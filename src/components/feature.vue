@@ -1,20 +1,30 @@
 <template>
-	<article class="feature">
-		<div class="header">
-			<h2>
-				<slot name="header"></slot>
-			</h2>
+	<article class=" feature card">
+		<div class="card-block text-xs-center">
+			<h4 class="card-title">
+				<slot name="title"></slot>
+			</h4>
+			<h6 class="card-subtitle text-muted">
+				<slot name="subtitle"></slot>
+			</h6>
 		</div>
-		<figure>
-			<img src="" alt="">
-			<figcaption>
-				<h3 class="catch">
-					<slot name="catch"></slot>
-				</h3>
-				<p class="description">
-					<slot name="description"></slot>
-				</p>
-			</figcaption>
-		</figure>
+		<div class="m-x-auto text-xs-center">
+			<img :src="illustration" alt="Card image">
+		</div>
+		<div class="card-block">
+			<div class="card-text">
+				<slot name="description"></slot>
+			</div>
+		</div>
 	</article>
 </template>
+<script type="text/ecmascript-6">
+	export default {
+		props: {
+			illustration: {
+				type: String,
+				required: true
+			}
+		}
+	}
+</script>
