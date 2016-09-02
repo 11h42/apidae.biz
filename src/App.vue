@@ -1,12 +1,17 @@
 <template>
 	<div id="app">
 		<navbar></navbar>
-		<section class="masthead">
-			<h1 class="display-1 text-sm-center catchline">
-				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr> :
-				3 logiciels RH en 1
-			</h1>
-		</section>
+
+		<mast-head class="masthead">
+			<span slot="header" class="m-x-auto ">
+				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr>
+			</span>
+
+			<small slot="header-subtitle">
+				3 logiciels RH en <b>1</b>.
+			</small>
+		</mast-head>
+
 
 		<section class="features">
 			<section class="features">
@@ -21,15 +26,16 @@
 
 <script>
 	import Navbar from './components/navbar'
+	import MastHead from './components/mast-head'
 	import Feature from './components/feature'
 
 	export default {
 		data () {
-			return {
-			}
+			return {}
 		},
 		components: {
 			Navbar,
+			MastHead,
 			Feature
 		}
 	}
@@ -39,18 +45,4 @@
 	@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 	@import '../node_modules/font-awesome/css/font-awesome.min.css';
 	@import '../node_modules/hint.css/hint.min.css';
-
-	.masthead {
-		background-image: url('assets/banner.jpg');
-		background-size: cover;
-		height: 80vh;
-	}
-
-	.catchline {
-		top: 50vh;
-		position: relative;
-		color: white;
-		text-shadow: .25rem .25rem 1rem #000;
-	}
-
 </style>
