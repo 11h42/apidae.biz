@@ -1,64 +1,68 @@
 <template>
-  <div id="app">
-    <img class="logo" src="assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
-  </div>
+	<div id="app">
+		<nav class="navbar navbar-full navbar-dark bg-inverse">
+			<ul class="nav navbar-nav">
+				<a class="navbar-brand" href="#">Apidae</a>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Solutions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="masthead">
+			<h1 class="display-1 text-sm-center catchline">
+				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr> :
+				3 logiciels RH en 1
+			</h1>
+		</section>
+
+		<section class="features">
+			<section class="features">
+				<feature>
+					<span slot="header">blabla</span>
+					<span slot="catch">super catchy</span>
+				</feature>
+			</section>
+		</section>
+	</div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+	import Feature from './components/feature'
 
-export default {
-  components: {
-    Hello
-  }
-}
+	export default {
+		data () {
+			return {
+			}
+		},
+		components: {
+			Feature
+		}
+	}
 </script>
 
 <style>
-html {
-  height: 100%;
-}
+	@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+	@import '../node_modules/font-awesome/css/font-awesome.min.css';
+	@import '../node_modules/hint.css/hint.min.css';
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+	.masthead {
+		background-image: url('assets/banner.jpg');
+		background-size: cover;
+		height: 80vh;
+	}
 
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
+	.catchline {
+		top: 50vh;
+		position: relative;
+		color: white;
+		text-shadow: .25rem .25rem 1rem #000;
+	}
 
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
-
-.logo {
-  width: 100px;
-  height: 100px
-}
 </style>
