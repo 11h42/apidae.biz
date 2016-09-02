@@ -14,12 +14,11 @@
 
 
 		<section class="features">
-			<section class="features">
-				<feature>
-					<span slot="header">blabla</span>
-					<span slot="catch">super catchy</span>
-				</feature>
-			</section>
+			<feature v-for="feature in features">
+				<span slot="header">{{feature.header}}</span>
+				<span slot="catch">{{feature.catch}}</span>
+				<p slot="description">{{feature.description}}</p>
+			</feature>
 		</section>
 	</div>
 </template>
@@ -31,7 +30,26 @@
 
 	export default {
 		data () {
-			return {}
+			return {
+				features: [
+					{
+						title: 'Congés et absences',
+						catch: 'Rapide et efficace',
+						description: 'en quelques clics demandez vos congés et recevez la réponse par email dès que votre manager a répondu.'
+					},
+					{
+						title: 'Notes de frais',
+						catch: 'Fini la paperasse inutile',
+						description: 'sur votre smartphone à la fin du repas avec votre client envoyez la note de frais à votre employeur.'
+					},
+					{
+						title: 'Suivi d’activité',
+						catch: 'Gain de temps',
+						description: 'c’est l’heure du bilan d’activité mensuel mais qu’avez-vous fait le vendredi 12 après-midi ? Plus de prise de tête : déclarez votre activité au jour le jour en toute simplicité.'
+
+					}
+				]
+			}
 		},
 		components: {
 			Navbar,
