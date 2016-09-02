@@ -1,20 +1,6 @@
 <template>
 	<div id="app">
-		<nav class="navbar navbar-full navbar-dark bg-inverse">
-			<ul class="nav navbar-nav">
-				<a class="navbar-brand" href="#">Apidae</a>
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Solutions</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
-				</li>
-			</ul>
-		</nav>
-
+		<navbar></navbar>
 		<section class="masthead">
 			<h1 class="display-1 text-sm-center catchline">
 				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr> :
@@ -34,6 +20,7 @@
 </template>
 
 <script>
+	import Navbar from './components/navbar'
 	import Feature from './components/feature'
 
 	export default {
@@ -42,6 +29,7 @@
 			}
 		},
 		components: {
+			Navbar,
 			Feature
 		}
 	}
