@@ -9,7 +9,7 @@
 			</h6>
 		</div>
 		<div class="m-x-auto text-xs-center">
-			<img :src="illustration" alt="Card image">
+			<img :src="illustrationPath" alt="Card image">
 		</div>
 		<div class="card-block">
 			<div class="card-text">
@@ -24,6 +24,11 @@
 			illustration: {
 				type: String,
 				required: true
+			}
+		},
+		computed: {
+			illustrationPath: function () {
+				return require('../' + this.illustration)
 			}
 		}
 	}
