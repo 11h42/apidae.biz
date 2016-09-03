@@ -20,17 +20,25 @@
 				<p slot="description">{{feature.description}}</p>
 			</feature>
 		</section>
+
+		<my-footer></my-footer>
 	</div>
 </template>
 <script>
 	import Navbar from './components/navbar'
 	import MastHead from './components/mast-head'
 	import Feature from './components/feature'
+	import MyFooter from './components/footer'
 
 	export default {
+		components: {
+			Navbar,
+			MastHead,
+			Feature,
+			MyFooter
+		},
 		data () {
 			return {
-
 				features: [
 					{
 						title: 'Congés et absences',
@@ -53,11 +61,6 @@
 					}
 				]
 			}
-		},
-		components: {
-			Navbar,
-			MastHead,
-			Feature
 		}
 	}
 </script>
