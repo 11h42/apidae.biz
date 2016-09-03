@@ -50,6 +50,6 @@ if (process.env.NODE_ENV === 'production') {
 				warnings: false
 			}
 		}),
-		new webpack.optimize.OccurenceOrderPlugin()
+		new webpack.optimize.OccurrenceOrderPlugin()
 	]);
 }
