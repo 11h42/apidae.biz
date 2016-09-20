@@ -20,10 +20,10 @@
 	</footer>
 </template>
 <script type="text/ecmascript-6">
-	import OurAddress from './our-address'
-	import ContactUs from './contact-us'
-	import OurServices from './our-services'
-	import Attribution from './attribution'
+	import OurAddress from './our-address';
+	import ContactUs from './contact-us';
+	import OurServices from './our-services';
+	import Attribution from './attribution';
 
 	export default {
 		components: {
