@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<h3>Contactez-nous</h3>
-		<ul class="vcard">
+		<ul class="vcard list-unstyled">
 			<li class="tel">
 				<i class="fa fa-phone" aria-hidden="true" title="Téléphone"></i> :
 				<!--<span class="sr-only">Téléphone</span>-->
