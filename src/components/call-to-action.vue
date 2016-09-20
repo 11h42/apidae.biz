@@ -1,7 +1,7 @@
 <template>
 	<article id="call-to-action" class="m-x-auto text-xs-center">
 		<div class="row">
-					<continue target="#call-to-action"></continue>
+			<continue target="#call-to-action"></continue>
 		</div>
 
 		<div class="row">
@@ -40,5 +40,6 @@
 
 	#call-to-action .continue {
 		top: 0;
+		opacity: .5;
 	}
 </style>
