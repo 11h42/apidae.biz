@@ -3,22 +3,18 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1 class="display-5">
-					Envie d’un devis ou simplement de poser une question ?
+					Envie d’un <em class="text-warning">devis</em> ou simplement de poser une <em class="text-primary">question</em> ?
 				</h1>
 			</div>
 		</div>
-		<br>
+		<hr>
+
 		<div class="row">
 			<div class="col-xs-12">
 				<button class="btn btn-success btn-lg">
-					Contactez-nous
+					<b>Contactez-nous</b>
 				</button>
 			</div>
 		</div>
 	</article>
 </template>
-<style>
-	#call-to-action {
-		padding-top: 18vh;
-	}
-</style>

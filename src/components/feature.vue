@@ -1,5 +1,5 @@
 <template>
-	<article :id="id" class="feature card">
+	<article :id="id" class="feature">
 		<div class="card-block text-xs-center">
 			<h4 class="card-title">
 				<slot name="title"></slot>
@@ -21,8 +21,8 @@
 <script type="text/ecmascript-6">
 	export default {
 		props: {
-			illustration: { type: String, required: true},
-			id: { type: String, required: true}
+			illustration: {type: String, required: true},
+			id: {type: String, required: true}
 		},
 		computed: {
 			illustrationPath: function () {

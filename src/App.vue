@@ -14,19 +14,18 @@
 
 		<div class="container-fluid">
 			<section id="fonctionnalités" class="row">
-				<!--<div class="card-deck-wrapper">-->
-				<!--<div class="card-deck">-->
-					<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.title">
+				<div class="card-deck">
+					<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
+							 class="card">
 						<span slot="title">{{feature.title}}</span>
 						<span slot="subtitle">{{feature.subtitle}}</span>
 						<p slot="description">{{feature.description}}</p>
 					</feature>
-				<!--</div>-->
-				<!--</div>-->
+				</div>
 			</section>
 
-			<section id="nous-contacter">
-				<call-to-action></call-to-action>
+			<section id="nous-contacter" class="row">
+				<call-to-action class="col-xs-12"></call-to-action>
 			</section>
 		</div>
 
@@ -83,5 +82,10 @@
 
 	#fonctionnalités, #nous-contacter {
 		height: 50vh;
+		margin-top: 3rem;
 	}
+		#call-to-action {
+		padding-top: 18vh;
+	}
+
 </style>
