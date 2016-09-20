@@ -2,15 +2,12 @@
 	<div id="app">
 		<navbar :features="features"></navbar>
 
-		<mast-head class="masthead">
+		<cover class="masthead">
 			<span slot="header" class="m-x-auto ">
 				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr>
 			</span>
-
-			<small slot="header-subtitle">
-				3 logiciels RH en <b>1</b>.
-			</small>
-		</mast-head>
+			<small slot="header-subtitle">3 logiciels RH en <b>1</b>.</small>
+		</cover>
 
 		<div class="container-fluid">
 			<section id="fonctionnalités" class="row">
@@ -34,7 +31,7 @@
 </template>
 <script type="text/ecmascript-6">
 	import Navbar from './components/navbar'
-	import MastHead from './components/mast-head'
+	import Cover from './components/cover'
 	import Feature from './components/feature'
 	import CallToAction from './components/call-to-action';
 	import MyFooter from './components/footer'
@@ -42,7 +39,7 @@
 	export default {
 		components: {
 			Navbar,
-			MastHead,
+			Cover,
 			Feature,
 			CallToAction,
 			MyFooter

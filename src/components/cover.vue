@@ -1,5 +1,5 @@
 <template>
-	<section class="mast-head">
+	<section class="cover">
 		<div class="catchline">
 			<h1 class="display-1 text-xs-center">
 				<slot name="header"></slot>
@@ -12,13 +12,13 @@
 
 <style>
 	.catchline {
-		top: 40%;
+		top: 20vh;
 		position: relative;
 		color: white;
 		text-shadow: .25rem .25rem 1rem #000;
 	}
 
-	.mast-head {
+	.cover {
 		background-image: url('../assets/banner.jpg');
 		background-size: cover;
 		height: 80vh;
