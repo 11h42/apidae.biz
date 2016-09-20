@@ -81,8 +81,8 @@
 	@import '../node_modules/hint.css/hint.min.css';
 
 	#fonctionnalités, #nous-contacter {
-		height: 50vh;
-		margin-top: 3rem;
+		min-height: 50vh;
+		margin-top: 5rem;
 	}
 		#call-to-action {
 		padding-top: 18vh;
