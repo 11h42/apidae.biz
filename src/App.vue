@@ -1,16 +1,16 @@
 <template>
 	<div id="app">
-		<navbar></navbar>
+		<navbar :features="features"></navbar>
 
-			<mast-head class="masthead">
+		<mast-head class="masthead">
 			<span slot="header" class="m-x-auto ">
 				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr>
 			</span>
 
-				<small slot="header-subtitle">
-					3 logiciels RH en <b>1</b>.
-				</small>
-			</mast-head>
+			<small slot="header-subtitle">
+				3 logiciels RH en <b>1</b>.
+			</small>
+		</mast-head>
 
 		<div class="container-fluid">
 			<section id="fonctionnalités" class="row">

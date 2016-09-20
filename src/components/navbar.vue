@@ -5,9 +5,19 @@
 			<li class="nav-item">
 				<a class="nav-link" href="#fonctionnalités">Solutions</a>
 			</li>
+			<li class="nav-item" v-for="feature in features">
+				<a class="nav-link" :href="'#' + feature.id">{{ feature.title}}</a>
+			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#nous-contacter">Contact</a>
 			</li>
 		</ul>
 	</nav>
 </template>
+<script type="text/ecmascript-6">
+	export default {
+		props: {
+			features: {type: Object, required: true}
+		},
+	}
+</script>
