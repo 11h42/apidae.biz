@@ -17,7 +17,7 @@
 <script type="text/ecmascript-6">
 	export default {
 		props: {
-			features: {type: Object, required: true}
+			features: {type: Array, required: true}
 		},
 	}
 </script>
