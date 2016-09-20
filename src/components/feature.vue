@@ -31,3 +31,11 @@
 		}
 	}
 </script>
+<style>
+	.feature .title {
+		text-transform: uppercase
+	}
+	.feature .subtitle {
+		/*text-transform: capitalize;*/
+	}
+</style>

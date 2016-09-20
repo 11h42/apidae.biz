@@ -4,9 +4,9 @@
 		<div class="card-deck">
 			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
 					 class="card">
-				<span slot="title">{{feature.title}}</span>
-				<span slot="subtitle">{{feature.subtitle}}</span>
-				<p slot="description">{{feature.description}}</p>
+				<span class="title" slot="title">{{feature.title}}</span>
+				<span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
+				<p class="description" slot="description">{{feature.description}}</p>
 			</feature>
 		</div>
 	</div>
