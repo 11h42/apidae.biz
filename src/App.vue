@@ -51,24 +51,27 @@
 			return {
 				features: [
 					{
+						id: 'suivi-d’activité',
+						title: 'Suivi d’activité',
+						illustration: 'assets/suivi-d-activité.png',
+						subtitle: 'Gain de temps',
+						description: 'c’est l’heure du bilan d’activité mensuel mais qu’avez-vous fait le vendredi 12 après-midi ? Plus de prise de tête : déclarez votre activité au jour le jour en toute simplicité.'
+
+					},
+					{
+						id: 'congés-et-absences',
 						title: 'Congés et absences',
 						illustration: 'assets/congés.png',
 						subtitle: 'Rapide et efficace',
 						description: 'en quelques clics demandez vos congés et recevez la réponse par email dès que votre manager a répondu.'
 					},
 					{
+						id: 'notes-de-frais',
 						title: 'Notes de frais',
 						illustration: 'assets/note-de-frais.png',
 						subtitle: 'Fini la paperasse inutile',
 						description: 'sur votre smartphone à la fin du repas avec votre client envoyez la note de frais à votre employeur.'
 					},
-					{
-						title: 'Suivi d’activité',
-						illustration: 'assets/suivi-d-activité.png',
-						subtitle: 'Gain de temps',
-						description: 'c’est l’heure du bilan d’activité mensuel mais qu’avez-vous fait le vendredi 12 après-midi ? Plus de prise de tête : déclarez votre activité au jour le jour en toute simplicité.'
-
-					}
 				]
 			}
 		}
