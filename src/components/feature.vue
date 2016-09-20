@@ -8,7 +8,7 @@
 				<slot name="subtitle"></slot>
 			</h6>
 		</div>
-		<div class="m-x-auto text-xs-center">
+		<div class="m-x-auto text-xs-center illustration">
 			<img :src="illustrationPath" alt="Card image" class="img-fluid  m-x-auto d-block">
 		</div>
 		<div class="card-block">
@@ -37,5 +37,8 @@
 	}
 	.feature .subtitle {
 		/*text-transform: capitalize;*/
+	}
+	.feature .illustration {
+		padding: 2em;
 	}
 </style>
