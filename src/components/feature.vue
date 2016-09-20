@@ -9,7 +9,7 @@
 			</h6>
 		</div>
 		<div class="m-x-auto text-xs-center">
-			<img :src="illustrationPath" alt="Card image">
+			<img :src="illustrationPath" alt="Card image" class="img-fluid  m-x-auto d-block">
 		</div>
 		<div class="card-block">
 			<div class="card-text">
