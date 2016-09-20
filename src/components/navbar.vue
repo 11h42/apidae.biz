@@ -6,7 +6,9 @@
 				<a class="nav-link" href="#fonctionnalités">Fonctionnalités</a>
 			</li>
 			<li class="nav-item" v-for="feature in features">
-				<a class="nav-link" :href="'#' + feature.id">{{ feature.title}}</a>
+				<a class="nav-link" :href="'#' + feature.id">
+					<i>{{ feature.title}}	</i>
+				</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#nous-contacter">Contact</a>
