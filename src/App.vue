@@ -79,7 +79,12 @@
 		min-height: 50vh;
 		margin-top: 5rem;
 	}
-		#call-to-action {
+
+	#fonctionnalités {
+		padding: 0 5em;
+	}
+
+	#call-to-action {
 		padding-top: 18vh;
 	}
 

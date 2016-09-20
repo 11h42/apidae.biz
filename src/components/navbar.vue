@@ -3,7 +3,7 @@
 		<ul class="nav navbar-nav">
 			<a class="navbar-brand" href="#">Apidae</a>
 			<li class="nav-item">
-				<a class="nav-link" href="#fonctionnalités">Solutions</a>
+				<a class="nav-link" href="#fonctionnalités">Fonctionnalités</a>
 			</li>
 			<li class="nav-item" v-for="feature in features">
 				<a class="nav-link" :href="'#' + feature.id">{{ feature.title}}</a>
