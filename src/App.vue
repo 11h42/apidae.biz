@@ -13,6 +13,9 @@
 		</mast-head>
 
 
+			<section id="nous-contacter">
+				<call-to-action></call-to-action>
+			</section>
 		<section class="features card-group">
 			<feature v-for="feature in features" :illustration="feature.illustration">
 				<span slot="title">{{feature.title}}</span>
@@ -24,10 +27,11 @@
 		<my-footer></my-footer>
 	</div>
 </template>
-<script>
+<script type="text/ecmascript-6">
 	import Navbar from './components/navbar'
 	import MastHead from './components/mast-head'
 	import Feature from './components/feature'
+	import CallToAction from './components/call-to-action';
 	import MyFooter from './components/footer'
 
 	export default {
@@ -35,6 +39,7 @@
 			Navbar,
 			MastHead,
 			Feature,
+			CallToAction,
 			MyFooter
 		},
 		data () {
@@ -69,4 +74,8 @@
 	@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 	@import '../node_modules/font-awesome/css/font-awesome.min.css';
 	@import '../node_modules/hint.css/hint.min.css';
+
+	#fonctionnalités, #nous-contacter {
+		height: 50vh;
+	}
 </style>
