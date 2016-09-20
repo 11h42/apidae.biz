@@ -1,6 +1,6 @@
 # apidae
 
-> A Vue.js project
+>  site web Apidae: Solution SIRH 3 logiciels RH en 1. [http://apidae.biz](http://apidae.biz).
 
 ## Build Setup
 
