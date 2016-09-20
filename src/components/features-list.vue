@@ -1,0 +1,27 @@
+<template>
+	<div class="col-lg-12">
+		<continue></continue>
+		<div class="card-deck">
+			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
+					 class="card">
+				<span slot="title">{{feature.title}}</span>
+				<span slot="subtitle">{{feature.subtitle}}</span>
+				<p slot="description">{{feature.description}}</p>
+			</feature>
+		</div>
+	</div>
+</template>
+<script type="text/ecmascript-6">
+	import Continue from './continue';
+	import Feature from './feature';
+
+	export default {
+		props: {
+			features: {type: Array, required: true}
+		},
+		components: {
+			Continue,
+			Feature
+		}
+	}
+</script>

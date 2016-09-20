@@ -11,14 +11,7 @@
 
 		<div class="container-fluid">
 			<section id="fonctionnalités" class="row">
-				<div class="card-deck">
-					<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
-							 class="card">
-						<span slot="title">{{feature.title}}</span>
-						<span slot="subtitle">{{feature.subtitle}}</span>
-						<p slot="description">{{feature.description}}</p>
-					</feature>
-				</div>
+				<features-list :features="features"></features-list>
 			</section>
 
 			<section id="nous-contacter" class="row">
@@ -30,19 +23,21 @@
 	</div>
 </template>
 <script type="text/ecmascript-6">
-	import Navbar from './components/navbar'
-	import Cover from './components/cover'
-	import Feature from './components/feature'
+	import Navbar from './components/navbar';
+	import Cover from './components/cover';
+	import FeaturesList from './components/features-list';
 	import CallToAction from './components/call-to-action';
-	import MyFooter from './components/footer'
+	import MyFooter from './components/footer';
+	import Continue from './components/continue.vue';
 
 	export default {
 		components: {
 			Navbar,
-			Cover,
-			Feature,
+			Continue,
+			FeaturesList,
 			CallToAction,
-			MyFooter
+			MyFooter,
+			Cover
 		},
 		data () {
 			return {
