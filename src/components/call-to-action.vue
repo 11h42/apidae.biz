@@ -1,9 +1,12 @@
 <template>
 	<article id="call-to-action" class="m-x-auto text-xs-center">
+		<continue target="#call-to-action"></continue>
+
 		<div class="row">
 			<div class="col-xs-12">
 				<h1 class="display-5">
-					Envie d’un <em class="text-warning">devis</em> ou simplement de poser une <em class="text-primary">question</em> ?
+					Envie d’un <em class="text-warning">devis</em> ou simplement de poser une <em class="text-primary">question</em>
+					?
 				</h1>
 			</div>
 		</div>
@@ -18,3 +21,21 @@
 		</div>
 	</article>
 </template>
+<script type="text/ecmascript-6">
+	import Continue from './continue';
+
+	export default {
+		components: {
+			Continue
+		}
+	}
+</script>
+<style>
+	#call-to-action {
+		position: relative;
+	}
+
+	#call-to-action .continue {
+		top: 0;
+	}
+</style>

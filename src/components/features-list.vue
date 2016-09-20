@@ -1,6 +1,6 @@
 <template>
-	<div class="col-lg-12">
-		<continue></continue>
+	<div id="features-list" class="col-lg-12">
+		<continue target="#features-list"></continue>
 		<div class="card-deck">
 			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
 					 class="card">
@@ -25,3 +25,8 @@
 		}
 	}
 </script>
+<style>
+	#features-list .continue {
+		top: -11em;
+	}
+</style>

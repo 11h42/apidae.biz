@@ -9,7 +9,6 @@
 		</div>
 	</section>
 </template>
-
 <style>
 	.catchline {
 		top: 20vh;
@@ -22,6 +21,6 @@
 		background-image: url('../assets/banner.jpg');
 		background-size: cover;
 		height: 80vh;
+		position: relative;
 	}
-
 </style>

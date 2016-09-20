@@ -76,7 +76,7 @@
 	@import '../node_modules/hint.css/hint.min.css';
 
 	#fonctionnalités, #nous-contacter {
-		min-height: 50vh;
+		min-height: 60vh;
 		margin-top: 5rem;
 	}
 
