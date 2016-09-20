@@ -12,6 +12,10 @@
 					<our-services></our-services>
 				</div>
 			</div>
+
+			<div class="row">
+				<attribution></attribution>
+			</div>
 		</div>
 	</footer>
 </template>
@@ -19,12 +23,14 @@
 	import OurAddress from './our-address'
 	import ContactUs from './contact-us'
 	import OurServices from './our-services'
+	import Attribution from './attribution'
 
 	export default {
 		components: {
 			OurAddress,
 			ContactUs,
 			OurServices,
+			Attribution
 		}
 	}
 </script>
