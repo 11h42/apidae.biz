@@ -38,4 +38,7 @@
 	.bg-inverse {
 		color: white;
 	}
+	.footer {
+		padding-top: 3rem;
+	}
 </style>
