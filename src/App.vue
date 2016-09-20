@@ -2,27 +2,33 @@
 	<div id="app">
 		<navbar></navbar>
 
-		<mast-head class="masthead">
+			<mast-head class="masthead">
 			<span slot="header" class="m-x-auto ">
 				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr>
 			</span>
 
-			<small slot="header-subtitle">
-				3 logiciels RH en <b>1</b>.
-			</small>
-		</mast-head>
+				<small slot="header-subtitle">
+					3 logiciels RH en <b>1</b>.
+				</small>
+			</mast-head>
 
+		<div class="container-fluid">
+			<section id="fonctionnalités" class="row">
+				<!--<div class="card-deck-wrapper">-->
+				<!--<div class="card-deck">-->
+					<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.title">
+						<span slot="title">{{feature.title}}</span>
+						<span slot="subtitle">{{feature.subtitle}}</span>
+						<p slot="description">{{feature.description}}</p>
+					</feature>
+				<!--</div>-->
+				<!--</div>-->
+			</section>
 
 			<section id="nous-contacter">
 				<call-to-action></call-to-action>
 			</section>
-		<section class="features card-group">
-			<feature v-for="feature in features" :illustration="feature.illustration">
-				<span slot="title">{{feature.title}}</span>
-				<span slot="subtitle">{{feature.subtitle}}</span>
-				<p slot="description">{{feature.description}}</p>
-			</feature>
-		</section>
+		</div>
 
 		<my-footer></my-footer>
 	</div>
