@@ -38,6 +38,9 @@
 	.bg-inverse {
 		color: white;
 	}
+	.bg-inverse a {
+		color: hsla(0, 0%, 100%, 0.5);
+	}
 	.footer {
 		padding-top: 3rem;
 	}
