@@ -2,7 +2,7 @@
 	<div class="continue d-block text-xs-center">
 		<a :href="target">
 			<span class="sr-only">{{target}}</span>
-			<i class=" fa fa-angle-double-down m-x-auto"></i>
+			<i class=" fa fa-angle-double-down fa-fw m-x-auto"></i>
 		</a>
 	</div>
 </template>
@@ -23,10 +23,10 @@
 		width: 100%;
 		height: 6em;
 		z-index: 99;
+		left: 0;
 	}
 
 	.continue .fa {
-		position: absolute;
 		font-size: 6em;
 		text-shadow: .1rem .1rem .5rem #000;
 		opacity: .25;
