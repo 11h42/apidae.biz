@@ -4,7 +4,7 @@
 
 		<cover class="masthead">
 			<span slot="header" class="m-x-auto ">
-				Solution <abbr title="Solution Informatique de Resources Humaines">SIRH</abbr>
+				Solution <abbr title="Système d'information de gestion des ressources humaines">SIRH</abbr>
 			</span>
 			<small slot="header-subtitle">3 logiciels RH en <b>1</b>.</small>
 		</cover>
