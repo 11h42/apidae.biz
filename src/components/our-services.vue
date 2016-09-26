@@ -4,10 +4,10 @@
 		<ul class="list-unstyled">
 			<li>
 				<i class="fa fa-envelope-o" aria-hidden="true" ></i>
-				<a href="akemail.fr">Akemail</a>, solution d’e-mailing ;</li>
+				<a href="http://akemail.fr">Akemail</a>, solution d’e-mailing ;</li>
 			<li>
 				<i class="fa fa-clock-o" aria-hidden="true" ></i>
-				<a href="11h42.fr">11h42</a>, accélérateur de projet.</li>
+				<a href="http://11h42.com">11h42</a>, accélérateur de projet.</li>
 		</ul>
 	</section>
 </template>
