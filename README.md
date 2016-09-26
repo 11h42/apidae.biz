@@ -4,19 +4,27 @@
 
 ## Build Setup
 
-``` bash
-# install dependencies
-npm install
+### Install Dependencies
+	
+	npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+### Serve With Hot Reload 
 
-# build for production with minification
-npm run build
-```
+Available at [localhost:8080](localhost:8080):
+
+	npm run dev
+
+### Build For Production 
+
+Done with minification:
+
+	npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+### Bump version
+
+ see [`bumped` documentation](https://bumped.github.io/).
 ### Images
 
 * [cover](https://unsplash.com/@flenjoore?photo=uF860tgJ-jw) - cc0 ;
