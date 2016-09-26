@@ -17,7 +17,7 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<a href="mailto:apidae@akema.fr" class="btn btn-success btn-lg">
+				<a href="mailto:contact@apidae.biz" class="btn btn-success btn-lg">
 					<b>Contactez-nous</b>
 				</a>
 			</div>
