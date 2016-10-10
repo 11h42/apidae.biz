@@ -1,6 +1,6 @@
 {
   "name": "apidae",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "gestion des congés, CRA, Compte rendu d'activité, SIRH, note de frais",
   "author": "edouard@akema.fr",
   "private": true,
