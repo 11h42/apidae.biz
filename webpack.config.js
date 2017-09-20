@@ -10,8 +10,7 @@ module.exports = {
 		filename: 'build.js'
 	},
 	resolve: {
-		extensions: ['', '.js', '.vue'],
-		modulesDirectories: ["node_modules", "src"]
+		extensions: ['.js', '.vue'],
 	},
 	module: {
 		loaders: [

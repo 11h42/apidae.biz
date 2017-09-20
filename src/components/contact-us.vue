@@ -11,7 +11,7 @@
 				<i class="fa fa-envelope" aria-hidden="true" title="par e-mail"></i>
 				<abbr title="courriel">e-mail</abbr>:
 				<span class="value">
-				<a href="mailto:contact@apidae.biz">contact@apidae.biz</a>.
+				<a href="mailto:contact@apidae.biz">contact@apidae.biz</a>
 				</span>
 			</li>
 		</ul>

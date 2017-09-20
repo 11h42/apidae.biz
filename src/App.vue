@@ -6,7 +6,7 @@
 			<span slot="header" class="m-x-auto ">
 				Solution <abbr title="Système d'information de gestion des ressources humaines">SIRH</abbr>
 			</span>
-			<small slot="header-subtitle">3 logiciels RH en <b>1</b>.</small>
+			<small slot="header-subtitle">4 logiciels RH en <b>1</b>.</small>
 		</cover>
 
 		<div class="container-fluid">
@@ -63,6 +63,13 @@
 						illustration: 'assets/note-de-frais.png',
 						subtitle: 'Fini la paperasse inutile',
 						description: 'Sur votre smartphone à la fin du repas avec votre client envoyez la note de frais à votre employeur.'
+					},
+					{
+						id: 'time-tracking',
+						title: 'Time tracking',
+						illustration: 'assets/time-tracking.png',
+						subtitle: 'Traçabilité de vos tâches',
+						description: 'Suivez vos temps d\'activité par tâche et par projet.'
 					},
 				]
 			}
