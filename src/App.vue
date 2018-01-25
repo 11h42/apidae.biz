@@ -1,12 +1,15 @@
 <template>
 	<div id="app">
-		<navbar :features="features"></navbar>
+		<navbar :features="features" :showbtn="true"></navbar>
 
 		<cover class="masthead">
-			<span slot="header" class="m-x-auto ">
-				Solution <abbr title="Système d'information de gestion des ressources humaines">SIRH</abbr>
+			<span slot="header" class="m-x-auto">
+				Ne perdez plus votre temps !
 			</span>
-			<small slot="header-subtitle">4 logiciels RH en <b>1</b>.</small>
+			<small slot="header-subtitle">Apidae, c'est 4 logiciels R.H. en 1 ! Gérez
+				vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail
+				depuis une seule application web ou mobile.
+			</small>
 		</cover>
 
 		<div class="container-fluid">
@@ -39,13 +42,13 @@
 			MyFooter,
 			Cover
 		},
-		data () {
+		data() {
 			return {
 				features: [
 					{
 						id: 'suivi-d’activité',
 						title: 'Suivi d’activité',
-						illustration: 'assets/suivi-d-activité.png',
+						illustration: 'fa fa-3x fa-line-chart',
 						subtitle: 'Gain de temps',
 						description: 'C’est l’heure du bilan d’activité mensuel mais qu’avez-vous fait le vendredi 12 après-midi ? Plus de prise de tête : déclarez votre activité au jour le jour en toute simplicité.'
 
@@ -53,23 +56,23 @@
 					{
 						id: 'congés-et-absences',
 						title: 'Congés et absences',
-						illustration: 'assets/congés.png',
+						illustration: 'fa fa-3x fa-plane',
 						subtitle: 'Rapide et efficace',
-						description: 'En quelques clics demandez vos congés et recevez la réponse par email dès que votre manager a répondu.'
+						description: 'En quelques clics demandez vos congés ou renseignez vos absences prévues et recevez la réponse par email dès que votre manager a répondu.'
 					},
 					{
 						id: 'notes-de-frais',
 						title: 'Notes de frais',
-						illustration: 'assets/note-de-frais.png',
+						illustration: 'fa fa-3x fa-credit-card',
 						subtitle: 'Fini la paperasse inutile',
-						description: 'Sur votre smartphone à la fin du repas avec votre client envoyez la note de frais à votre employeur.'
+						description: 'Sur votre smartphone à la fin du repas avec votre client, créez envoyez la note de frais à votre employeur en quelques clics.'
 					},
 					{
 						id: 'time-tracking',
 						title: 'Time tracking',
-						illustration: 'assets/time-tracking.png',
+						illustration: 'fa fa-3x fa-clock-o',
 						subtitle: 'Traçabilité de vos tâches',
-						description: 'Suivez vos temps d\'activité par tâche et par projet.'
+						description: 'Suivez en temps réel vos temps d\'activité par tâche et par projet et obtenez des synthèses détaillées par période et par projet. Idéal pour organiser votre travail.'
 					},
 				]
 			}
@@ -82,16 +85,15 @@
 	@import '../node_modules/font-awesome/css/font-awesome.min.css';
 	@import '../node_modules/hint.css/hint.min.css';
 
-	#fonctionnalités, #nous-contacter {
-		min-height: 60vh;
-		margin-top: 5rem;
+	body {
+		font-family: 'Open Sans', sans-serif;
 	}
 
 	#fonctionnalités {
-		padding: 0 5em;
+		margin-bottom: 50px;
 	}
 
 	#call-to-action {
-		padding-top: 18vh;
+		padding-top: 50px;
 	}
 </style>

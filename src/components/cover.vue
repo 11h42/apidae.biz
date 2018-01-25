@@ -1,26 +1,59 @@
 <template>
 	<section class="cover">
-		<div class="catchline">
-			<h1 class="display-1 text-xs-center">
-				<slot name="header"></slot>
-				<br>
-				<slot name="header-subtitle"></slot>
-			</h1>
+		<div class="container">
+			<div class="catchline row">
+				<div class="col-lg-6 col-md-12">
+					<h1 class="maintitle">
+						<slot name="header"></slot>
+						<br>
+					</h1>
+					<br />
+					<h4 class="text-muted subtitle"><slot name="header-subtitle"></slot></h4>
+
+					<a href="/signup" class="btn btn-lg" id="cover-trial-button">
+						<i class="fa fa-arrow-circle-o-right"></i>
+						&nbspEssayer gratuitement !
+					</a>
+
+					<i class="text-muted">Période d'essai de deux mois gratuite <br />et sans engagement.</i>
+				</div>
+			</div>
 		</div>
 	</section>
 </template>
 <style>
 	.catchline {
-		top: 20vh;
+		top: 15vh;
 		position: relative;
-		color: white;
-		text-shadow: .25rem .25rem 1rem #000;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.maintitle {
+		font-weight: bold;
+	}
+
+	.subtitle {
+		font-weight: lighter;
 	}
 
 	.cover {
-		background-image: url('../assets/banner.jpg');
-		background-size: cover;
+		background-image: url('../assets/banner-mockups.png');
+		background-repeat: no-repeat;
+		background-size: contain;
 		height: 80vh;
 		position: relative;
+		padding: 0 80px;
+	}
+
+	#cover-trial-button {
+		display: block;
+		width: fit-content;
+		width: -moz-fit-content;
+		color: white;
+		margin-top: 80px;
+		margin-bottom: 40px;
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: #F4511E;
 	}
 </style>

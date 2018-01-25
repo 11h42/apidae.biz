@@ -1,6 +1,6 @@
 <template>
 	<article :id="id" class="feature">
-		<div class="card-block text-xs-center">
+		<div class="text-xs-center">
 			<h4 class="card-title">
 				<slot name="title"></slot>
 			</h4>
@@ -9,8 +9,9 @@
 			</h6>
 		</div>
 		<div class="m-x-auto text-xs-center illustration">
-			<img :src="illustrationPath" alt="Card image" class="img-fluid  m-x-auto d-block">
+			<i :class="illustrationClass"></i>
 		</div>
+		<hr>
 		<div class="card-block">
 			<div class="card-text">
 				<slot name="description"></slot>
@@ -25,20 +26,22 @@
 			id: {type: String, required: true}
 		},
 		computed: {
-			illustrationPath: function () {
-				return require('../' + this.illustration)
+			illustrationClass: function () {
+				return this.illustration
 			}
 		}
 	}
 </script>
 <style>
-	.feature .title {
-		text-transform: uppercase;
+	.feature {
+		text-align: center;
+		border: none;
+	}
+	.feature .illustration {
+		padding: 25px;
+		padding-top: 40px;
 	}
 	.feature .subtitle {
 		/*text-transform: capitalize;*/
-	}
-	.feature .illustration {
-		padding: 2em;
 	}
 </style>

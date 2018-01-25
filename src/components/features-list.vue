@@ -1,9 +1,8 @@
 <template>
-	<div id="features-list" class="col-lg-12">
-		<continue target="#features-list"></continue>
-		<div class="card-deck">
+	<div id="features-list" class="container">
+		<div class="col-lg-12 card-deck">
 			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
-					 class="card">
+					 class="col-lg-3 col-md-6">
 				<span class="title" slot="title">{{feature.title}}</span>
 				<span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
 				<p class="description" slot="description">{{feature.description}}</p>
@@ -26,7 +25,4 @@
 	}
 </script>
 <style>
-	#features-list .continue {
-		top: -11em;
-	}
 </style>

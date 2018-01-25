@@ -4,6 +4,9 @@ const path = require('path');
 module.exports = {
 	context: __dirname + '/src',
 	entry: './main.js',
+	devServer: {
+		historyApiFallback: true,
+	},
 	output: {
 		path: __dirname + '/dist',
 		publicPath: '/dist/',

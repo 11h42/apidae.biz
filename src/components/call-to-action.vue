@@ -1,15 +1,12 @@
 <template>
 	<article id="call-to-action" class="m-x-auto text-xs-center">
-		<div class="row">
-			<continue target="#call-to-action"></continue>
-		</div>
 
 		<div class="row">
 			<div class="col-xs-12">
-				<h1 class="display-5">
+				<h2>
 					Envie d’un <em class="text-warning">devis</em> ou simplement de poser une <em class="text-primary">question</em>
 					?
-				</h1>
+				</h2>
 			</div>
 		</div>
 
@@ -17,7 +14,7 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<a href="mailto:contact@apidae.biz" class="btn btn-success btn-lg">
+				<a href="mailto:contact@apidae.biz" class="btn btn-lg">
 					<b>Contactez-nous</b>
 				</a>
 			</div>
@@ -36,10 +33,14 @@
 <style>
 	#call-to-action {
 		position: relative;
+		margin-bottom: 100px;
 	}
 
-	#call-to-action .continue {
-		top: 0;
-		opacity: .5;
+	#call-to-action h2 {
+		font-weight: bold;
+	}
+
+	#call-to-action .btn {
+		background-color: #1B6D85;
 	}
 </style>
