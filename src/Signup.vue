@@ -28,7 +28,7 @@
 						<input type="text" name="telephone" id="telephone" class="margin-bottom">
 
 						<label for="password">Mot de passe : <i class="text-muted">(pourquoi ne pas utiliser <a
-								target="_blank" href="https://lesspass.com/">LessPass</a>)</i></label>
+								target="_blank" href="https://lesspass.com/">LessPass</a> ?)</i></label>
 						<input type="password" name="password" id="password" class="margin-bottom">
 
 						<br/>
