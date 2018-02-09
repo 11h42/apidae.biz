@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<navbar :features="[]" :showbtntry="true" :showbtnpricing="false"></navbar>
+		<navbar :features="[]" :showbtntry="true" :showbtnpricing="false" v-if="!ascomponent"></navbar>
 
 		<div id="pricing-container" class="container">
 			<h2>Tarifs</h2>
@@ -132,7 +132,7 @@
 			</div>
 		</div>
 
-		<my-footer></my-footer>
+		<my-footer v-if="!ascomponent"></my-footer>
 	</div>
 </template>
 <script type="text/ecmascript-6">
@@ -140,6 +140,9 @@ import Navbar from "./components/navbar";
 import MyFooter from "./components/footer";
 
 export default {
+  props: {
+	  ascomponent: {type: Boolean, required: true},
+  },
   components: {
     Navbar,
     MyFooter
@@ -177,6 +180,9 @@ body {
 .pricing {
   padding: 20px;
   color: white !important;
+}
+
+@media screen and (max-width: 991px) {
 }
 
 .inner-pricing {

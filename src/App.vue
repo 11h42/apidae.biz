@@ -17,6 +17,8 @@
 				<features-list :features="features"></features-list>
 			</section>
 
+			<pricing :ascomponent="true"></pricing>
+
 			<section id="nous-contacter" class="row">
 				<call-to-action class="col-xs-12"></call-to-action>
 			</section>
@@ -32,6 +34,7 @@
 	import CallToAction from './components/call-to-action';
 	import MyFooter from './components/footer';
 	import Continue from './components/continue.vue';
+	import Pricing from './Pricing.vue';
 
 	export default {
 		components: {
@@ -40,7 +43,8 @@
 			FeaturesList,
 			CallToAction,
 			MyFooter,
-			Cover
+			Cover,
+			Pricing
 		},
 		data() {
 			return {
@@ -85,12 +89,9 @@
 	@import '../node_modules/font-awesome/css/font-awesome.min.css';
 	@import '../node_modules/hint.css/hint.min.css';
 
-	body {
+	body, html {
 		font-family: 'Open Sans', sans-serif;
-	}
-
-	#fonctionnalités {
-		margin-bottom: 50px;
+		width: 100%;
 	}
 
 	#call-to-action {
