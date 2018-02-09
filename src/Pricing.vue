@@ -112,7 +112,7 @@
 								<li>
 									<i class="fa fa-users">&nbsp&nbsp</i>
 									<i class="fa fa-user">&nbsp&nbsp</i>									
-									Nombre d'utilisateurs <b>adapté à vos besoins</b>
+									Nombre d'utilisateurs adapté à vos besoins
 								</li>
 								<li>
 									<i class="fa fa-clock-o">&nbsp&nbsp</i>									
