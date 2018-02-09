@@ -4,8 +4,7 @@
 			<a class="navbar-brand" href="/">
 				<img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
 				&nbspApidae</a>
-			<a href="/signup" class="nav-item btn btn-blue" v-if="showbtntry">Essai gratuit</a>
-			<a href="/pricing" class="nav-item btn btn-default" v-if="showbtnpricing">Voir les tarifs</a>
+			<a href="mailto:contact@apidae.biz?subject=Version d'essai Apidae" class="nav-item btn btn-blue" v-if="showbtntry">Essai gratuit</a>
 		</ul>
 	</nav>
 </template>

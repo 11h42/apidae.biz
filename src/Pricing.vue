@@ -18,7 +18,7 @@
 							<i>Période d'essai d'une durée de 2 mois sans engagement</i>
 							<br>
 							<br>
-							<a href="/signup" class="btn">Essai gratuit</a>
+							<a href="mailto:contact@apidae.biz?subject=Version d'essai Apidae" class="btn">Essai gratuit</a>
 						</div>
 						<div class="pricing-body">
 							<ul>

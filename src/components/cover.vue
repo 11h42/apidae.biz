@@ -10,7 +10,7 @@
 					<br />
 					<h4 class="text-muted subtitle"><slot name="header-subtitle"></slot></h4>
 
-					<a href="/signup" class="btn btn-lg" id="cover-trial-button">
+					<a href="mailto:contact@apidae.biz?subject=Version d'essai Apidae" class="btn btn-lg" id="cover-trial-button">
 						<i class="fa fa-arrow-circle-o-right"></i>
 						&nbspEssayer gratuitement !
 					</a>
