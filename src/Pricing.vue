@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<navbar :features="[]" :showbtntry="true" :showbtnpricing="false" v-if="!ascomponent"></navbar>
+		<navbar :features="[]" :showbtntry="true" v-if="!ascomponent"></navbar>
 
 		<div id="pricing-container" class="container">
 			<h2>Tarifs</h2>
@@ -18,7 +18,7 @@
 							<i>Période d'essai d'une durée de 2 mois sans engagement</i>
 							<br>
 							<br>
-							<a href="/signup" class="btn">S'inscrire</a>
+							<a href="/signup" class="btn">Essai gratuit</a>
 						</div>
 						<div class="pricing-body">
 							<ul>
@@ -54,7 +54,7 @@
 							<br>
 							<br>
 							<br>
-							<button class="btn starter-btn">Nous contacter</button>
+							<a href="mailto:contact@akema.fr?subject=Demande de devis offre Starter Apidae" class="btn starter-btn">Nous contacter</a>
 						</div>
 						<div class="pricing-body">
 						<ul>
@@ -79,7 +79,7 @@
 								Module d'Absences et Congés
 							</li>
 							<li>
-								<i class="fa fa-file">&nbsp&nbsp</i>
+								<i class="fa fa-envelope-open">&nbsp&nbsp</i>
 								Module Ordres de Mission <i>(bientôt !)</i>
 							</li>
 							<li>
@@ -100,7 +100,7 @@
 							<i>Payez en fonction du nombre d'utilisateurs</i>
 							<br>
 							<br>
-							<button class="btn entreprise-btn">Nous contacter</button>
+							<a href="mailto:contact@akema.fr?subject=Demande de devis offre Entreprise Apidae" class="btn entreprise-btn">Nous contacter</a>
 						</div>
 						<div class="pricing-body">
 							<div class="quote">
@@ -120,7 +120,7 @@
 								</li>
 								<li>
 									<i class="fa fa-check">&nbsp&nbsp</i>									
-										<a href="#">
+										<a href="mailto:contact@akema.fr?subject=Demande de devis offre Entreprise Apidae">
 											<u>Devis personnalisé et rapide</u>
 											&nbsp<i class="fa fa-arrow-circle-o-right"></i>
 										</a>

@@ -1,13 +1,14 @@
 <template>
 	<div id="app">
-		<navbar :features="[]" :showbtntry="false" :showbtnpricing="true"></navbar>
+		<navbar :features="[]" :showbtntry="false"></navbar>
 
 		<div id="signup-form" class="container">
 			<div class="row">
 				<div class="col-lg-6" id="inner-form" v-bind:class="{'faded': submit_success}">
 					<h2>S'inscrire</h2>
 					<hr>
-					<form action="http://localhost:8000/api/signup/" @submit.prevent="send_form">
+					<!--<form action="http://localhost:8000/api/signup/" @submit.prevent="send_form">-->
+          <form method="post" action="mailto:contact@akema.fr?subject=Version évalutation Apidae" enctype="text/plain">
 						<label for="company-name">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
 							accédez à Apidae via entre-prise.apidae.biz)</i></label>
 						<input type="text" name="companyname" id="companyname" class="margin-bottom" v-model="form.companyname" :disabled="submit_success">
@@ -25,10 +26,11 @@
 						<label for="telephone">Téléphone* : <i class="text-muted">(format: 06XXXXXXXX)</i></label>
 						<input type="text" name="telephone" id="telephone" class="margin-bottom" v-model="form.telephone" :disabled="submit_success">
 
+            <!--
 						<label for="password">Mot de passe* : <i class="text-muted">(pourquoi ne pas utiliser <a
 								target="_blank" href="https://lesspass.com/">LessPass</a> ?)</i></label>
 						<input type="password" name="password" id="password" class="margin-bottom" v-model="form.password" :disabled="submit_success">
-
+            -->
 						<br/>
 						<br/>
 						<i v-if="error_message" id="error-message">{{ error_message }}</i>
@@ -43,7 +45,7 @@
 					<h3>Votre version d'évaluation est expirée ?</h3>
 					<br/>
 					<br/>
-					<a href="/pricing" class="btn">Voir les tarifs</a>
+					<a href="/#pricings" class="btn">Voir les tarifs</a>
 				</div>
 
 				<div class="col-lg-12" v-if="submit_success" id="submit-success-div" v-bind:class="{'visible': submit_success}">

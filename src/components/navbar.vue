@@ -14,7 +14,6 @@
 		props: {
 			features: {type: Array, required: true},
 			showbtntry: {type: Boolean, required: true},
-			showbtnpricing: {type: Boolean, required: true}
 		},
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<navbar :features="features" :showbtntry="true" :showbtnpricing="true"></navbar>
+		<navbar :features="features" :showbtntry="true"></navbar>
 
 		<cover class="masthead">
 			<span slot="header" class="m-x-auto">
