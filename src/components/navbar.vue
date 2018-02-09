@@ -4,7 +4,8 @@
 			<a class="navbar-brand" href="/">
 				<img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
 				&nbspApidae</a>
-			<a href="/signup" class="nav-item btn" v-if="showbtn">Essai gratuit</a>
+			<a href="/signup" class="nav-item btn btn-blue" v-if="showbtntry">Essai gratuit</a>
+			<a href="/pricing" class="nav-item btn btn-default" v-if="showbtnpricing">Voir les tarifs</a>
 		</ul>
 	</nav>
 </template>
@@ -12,12 +13,13 @@
 	export default {
 		props: {
 			features: {type: Array, required: true},
-			showbtn: {type: Boolean, required: true}
+			showbtntry: {type: Boolean, required: true},
+			showbtnpricing: {type: Boolean, required: true}
 		},
 	}
 </script>
 <style>
-	nav	{
+	nav {
 		background-color: #1C2B36 !important;
 	}
 
@@ -35,7 +37,16 @@
 
 	nav a.btn {
 		float: right !important;
-		background-color: #1B6D85;
 		margin-top: 15px;
+		margin-right: 15px;
 	}
+
+	nav a.btn-blue {
+		background-color: #1B6D85;
+	}
+
+	nav a.btn-default{
+		border: 1px solid white;
+	}
+
 </style>

@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Signup from './Signup.vue'
+import Pricing from './Pricing.vue'
 
 const routes = {
 	'/': App ,
-	'/signup': Signup
+	'/signup': Signup,
+	'/pricing': Pricing,
 };
 
 new Vue({

@@ -2,7 +2,7 @@
 	<section>
 		<h3>Nos bureaux</h3>
 		<div class="vcard">
-			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			<i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp
 			<span class="fn org name">Apidae - AKEMA SAS</span> <br>
 			<a href="https://goo.gl/maps/zaEWdjBGvh72">
 				<address class="adr">

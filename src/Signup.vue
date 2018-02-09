@@ -1,52 +1,58 @@
 <template>
 	<div id="app">
-		<navbar :features="[]" :showbtn="false"></navbar>
+		<navbar :features="[]" :showbtntry="false" :showbtnpricing="true"></navbar>
 
 		<div id="signup-form" class="container">
 			<div class="row">
-				<div class="col-lg-6" id="inner-form">
+				<div class="col-lg-6" id="inner-form" v-bind:class="{'faded': submit_success}">
 					<h2>S'inscrire</h2>
-					<i class="text-muted">Cette version d'évaluation a une durée de validité de deux mois à compté de
-						l'inscription.</i>
 					<hr>
-					<form action="">
-						<label for="company-name">Nom de votre société : <i class="text-muted"><br/>(ex: 'Entre-Prise',
+					<form action="http://localhost:8000/api/signup/" @submit.prevent="send_form">
+						<label for="company-name">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
 							accédez à Apidae via entre-prise.apidae.biz)</i></label>
-						<input type="text" name="company-name" id="company-name" class="margin-bottom">
+						<input type="text" name="companyname" id="companyname" class="margin-bottom" v-model="form.companyname" :disabled="submit_success">
 
-						<label for="lastname">Nom :</label>
-						<input type="text" name="lastname" id="lastname" class="margin-bottom">
+						<label for="lastname">Nom* :</label>
+						<input type="text" name="lastname" id="lastname" class="margin-bottom" v-model="form.lastname" :disabled="submit_success">
 
-						<label for="firstname">Prénom :</label>
-						<input type="text" name="firstname" id="firstname" class="margin-bottom">
+						<label for="firstname">Prénom* :</label>
+						<input type="text" name="firstname" id="firstname" class="margin-bottom" v-model="form.firstname" :disabled="submit_success">
 
-						<label for="email">Email : <i class="text-muted">(vous y recevrez un mail de
+						<label for="email">Email* : <i class="text-muted">(vous y recevrez un mail de
 							confirmation)</i></label>
-						<input type="email" name="email" id="email" class="margin-bottom">
+						<input type="email" name="email" id="email" class="margin-bottom" v-model="form.email" :disabled="submit_success">
 
-						<label for="telephone">Téléphone : <i class="text-muted">(format: 06XXXXXXXX)</i></label>
-						<input type="text" name="telephone" id="telephone" class="margin-bottom">
+						<label for="telephone">Téléphone* : <i class="text-muted">(format: 06XXXXXXXX)</i></label>
+						<input type="text" name="telephone" id="telephone" class="margin-bottom" v-model="form.telephone" :disabled="submit_success">
 
-						<label for="password">Mot de passe : <i class="text-muted">(pourquoi ne pas utiliser <a
+						<label for="password">Mot de passe* : <i class="text-muted">(pourquoi ne pas utiliser <a
 								target="_blank" href="https://lesspass.com/">LessPass</a> ?)</i></label>
-						<input type="password" name="password" id="password" class="margin-bottom">
+						<input type="password" name="password" id="password" class="margin-bottom" v-model="form.password" :disabled="submit_success">
 
 						<br/>
 						<br/>
-						<i class="text-muted">En cliquant sur ce bouton, vous serez redirigé vers l'espace de connexion
-							de votre compte Apidae.</i>
+						<i v-if="error_message" id="error-message">{{ error_message }}</i>
 						<input type="submit" value="Valider" class="btn btn-lg">
 					</form>
 				</div>
 
 
-				<div class="col-lg-6" id="access-pricing-div">
+				<div class="col-lg-6" id="access-pricing-div" v-if="!submit_success">
 					<h4 class="text-muted">Ou bien...</h4>
 					<br/>
 					<h3>Votre version d'évaluation est expirée ?</h3>
 					<br/>
 					<br/>
-					<a href="/#pricing" class="btn">Accéder au pricing</a>
+					<a href="/pricing" class="btn">Voir les tarifs</a>
+				</div>
+
+				<div class="col-lg-12" v-if="submit_success" id="submit-success-div" v-bind:class="{'visible': submit_success}">
+          <h4 class="text-muted">Il ne reste plus qu'une étape ...</h4>
+          <br />
+          <h3>Nous vous avons envoyé un mail, </h3>
+          <h5><b>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !</b></h5>
+          <br />
+          <a :href="'http://' + login_url + '.apidae.biz'" class="btn">Accéder à Apidae</a>
 				</div>
 			</div>
 		</div>
@@ -55,82 +61,135 @@
 	</div>
 </template>
 <script type="text/ecmascript-6">
-	import Navbar from './components/navbar';
-	import MyFooter from './components/footer';
+import Navbar from "./components/navbar";
+import MyFooter from "./components/footer";
 
-	export default {
-		components: {
-			Navbar,
-			MyFooter
-		}
-	}
+export default {
+  components: {
+    Navbar,
+    MyFooter
+  },
+  data() {
+    return {
+      form: {},
+      error_message: "",
+      submit_success: false,
+      login_url: ""
+    };
+  },
+  methods: {
+    send_form: function() {
+      let _this = this;
+      $.post({
+        url: "https://apidae-dev.akema.fr/api/signup/",
+        dataType: "text",
+        contentType: "application/x-www-form-urlencoded",
+        data: this.form,
+      }).done(function (data) {
+        _this.submit_success = true;
+        _this.login_url = data;
+        $('#inner-form').slideUp('slow');
+      }).fail(function (error) {
+        _this.error_message = error.responseText;
+      })
+    }
+  }
+};
 </script>
 
 <style>
-	@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-	@import '../node_modules/font-awesome/css/font-awesome.min.css';
-	@import '../node_modules/hint.css/hint.min.css';
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/hint.css/hint.min.css";
 
-	body {
-		font-family: 'Open Sans', sans-serif;
-	}
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
-	#signup-form {
-		padding: 35px 15px;
-	}
+#signup-form {
+  padding: 35px 15px;
+}
 
-	#inner-form {
-		padding: 20px 30px 20px 30px;
-		border: 1px solid rgba(142, 153, 138, .5);
-		border-bottom: 5px solid #1b6d85;
-	}
+#inner-form {
+  padding: 20px 30px 20px 30px;
+  border: 1px solid rgba(142, 153, 138, 0.5);
+  border-bottom: 5px solid #1b6d85;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
 
-	#signup-form form {
-		margin-bottom: 50px;
-	}
+#inner-form.faded {
+  opacity: 0.6;
+}
 
-	#signup-form form label {
-		color: #3C3C3C;
-		font-weight: bold;
-		font-size: 13px;
-	}
+#signup-form form {
+  margin-bottom: 50px;
+}
 
-	#signup-form form label a {
-		color: #0275d8 !important;
-	}
+#signup-form form label {
+  color: #3c3c3c;
+  font-weight: bold;
+  font-size: 13px;
+}
 
-	#signup-form form input {
-		background-color: white;
-		color: #3C3C3C;
-		outline: none;
-		border: 1px solid rgba(142, 153, 138, .5);
-		padding: 4px 8px;
-		width: 100%;
-	}
+#signup-form form label a {
+  color: #0275d8 !important;
+}
 
-	#signup-form form .margin-bottom {
-		margin-bottom: 8px;
-	}
+#signup-form form input {
+  background-color: white;
+  color: #3c3c3c;
+  outline: none;
+  border: 1px solid rgba(142, 153, 138, 0.5);
+  padding: 4px 8px;
+  width: 100%;
+}
 
-	#signup-form form .btn {
-		background-color: #F4511E;
-		color: white;
-		width: fit-content;
-		width: -moz-fit-content;
-		padding: 7px 30px;
-		border: none;
-		float: right;
-		margin-top: 15px;
-	}
+#signup-form form .margin-bottom {
+  margin-bottom: 8px;
+}
 
-	#access-pricing-div {
-		text-align: center;
-		padding: 200px 50px;
-	}
+#signup-form form .btn {
+  background-color: #f4511e;
+  color: white;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 7px 30px;
+  border: none;
+  float: right;
+  margin-top: 15px;
+}
 
-	#access-pricing-div .btn {
-		background-color: #1B6D85;
-		padding-left: 35px;
-		padding-right: 35px;
-	}
+#access-pricing-div {
+  text-align: center;
+  padding: 200px 50px;
+}
+
+#access-pricing-div .btn {
+  background-color: #1b6d85;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#submit-success-div {
+  text-align: center;
+  padding: 200px 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#submit-success-div.visible {
+  opacity: 1;
+}
+
+#submit-success-div .btn {
+  background-color: #f4511e;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+#error-message {
+  color: rgb(255, 0, 0);
+}
+
 </style>
