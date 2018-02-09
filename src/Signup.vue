@@ -8,7 +8,7 @@
 					<h2>S'inscrire</h2>
 					<hr>
 					<!--<form action="http://localhost:8000/api/signup/" @submit.prevent="send_form">-->
-          <form method="post" action="mailto:contact@akema.fr?subject=Version évalutation Apidae" enctype="text/plain">
+          <form method="post" action="mailto:contact@apidae.biz?subject=Version évalutation Apidae" enctype="text/plain">
 						<label for="company-name">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
 							accédez à Apidae via entre-prise.apidae.biz)</i></label>
 						<input type="text" name="companyname" id="companyname" class="margin-bottom" v-model="form.companyname" :disabled="submit_success">

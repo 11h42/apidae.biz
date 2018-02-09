@@ -54,7 +54,7 @@
 							<br>
 							<br>
 							<br>
-							<a href="mailto:contact@akema.fr?subject=Demande de devis offre Starter Apidae" class="btn starter-btn">Nous contacter</a>
+							<a href="mailto:contact@apidae.biz?subject=Demande de devis offre Starter Apidae" class="btn starter-btn">Nous contacter</a>
 						</div>
 						<div class="pricing-body">
 						<ul>
@@ -93,14 +93,14 @@
 				<div class="pricing col-lg-4" id="entreprise">
 					<div class="inner-pricing box-shadow">
 						<div class="pricing-header">
-							<h5>Entreprise</h5>
+							<h5>Premium</h5>
 							<hr>
 							<h3><b>Tarif dégréssif</b></h3>
 							<br>
 							<i>Payez en fonction du nombre d'utilisateurs</i>
 							<br>
 							<br>
-							<a href="mailto:contact@akema.fr?subject=Demande de devis offre Entreprise Apidae" class="btn entreprise-btn">Nous contacter</a>
+							<a href="mailto:contact@apidae.biz?subject=Demande de devis offre Premium Apidae" class="btn entreprise-btn">Nous contacter</a>
 						</div>
 						<div class="pricing-body">
 							<div class="quote">
@@ -120,7 +120,7 @@
 								</li>
 								<li>
 									<i class="fa fa-check">&nbsp&nbsp</i>									
-										<a href="mailto:contact@akema.fr?subject=Demande de devis offre Entreprise Apidae">
+										<a href="mailto:contact@apidae.biz?subject=Demande de devis offre Premium Apidae">
 											<u>Devis personnalisé et rapide</u>
 											&nbsp<i class="fa fa-arrow-circle-o-right"></i>
 										</a>
