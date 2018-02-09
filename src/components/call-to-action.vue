@@ -22,25 +22,33 @@
 	</article>
 </template>
 <script type="text/ecmascript-6">
-	import Continue from './continue';
+import Continue from "./continue";
 
-	export default {
-		components: {
-			Continue
-		}
-	}
+export default {
+  components: {
+    Continue
+  }
+};
 </script>
 <style>
-	#call-to-action {
-		position: relative;
-		margin-bottom: 100px;
-	}
+#call-to-action {
+  position: relative;
+  margin-bottom: 100px;
+}
 
-	#call-to-action h2 {
-		font-weight: bold;
-	}
+#call-to-action h2 {
+  font-weight: bold;
+}
 
-	#call-to-action .btn {
-		background-color: #1B6D85;
-	}
+#call-to-action .btn {
+  background-color: #1b6d85;
+}
+
+.text-warning {
+  color: #f25224 !important;
+}
+
+.text-primary {
+  color: #246d84 !important;
+}
 </style>

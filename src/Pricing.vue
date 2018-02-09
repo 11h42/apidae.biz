@@ -50,11 +50,11 @@
 							<h1 class="d-inline-block"><b>9</b></h1>
 							<sup><h5 class="d-inline-block">€</h5></sup>
 							<br/>
-							<i>Hors taxes / mois</i>
+							<i>H.T. / mois</i>
 							<br>
 							<br>
 							<br>
-							<button class="btn">Découvrir</button>
+							<button class="btn starter-btn">Nous contacter</button>
 						</div>
 						<div class="pricing-body">
 						<ul>
@@ -68,7 +68,7 @@
 							</li>
 							<li>
 								<i class="fa fa-line-chart">&nbsp&nbsp</i>
-								Module de Comptes Rendus d'Activités
+								Module de Comptes Rendus d'Activité
 							</li>
 							<li>
 								<i class="fa fa-credit-card">&nbsp&nbsp</i>
@@ -76,11 +76,11 @@
 							</li>
 							<li>
 								<i class="fa fa-plane">&nbsp&nbsp</i>
-								Modules d'Absences et Congés
+								Module d'Absences et Congés
 							</li>
 							<li>
 								<i class="fa fa-file">&nbsp&nbsp</i>
-								Modules Ordres de Missions <i>(bientôt !)</i>
+								Module Ordres de Mission <i>(bientôt !)</i>
 							</li>
 							<li>
 								<i class="fa fa-file-pdf-o">&nbsp&nbsp</i>
@@ -100,11 +100,11 @@
 							<i>Payez en fonction du nombre d'utilisateurs</i>
 							<br>
 							<br>
-							<button class="btn">Nous contacter</button>
+							<button class="btn entreprise-btn">Nous contacter</button>
 						</div>
 						<div class="pricing-body">
 							<div class="quote">
-								<i>Tout les avantages 'Starter' 
+								<i>Tous les avantages 'Starter' 
 									<i class="fa fa-plus"></i>
 								</i>
 							</div>
