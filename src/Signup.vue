@@ -9,9 +9,7 @@
 			<div class="col-lg-6" id="inner-form" v-bind:class="{'faded': submit_success}">
 				<h2>S'inscrire</h2>
 				<hr>
-				<!--<form action="http://localhost:8000/api/signup/" @submit.prevent="send_form">-->
-				<form method="post" action="mailto:contact@apidae.biz?subject=Version évalutation Apidae"
-					  enctype="text/plain">
+				<form @submit.prevent="send_form">
 					<label for="companyname">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
 						accédez à Apidae via entre-prise.apidae.biz)</i></label>
 					<input type="text" name="companyname" id="companyname" class="margin-bottom"
@@ -34,11 +32,10 @@
 					<input type="text" name="telephone" id="telephone" class="margin-bottom" v-model="form.telephone"
 						   :disabled="submit_success">
 
-					<!--
-                                <label for="password">Mot de passe* : <i class="text-muted">(pourquoi ne pas utiliser <a
-                                        target="_blank" href="https://lesspass.com/">LessPass</a> ?)</i></label>
-                                <input type="password" name="password" id="password" class="margin-bottom" v-model="form.password" :disabled="submit_success">
-                    -->
+                    <label for="password">Mot de passe* : <i class="text-muted">(pourquoi ne pas utiliser <a
+                            target="_blank" href="https://lesspass.com/">LessPass</a> ?)</i></label>
+                    <input type="password" name="password" id="password" class="margin-bottom" v-model="form.password" :disabled="submit_success">
+                    
 					<br/>
 					<br/>
 					<i v-if="error_message" id="error-message">{{ error_message }}</i>
@@ -69,139 +66,140 @@
 	</div>
 </template>
 <script type="text/ecmascript-6">
-	import Navbar from "./components/navbar";
-	import MyFooter from "./components/footer";
+import Navbar from "./components/navbar";
+import MyFooter from "./components/footer";
 
-	export default {
-		components: {
-			Navbar,
-			MyFooter
-		},
-		data() {
-			return {
-				form: {},
-				error_message: "",
-				submit_success: false,
-				login_url: ""
-			};
-		},
-		methods: {
-			send_form: function () {
-				let _this = this;
-				$.post({
-					url: "https://apidae-dev.akema.fr/api/signup/",
-					dataType: "text",
-					contentType: "application/x-www-form-urlencoded",
-					data: this.form,
-				}).done(function (data) {
-					_this.submit_success = true;
-					_this.login_url = data;
-					$('#inner-form').slideUp('slow');
-				}).fail(function (error) {
-					_this.error_message = error.responseText;
-				})
-			}
-		}
-	};
+export default {
+  components: {
+    Navbar,
+    MyFooter
+  },
+  data() {
+    return {
+      form: {},
+      error_message: "",
+      submit_success: false,
+      login_url: ""
+    };
+  },
+  methods: {
+    send_form: function() {
+      let _this = this;
+      $.post({
+        url: "http://localhost:8000/api/signup/",
+        dataType: "text",
+        contentType: "application/x-www-form-urlencoded",
+        data: this.form
+      })
+        .done(function(data) {
+          _this.submit_success = true;
+          _this.login_url = data;
+          $("#inner-form").slideUp("slow");
+        })
+        .fail(function(error) {
+          _this.error_message = error.responseText;
+        });
+    }
+  }
+};
 </script>
 
 <style>
-	@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-	@import "../node_modules/font-awesome/css/font-awesome.min.css";
-	@import "../node_modules/hint.css/hint.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/hint.css/hint.min.css";
 
-	body {
-		font-family: "Open Sans", sans-serif;
-	}
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
-	#signup-form {
-		padding: 35px 15px;
-		text-align: center;
-	}
+#signup-form {
+  padding: 35px 15px;
+  text-align: center;
+}
 
-	#inner-form {
-		text-align: left;
-		margin: 50px 0 50px 0;
-		padding: 20px 30px 20px 30px;
-		border-bottom: 5px solid #1b6d85;
-		border-radius: 15px;
-  		box-shadow: -10px 10px 40px #3c3c3c;
-		opacity: 1;
-		transition: opacity 1s ease;
-	}
+#inner-form {
+  text-align: left;
+  margin: 50px 0 50px 0;
+  padding: 20px 30px 20px 30px;
+  border-bottom: 5px solid #1b6d85;
+  border-radius: 15px;
+  box-shadow: -10px 10px 40px #3c3c3c;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
 
-	#inner-form.faded {
-		opacity: 0.6;
-	}
+#inner-form.faded {
+  opacity: 0.6;
+}
 
-	#signup-form form {
-		margin-bottom: 50px;
-	}
+#signup-form form {
+  margin-bottom: 50px;
+}
 
-	#signup-form form label {
-		color: #3c3c3c;
-		font-weight: bold;
-		font-size: 13px;
-	}
+#signup-form form label {
+  color: #3c3c3c;
+  font-weight: bold;
+  font-size: 13px;
+}
 
-	#signup-form form label a {
-		color: #0275d8 !important;
-	}
+#signup-form form label a {
+  color: #0275d8 !important;
+}
 
-	#signup-form form input {
-		background-color: white;
-		color: #3c3c3c;
-		outline: none;
-		border: 1px solid rgba(142, 153, 138, 0.5);
-		padding: 4px 8px;
-		width: 100%;
-	}
+#signup-form form input {
+  background-color: white;
+  color: #3c3c3c;
+  outline: none;
+  border: 1px solid rgba(142, 153, 138, 0.5);
+  padding: 4px 8px;
+  width: 100%;
+}
 
-	#signup-form form .margin-bottom {
-		margin-bottom: 8px;
-	}
+#signup-form form .margin-bottom {
+  margin-bottom: 8px;
+}
 
-	#signup-form form .btn {
-		background-color: #f4511e;
-		color: white;
-		width: fit-content;
-		width: -moz-fit-content;
-		padding: 7px 30px;
-		border: none;
-		float: right;
-		margin-top: 15px;
-	}
+#signup-form form .btn {
+  background-color: #f4511e;
+  color: white;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 7px 30px;
+  border: none;
+  float: right;
+  margin-top: 15px;
+}
 
-	#access-pricing-div {
-		text-align: center;
-		padding: 200px 50px;
-	}
+#access-pricing-div {
+  text-align: center;
+  padding: 200px 50px;
+}
 
-	#access-pricing-div .btn {
-		background-color: #1b6d85;
-		padding-left: 35px;
-		padding-right: 35px;
-	}
+#access-pricing-div .btn {
+  background-color: #1b6d85;
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
-	#submit-success-div {
-		text-align: center;
-		padding: 200px 50px;
-		opacity: 0;
-		transition: opacity 1s;
-	}
+#submit-success-div {
+  text-align: center;
+  padding: 200px 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
 
-	#submit-success-div.visible {
-		opacity: 1;
-	}
+#submit-success-div.visible {
+  opacity: 1;
+}
 
-	#submit-success-div .btn {
-		background-color: #f4511e;
-		padding-left: 35px;
-		padding-right: 35px;
-	}
+#submit-success-div .btn {
+  background-color: #f4511e;
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
-	#error-message {
-		color: rgb(255, 0, 0);
-	}
-
+#error-message {
+  color: rgb(255, 0, 0);
+}
 </style>
