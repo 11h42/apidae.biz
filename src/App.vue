@@ -1,8 +1,8 @@
 <template>
 	<div id="app">
-		<navbar :features="features" :showbtntry="true"></navbar>
+		<navbar :features="features" :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
-		<cover class="masthead">
+		<cover class="masthead" :scroll_to_signup="scroll_to_signup">
 			<span slot="header" class="m-x-auto">
 				Ne perdez plus votre temps !
 			</span>
@@ -17,7 +17,9 @@
 				<features-list :features="features"></features-list>
 			</section>
 
-			<pricing :ascomponent="true"></pricing>
+			<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
+
+			<signup></signup>
 
 			<section id="nous-contacter" class="row">
 				<call-to-action class="col-xs-12"></call-to-action>
@@ -35,6 +37,7 @@
 	import MyFooter from './components/footer';
 	import Continue from './components/continue.vue';
 	import Pricing from './Pricing.vue';
+	import Signup from './Signup.vue';
 
 	export default {
 		components: {
@@ -44,7 +47,8 @@
 			CallToAction,
 			MyFooter,
 			Cover,
-			Pricing
+			Pricing,
+			Signup
 		},
 		data() {
 			return {
@@ -79,6 +83,14 @@
 						description: 'Suivez en temps réel vos temps d\'activité par tâche et par projet et obtenez des synthèses détaillées par période et par projet. Idéal pour organiser votre travail.'
 					},
 				]
+			}
+		},
+
+		methods: {
+			scroll_to_signup: function () {
+				$('html, body').animate({
+					scrollTop: $('#signup-form').offset().top
+				}, 1000);
 			}
 		}
 	}

@@ -7,20 +7,30 @@
 						<slot name="header"></slot>
 						<br>
 					</h1>
-					<br />
-					<h4 class="text-muted subtitle"><slot name="header-subtitle"></slot></h4>
+					<br/>
+					<h4 class="text-muted subtitle">
+						<slot name="header-subtitle"></slot>
+					</h4>
 
-					<a href="mailto:contact@apidae.biz?subject=Version d'essai Apidae" class="btn btn-lg" id="cover-trial-button">
+					<a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
 						<i class="fa fa-arrow-circle-o-right"></i>
 						&nbspEssayer gratuitement !
 					</a>
 
-					<i class="text-muted">Période d'essai de deux mois gratuite <br />et sans engagement.</i>
+					<i class="text-muted">Période d'essai de deux mois gratuite <br/>et sans engagement.</i>
 				</div>
 			</div>
 		</div>
 	</section>
 </template>
+
+<script type="text/ecmascript-6">
+	export default {
+		props: {
+			scroll_to_signup: {type: Function, required: true}
+		},
+	}
+</script>
 <style>
 	.catchline {
 		top: 15vh;

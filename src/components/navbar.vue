@@ -4,7 +4,7 @@
 			<a class="navbar-brand" href="/">
 				<img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
 				&nbspApidae</a>
-			<a href="mailto:contact@apidae.biz?subject=Version d'essai Apidae" class="nav-item btn btn-blue" v-if="showbtntry">Essai gratuit</a>
+			<a class="nav-item btn btn-blue" v-if="showbtntry" @click="scroll_to_signup">Essai gratuit</a>
 		</ul>
 	</nav>
 </template>
@@ -13,6 +13,7 @@
 		props: {
 			features: {type: Array, required: true},
 			showbtntry: {type: Boolean, required: true},
+			scroll_to_signup: {type: Function, required: true}
 		},
 	}
 </script>
@@ -43,7 +44,7 @@
 		background-color: #1B6D85;
 	}
 
-	nav a.btn-default{
+	nav a.btn-default {
 		border: 1px solid white;
 	}
 

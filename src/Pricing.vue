@@ -18,7 +18,7 @@
 							<i>Période d'essai d'une durée de 2 mois sans engagement</i>
 							<br>
 							<br>
-							<a href="mailto:contact@apidae.biz?subject=Version d'essai Apidae" class="btn">Essai gratuit</a>
+							<a @click="scroll_to_signup" class="btn">Essai gratuit</a>
 						</div>
 						<div class="pricing-body">
 							<ul>
@@ -104,22 +104,22 @@
 						</div>
 						<div class="pricing-body">
 							<div class="quote">
-								<i>Tous les avantages 'Starter' 
+								<i>Tous les avantages 'Starter'
 									<i class="fa fa-plus"></i>
 								</i>
 							</div>
 							<ul>
 								<li>
 									<i class="fa fa-users">&nbsp&nbsp</i>
-									<i class="fa fa-user">&nbsp&nbsp</i>									
+									<i class="fa fa-user">&nbsp&nbsp</i>
 									Nombre d'utilisateurs adapté à vos besoins
 								</li>
 								<li>
-									<i class="fa fa-clock-o">&nbsp&nbsp</i>									
+									<i class="fa fa-clock-o">&nbsp&nbsp</i>
 									Module de Time-tracking
 								</li>
 								<li>
-									<i class="fa fa-check">&nbsp&nbsp</i>									
+									<i class="fa fa-check">&nbsp&nbsp</i>
 										<a href="mailto:contact@apidae.biz?subject=Demande de devis offre Premium Apidae">
 											<u>Devis personnalisé et rapide</u>
 											&nbsp<i class="fa fa-arrow-circle-o-right"></i>
@@ -142,6 +142,7 @@ import MyFooter from "./components/footer";
 export default {
   props: {
 	  ascomponent: {type: Boolean, required: true},
+	  scroll_to_signup: {type: Function, required: true}
   },
   components: {
     Navbar,
