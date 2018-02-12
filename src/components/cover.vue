@@ -17,7 +17,7 @@
 						&nbspEssayer gratuitement !
 					</a>
 
-					<i class="text-muted">Période d'essai de deux mois gratuite <br/>et sans engagement.</i>
+					<i class="text-muted hidden-sm-down">Période d'essai de deux mois gratuite <br/>et sans engagement.</i>
 				</div>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 		background-size: contain;
 		height: 80vh;
 		position: relative;
-		padding: 0 80px;
+		padding: 0 10px;
 	}
 
 	#cover-trial-button {
@@ -60,7 +60,7 @@
 		width: fit-content;
 		width: -moz-fit-content;
 		color: white;
-		margin-top: 80px;
+		margin-top: 60px;
 		margin-bottom: 40px;
 		padding-left: 50px;
 		padding-right: 50px;
