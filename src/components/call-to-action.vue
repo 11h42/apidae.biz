@@ -3,18 +3,19 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>
-					Envie d’un <em class="text-warning">devis</em> ou simplement de poser une <em class="text-primary">question</em>
+				<h3>
+					Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-primary">question</span>
 					?
-				</h2>
+				</h3>
 			</div>
 		</div>
 
 		<hr>
+		<br>
 
 		<div class="row">
 			<div class="col-xs-12">
-				<a href="mailto:contact@apidae.biz" class="btn btn-lg">
+				<a href="mailto:contact@apidae.biz" class="btn">
 					<b>Contactez-nous</b>
 				</a>
 			</div>
@@ -34,10 +35,6 @@ export default {
 #call-to-action {
   position: relative;
   margin-bottom: 100px;
-}
-
-#call-to-action h2 {
-  font-weight: bold;
 }
 
 #call-to-action .btn {
