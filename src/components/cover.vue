@@ -55,6 +55,12 @@
 		padding: 0 10px;
 	}
 
+	@media screen and (max-width: 991px) {
+		.cover {
+			background-size: auto;
+		}
+	}
+
 	#cover-trial-button {
 		display: block;
 		width: fit-content;

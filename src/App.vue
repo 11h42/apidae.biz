@@ -102,7 +102,7 @@
 	@import '../node_modules/hint.css/hint.min.css';
 
 	body, html {
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Open Sans', sans-serif !important;
 		width: 100%;
 	}
 
