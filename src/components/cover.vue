@@ -39,7 +39,7 @@
 	.maintitle {
 		font-weight: bold;
 	}
-
+	
 	.subtitle {
 		font-weight: lighter;
 	}
@@ -51,6 +51,12 @@
 		height: 80vh;
 		position: relative;
 		padding: 0 10px;
+	}
+
+	@media screen and (max-height: 638px) {
+		.cover {
+			background-size: cover;
+		}
 	}
 
 	@media screen and (max-width: 991px) {

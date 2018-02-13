@@ -4,7 +4,7 @@
 
 		<cover class="masthead" :scroll_to_signup="scroll_to_signup">
 			<span slot="header" class="m-x-auto">
-				Ne perdez plus votre temps !
+				Ne perdez plus votre temps&nbsp!
 			</span>
 			<small slot="header-subtitle">Apidae, c'est 4 logiciels R.H. en 1 ! Gérez
 				vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail
