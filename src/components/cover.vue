@@ -16,8 +16,6 @@
 						<i class="fa fa-arrow-circle-o-right"></i>
 						&nbspEssayer gratuitement !
 					</a>
-
-					<i class="text-muted hidden-sm-down">Période d'essai de deux mois gratuite <br/>et sans engagement.</i>
 				</div>
 			</div>
 		</div>
