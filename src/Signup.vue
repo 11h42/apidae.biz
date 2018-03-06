@@ -7,7 +7,7 @@
 
 		<div class="row">
 			<div class="col-lg-6" id="inner-form" v-bind:class="{'faded': submit_success}">
-				<h2>S'inscrire</h2>
+				<h4>Créer votre compte</h4>
 				<hr>
 				<form @submit.prevent="send_form">
 					<label for="companyname">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
@@ -37,7 +37,9 @@
                     <input type="password" name="password" id="password" class="margin-bottom" v-model="form.password" :disabled="submit_success">
                     
 					<br/>
-					<br/>
+					<br/>          
+          <div class="g-recaptcha" data-sitekey="6Lcvy0oUAAAAAHDt9ZyGMBTWSRPsMiM58aZCg4gR"></div>
+          <br />
 					<i v-if="error_message" id="error-message">{{ error_message }}</i>
 					<input type="submit" value="Valider" class="btn btn-lg">
 				</form>
@@ -60,7 +62,7 @@
 				<h3>Nous vous avons envoyé un mail, </h3>
 				<h5><b>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !</b></h5>
 				<br/>
-				<a :href="'http://' + login_url + '.apidae.biz'" class="btn">Accéder à Apidae</a>
+				<a :href="'http://' + login_url" class="btn">Accéder à Apidae</a>
 			</div>
 		</div>
 	</div>
@@ -85,8 +87,9 @@ export default {
   methods: {
     send_form: function() {
       let _this = this;
+      this.form.gRecaptchaResponse = grecaptcha.getResponse();
       $.post({
-        url: "http://localhost:8000/api/signup/",
+        url: "http://localhost:3000/api/signup/",
         dataType: "text",
         contentType: "application/x-www-form-urlencoded",
         data: this.form
@@ -122,10 +125,8 @@ body {
   text-align: left;
   margin: 50px 0 50px 0;
   padding: 20px 30px 20px 30px;
-  border-bottom: 5px solid #1b6d85;
-  border-radius: 15px;
-  box-shadow: -10px 10px 40px #3c3c3c;
-  opacity: 1;
+  border-bottom: 4px solid #dcdcdc;
+  box-shadow: 0 1px 4px rgba(90, 90, 90, 0.4);
   transition: opacity 1s ease;
 }
 
