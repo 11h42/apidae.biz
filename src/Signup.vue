@@ -89,7 +89,7 @@ export default {
       let _this = this;
       this.form.gRecaptchaResponse = grecaptcha.getResponse();
       $.post({
-        url: "http://localhost:3000/api/signup/",
+        url: "https://apidae-dev.akema.fr/api/signup/",
         dataType: "text",
         contentType: "application/x-www-form-urlencoded",
         data: this.form
@@ -111,10 +111,6 @@ export default {
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "../node_modules/hint.css/hint.min.css";
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
 
 #signup-form {
   padding: 35px 15px;
@@ -166,7 +162,7 @@ body {
   color: white;
   width: fit-content;
   width: -moz-fit-content;
-  padding: 7px 30px;
+  padding: 7px 20px;
   border: none;
   float: right;
   margin-top: 15px;
@@ -179,8 +175,8 @@ body {
 
 #access-pricing-div .btn {
   background-color: #1b6d85;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #submit-success-div {

@@ -102,11 +102,18 @@
 	@import '../node_modules/hint.css/hint.min.css';
 
 	body, html {
-		font-family: 'Open Sans', sans-serif;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+  					 Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		width: 100%;
 	}
 
 	#call-to-action {
 		padding-top: 50px;
+	}
+
+	.btn {
+		cursor: pointer;
+		border-radius: 25px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 	}
 </style>

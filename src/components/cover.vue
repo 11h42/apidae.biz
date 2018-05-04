@@ -35,7 +35,6 @@
 	.catchline {
 		top: 15vh;
 		position: relative;
-		font-family: 'Open Sans', sans-serif;
 	}
 
 	.maintitle {

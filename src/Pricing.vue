@@ -160,10 +160,6 @@ export default {
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "../node_modules/hint.css/hint.min.css";
 
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
 #pricing-container {
   text-align: center;
   padding: 40px 0;
