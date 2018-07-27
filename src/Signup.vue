@@ -60,9 +60,13 @@
 				<h4 class="text-muted">Il ne reste plus qu'une étape ...</h4>
 				<br/>
 				<h3>Nous vous avons envoyé un mail, </h3>
-				<h5><b>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !</b></h5>
+				<h5><b>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !</b>
+            <br />
+            <br />
+            <small>Attention, vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</small>
+        </h5>
 				<br/>
-				<a :href="'http://' + login_url" class="btn">Accéder à Apidae</a>
+				<a :href="'https://' + login_url" class="btn">Accéder à Apidae</a>
 			</div>
 		</div>
 	</div>
