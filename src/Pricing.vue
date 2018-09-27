@@ -3,7 +3,7 @@
 		<navbar :features="[]" :showbtntry="true" v-if="!ascomponent"></navbar>
 
 		<div id="pricing-container" class="container">
-			<h2>Tarifs</h2>
+			<h2 class="font-weight-bold">Tarifs</h2>
 			<hr>
 			<h5 class="text-muted">Découvrez l'offre adaptée à vos besoins</h5>
 

@@ -102,8 +102,7 @@
 	@import '../node_modules/hint.css/hint.min.css';
 
 	body, html {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
-  					 Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-family: Ubuntu, sans-serif;
 		width: 100%;
 	}
 

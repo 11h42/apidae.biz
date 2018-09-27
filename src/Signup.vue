@@ -1,13 +1,14 @@
 <template>
 	<div id="signup-form" class="container">
 
-		<h2>Essayer gratuitement</h2>
+		<h2 class="font-weight-bold">Essayer gratuitement</h2>
 		<hr>
-		<h5 class="text-muted">Découvrez les fonctionnalités d'Apidae pendant deux mois <br />gratuitement et sans engagement</h5>
+		<h5 class="text-muted">Découvrez les fonctionnalités d'Apidae<br />
+			<span class="text-warning">pendant deux mois gratuitement et sans engagement</span> !</h5>
 
 		<div class="row">
 			<div class="col-lg-6" id="inner-form" v-bind:class="{'faded': submit_success}">
-				<h4>Créer votre compte</h4>
+				<h3>Créer votre compte</h3>
 				<hr>
 				<form @submit.prevent="send_form">
 					<label for="companyname">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
@@ -46,7 +47,7 @@
 			</div>
 
 
-			<div class="col-lg-6" id="access-pricing-div" v-if="!submit_success">
+			<div class="col-lg-6 hidden-md-down" id="access-pricing-div" v-if="!submit_success">
 				<h4 class="text-muted">Ou bien...</h4>
 				<br/>
 				<h3>Votre version d'évaluation est expirée ?</h3>
@@ -125,8 +126,8 @@ export default {
   text-align: left;
   margin: 50px 0 50px 0;
   padding: 20px 30px 20px 30px;
-  border-bottom: 4px solid #dcdcdc;
-  box-shadow: 0 1px 4px rgba(90, 90, 90, 0.4);
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+            0 5px 15px 0 rgba(0,0,0,0.08);
   transition: opacity 1s ease;
 }
 
