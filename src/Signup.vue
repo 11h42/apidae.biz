@@ -95,6 +95,7 @@ export default {
       this.form.gRecaptchaResponse = grecaptcha.getResponse();
       $.post({
         url: "https://apidae-dev.akema.fr/api/signup/",
+        crossDomain: true,
         dataType: "text",
         contentType: "application/x-www-form-urlencoded",
         data: this.form
