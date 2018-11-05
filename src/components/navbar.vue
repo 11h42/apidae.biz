@@ -1,6 +1,6 @@
 <template>
 	<nav class="navbar navbar-full bg-inverse">
-		<ul class="nav navbar-nav container">
+		<ul class="nav navbar-nav container d-flex flex-row">
 			<a class="navbar-brand" href="/">
 				<img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
 				&nbsp;Apidae</a>

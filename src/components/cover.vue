@@ -16,8 +16,6 @@
 						<i class="fa fa-arrow-circle-o-right"></i>
 						&nbspEssayer gratuitement !
 					</a>
-
-					<i class="text-muted">Période d'essai de deux mois gratuite <br/>et sans engagement.</i>
 				</div>
 			</div>
 		</div>
@@ -40,7 +38,7 @@
 	.maintitle {
 		font-weight: bold;
 	}
-
+	
 	.subtitle {
 		font-weight: lighter;
 	}
@@ -51,7 +49,19 @@
 		background-size: contain;
 		height: 80vh;
 		position: relative;
-		padding: 0 80px;
+		padding: 0 10px;
+	}
+
+	@media screen and (max-height: 638px) {
+		.cover {
+			background-size: cover;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.cover {
+			background-size: auto;
+		}
 	}
 
 	#cover-trial-button {
@@ -59,7 +69,7 @@
 		width: fit-content;
 		width: -moz-fit-content;
 		color: white;
-		margin-top: 80px;
+		margin-top: 60px;
 		margin-bottom: 40px;
 		padding-left: 50px;
 		padding-right: 50px;
