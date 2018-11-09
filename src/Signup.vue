@@ -103,23 +103,23 @@
 				let _this = this;
 				this.loading = true;
 				this.form.gRecaptchaResponse = grecaptcha.getResponse();
+
 				$.post({
-					url: "https://apidae-dev.akema.fr/api/signup/",
+					url: "http://localhost:8000/api/signup/",
 					crossDomain: true,
 					dataType: "text",
-					contentType: "application/x-www-form-urlencoded",
-					data: this.form
+					contentType: "application/json",
+					data: JSON.stringify(this.form)
 				})
-						.done(function (data) {
-							_this.submit_success = true;
-							_this.login_url = data;
-							_this.loading = false;
-							$("#inner-form").slideUp("slow");
-						})
-						.fail(function (error) {
-							_this.error_message = error.responseText;
-							_this.loading = false;
-						});
+					.done(function (data) {
+						_this.submit_success = true;
+						_this.login_url = data;
+						_this.loading = false;
+						$("#inner-form").slideUp("slow");
+					}).fail(function (error) {
+						_this.error_message = JSON.parse(error.responseText).error;
+						_this.loading = false;
+					});
 			}
 		}
 	};
