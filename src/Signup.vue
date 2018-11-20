@@ -40,7 +40,7 @@
 
 					<br/>
 					<br/>
-					<div class="g-recaptcha" data-sitekey="6Lcvy0oUAAAAAHDt9ZyGMBTWSRPsMiM58aZCg4gR"></div>
+					<div class="g-recaptcha" data-sitekey="6LemBHwUAAAAAIBgnSCFE1Pk0BWVbZkwWU05TYYU"></div>
 					<br/>
 					<i v-if="error_message" id="error-message">{{ error_message }}</i>
 					<input v-if="!loading" type="submit" value="Valider" class="btn btn-lg">
