@@ -111,15 +111,15 @@
 					contentType: "application/json",
 					data: JSON.stringify(this.form)
 				})
-					.done(function (data) {
-						_this.submit_success = true;
-						_this.login_url = data;
-						_this.loading = false;
-						$("#inner-form").slideUp("slow");
-					}).fail(function (error) {
-						_this.error_message = JSON.parse(error.responseText).error;
-						_this.loading = false;
-					});
+						.done(function (data) {
+							_this.submit_success = true;
+							_this.login_url = data;
+							_this.loading = false;
+							$("#inner-form").slideUp("slow");
+						}).fail(function (error) {
+					_this.error_message = JSON.parse(error.responseText).error;
+					_this.loading = false;
+				});
 			}
 		}
 	};
@@ -139,8 +139,9 @@
 		text-align: left;
 		margin: 50px 0 50px 0;
 		padding: 20px 30px 20px 30px;
-		box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
-		0 5px 15px 0 rgba(0, 0, 0, 0.08);
+		box-shadow: 0 3px 20px #d8d8d8;
+		border: 1px solid #d8d8d8;
+		border-radius: 6px;
 		transition: opacity 1s ease;
 	}
 

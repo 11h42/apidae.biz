@@ -3,10 +3,10 @@
 
 		<div class="row">
 			<div class="col-xs-12">
-				<h2>
-					Envie d’un <em class="text-warning">devis</em> ou simplement de poser une <em class="text-primary">question</em>
+				<h3>
+					Envie d’un <span class="text-warning">devis</span> ou simplement de poser une <span class="text-primary">question</span>
 					?
-				</h2>
+				</h3>
 			</div>
 		</div>
 
@@ -14,7 +14,7 @@
 
 		<div class="row justify-content-center">
 			<a href="mailto:contact@apidae.biz" class="btn btn-lg">
-				<b>Contactez-nous</b>
+				<span>Contactez-nous</span>
 			</a>
 		</div>
 	</article>
