@@ -39,20 +39,23 @@
 						   :disabled="submit_success">
 
 					<br/>
-					<br/>
-					<div class="g-recaptcha" data-sitekey="6LemBHwUAAAAAIBgnSCFE1Pk0BWVbZkwWU05TYYU"></div>
-					<br/>
+					<br v-if="error_message"/>
 					<i v-if="error_message" id="error-message">{{ error_message }}</i>
-					<input v-if="!loading" type="submit" value="Valider" class="btn btn-lg">
-					<button v-if="loading" class="btn btn-lg" id="form-loading-button">
-						<div class="lds-ring">
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<span>Inscription en cours</span>
-					</button>
+					<br v-if="error_message">
+					<br>
+					<div id="captcha-and-submit">
+						<div class="g-recaptcha" data-sitekey="6LemBHwUAAAAAIBgnSCFE1Pk0BWVbZkwWU05TYYU"></div>
+						<input v-if="!loading" type="submit" value="Valider" class="btn btn-lg">
+						<button v-if="loading" class="btn btn-lg" id="form-loading-button">
+							<div class="lds-ring">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+							<span>Inscription en cours</span>
+						</button>
+					</div>
 				</form>
 			</div>
 
@@ -70,206 +73,211 @@
 				 v-bind:class="{'visible': submit_success}">
 				<h4 class="text-muted">Il ne reste plus qu'une étape ...</h4>
 				<br/>
-				<h3>Nous vous avons envoyé un mail, </h3>
-				<h5><b>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !</b>
+				<h5>Nous vous avons envoyé un mail, </h5>
+				<h5>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !
 					<br/>
 					<br/>
-					<small>Attention, vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</small>
 				</h5>
+				<span>Attention, vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</span>
 			</div>
 		</div>
 	</div>
 </template>
 <script type="text/ecmascript-6">
-	import Navbar from "./components/navbar";
-	import MyFooter from "./components/footer";
+import Navbar from "./components/navbar";
+import MyFooter from "./components/footer";
 
-	export default {
-		components: {
-			Navbar,
-			MyFooter
-		},
-		data() {
-			return {
-				form: {},
-				error_message: "",
-				submit_success: false,
-				login_url: "",
-				loading: false
-			};
-		},
-		methods: {
-			send_form: function () {
-				let _this = this;
-				this.loading = true;
-				this.form.gRecaptchaResponse = grecaptcha.getResponse();
+export default {
+  components: {
+    Navbar,
+    MyFooter
+  },
+  data() {
+    return {
+      form: {},
+      error_message: "",
+      submit_success: false,
+      login_url: "",
+      loading: false
+    };
+  },
+  methods: {
+    send_form: function() {
+      let _this = this;
+      this.loading = true;
+      this.form.gRecaptchaResponse = grecaptcha.getResponse();
 
-				$.post({
-					url: "http://localhost:8000/api/signup/",
-					crossDomain: true,
-					dataType: "text",
-					contentType: "application/json",
-					data: JSON.stringify(this.form)
-				})
-						.done(function (data) {
-							_this.submit_success = true;
-							_this.login_url = data;
-							_this.loading = false;
-							$("#inner-form").slideUp("slow");
-						}).fail(function (error) {
-					_this.error_message = JSON.parse(error.responseText).error;
-					_this.loading = false;
-				});
-			}
-		}
-	};
+      $.post({
+        url: "http://localhost:8000/api/signup/",
+        crossDomain: true,
+        dataType: "text",
+        contentType: "application/json",
+        data: JSON.stringify(this.form)
+      })
+        .done(function(data) {
+          _this.submit_success = true;
+          _this.login_url = data;
+          _this.loading = false;
+          $("#inner-form").slideUp("slow");
+        })
+        .fail(function(error) {
+          _this.error_message = JSON.parse(error.responseText).error;
+          _this.loading = false;
+        });
+    }
+  }
+};
 </script>
 
 <style>
-	@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-	@import "../node_modules/font-awesome/css/font-awesome.min.css";
-	@import "../node_modules/hint.css/hint.min.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/hint.css/hint.min.css";
 
-	#signup-form {
-		padding: 35px 15px;
-		text-align: center;
-	}
+#signup-form {
+  padding: 35px 15px;
+  text-align: center;
+}
 
-	#inner-form {
-		text-align: left;
-		margin: 50px 0 50px 0;
-		padding: 20px 30px 20px 30px;
-		box-shadow: 0 3px 20px #d8d8d8;
-		border: 1px solid #d8d8d8;
-		border-radius: 6px;
-		transition: opacity 1s ease;
-	}
+#inner-form {
+  text-align: left;
+  margin: 50px 0 50px 0;
+  padding: 20px 30px 20px 30px;
+  border-radius: 6px;
+  transition: opacity 1s ease;
+  box-shadow: 0 0 10px lightgray;
+  border: 1px solid lightgray;
+}
 
-	#inner-form.faded {
-		opacity: 0.6;
-	}
+#inner-form.faded {
+  opacity: 0.6;
+}
 
-	#signup-form form {
-		margin-bottom: 50px;
-	}
+#signup-form form {
+  margin-bottom: 10px;
+}
 
-	#signup-form form label {
-		color: #3c3c3c;
-		font-weight: bold;
-		font-size: 13px;
-	}
+#signup-form form label {
+  color: #3c3c3c;
+  font-weight: bold;
+  font-size: 13px;
+}
 
-	#signup-form form label a {
-		color: #0275d8 !important;
-	}
+#signup-form form label a {
+  color: #0275d8 !important;
+}
 
-	#signup-form form input {
-		background-color: white;
-		color: #3c3c3c;
-		outline: none;
-		border: 1px solid rgba(142, 153, 138, 0.5);
-		padding: 4px 8px;
-		width: 100%;
-	}
+#signup-form form input {
+  background-color: white;
+  color: #3c3c3c;
+  outline: none;
+  border: 1px solid rgba(142, 153, 138, 0.5);
+  padding: 4px 8px;
+  width: 100%;
+}
 
-	#signup-form form .margin-bottom {
-		margin-bottom: 8px;
-	}
+#signup-form form .margin-bottom {
+  margin-bottom: 8px;
+}
 
-	#signup-form form .btn {
-		background-color: #f4511e;
-		color: white;
-		width: fit-content;
-		width: -moz-fit-content;
-		padding: 7px 20px;
-		border: none;
-		float: right;
-		margin-top: 15px;
-	}
+#signup-form form .btn {
+  background-color: #f4511e;
+  color: white;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 7px 20px;
+  border: none;
+  float: right;
+  margin-top: 15px;
+}
 
-	#access-pricing-div {
-		text-align: center;
-		padding: 200px 50px;
-	}
+#captcha-and-submit {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
-	#access-pricing-div .btn {
-		background-color: #1b6d85;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+#access-pricing-div {
+  text-align: center;
+  padding: 200px 50px;
+}
 
-	#submit-success-div {
-		text-align: center;
-		padding: 200px 50px;
-		opacity: 0;
-		transition: opacity 1s;
-	}
+#access-pricing-div .btn {
+  background-color: #1b6d85;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-	#submit-success-div.visible {
-		opacity: 1;
-	}
+#submit-success-div {
+  text-align: center;
+  padding: 200px 50px;
+  opacity: 0;
+  transition: opacity 1s;
+}
 
-	#submit-success-div .btn {
-		background-color: #f4511e;
-		padding-left: 35px;
-		padding-right: 35px;
-	}
+#submit-success-div.visible {
+  opacity: 1;
+}
 
-	#error-message {
-		color: rgb(255, 0, 0);
-	}
+#submit-success-div .btn {
+  background-color: #f4511e;
+  padding-left: 35px;
+  padding-right: 35px;
+}
 
-	/* ======================== */
-	/* loading animations style */
+#error-message {
+  color: rgb(255, 0, 0);
+}
 
-	#form-loading-button {
-		display: flex;
-		align-items: center;
-	}
+/* ======================== */
+/* loading animations style */
 
-	.lds-ring {
-		display: inline-block;
-		position: relative;
-		top: -3px;
-		left: -5px;
-		width: 32px;
-		height: 32px;
-		margin-right: 10px;
-	}
+#form-loading-button {
+  display: flex;
+  align-items: center;
+}
 
-	.lds-ring div {
-		box-sizing: border-box;
-		display: block;
-		position: absolute;
-		width: 24px;
-		height: 24px;
-		margin: 6px;
-		border: 3px solid #fff;
-		border-radius: 50%;
-		animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-		border-color: #fff transparent transparent transparent;
-	}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  left: -5px;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
 
-	.lds-ring div:nth-child(1) {
-		animation-delay: -0.45s;
-	}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: 6px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
 
-	.lds-ring div:nth-child(2) {
-		animation-delay: -0.3s;
-	}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
 
-	.lds-ring div:nth-child(3) {
-		animation-delay: -0.15s;
-	}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
 
-	@keyframes lds-ring {
-		0% {
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(360deg);
-		}
-	}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
 
-
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>

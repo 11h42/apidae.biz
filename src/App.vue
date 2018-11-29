@@ -109,7 +109,7 @@
 
 	body,
 	html {
-		font-family: "Raleway", sans-serif !important;
+		font-family: "Ubuntu", sans-serif !important;
 		font-weight: 400;
 		width: 100%;
 	}
