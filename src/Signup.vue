@@ -34,8 +34,8 @@
 						   :disabled="submit_success">
 
 					<label for="password">Mot de passe* : <i class="text-muted">(pourquoi ne pas utiliser <a
-							target="_blank" href="https://lesspass.com/">LessPass</a> ?)</i></label>
-					<input type="password" name="password" id="password" class="margin-bottom" v-model="form.password"
+							target="_blank" href="https://lesspass.com/" tabindex="-1">LessPass</a> ?)</i></label>
+					<input type="password" name="password" id="password" v-model="form.password"
 						   :disabled="submit_success">
 
 					<br/>
@@ -53,7 +53,7 @@
 								<div></div>
 								<div></div>
 							</div>
-							<span>Inscription en cours</span>
+							<span>Inscription</span>
 						</button>
 					</div>
 				</form>
@@ -108,7 +108,7 @@
 				this.form.gRecaptchaResponse = grecaptcha.getResponse();
 
 				$.post({
-					url: "https://apidae.biz/api/signup/",
+					url: "https://signup.apidae.biz/api/signup/",
 					crossDomain: true,
 					dataType: "text",
 					contentType: "application/json",
@@ -121,6 +121,7 @@
 							$("#inner-form").slideUp("slow");
 						})
 						.fail(function (error) {
+							grecaptcha.reset();
 							_this.error_message = JSON.parse(error.responseText).error;
 							_this.loading = false;
 						});
