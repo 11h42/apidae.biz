@@ -3,7 +3,7 @@
 		<ul class="nav navbar-nav container d-flex flex-row">
 			<a class="navbar-brand" href="/">
 				<img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
-				&nbspApidae</a>
+				&nbsp;Apidae</a>
 			<a class="nav-item btn btn-blue" v-if="showbtntry" @click="scroll_to_signup">Essai gratuit</a>
 		</ul>
 	</nav>

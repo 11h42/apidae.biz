@@ -3,7 +3,7 @@
 		<navbar :features="[]" :showbtntry="true" v-if="!ascomponent"></navbar>
 
 		<div id="pricing-container" class="container">
-			<h2>Tarifs</h2>
+			<h2 class="font-weight-bold">Tarifs</h2>
 			<hr>
 			<h5 class="text-muted">Découvrez l'offre adaptée à vos besoins</h5>
 
@@ -23,19 +23,19 @@
 						<div class="pricing-body">
 							<ul>
 								<li>
-									<i class="fa fa-user">&nbsp&nbsp</i>
+									<i class="fa fa-user">&nbsp;&nbsp;</i>
 									Limité à 3 comptes utilisateurs
 								</li>
 								<li>
-									<i class="fa fa-calendar">&nbsp&nbsp</i>
+									<i class="fa fa-calendar">&nbsp;&nbsp;</i>
 									Accés limité à deux mois
 								</li>
 								<li>
-									<i class="fa fa-check">&nbsp&nbsp</i>
+									<i class="fa fa-check">&nbsp;&nbsp;</i>
 									Conservation de vos données au passage à une offre supérieure
 								</li>
 								<li>
-									<i class="fa fa-thumbs-up">&nbsp&nbsp</i>
+									<i class="fa fa-thumbs-up">&nbsp;&nbsp;</i>
 									Inscription gratuite et sans engagement
 								</li>
 							</ul>
@@ -59,31 +59,31 @@
 						<div class="pricing-body">
 						<ul>
 							<li>
-								<i class="fa fa-users">&nbsp&nbsp</i>
+								<i class="fa fa-users">&nbsp;&nbsp;</i>
 								Jusqu'à 5 utilisateurs
 							</li>
 							<li>
-								<i class="fa fa-mobile">&nbsp&nbsp</i>
+								<i class="fa fa-mobile">&nbsp;&nbsp;</i>
 								Accés depuis tout support
 							</li>
 							<li>
-								<i class="fa fa-line-chart">&nbsp&nbsp</i>
+								<i class="fa fa-line-chart">&nbsp;&nbsp;</i>
 								Module de Comptes Rendus d'Activité
 							</li>
 							<li>
-								<i class="fa fa-credit-card">&nbsp&nbsp</i>
+								<i class="fa fa-credit-card">&nbsp;&nbsp;</i>
 								Module de Notes de Frais
 							</li>
 							<li>
-								<i class="fa fa-plane">&nbsp&nbsp</i>
+								<i class="fa fa-plane">&nbsp;&nbsp;</i>
 								Module d'Absences et Congés
 							</li>
 							<li>
-								<i class="fa fa-envelope-open">&nbsp&nbsp</i>
+								<i class="fa fa-envelope-open">&nbsp;&nbsp;</i>
 								Module Ordres de Mission <i>(bientôt !)</i>
 							</li>
 							<li>
-								<i class="fa fa-file-pdf-o">&nbsp&nbsp</i>
+								<i class="fa fa-file-pdf-o">&nbsp;&nbsp;</i>
 								Exports avancés
 							</li>
 						</ul>
@@ -110,19 +110,19 @@
 							</div>
 							<ul>
 								<li>
-									<i class="fa fa-users">&nbsp&nbsp</i>
-									<i class="fa fa-user">&nbsp&nbsp</i>
+									<i class="fa fa-users">&nbsp;&nbsp;</i>
+									<i class="fa fa-user">&nbsp;&nbsp;</i>
 									Nombre d'utilisateurs adapté à vos besoins
 								</li>
 								<li>
-									<i class="fa fa-clock-o">&nbsp&nbsp</i>
+									<i class="fa fa-clock-o">&nbsp;&nbsp;</i>
 									Module de Time-tracking
 								</li>
 								<li>
-									<i class="fa fa-check">&nbsp&nbsp</i>
+									<i class="fa fa-check">&nbsp;&nbsp;</i>
 										<a href="mailto:contact@apidae.biz?subject=Demande de devis offre Premium Apidae">
 											<u>Devis personnalisé et rapide</u>
-											&nbsp<i class="fa fa-arrow-circle-o-right"></i>
+											&nbsp;<i class="fa fa-arrow-circle-o-right"></i>
 										</a>
 								</li>
 							</ul>
@@ -159,10 +159,6 @@ export default {
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "../node_modules/hint.css/hint.min.css";
-
-body {
-  font-family: "Open Sans", sans-serif;
-}
 
 #pricing-container {
   text-align: center;
