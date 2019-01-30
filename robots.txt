@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /mentions-legales.html
-Disallow: /dist/
-Disallow: /static/
-Disallow: /src/
-Disallow: /src/assets
-Disallow: /src/components
-
-Sitemap: https://apidae.biz//sitemap.xml
