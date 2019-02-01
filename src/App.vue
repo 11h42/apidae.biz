@@ -57,17 +57,17 @@
 						id: "suivi-d’activité",
 						title: "Suivi d’activité",
 						illustration: "fa fa-3x fa-line-chart",
-						subtitle: "Gain de temps",
+						subtitle: "Gain de temps, plus d'oubli",
 						description:
-								"C’est l’heure du bilan d’activité mensuel mais qu’avez-vous fait le vendredi 12 après-midi ? Plus de prise de tête : déclarez votre activité au jour le jour en toute simplicité."
+								"C'est l\'heure du bilan d'activité mensuel. L\'un de vos collaborateurs (ou peut-être tous) ne se rappelle plus ce qu\'il a fait le vendredi 12 après-midi ? Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes."
 					},
 					{
 						id: "congés-et-absences",
 						title: "Congés et absences",
 						illustration: "fa fa-3x fa-plane",
-						subtitle: "Rapide et efficace",
+						subtitle: "Rapide, simple et efficace",
 						description:
-								"En quelques clics demandez vos congés ou renseignez vos absences prévues et recevez la réponse par email dès que votre manager a répondu."
+								"En quelques clics, les collaborateurs posent leurs prévisions de congés ou renseignent leurs absence (RTT, déplacements ...). Ils reçoivent la réponse par email dès que le manager a répondu. Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances. Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu."
 					},
 					{
 						id: "notes-de-frais",
@@ -75,15 +75,23 @@
 						illustration: "fa fa-3x fa-credit-card",
 						subtitle: "Fini la paperasse inutile",
 						description:
-								"Sur votre smartphone à la fin du repas avec votre client, créez envoyez la note de frais à votre employeur en quelques clics."
+								"A la fin du repas avec le client, et depuis son smartphone, le collaborateur crée et vous envoie la note de frais en quelques clics. Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir. De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise."
 					},
 					{
 						id: "time-tracking",
 						title: "Time tracking",
 						illustration: "fa fa-3x fa-clock-o",
-						subtitle: "Traçabilité de vos tâches",
+						subtitle: "Traçabilité des tâches à venir ou en cours",
 						description:
-								"Suivez en temps réel vos temps d'activité par tâche et par projet et obtenez des synthèses détaillées par période et par projet. Idéal pour organiser votre travail."
+								"Suivez en temps réel les temps d'activité de chacun de vos collaborateurs, par tâche et par projet, et obtenez des synthèses significatives et détaillées. Idéal pour l\'organisation du travail et pour disposer d'une vue globale de l\'activité de chacun des membres de votre équipe. Le collaborateur, lors d'une nouvelle tâche sur un projet, peut déclencher un chronomètre en début d\'activité, et l'arrêter selon ses besoins ou contraintes, ou bien tout simplement lorsque la tâche est terminée."
+					},
+					{
+						id: "ordre-de-mission",
+						title: "Ordres de missions",
+						illustration: "fa fa-3x fa-file-export",
+						subtitle: "Ordres de missions",
+						description:
+								"Chacun des opérationnels de votre équipe crée et soumet l'ordre de mission au manager pour validation, avant le déplacement prévu. Dès la demande validée, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur."
 					}
 				]
 			};
