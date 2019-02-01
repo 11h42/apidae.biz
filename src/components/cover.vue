@@ -14,7 +14,7 @@
 
 					<a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
 						<i class="fa fa-arrow-circle-o-right"></i>
-						&nbspEssayer gratuitement !
+						&nbspEssayer gratuitement APIDAE !
 					</a>
 				</div>
 			</div>
