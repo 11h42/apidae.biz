@@ -1,6 +1,6 @@
 # apidae
 
->  site web Apidae: Solution SIRH 3 logiciels RH en 1. [http://apidae.biz](http://apidae.biz).
+>  site web Apidae: Application SIRH full web Apidae. [http://apidae.biz](http://apidae.biz).
 
 ## Build Setup
 
