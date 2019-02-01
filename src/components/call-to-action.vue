@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h3>
-					Envie d’un <span class="text-warning">devis</span> ou simplement de poser une <span class="text-primary">question</span>
+					Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-primary">question</span>
 					?
 				</h3>
 			</div>
