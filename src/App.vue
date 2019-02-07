@@ -6,9 +6,7 @@
 			<span slot="header" class="m-x-auto">
 				Ne perdez plus votre temps&nbsp!
 			</span>
-			<small slot="header-subtitle">Apidae, c'est 4 logiciels R.H. en 1 ! Gérez
-				vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail
-				depuis une seule application web ou mobile.
+			<small slot="header-subtitle">Apidae, c'est notre solution SIRH : 5 logiciels R.H. en 1 ! <br/><br/>Gérez de manière simple vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail depuis une seule application web ou mobile.
 			</small>
 		</cover>
 
@@ -59,7 +57,7 @@
 						illustration: "fa fa-3x fa-line-chart",
 						subtitle: "Gain de temps, plus d'oubli",
 						description:
-								"C'est l\'heure du bilan d'activité mensuel. L\'un de vos collaborateurs (ou peut-être tous) ne se rappelle plus ce qu\'il a fait le vendredi 12 après-midi ? Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes."
+								"C'est l\'heure du bilan d'activité mensuel. L\'un de vos collaborateurs (ou peut-être tous) ne se rappelle plus ce qu\'il a fait le vendredi 12 après-midi ? \u000APlus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes."
 					},
 					{
 						id: "congés-et-absences",
@@ -67,13 +65,13 @@
 						illustration: "fa fa-3x fa-plane",
 						subtitle: "Rapide, simple et efficace",
 						description:
-								"En quelques clics, les collaborateurs posent leurs prévisions de congés ou renseignent leurs absence (RTT, déplacements ...). Ils reçoivent la réponse par email dès que le manager a répondu. Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances. Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu."
+								"En quelques clics, les collaborateurs posent leurs prévisions de congés ou renseignent leurs absence (RTT, déplacements ...). Ils reçoivent la réponse par email dès que le manager a répondu.Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances. Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu."
 					},
 					{
 						id: "notes-de-frais",
 						title: "Notes de frais",
 						illustration: "fa fa-3x fa-credit-card",
-						subtitle: "Fini la paperasse inutile",
+						subtitle: "Finie la paperasse inutile",
 						description:
 								"A la fin du repas avec le client, et depuis son smartphone, le collaborateur crée et vous envoie la note de frais en quelques clics. Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir. De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise."
 					},
@@ -88,8 +86,8 @@
 					{
 						id: "ordre-de-mission",
 						title: "Ordres de missions",
-						illustration: "fa fa-3x fa-file-export",
-						subtitle: "Ordres de missions",
+						illustration: "fa fa-3x fa-file",
+						subtitle: "Simplicité et rapidité",
 						description:
 								"Chacun des opérationnels de votre équipe crée et soumet l'ordre de mission au manager pour validation, avant le déplacement prévu. Dès la demande validée, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur."
 					}
