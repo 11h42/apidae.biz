@@ -3,6 +3,16 @@
 		<navbar :features="[]" :showbtntry="true" v-if="!ascomponent"></navbar>
 
 		<div id="pricing-container" class="container">
+				
+			<h2 class="font-weight-bold">Apidae, simple et efficace</h2>
+			<hr>
+			<h5 class="text-muted">Visualisez notre démo</h5>
+			<br>
+			<div class="row">
+            	<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        	</div>
+
+        	<br/><br/>
 			<h2 class="font-weight-bold">Tarifs</h2>
 			<hr>
 			<h5 class="text-muted">Découvrez l'offre adaptée à vos besoins</h5>
@@ -254,4 +264,10 @@ export default {
 #entreprise .pricing-header {
   background-color: #f25224;
 }
+
+.center {
+	text-align : center;
+	margin : 0 auto;
+}
+
 </style>

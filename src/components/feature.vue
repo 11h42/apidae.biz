@@ -17,6 +17,16 @@
 				<slot name="description"></slot>
 			</div>
 		</div>
+		<div class="card-block">
+			<div class="card-text">
+				<slot name="description2"></slot>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="card-text">
+				<slot name="description3"></slot>
+			</div>
+		</div>
 	</article>
 </template>
 <script type="text/ecmascript-6">

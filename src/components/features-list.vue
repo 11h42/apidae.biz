@@ -6,6 +6,8 @@
 				<span class="title" slot="title">{{feature.title}}</span>
 				<span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
 				<p class="description" slot="description">{{feature.description}}</p>
+				<p class="description2" slot="description2">{{feature.description2}}</p>
+				<p class="description3" slot="description3">{{feature.description3}}</p>
 			</feature>
 		</div>
 	</div>
