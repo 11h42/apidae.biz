@@ -6,9 +6,7 @@
 			<span slot="header" class="m-x-auto">
 				Ne perdez plus votre temps&nbsp!
 			</span>
-			<small slot="header-subtitle">Apidae, c'est 4 logiciels R.H. en 1 ! Gérez
-				vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail
-				depuis une seule application web ou mobile.
+			<small slot="header-subtitle">Apidae, c'est notre solution SIRH : 5 logiciels R.H. en 1 ! <br/><br/>Gérez vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail depuis une seule application web ou mobile.
 			</small>
 		</cover>
 
