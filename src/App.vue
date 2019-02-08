@@ -4,14 +4,20 @@
 
 		<cover class="masthead" :scroll_to_signup="scroll_to_signup">
 			<span slot="header" class="m-x-auto">
-				Ne perdez plus votre temps&nbsp!
+				Ne perdez plus un temps précieux&nbsp!
 			</span>
-			<small slot="header-subtitle">Apidae, c'est notre solution SIRH : 5 logiciels R.H. en 1 ! <br/><br/>Gérez vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail depuis une seule application web ou mobile.
+			<small slot="header-subtitle">Apidae, c'est notre solution SIRH : 4 logiciels R.H. en 1 ! <br/><br/>Gérez vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail depuis une seule application web ou mobile.
 			</small>
 		</cover>
 
 		<div class="container-fluid">
-			<section id="fonctionnalités" class="row">
+			<section id="fonctionnalités" class="row pictos">
+				<div  class="col-xl-12 col-lg-6 col-md-6">
+					<a href="./src/cra.html"><img src="src/assets/suivi-d-activité.png" alt="Apidae Gestion des activités"></a>
+					<a href="./src/absences.html"><img src="src/assets/conges.png" alt="Apidae Gestion des absences"></a>
+					<a href="./src/frais.html"><img src="src/assets/note-de-frais.png" alt="Apidae Notes de frais"></a>
+					<a href="./src/time.html"><img src="src/assets/time-tracking.png" alt="Apidae Time Tracking"></a>
+				</div>
 				<features-list :features="features"></features-list>
 			</section>
 
@@ -58,10 +64,6 @@
 						subtitle: "Gain de temps, plus d'oubli",
 						description:
 								"C'est l\'heure du bilan d'activité mensuel.",
-						description2:
-								"L\'un de vos collaborateurs ne se rappelle plus ce qu\'il a fait le vendredi 12 après-midi ?",
-						description3:
-								"Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes."
 					},
 					{
 						id: "congés-et-absences",
@@ -69,23 +71,15 @@
 						illustration: "fa fa-3x fa-plane",
 						subtitle: "Rapide, simple et efficace",
 						description:
-								"En quelques clics, les collaborateurs posent leurs prévisions de congés ou renseignent leurs absence (RTT, déplacements ...). Ils reçoivent la réponse par email dès que le manager a répondu.",
-						description2:
-								"Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances.",
-						description3:
-								"Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu."
+								"L'heure des vacances approche..."
 					},
 					{
 						id: "notes-de-frais",
 						title: "Notes de frais",
 						illustration: "fa fa-3x fa-credit-card",
-						subtitle: "Fini la paperasse inutile",
+						subtitle: "Fini la paperasse inutile",	
 						description:
-								"A la fin du repas avec le client, et depuis son smartphone, le collaborateur crée et vous envoie la note de frais en quelques clics. ",
-						description2:
-								"Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir.",
-						description3:
-								"De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise."
+								"Un déjeuner avec un client, les frais de déplacements, de téléphone ..."
 					},
 					{
 						id: "time-tracking",
@@ -93,23 +87,7 @@
 						illustration: "fa fa-3x fa-clock-o",
 						subtitle: "Traçabilité des tâches à venir ou en cours",
 						description:
-								"Suivez en temps réel les temps d'activité de chacun de vos collaborateurs, par tâche et par projet, et obtenez des synthèses significatives et détaillées. ",
-						description2:
-								"Idéal pour l\'organisation du travail et pour disposer d'une vue globale de l\'activité de chacun des membres de votre équipe. Le collaborateur, lors d'une nouvelle tâche sur un projet, peut déclencher un chronomètre en début d\'activité, et l'arrêter selon ses besoins ou contraintes, ou bien tout simplement lorsque la tâche est terminée.",
-						description3:
-								""
-					},
-					{
-						id: "ordre-de-mission",
-						title: "Ordres de missions",
-						illustration: "fa fa-3x fa-file",
-						subtitle: "Ordres de missions",
-						description:
-								"Chacun des opérationnels de votre équipe crée et soumet l'ordre de mission au manager pour validation, avant le déplacement prévu. ",
-						description2:
-								"Dès la demande validée, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur.",
-						description3:
-								""
+								"Obtenez des synthèses significatives et détaillées des activités de vos équipes."
 					}
 				]
 			};
@@ -143,4 +121,9 @@
 	#call-to-action {
 		padding-top: 50px;
 	}
+
+	.center {
+		text-align : center;
+	} 
+
 </style>

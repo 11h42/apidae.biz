@@ -1,8 +1,8 @@
 <template>
 	<section class="cover">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="catchline row">
-				<div class="col-lg-6 col-md-12">
+				<div class="col-xl-offset-6 col-xl-6 col-lg-offset-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<h1 class="maintitle">
 						<slot name="header"></slot>
 						<br>

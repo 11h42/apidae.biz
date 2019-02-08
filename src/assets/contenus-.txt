@@ -1,0 +1,63 @@
+
+			 		<cover class="masthead" :scroll_to_signup="scroll_to_signup">
+			            <span slot="header" class="m-x-auto">
+			                En entreprise, le temps est précieux, ne le perdez pas&nbsp!
+			            </span>
+			            <small slot="header-subtitle">Apidae, c'est LA solution de gestion de vos tâches administratives ! 
+			            	Une application de gestion n'est pas obligatoirement terne et ennuyeuse.
+			            	Avec Apidae, vous disposez d'une interface conviviale et complète, et vos collaborateurs saisissent très simplement leurs notes de frais, leurs congés et absences ainsi que leurs ordres de mission, gèrent leurs suivis d'activités, depuis une seule application web ou mobile.
+			            	Ils ont ainsi tout le temps et l'opportunité de se consacrer à leur coeur de métier.
+			            	De votre côté, vous gagnez en efficacité, en productivité puisque vs collab
+			            	"
+
+			            </small>
+			        </cover>
+
+
+ 
+					{
+						id: "suivi-d'activité",
+						title: "Suivi d'activité",
+						illustration: "fa fa-3x fa-line-chart",
+						subtitle: "Gain de temps, plus d'oubli",
+						description:
+								"C'est l'heure du bilan d'activité mensuel.
+								L'un de vos collaborateurs (ou peut-être tous) a oublié ce qu'il a fait le vendredi 12 après-midi ? 
+								Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité.
+								Coté manager, vous avez une vision globale du planning et de l'organisation de vos équipes."
+					},
+					{
+						id: "congés-et-absences",
+						title: "Congés et absences",
+						illustration: "fa fa-3x fa-plane",
+						subtitle: "Rapide, simple et efficace",
+						description:
+								"En quelques clics, demandez vos congés ou renseignez vos absences prévues et recevez la réponse par email dès que votre manager a répondu."
+					},
+					{
+						id: "notes-de-frais",
+						title: "Notes de frais",
+						illustration: "fa fa-3x fa-credit-card",
+						subtitle: "Finie la paperasse inutile, ",
+						description:
+								"A la fin du repas avec le client, et depuis son smartphone, le collaborateur crée et vous envoie la note de frais en quelques clics. Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir.
+								De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise."
+					},
+					{
+						id: "time-tracking",
+						title: "Time tracking",
+						illustration: "fa fa-3x fa-clock-o",
+						subtitle: "Traçabilité des tâches à faire ou en cours",
+						description:
+								"Suivez en temps réel les temps d'activité de chacun de vos collaborateurs, par tâche et par projet, et obtenez des synthèses significatives et détaillées. Idéal pour l'organisation du travail et pour disposer d'une vue globale de l'activité de chacun des membres de votre équipe.
+								Le collaborateur, lors d'une nouvelle tâche sur un projet, peut déclencher un minuteur en début d'activité, et l'arrêter selon ses besoins ou contraintes, ou bien lorsque la tâche est terminée."
+					}
+					{
+						id: "ordre-de-mission",
+						title: "Ordres de missions",
+						illustration: "fa fa-3x fa-clock-o",
+						subtitle: "Ordres de missions des collaborateurs",
+						description:
+								"Chacun des opérationnels de votre équipe crée et soumet l'ordre de mission au manager pour validation, avant le déplacement."
+					}
+
