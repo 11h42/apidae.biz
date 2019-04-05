@@ -11,10 +11,19 @@
 		<div class="m-x-auto text-xs-center illustration">
 			<i :class="illustrationClass"></i>
 		</div>
-		<hr>
 		<div class="card-block">
 			<div class="card-text">
 				<slot name="description"></slot>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="card-text">
+				<slot name="description2"></slot>
+			</div>
+		</div>
+		<div class="card-block">
+			<div class="card-text">
+				<slot name="description3"></slot>
 			</div>
 		</div>
 	</article>
@@ -23,6 +32,7 @@
 	export default {
 		props: {
 			illustration: {type: String, required: true},
+			link: {type: String, required: true},
 			id: {type: String, required: true}
 		},
 		computed: {
@@ -43,5 +53,10 @@
 	}
 	.feature .subtitle {
 		/*text-transform: capitalize;*/
+	}
+	.feature .image {
+		with : 100%;
+		padding: 25px;
+		padding-top: 40px;
 	}
 </style>

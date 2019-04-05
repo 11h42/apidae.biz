@@ -15,7 +15,13 @@
 		</cover>
 
 		<div class="container-fluid">
-			<section id="fonctionnalités" class="row">
+			<section id="fonctionnalités" class="row pictos">
+				<div  class="col-xl-12 col-lg-6 col-md-6">
+					<a href="./src/cra.html"><img src="src/assets/suivi-d-activité.png" alt="Apidae Gestion des activités"></a>
+					<a href="./src/absences.html"><img src="src/assets/conges.png" alt="Apidae Gestion des absences"></a>
+					<a href="./src/frais.html"><img src="src/assets/note-de-frais.png" alt="Apidae Notes de frais"></a>
+					<a href="./src/time.html"><img src="src/assets/time-tracking.png" alt="Apidae Time Tracking"></a>
+				</div>
 				<features-list :features="features"></features-list>
 			</section>
 
@@ -61,7 +67,7 @@
 						illustration: "fa fa-3x fa-line-chart",
 						subtitle: "Gain de temps, plus d'oubli",
 						description:
-								"C'est l\'heure du bilan d'activité mensuel. L\'un de vos collaborateurs (ou peut-être tous) ne se rappelle plus ce qu\'il a fait le vendredi 12 après-midi ? Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes."
+								"C'est l\'heure du bilan d'activité mensuel.",
 					},
 					{
 						id: "congés-et-absences",
@@ -69,7 +75,7 @@
 						illustration: "fa fa-3x fa-plane",
 						subtitle: "Rapide, simple et efficace",
 						description:
-								"En quelques clics, les collaborateurs posent leurs prévisions de congés ou renseignent leurs absence (RTT, déplacements ...). Ils reçoivent la réponse par email dès que le manager a répondu. Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances. Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu."
+								"L'heure des vacances approche..."
 					},
 					{
 						id: "notes-de-frais",
@@ -77,7 +83,7 @@
 						illustration: "fa fa-3x fa-credit-card",
 						subtitle: "Fini la paperasse inutile",
 						description:
-								"A la fin du repas avec le client, et depuis son smartphone, le collaborateur crée et vous envoie la note de frais en quelques clics. Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir. De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise."
+								"Un déjeuner avec un client, les frais de déplacements, de téléphone ..."
 					},
 					{
 						id: "time-tracking",
@@ -85,15 +91,7 @@
 						illustration: "fa fa-3x fa-clock-o",
 						subtitle: "Traçabilité des tâches à venir ou en cours",
 						description:
-								"Suivez en temps réel les temps d'activité de chacun de vos collaborateurs, par tâche et par projet, et obtenez des synthèses significatives et détaillées. Idéal pour l\'organisation du travail et pour disposer d'une vue globale de l\'activité de chacun des membres de votre équipe. Le collaborateur, lors d'une nouvelle tâche sur un projet, peut déclencher un chronomètre en début d\'activité, et l'arrêter selon ses besoins ou contraintes, ou bien tout simplement lorsque la tâche est terminée."
-					},
-					{
-						id: "ordre-de-mission",
-						title: "Ordres de missions",
-						illustration: "fa fa-3x fa-file-export",
-						subtitle: "Ordres de missions",
-						description:
-								"Chacun des opérationnels de votre équipe crée et soumet l'ordre de mission au manager pour validation, avant le déplacement prévu. Dès la demande validée, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur."
+								"Obtenez des synthèses significatives et détaillées des activités de vos équipes."
 					}
 				]
 			};
@@ -127,4 +125,9 @@
 	#call-to-action {
 		padding-top: 50px;
 	}
+
+	.center {
+		text-align : center;
+	}
+
 </style>
