@@ -1,40 +1,42 @@
 <template>
-	<div id="app">
-		<navbar :features="features" :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
+	<div class="core-app">
+		<div id="app">
+			<navbar :features="features" :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
-		<cover class="masthead" :scroll_to_signup="scroll_to_signup">
-			<span slot="header" class="m-x-auto">
-				Apidae : Solution de management des ressources
-			</span>
-			<small slot="header-subtitle">Apidae est le logiciel de management des ressources en entreprise idéal pour le TPE/PME.
-				Vous allez pouvoir centraliser et automatiser des procédures administratives telle que la
-				<b>gestion des notes de frais</b>, <b>la gestion des congés et des absneces</b> des salariés ainsi
-				que la <b>gestion du suivi d'activité</b> au sein de l'entreprise. Des solutions RH dans une seule
-				application, c'est ce que Apidae vous propose &nbsp!
-			</small>
-		</cover>
+			<cover class="masthead" :scroll_to_signup="scroll_to_signup">
+				<span slot="header" class="m-x-auto">
+					Apidae : Solution de management des ressources
+				</span>
+				<small slot="header-subtitle">Apidae est le logiciel de management des ressources en entreprise idéal pour le TPE/PME.
+					Vous allez pouvoir centraliser et automatiser des procédures administratives telle que la
+					<b>gestion des notes de frais</b>, <b>la gestion des congés et des absneces</b> des salariés ainsi
+					que la <b>gestion du suivi d'activité</b> au sein de l'entreprise. Des solutions RH dans une seule
+					application, c'est ce que Apidae vous propose &nbsp!
+				</small>
+			</cover>
 
-		<div class="container-fluid">
-			<section id="fonctionnalités" class="row pictos">
-				<div  class="col-xl-12 col-lg-6 col-md-6">
-					<a href="./src/cra.html"><img src="src/assets/suivi-d-activité.png" alt="Apidae Gestion des activités"></a>
-					<a href="./src/absences.html"><img src="src/assets/conges.png" alt="Apidae Gestion des absences"></a>
-					<a href="./src/frais.html"><img src="src/assets/note-de-frais.png" alt="Apidae Notes de frais"></a>
-					<a href="./src/time.html"><img src="src/assets/time-tracking.png" alt="Apidae Time Tracking"></a>
-				</div>
-				<features-list :features="features"></features-list>
-			</section>
+			<div class="container-fluid">
+				<section id="fonctionnalités" class="row pictos">
+					<div  class="col-xl-12 col-lg-6 col-md-6">
+						<a href="./src/cra.html"><img src="src/assets/suivi-d-activité.png" alt="Apidae Gestion des activités"></a>
+						<a href="./src/absences.html"><img src="src/assets/conges.png" alt="Apidae Gestion des absences"></a>
+						<a href="./src/frais.html"><img src="src/assets/note-de-frais.png" alt="Apidae Notes de frais"></a>
+						<a href="./src/time.html"><img src="src/assets/time-tracking.png" alt="Apidae Time Tracking"></a>
+					</div>
+					<features-list :features="features"></features-list>
+				</section>
 
-			<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
+				<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
-			<signup></signup>
+				<signup></signup>
 
-			<section id="nous-contacter" class="row">
-				<call-to-action class="col-xs-12"></call-to-action>
-			</section>
+				<section id="nous-contacter" class="row">
+					<call-to-action class="col-xs-12"></call-to-action>
+				</section>
+			</div>
+
+			<my-footer></my-footer>
 		</div>
-
-		<my-footer></my-footer>
 	</div>
 </template>
 <script type="text/ecmascript-6">
@@ -120,14 +122,29 @@
 		font-family: "Ubuntu", sans-serif !important;
 		font-weight: 400;
 		width: 100%;
+		height: 100%;
+		position: absolute;
 	}
 
 	#call-to-action {
 		padding-top: 50px;
 	}
 
+	#app {
+		position: relative;
+		overflow:scroll;
+		width: 100%;
+		height: 100%;
+	}
+
 	.center {
 		text-align : center;
+	}
+
+	.core-app {
+		position: fixed;
+		width: 100%;
+		height: 100%;
 	}
 
 </style>
