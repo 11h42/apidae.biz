@@ -20,20 +20,61 @@
 					<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
+			<hr class="catchline"/>
+			<div class="row card-deck catchline">
+				<product-information v-for="productInformation in productInformations"
+						 class="col-xl-4">
+					<span class="title" slot="title">{{productInformation.title}}</span>
+					<p class="information" slot="information">{{productInformation.information}}</p>
+				</product-information>
+			</div>
 		</div>
 	</section>
 </template>
 
 <script type="text/ecmascript-6">
+	import ProductInformation from "./product-information";
+
 	export default {
+		components: {
+			ProductInformation,
+		},
 		props: {
 			scroll_to_signup: {type: Function, required: true}
+		},
+		data() {
+			return {
+				productInformations: [
+					{
+						title: "DIGITILISATION DE VOTRE ENTREPRISE",
+						information:
+								"Vous accompagner dans la digitalisation de votre entreprise, " +
+								"c'est ce que vous promet notre application RH Apidae",
+					},
+					{
+						title: "SIMPLIFIEZ VOS PROCESS RH",
+						information:
+								"Automatiser vos processus RH et faite gagner du temps à vos collaborateurs"
+					},
+					{
+						title: "UNE SOLUTION TOUT-EN-UN",
+						information:
+								"Gérez vos notes de frais, vos comptes-rendus d'actovités, vos congés et vos temps " +
+								"de travail depuis une seule application web ou mobile"
+					}
+				]
+			};
 		},
 	}
 </script>
 <style>
+	hr {
+		margin-top: 2em;
+		border-top-width: 3px;
+	}
+
 	.catchline {
-		top: 15vh;
+		top: 7vh;
 		position: relative;
 	}
 
@@ -48,7 +89,7 @@
 	.cover {
 		height: 80vh;
 		position: relative;
-		padding: 0 1em;
+		padding: 0 4em;
 	}
 
 	@media screen and (max-height: 638px) {

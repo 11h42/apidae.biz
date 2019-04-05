@@ -1,7 +1,7 @@
 <template>
 	<div class="core-app">
 		<div id="app">
-			<navbar :features="features" :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
+			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
 			<cover class="masthead" :scroll_to_signup="scroll_to_signup">
 				<span slot="header" class="m-x-auto">

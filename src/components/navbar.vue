@@ -21,7 +21,6 @@
 <script type="text/ecmascript-6">
 	export default {
 		props: {
-			features: {type: Array, required: true},
 			showbtntry: {type: Boolean, required: true},
 			scroll_to_signup: {type: Function, required: true}
 		},
