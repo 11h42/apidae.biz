@@ -5,7 +5,6 @@
 				<div class="col-lg-6 col-md-12">
 					<h1 class="maintitle">
 						<slot name="header"></slot>
-						<br>
 					</h1>
 					<br/>
 					<h4 class="text-muted subtitle">
@@ -38,7 +37,7 @@
 	.maintitle {
 		font-weight: bold;
 	}
-	
+
 	.subtitle {
 		font-weight: lighter;
 	}
@@ -73,6 +72,6 @@
 		margin-bottom: 40px;
 		padding-left: 50px;
 		padding-right: 50px;
-		background-color: #F4511E;
+		background-color: #fcce21;
 	}
 </style>

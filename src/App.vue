@@ -4,11 +4,13 @@
 
 		<cover class="masthead" :scroll_to_signup="scroll_to_signup">
 			<span slot="header" class="m-x-auto">
-				Ne perdez plus votre temps&nbsp!
+				Apidae : Solution de management des ressources
 			</span>
-			<small slot="header-subtitle">Apidae, c'est 4 logiciels R.H. en 1 ! Gérez
-				vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps de travail
-				depuis une seule application web ou mobile.
+			<small slot="header-subtitle">Apidae est le logiciel de management des ressources en entreprise idéal pour le TPE/PME.
+				Vous allez pouvoir centraliser et automatiser des procédures administratives telle que la
+				<b>gestion des notes de frais</b>, <b>la gestion des congés et des absneces</b> des salariés ainsi
+				que la <b>gestion du suivi d'activité</b> au sein de l'entreprise. Des solutions RH dans une seule
+				application, c'est ce que Apidae vous propose &nbsp!
 			</small>
 		</cover>
 

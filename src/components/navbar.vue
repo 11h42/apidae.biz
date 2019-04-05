@@ -14,7 +14,7 @@
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>
-			<a class="nav-item btn btn-blue" v-if="showbtntry" @click="scroll_to_signup">Essai gratuit</a>
+			<a class="nav-item btn btn-yellow" v-if="showbtntry" @click="scroll_to_signup">Essai gratuit</a>
 		</div>
 	</nav>
 </template>
@@ -60,7 +60,7 @@
 		margin-right: 15px;
 	}
 
-	nav a.btn-blue {
+	nav a.btn-yellow {
 		background-color: #fcce21;
 	}
 
