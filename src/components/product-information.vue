@@ -1,12 +1,14 @@
 <template>
-	<article class="product-information">
-		<div class="text-xs-left">
-			<h4 class="information-title">
-				<slot name="title"></slot>
-			</h4>
-		</div>
-		<div class="information">
-			<slot name="information"></slot>
+	<article>
+		<div class="product-information">
+			<div class="text-xs-left">
+				<h4 class="information-title">
+					<slot name="title"></slot>
+				</h4>
+			</div>
+			<div class="information">
+				<slot name="information"></slot>
+			</div>
 		</div>
 	</article>
 </template>
@@ -23,7 +25,8 @@
 	.product-information {
 		text-align: left;
 		border: none;
-		padding-right: 8em;
-		padding-top: 2em;
+		padding: 0 0 2em 0;
+		width: 80%;
+		margin-left: 10%;
 	}
 </style>

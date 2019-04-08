@@ -1,18 +1,16 @@
 <template>
-	<div class="container-fluid solution-container">
+	<div class="solution-container">
 		<h2 class="title-solution">Nos solutions RH Apidae</h2>
 		<section id="solutions" class="row">
 			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
-				 class="col-xl-3 col-lg-6 col-md-6 feature_container">
+				 class=" col-xs-12 col-lg-3 col-md-6 feature_container">
 				<span class="title" slot="title">{{feature.title}}</span>
 				<span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
 				<p class="description" slot="description">{{feature.description}}</p>
 				<p class="description" slot="description2">{{feature.description2}}</p>
 				<p class="description" slot="description3">{{feature.description3}}</p>
+				<a class="btn learn-more" slot="button" v-bind:href="feature.reference">{{feature.label}}</a>
 			</feature>
-			<div v-for="learnMore in buttonLearnMore" class="col-xl-3 col-lg-6 col-md-6">
-				<a class="btn learn-more" v-bind:href="learnMore.reference">{{learnMore.label}}</a>
-			</div>
 		</section>
 	</div>
 </template>
@@ -36,7 +34,9 @@
 						description2:
 								"L\'un de vos collaborateurs ne se rappelle plus ce qu\'il a fait le vendredi 12 après-midi ?",
 						description3:
-								"Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes."
+								"Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes.",
+						label: "En savoir plus",
+						reference: "./src/cra.html",
 					},
 					{
 						id: "congés-et-absences",
@@ -48,7 +48,9 @@
 						description2:
 								"Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances.",
 						description3:
-								"Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu."
+								"Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu.",
+						label: "En savoir plus",
+						reference: "./src/absences.html",
 					},
 					{
 						id: "notes-de-frais",
@@ -60,7 +62,9 @@
 						description2:
 								"Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir.",
 						description3:
-								"De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise."
+								"De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise.",
+						label: "En savoir plus",
+						reference: "./src/frais.html",
 					},
 					{
 						id: "time-tracking",
@@ -72,7 +76,9 @@
 						description2:
 								"Idéal pour l\'organisation du travail et pour disposer d'une vue globale de l\'activité de chacun des membres de votre équipe. Le collaborateur, lors d'une nouvelle tâche sur un projet, peut déclencher un chronomètre en début d\'activité, et l'arrêter selon ses besoins ou contraintes, ou bien tout simplement lorsque la tâche est terminée.",
 						description3:
-								""
+								"",
+						label: "En savoir plus",
+						reference: "./src/time.html",
 					}
 				],
 				buttonLearnMore: [
@@ -121,7 +127,8 @@
 	.feature_container{
 		font-weight: bold;
 		font-size: large;
-		padding: 0 3em;
+		padding: 0;
+		padding-bottom: 4em;
 	}
 
 	.color-illustration {
@@ -133,13 +140,15 @@
 
 	#solutions{
 		top: 10vh;
-		margin: 8em 8em  0 8em;
+		margin: 8em 0  0 0;
 	}
 
 	.learn-more {
 		background-color: #fcce21;
 		font-size: large;
 		font-weight: bold;
+		position: relative;
+		left: -50%;
 	}
 
 </style>

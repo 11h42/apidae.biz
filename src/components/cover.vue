@@ -1,29 +1,33 @@
 <template>
-	<section class="cover">
-		<div class="container-fluid">
+	<section class="cover container-fluid">
+		<div>
 			<div class="catchline row">
-				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-					<h1 class="maintitle">
-						<slot name="header"></slot>
-					</h1>
-					<br/>
-					<h4 class="text-muted subtitle">
-						<slot name="header-subtitle"></slot>
-					</h4>
+				<div class="col-lg-6 col-md-12 col-xs-12">
+					<div class="cover-para">
+						<h1 class="maintitle">
+							<slot name="header"></slot>
+						</h1>
+						<br/>
+						<h4 class="text-muted subtitle">
+							<slot name="header-subtitle"></slot>
+						</h4>
 
-					<a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
-						<i class="fa fa-arrow-circle-o-right"></i>
-						&nbspEssayer gratuitement notre solution APIDAE !
-					</a>
+						<a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
+							<i class="fa fa-arrow-circle-o-right"></i>
+							&nbspEssayer gratuitement notre solution APIDAE !
+						</a>
+					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row">
-					<iframe class="center" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="col-lg-6 col-md-12 col-xs-12">
+					<div class="video-container">
+						<iframe class="center video-size" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 			<hr class="catchline"/>
 			<div class="row card-deck catchline">
 				<product-information v-for="productInformation in productInformations"
-						 class="col-xl-4">
+						 class="col-xs-12 col-mg-6 col-lg-4">
 					<span class="title" slot="title">{{productInformation.title}}</span>
 					<p class="information" slot="information">{{productInformation.information}}</p>
 				</product-information>
@@ -88,7 +92,22 @@
 
 	.cover {
 		position: relative;
-		padding: 0 4em;
+		padding: 0;
+	}
+
+	.cover-para {
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	.video-container{
+		width: 80%;
+		margin: auto;
+	}
+
+	.video-size {
+		max-width: 100%;
+		max-height: 100%;
 	}
 
 	@media screen and (max-height: 638px) {
@@ -105,6 +124,8 @@
 
 	#cover-trial-button {
 		display: block;
+		white-space: normal !important;
+    	word-wrap: break-word;
 		width: fit-content;
 		width: -moz-fit-content;
 		color: white;
