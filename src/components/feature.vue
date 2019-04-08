@@ -48,8 +48,7 @@
 		border: none;
 	}
 	.feature .illustration {
-		padding: 25px;
-		padding-top: 40px;
+		padding: 40px 0 25px 0;
 	}
 	.feature .subtitle {
 		/*text-transform: capitalize;*/

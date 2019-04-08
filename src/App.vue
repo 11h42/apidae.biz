@@ -16,15 +16,7 @@
 			</cover>
 
 			<div class="container-fluid">
-				<section id="fonctionnalités" class="row pictos">
-					<div  class="col-xl-12 col-lg-6 col-md-6">
-						<a href="./src/cra.html"><img src="src/assets/suivi-d-activité.png" alt="Apidae Gestion des activités"></a>
-						<a href="./src/absences.html"><img src="src/assets/conges.png" alt="Apidae Gestion des absences"></a>
-						<a href="./src/frais.html"><img src="src/assets/note-de-frais.png" alt="Apidae Notes de frais"></a>
-						<a href="./src/time.html"><img src="src/assets/time-tracking.png" alt="Apidae Time Tracking"></a>
-					</div>
-					<features-list :features="features"></features-list>
-				</section>
+				<solution></solution>
 
 				<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
@@ -42,9 +34,9 @@
 <script type="text/ecmascript-6">
 	import Navbar from "./components/navbar";
 	import Cover from "./components/cover";
-	import FeaturesList from "./components/features-list";
 	import CallToAction from "./components/call-to-action";
 	import MyFooter from "./components/footer";
+	import Solution from "./components/solution"
 	import Continue from "./components/continue.vue";
 	import Pricing from "./Pricing.vue";
 	import Signup from "./Signup.vue";
@@ -53,50 +45,12 @@
 		components: {
 			Navbar,
 			Continue,
-			FeaturesList,
 			CallToAction,
 			MyFooter,
+			Solution,
 			Cover,
 			Pricing,
 			Signup
-		},
-		data() {
-			return {
-				features: [
-					{
-						id: "suivi-d’activité",
-						title: "Suivi d’activité",
-						illustration: "fa fa-3x fa-line-chart",
-						subtitle: "Gain de temps, plus d'oubli",
-						description:
-								"C'est l\'heure du bilan d'activité mensuel.",
-					},
-					{
-						id: "congés-et-absences",
-						title: "Congés et absences",
-						illustration: "fa fa-3x fa-plane",
-						subtitle: "Rapide, simple et efficace",
-						description:
-								"L'heure des vacances approche..."
-					},
-					{
-						id: "notes-de-frais",
-						title: "Notes de frais",
-						illustration: "fa fa-3x fa-credit-card",
-						subtitle: "Fini la paperasse inutile",
-						description:
-								"Un déjeuner avec un client, les frais de déplacements, de téléphone ..."
-					},
-					{
-						id: "time-tracking",
-						title: "Time tracking",
-						illustration: "fa fa-3x fa-clock-o",
-						subtitle: "Traçabilité des tâches à venir ou en cours",
-						description:
-								"Obtenez des synthèses significatives et détaillées des activités de vos équipes."
-					}
-				]
-			};
 		},
 
 		methods: {

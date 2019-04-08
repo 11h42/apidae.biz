@@ -6,10 +6,10 @@
 				&nbsp;Apidae</a>
 			<div class="nav-item navmenu" id="navmenuId">
 				<a href="/">Accueil</a>
-				<a href="#">Suivi d'activité</a>
-				<a href="#">Congés et absences</a>
-				<a href="#">Notes de frais</a>
-				<a href="#">Time tracking</a>
+				<a href="./src/cra.html">Suivi d'activité</a>
+				<a href="./src/absences.html">Congés et absences</a>
+				<a href="./src/frais.html">Notes de frais</a>
+				<a href="./src/time.html">Time tracking</a>
 				<a href="javascript:void(0);" class="icon" @click="transformMenu()">
 					<i class="fa fa-bars"></i>
 				</a>
