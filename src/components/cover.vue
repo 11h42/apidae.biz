@@ -74,7 +74,7 @@
 	}
 
 	.catchline {
-		top: 7vh;
+		margin-top: 7vh;
 		position: relative;
 	}
 
@@ -87,7 +87,6 @@
 	}
 
 	.cover {
-		height: 80vh;
 		position: relative;
 		padding: 0 4em;
 	}

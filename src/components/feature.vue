@@ -1,12 +1,12 @@
 <template>
 	<article :id="id" class="feature">
 		<div class="text-xs-center">
-			<h4 class="card-title">
+			<div class="card-title">
 				<slot name="title"></slot>
-			</h4>
-			<h6 class="card-subtitle text-muted">
+			</div>
+			<div class="card-subtitle text-muted">
 				<slot name="subtitle"></slot>
-			</h6>
+			</div>
 		</div>
 		<div class="m-x-auto text-xs-center illustration">
 			<i :class="illustrationClass"></i>
@@ -49,6 +49,12 @@
 	}
 	.feature .illustration {
 		padding: 40px 0 25px 0;
+	}
+	.feature .card-title {
+		font-size: xx-large;
+	}
+	.feature .card-subtitle {
+		font-size: x-large;
 	}
 	.feature .subtitle {
 		/*text-transform: capitalize;*/

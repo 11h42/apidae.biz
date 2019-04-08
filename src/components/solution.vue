@@ -1,6 +1,6 @@
 <template>
 	<div class="container-fluid solution-container">
-		<h2>Nos Solutions RH Apidae</h2>
+		<h2 class="title-solution">Nos solutions RH Apidae</h2>
 		<section id="solutions" class="row">
 			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
 				 class="col-xl-3 col-lg-6 col-md-6 feature_container">
@@ -10,8 +10,8 @@
 				<p class="description" slot="description2">{{feature.description2}}</p>
 				<p class="description" slot="description3">{{feature.description3}}</p>
 			</feature>
-			<div v-for="learnMore in buttonLearnMore" class="col-xl-3 col-lg-6 col-md-6 feature_container">
-				<a class="btn learn-more">{{learnMore.label}}</a>
+			<div v-for="learnMore in buttonLearnMore" class="col-xl-3 col-lg-6 col-md-6">
+				<a class="btn learn-more" v-bind:href="learnMore.reference">{{learnMore.label}}</a>
 			</div>
 		</section>
 	</div>
@@ -78,15 +78,19 @@
 				buttonLearnMore: [
 					{
 						label: "En savoir plus",
+						reference: "./src/cra.html",
 					},
 					{
 						label: "En savoir plus",
+						reference: "./src/absences.html",
 					},
 					{
 						label: "En savoir plus",
+						reference: "./src/frais.html",
 					},
 					{
 						label: "En savoir plus",
+						reference: "./src/time.html",
 					},
 				]
 			};
@@ -110,7 +114,13 @@
 		text-align: center;
 	}
 
+	.title-solution {
+		font-size: 3.6em;
+	}
+
 	.feature_container{
+		font-weight: bold;
+		font-size: large;
 		padding: 0 3em;
 	}
 
