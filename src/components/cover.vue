@@ -27,9 +27,9 @@
 			<hr class="catchline"/>
 			<div class="row card-deck catchline">
 				<product-information v-for="productInformation in productInformations"
-						 class="col-xs-12 col-mg-6 col-lg-4">
-					<span class="title" slot="title">{{productInformation.title}}</span>
-					<p class="information" slot="information">{{productInformation.information}}</p>
+						 class="col-xs-12 col-md-6 col-lg-4">
+					<span slot="title">{{productInformation.title}}</span>
+					<p class="information-style" slot="information">{{productInformation.information}}</p>
 				</product-information>
 			</div>
 		</div>
@@ -87,6 +87,7 @@
 	}
 
 	.subtitle {
+		text-align: justify;
 		font-weight: lighter;
 	}
 
@@ -108,6 +109,10 @@
 	.video-size {
 		max-width: 100%;
 		max-height: 100%;
+	}
+
+	.information-style{
+		text-align: justify;
 	}
 
 	@media screen and (max-height: 638px) {

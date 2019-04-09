@@ -1,13 +1,16 @@
 <template>
 	<article>
-		<div class="product-information">
+		<div class="product-advantage">
 			<div class="text-xs-left">
-				<h4>
+				<h4 >
 					<slot name="title"></slot>
 				</h4>
 			</div>
 			<div>
-				<slot name="information"></slot>
+				<slot name="advantage"></slot>
+			</div>
+			<div>
+				<slot name="advantage2"></slot>
 			</div>
 		</div>
 	</article>
@@ -15,17 +18,14 @@
 
 <script>
     export default {
-    	props: {
-			productInformations: {type: Array, required: true}
-		},
     }
 </script>
 
 <style scoped>
-	.product-information {
-		text-align: left;
+	.product-advantage {
+		text-align: justify;
 		border: none;
-		padding: 0 0 2em 0;
+		padding: 2em 0 2em 0;
 		width: 80%;
 		margin-left: 10%;
 	}
