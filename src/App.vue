@@ -18,6 +18,8 @@
 			<div class="container-fluid">
 				<solution></solution>
 
+				<advantage :showbtntry="true" :scroll_to_signup="scroll_to_signup"></advantage>
+
 				<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
 				<signup></signup>
@@ -37,6 +39,7 @@
 	import CallToAction from "./components/call-to-action";
 	import MyFooter from "./components/footer";
 	import Solution from "./components/solution"
+	import Advantage from "./components/advantage"
 	import Continue from "./components/continue.vue";
 	import Pricing from "./Pricing.vue";
 	import Signup from "./Signup.vue";
@@ -48,6 +51,7 @@
 			CallToAction,
 			MyFooter,
 			Solution,
+			Advantage,
 			Cover,
 			Pricing,
 			Signup
