@@ -18,7 +18,7 @@
 							<i>Période d'essai d'une durée de 2 mois sans engagement</i>
 							<br>
 							<br>
-							<a @click="scroll_to_signup" class="btn">Essai gratuit</a>
+							<a @click="scroll_to_signup" class="btn btn-gratuit">Essai gratuit</a>
 						</div>
 						<div class="pricing-body">
 							<ul>
@@ -156,112 +156,124 @@ export default {
 </script>
 
 <style>
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../node_modules/font-awesome/css/font-awesome.min.css";
-@import "../node_modules/hint.css/hint.min.css";
+	@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+	@import "../node_modules/font-awesome/css/font-awesome.min.css";
+	@import "../node_modules/hint.css/hint.min.css";
 
-#pricing-container {
+	#pricing-container {
 
-  text-align: center;
-  padding: 8em 0 0 0;
-}
+	  text-align: center;
+	  padding: 8em 0 0 0;
+	}
 
-#pricings {
-  padding: 25px 0;
-}
+	#pricings {
+	  padding: 25px 0;
+	}
 
-#pricings .btn {
-  background-color: #222f39;
-  color: white;
-}
+	#pricings .btn {
+	  background-color: #222f39;
+	  color: white;
+	}
 
-.pricing {
-  padding: 20px;
-  color: white !important;
-}
+	.pricing {
+	  padding: 20px;
+	  color: white !important;
+	}
 
-@media screen and (max-width: 991px) {
-}
+	@media screen and (max-width: 991px) {
+	}
 
-.inner-pricing {
-  border: 1px solid rgb(230, 230, 230);
-  border-radius: 15px;
-}
+	.inner-pricing {
+	  border: 1px solid rgb(230, 230, 230);
+	  border-radius: 15px;
+	}
 
-.inner-pricing.box-shadow {
-  border: none;
-  box-shadow: -10px 10px 40px #3c3c3c;
-}
+	.inner-pricing.box-shadow {
+	  border: none;
+	  box-shadow: -10px 10px 40px #3c3c3c;
+	}
 
-.pricing-shifted {
-  margin-top: 35px;
-}
+	.pricing-shifted {
+	  margin-top: 35px;
+	}
 
-.pricing-header {
-  border-radius: 15px 15px 0 0;
-  padding: 25px 35px;
-}
+	.pricing-header {
+	  border-radius: 15px 15px 0 0;
+	  padding: 25px 35px;
+	}
 
-.pricing-body {
-  padding: 0 35px 20px 35px;
-  color: #3c3c3c !important;
-  text-align: left;
-}
+	.pricing-body {
+	  padding: 0 35px 20px 35px;
+	  color: #3c3c3c !important;
+	  text-align: left;
+	}
 
-.pricing-body * {
-  color: #3c3c3c !important;
-}
+	.pricing-body * {
+	  color: #3c3c3c !important;
+	}
 
-.pricing-body .fa {
-  color: #fcce21 !important;
-}
+	.pricing-body .fa {
+	  color: #fcce21 !important;
+	}
 
-.pricing-body i .icon-plus {
-	color: black !important;
-}
+	.pricing-body i .icon-plus {
+		color: black !important;
+	}
 
-.pricing-body .quote {
-  margin-top: 15px;
-  margin-left: -35px;
-  padding: 15px 25px 15px 10%;
-  font-weight: bold;
-  background-color: #fcce21;
-  border-radius: 0 5px 5px 0;
-  position: relative;
-}
+	.pricing-body .quote {
+	  margin-top: 15px;
+	  margin-left: -35px;
+	  padding: 15px 25px 15px 10%;
+	  font-weight: bold;
+	  background-color: #fcce21;
+	  border-radius: 0 5px 5px 0;
+	  position: relative;
+	}
 
-.pricing-body .quote .fa {
-  position: absolute;
-  right: 0px;
-  bottom: 15px;
-  padding: 5px 25px 5px 15px;
-  color: firebrick;
-}
+	.pricing-body .quote .fa {
+	  position: absolute;
+	  right: 0px;
+	  bottom: 15px;
+	  padding: 5px 25px 5px 15px;
+	  color: firebrick;
+	}
 
-.pricing-body ul {
-  padding-left: 0;
-}
+	.pricing-body ul {
+	  padding-left: 0;
+	}
 
-.pricing-body li {
-  list-style-type: none;
-  margin: 25px 0;
-}
+	.pricing-body li {
+	  list-style-type: none;
+	  margin: 25px 0;
+	}
 
-#decouverte .pricing-header {
-  background-color: #ababab;
-}
+	#decouverte .pricing-header {
+	  background-color: #ababab;
+	}
 
-#starter .pricing-header {
-  background-color: #1c2b36;
-}
+	#starter .pricing-header {
+	  background-color: #1c2b36;
+	}
 
-#entreprise .pricing-header {
-  background-color: #fcce21;
-}
+	#entreprise .pricing-header {
+	  background-color: #fcce21;
+	}
 
-.center {
-	text-align : center;
-	margin : 0 auto;
-}
+	.center {
+		text-align : center;
+		margin : 0 auto;
+	}
+
+	.btn-gratuit {
+		border: 3px solid white;
+	}
+
+	.starter-btn {
+		border: 3px solid white;
+	}
+
+	.entreprise-btn {
+		border: 3px solid white !important;
+	}
 
 </style>
