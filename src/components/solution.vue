@@ -1,6 +1,7 @@
 <template>
 	<div class="solution-container">
 		<h2 class="title-solution">Nos solutions RH Apidae</h2>
+		<hr class="split-line"/>
 		<section id="solutions" class="row">
 			<feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
 				 class=" col-xs-12 col-lg-3 col-md-6 feature_container">
@@ -117,11 +118,17 @@
 
 <style>
 	.solution-container{
+		padding-top: 8em;
 		text-align: center;
 	}
 
 	.title-solution {
 		font-size: 3.6em;
+	}
+
+	.split-line {
+		margin-left: 10%;
+		width: 80%;
 	}
 
 	.feature_container{
@@ -140,7 +147,7 @@
 
 	#solutions{
 		top: 10vh;
-		margin: 8em 0  0 0;
+		margin: 3em 0  0 0;
 	}
 
 	.learn-more {

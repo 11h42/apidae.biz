@@ -1,14 +1,10 @@
 <template>
 	<article id="call-to-action" class="mx-auto text-xs-center">
 
-		<div class="row">
-			<div class="col-xs-12">
-				<h3>
-					Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-primary">question</span>
-					?
-				</h3>
-			</div>
-		</div>
+		<h3>
+			Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-primary">question</span>
+			?
+		</h3>
 
 		<hr>
 

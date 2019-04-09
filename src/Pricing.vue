@@ -161,8 +161,9 @@ export default {
 @import "../node_modules/hint.css/hint.min.css";
 
 #pricing-container {
+
   text-align: center;
-  padding: 40px 0;
+  padding: 8em 0 0 0;
 }
 
 #pricings {

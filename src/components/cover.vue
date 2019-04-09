@@ -24,7 +24,6 @@
 					</div>
 				</div>
 			</div>
-			<hr class="catchline"/>
 			<div class="row card-deck catchline">
 				<product-information v-for="productInformation in productInformations"
 						 class="col-xs-12 col-md-6 col-lg-4">

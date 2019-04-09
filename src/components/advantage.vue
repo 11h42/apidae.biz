@@ -80,7 +80,7 @@
 
 <style scoped>
 	.advantage-container {
-		padding-top: 2em;
+		padding-top: 8em;
 	}
 
 	.main-advantage {

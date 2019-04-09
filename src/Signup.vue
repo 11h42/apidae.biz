@@ -136,7 +136,7 @@
 	@import "../node_modules/hint.css/hint.min.css";
 
 	#signup-form {
-		padding: 35px 15px;
+		padding: 8em 15px 0 15px;
 		text-align: center;
 	}
 
