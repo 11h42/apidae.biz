@@ -105,7 +105,7 @@
 						<div class="pricing-body">
 							<div class="quote">
 								<i>Tous les avantages 'Starter'
-									<i class="fa fa-plus"></i>
+									<i class="fa fa-plus icon-plus"></i>
 								</i>
 							</div>
 							<ul>
@@ -202,7 +202,7 @@ export default {
 }
 
 .pricing-body {
-  padding: 0px 35px 20px 35px;
+  padding: 0 35px 20px 35px;
   color: #3c3c3c !important;
   text-align: left;
 }
@@ -212,7 +212,11 @@ export default {
 }
 
 .pricing-body .fa {
-  color: #f25224 !important;
+  color: #fcce21 !important;
+}
+
+.pricing-body i .icon-plus {
+	color: black !important;
 }
 
 .pricing-body .quote {
@@ -220,9 +224,8 @@ export default {
   margin-left: -35px;
   padding: 15px 25px 15px 10%;
   font-weight: bold;
-  background-color: #f2512448;
+  background-color: #fcce21;
   border-radius: 0 5px 5px 0;
-  border-left: 5px solid firebrick;
   position: relative;
 }
 
@@ -244,15 +247,15 @@ export default {
 }
 
 #decouverte .pricing-header {
-  background-color: rgba(32, 109, 141, 0.54);
+  background-color: #ababab;
 }
 
 #starter .pricing-header {
-  background-color: #246d84;
+  background-color: #1c2b36;
 }
 
 #entreprise .pricing-header {
-  background-color: #f25224;
+  background-color: #fcce21;
 }
 
 .center {

@@ -182,7 +182,7 @@
 	}
 
 	#signup-form form .btn {
-		background-color: #f4511e;
+		background-color: #fcce21;
 		color: white;
 		width: fit-content;
 		width: -moz-fit-content;
@@ -204,7 +204,7 @@
 	}
 
 	#access-pricing-div .btn {
-		background-color: #1b6d85;
+		background-color: #fcce21;
 		padding-left: 20px;
 		padding-right: 20px;
 	}

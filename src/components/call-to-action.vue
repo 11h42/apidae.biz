@@ -39,11 +39,11 @@
 	}
 
 	#call-to-action .btn {
-		background-color: #1b6d85;
+		background-color: #fcce21;
 	}
 
 	.text-warning {
-		color: #f25224 !important;
+		color: #fcce21;
 	}
 
 	.text-primary {
