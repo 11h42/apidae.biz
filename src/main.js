@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Signup from './Signup.vue'
+import Cra from './pages/cra'
 
 const routes = {
 	'/': App ,
 	'/signup': Signup,
+	'/cra': Cra,
 };
 
 new Vue({
