@@ -13,18 +13,20 @@
 						</h4>
 
 						<a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
-							<i class="fa fa-arrow-circle-o-right"></i>
-							&nbspEssayer gratuitement notre solution APIDAE !
+							<slot name="text_button_free" class="free-size"></slot>
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 col-xs-12">
+				<div class="col-lg-6 col-md-12 col-xs-12" v-if="is_main_page">
 					<div class="video-container">
 						<iframe class="center video-size" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
+				<div class="col-lg-6 col-md-12 col-xs-12" v-if="!is_main_page">
+					<img src="../assets/suivi-d-activité.jpg" class="size-image">
+				</div>
 			</div>
-			<div class="row card-deck catchline">
+			<div class="row card-deck catchline" v-if="is_main_page">
 				<product-information v-for="productInformation in productInformations"
 						 class="col-xs-12 col-md-6 col-lg-4">
 					<span slot="title">{{productInformation.title}}</span>
@@ -43,7 +45,8 @@
 			ProductInformation,
 		},
 		props: {
-			scroll_to_signup: {type: Function, required: true}
+			scroll_to_signup: {type: Function, required: true},
+			is_main_page: {type: Boolean, required: true}
 		},
 		data() {
 			return {
@@ -98,6 +101,10 @@
 	.cover-para {
 		margin-left: 10%;
 		width: 80%;
+	}
+
+	.size-image {
+		width: 100%;
 	}
 
 	.video-container{

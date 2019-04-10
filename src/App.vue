@@ -3,7 +3,7 @@
 		<div id="app">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
-			<cover class="masthead" :scroll_to_signup="scroll_to_signup">
+			<cover class="masthead" :scroll_to_signup="scroll_to_signup" :is_main_page="true">
 				<span slot="header" class="m-x-auto">
 					Apidae : Solution de management des ressources
 				</span>
@@ -12,6 +12,9 @@
 					<b>gestion des notes de frais</b>, <b>la gestion des congés et des absneces</b> des salariés ainsi
 					que la <b>gestion du suivi d'activité</b> au sein de l'entreprise. Des solutions RH dans une seule
 					application, c'est ce que Apidae vous propose &nbsp!
+				</small>
+				<small slot="text_button_free" class="size-btn-cover">
+					<i class='fa fa-arrow-circle-o-right'/>&nbspEssayer gratuitement notre solution APIDAE !
 				</small>
 			</cover>
 
@@ -109,6 +112,10 @@
 
 	.core-app {
 		width: 100%;
+	}
+
+	.size-btn-cover {
+		font-size: 1em;
 	}
 
 </style>
