@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="pricing-form" class="container">
 		<navbar :features="[]" :showbtntry="true" v-if="!ascomponent"></navbar>
 
 		<div id="pricing-container" class="container">

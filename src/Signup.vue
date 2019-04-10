@@ -66,7 +66,7 @@
 				<h3>Votre version d'évaluation est expirée ?</h3>
 				<br/>
 				<br/>
-				<a href="/#pricing-container" class="btn">Voir les tarifs</a>
+				<a @click="scroll_to_price" class="btn">Voir les tarifs</a>
 			</div>
 
 			<div class="col-lg-12" v-if="submit_success" id="submit-success-div"
@@ -88,6 +88,10 @@
 	import MyFooter from "./components/footer";
 
 	export default {
+		props: {
+			scroll_to_price: {type: Function, required: true}
+		},
+
 		components: {
 			Navbar,
 			MyFooter
@@ -127,7 +131,7 @@
 						});
 			}
 		}
-	};
+	}
 </script>
 
 <style>

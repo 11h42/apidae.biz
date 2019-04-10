@@ -22,7 +22,7 @@
 
 				<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
-				<signup></signup>
+				<signup :scroll_to_price="scroll_to_price"></signup>
 
 				<section id="nous-contacter" class="row">
 					<call-to-action class="col-xs-12"></call-to-action>
@@ -60,10 +60,18 @@
 		methods: {
 			scroll_to_signup: function () {
 				$("html, body").animate(
-						{
-							scrollTop: $("#signup-form").offset().top
-						},
-						1000
+					{
+						scrollTop: $("#signup-form").offset().top
+					},
+					1000
+				);
+			},
+			scroll_to_price: function () {
+				$("html, body").animate(
+					{
+						scrollTop: $("#pricing-form").offset().top
+					},
+					1000
 				);
 			}
 		}
