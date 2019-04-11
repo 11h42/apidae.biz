@@ -3,7 +3,7 @@
 		<div id="app">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
-			<cover class="masthead" :scroll_to_signup="scroll_to_signup">
+			<cover class="masthead" :scroll_to_signup="scroll_to_signup" :is_main_page="false">
 				<span slot="header" class="m-x-auto">
 					Apidae : Logiciel de suivi d'activité pour TPE et PME
 				</span>
@@ -19,6 +19,17 @@
 					<i class='fa fa-arrow-circle-o-right'/>&nbspEssayer gratuitement
 				</small>
 			</cover>
+
+			<argument>
+				<span slot="title">
+					Nos solutions RH Apidae
+				</span>
+				<small slot="header-subtitle"> Apidae est la solution idéale pour favoriser le suivi d'activité de
+					votre entreprise. Notre Logiciel de suivi d'activité vous permet d'avoir une vision à 360° sur
+					l'activité de votre entreprise. Apidae, vous permet de connaître les temps d'activité de vos
+					équipes par projet, et ainsi de faciliter la gestion de la facturation client.
+				</small>
+			</argument>
 
 			<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
@@ -36,6 +47,7 @@
 <script type="text/ecmascript-6">
 	import Navbar from "./../components/navbar";
 	import Cover from "./../components/cover";
+	import Argument from "./../components/argument"
 	import CallToAction from "./../components/call-to-action";
 	import Pricing from "./../Pricing.vue";
 	import Signup from "./../Signup.vue";
@@ -45,6 +57,7 @@
         components: {
 			Navbar,
 			Cover,
+			Argument,
 			CallToAction,
 			Pricing,
 			Signup,

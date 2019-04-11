@@ -31,10 +31,6 @@
 		margin-left: 10%;
 	}
 
-	.build-icon {
-		width: 1em;
-	}
-
 	.sub-tittle {
 		width: calc(100% - 2em);
 		float: right;
