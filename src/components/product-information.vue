@@ -15,9 +15,6 @@
 
 <script>
     export default {
-    	props: {
-			productInformations: {type: Array, required: true}
-		},
     }
 </script>
 
