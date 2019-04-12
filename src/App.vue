@@ -1,5 +1,5 @@
 <template>
-	<div class="core-app">
+	<div class="core-app" onresize="resizeEvent()" onload="loadEvent()" >
 		<div id="app">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
@@ -79,6 +79,63 @@
 			}
 		}
 	};
+
+	function resizeEvent(){
+		changeSizeSubTitle();
+		changeSizeTitleInformation();
+	}
+
+	function loadEvent(){
+		changeSizeSubTitle();
+		changeSizeTitleInformation();
+	}
+
+    function  changeSizeTitleInformation() {
+		console.log("eeeeeeeeeeeeeee");
+    	if (window.innerWidth > 768) {
+			var baseHeight = 0;
+			for (var id in window.heightTitleInformation) {
+				var subTitle = window.heightTitleInformation[id];
+				if (subTitle.offsetHeight > baseHeight) {
+					baseHeight = subTitle.offsetHeight
+				}
+			}
+			for (var id in window.heightTitleInformation) {
+				var subTitle = window.heightTitleInformation[id];
+				if(subTitle.style)
+				{
+					subTitle.style.height = baseHeight + 'px';
+					console.dir(baseHeight);
+					console.dir(subTitle.style.height);
+				}
+			}
+		}
+	}
+
+	function  changeSizeSubTitle() {
+    	if (window.innerWidth > 768) {
+			var baseHeight = 0;
+			console.log("ffffffffffffff");
+			console.dir(this);
+			console.dir(window);
+			console.dir(window.heightTitleInformation);
+			console.dir(window.heightSubTitle);
+			for (var id in window.heightSubTitle) {
+				var subTitle = window.heightSubTitle[id];
+				if (subTitle.clientHeight > baseHeight) {
+					baseHeight = subTitle.clientHeight
+				}
+			}
+			for (var id in window.heightSubTitle) {
+				var subTitle = window.heightSubTitle[id];
+				if(subTitle.style)
+					subTitle.style.height = baseHeight + 'px';
+			}
+		}
+	}
+
+	window.onresize = resizeEvent;
+	window.onload = loadEvent;
 </script>
 
 <style>

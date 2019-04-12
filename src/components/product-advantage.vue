@@ -1,7 +1,7 @@
 <template>
 	<article>
 		<div class="product-advantage">
-			<table class="text-xs-left" onresize="changeSizeSubTitle()" onload="changeSizeSubTitle()" id="heightSubTitle">
+			<table class="text-xs-left" id="heightSubTitle">
 				<i class="fa fa-circle-thin fa-3x icon-yellow build-icon"><span class="build-check">&#10003;</span></i>
 				<h4 class="sub-tittle">
 					<slot name="title"></slot>
@@ -23,25 +23,6 @@
     	methods: {
 		}
     }
-    function  changeSizeSubTitle() {
-    	if (window.innerWidth > 768) {
-			var baseHeight = 0;
-			for (var id in this.heightSubTitle) {
-				var subTitle = this.heightSubTitle[id];
-				if (subTitle.clientHeight > baseHeight) {
-					baseHeight = subTitle.clientHeight
-				}
-			}
-			for (var id in this.heightSubTitle) {
-				var subTitle = this.heightSubTitle[id];
-				subTitle.style.height = baseHeight + 'px';
-				console.dir(subTitle.style.height)
-			}
-		}
-	}
-
-	window.onresize = changeSizeSubTitle;
-	window.onload = changeSizeSubTitle;
 
 </script>
 
