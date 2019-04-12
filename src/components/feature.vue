@@ -40,6 +40,7 @@
 	export default {
 		props: {
 			illustration: {type: String, required: true},
+			link: {type: String, required: true},
 			id: {type: String, required: true}
 		},
 		computed: {

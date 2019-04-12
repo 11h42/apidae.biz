@@ -79,7 +79,6 @@
 </script>
 
 <style scoped>
-
 	.advantage-container {
 		padding-top: 8em;
 	}

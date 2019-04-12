@@ -1,12 +1,12 @@
 <template>
 	<article>
 		<div class="product-advantage">
-			<table class="text-xs-left" id="heightSubTitle">
+			<div class="text-xs-left" id="heightSubTitle">
 				<i class="fa fa-circle-thin fa-3x icon-yellow build-icon"><span class="build-check">&#10003;</span></i>
 				<h4 class="sub-tittle">
 					<slot name="title"></slot>
 				</h4>
-			</table>
+			</div>
 			<div>
 				<slot name="advantage"></slot>
 			</div>
@@ -21,10 +21,6 @@
 </script>
 
 <style scoped>
-	table {
-	  	display: table;
-	}
-
 	.product-advantage {
 		text-align: justify;
 		display: grid;
