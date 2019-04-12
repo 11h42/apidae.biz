@@ -22,7 +22,7 @@
 
 			<argument>
 				<span slot="title">
-					Nos solutions RH Apidae
+					Suivi d'activité de vos équipes
 				</span>
 				<small slot="header-subtitle"> Apidae est la solution idéale pour favoriser le suivi d'activité de
 					votre entreprise. Notre Logiciel de suivi d'activité vous permet d'avoir une vision à 360° sur
@@ -30,6 +30,15 @@
 					équipes par projet, et ainsi de faciliter la gestion de la facturation client.
 				</small>
 			</argument>
+
+			<advantage-users>
+				<span slot="title">
+					Les avantages utilisateurs
+				</span>
+				<small slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilan d'activité. Avec Apidae
+					vous remplissez chaque jour vos activités professionnnel sur la plateforme.
+				</small>
+			</advantage-users>
 
 			<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
@@ -48,6 +57,7 @@
 	import Navbar from "./../components/navbar";
 	import Cover from "./../components/cover";
 	import Argument from "./../components/argument"
+	import AdvantageUsers from "./../components/advantage-users"
 	import CallToAction from "./../components/call-to-action";
 	import Pricing from "./../Pricing.vue";
 	import Signup from "./../Signup.vue";
@@ -58,6 +68,7 @@
 			Navbar,
 			Cover,
 			Argument,
+			AdvantageUsers,
 			CallToAction,
 			Pricing,
 			Signup,
