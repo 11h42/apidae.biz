@@ -1,5 +1,6 @@
 <template>
-	<div class="core-app" onresize="resizeEvent()" onload="loadEvent()" >
+	<div class="core-app" >
+		 <!--onresize="resizeEvent()" onload="loadEvent()"-->
 		<div id="app">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
@@ -81,54 +82,54 @@
 		}
 	};
 
-	function resizeEvent(){
-		changeSizeSubTitle();
-		changeSizeTitleInformation();
-	}
-
-	function loadEvent(){
-		changeSizeSubTitle();
-		changeSizeTitleInformation();
-	}
-
-    function  changeSizeTitleInformation() {
-    	if (window.innerWidth > 768) {
-			var baseHeight = 0;
-			for (var id in window.heightTitleInformation) {
-				var subTitle = window.heightTitleInformation[id];
-				if (subTitle.offsetHeight > baseHeight) {
-					baseHeight = subTitle.offsetHeight
-				}
-			}
-			for (var id in window.heightTitleInformation) {
-				var subTitle = window.heightTitleInformation[id];
-				if(subTitle.style)
-				{
-					subTitle.style.height = baseHeight + 'px';
-				}
-			}
-		}
-	}
-
-	function  changeSizeSubTitle() {
-    	if (window.innerWidth > 768) {
-			var baseHeight = 0;
-			for (var id in window.heightSubTitle) {
-				var subTitle = window.heightSubTitle[id];
-				if (subTitle.clientHeight > baseHeight) {
-					baseHeight = subTitle.clientHeight
-				}
-			}
-			for (var id in window.heightSubTitle) {
-				var subTitle = window.heightSubTitle[id];
-				if(subTitle.style)
-					subTitle.style.height = baseHeight + 'px';
-			}
-		}
-	}
-
-	window.onresize = resizeEvent;
-	window.onload = loadEvent;
+	// function resizeEvent(){
+	// 	changeSizeSubTitle();
+	// 	changeSizeTitleInformation();
+	// }
+    //
+	// function loadEvent(){
+	// 	changeSizeSubTitle();
+	// 	changeSizeTitleInformation();
+	// }
+    //
+    // function  changeSizeTitleInformation() {
+    	// if (window.innerWidth > 768) {
+	// 		var baseHeight = 0;
+	// 		for (var id in window.heightTitleInformation) {
+	// 			var subTitle = window.heightTitleInformation[id];
+	// 			if (subTitle.offsetHeight > baseHeight) {
+	// 				baseHeight = subTitle.offsetHeight
+	// 			}
+	// 		}
+	// 		for (var id in window.heightTitleInformation) {
+	// 			var subTitle = window.heightTitleInformation[id];
+	// 			if(subTitle.style)
+	// 			{
+	// 				subTitle.style.height = baseHeight + 'px';
+	// 			}
+	// 		}
+	// 	}
+	// }
+    //
+	// function  changeSizeSubTitle() {
+    	// if (window.innerWidth > 768) {
+	// 		var baseHeight = 0;
+	// 		for (var id in window.heightSubTitle) {
+	// 			var subTitle = window.heightSubTitle[id];
+	// 			if (subTitle.clientHeight > baseHeight) {
+	// 				baseHeight = subTitle.clientHeight
+	// 			}
+	// 		}
+	// 		for (var id in window.heightSubTitle) {
+	// 			var subTitle = window.heightSubTitle[id];
+	// 			if(subTitle.style)
+	// 				subTitle.style.height = baseHeight + 'px';
+	// 		}
+	// 	}
+	// }
+    //
+	// window.onresize = resizeEvent;
+	// window.onload = loadEvent;
 </script>
 
 <style>
