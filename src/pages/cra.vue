@@ -3,7 +3,8 @@
 		<div id="app">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
-			<cover class="masthead" :scroll_to_signup="scroll_to_signup" :is_main_page="false">
+			<cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
+				   :is_with_information="false" :is_main_title="true">
 				<span slot="header" class="m-x-auto">
 					Apidae : Logiciel de suivi d'activité pour TPE et PME
 				</span>
@@ -39,6 +40,21 @@
 					vous remplissez chaque jour vos activités professionnnel sur la plateforme.
 				</small>
 			</advantage-users>
+
+			<cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"
+				   :is_with_information="false" :is_main_title="false">
+				<span slot="header" class="m-x-auto">
+					Découvrez toutes les fonctionnalités de logiciel RH APIDAE
+				</span>
+				<small slot="header-subtitle">Apidae, c'est notre solution SIRH : Un logiciel tout-en-un. <br/>
+					Retrouver toutes les fonctionnalités de Apidae : <br/> <br/>
+					-Gestion des congés et des absences <br/> -Suivi d'activité <br/> -Time tracking <br/>
+					-Gestion des notes de frais
+				</small>
+				<small slot="text_button_free" class="size-btn-cover">
+					DÉCOUVREZ APIDAE
+				</small>
+			</cover>
 
 			<pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
 
@@ -110,6 +126,12 @@
 
 	.size-btn-cover {
 		font-size: 1em;
+	}
+
+	.place-cover {
+		margin-top: 8em;
+		width: 80%;
+		margin-left: 10%;
 	}
 
 </style>

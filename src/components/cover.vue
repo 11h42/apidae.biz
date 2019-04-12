@@ -4,9 +4,12 @@
 			<div class="catchline row">
 				<div class="col-lg-6 col-md-12 col-xs-12">
 					<div class="cover-para">
-						<h1 class="maintitle">
+						<h1 class="maintitle" v-if="is_main_title">
 							<slot name="header"></slot>
 						</h1>
+						<h2 class="maintitle" v-if="!is_main_title">
+							<slot name="header"></slot>
+						</h2>
 						<br/>
 						<h4 class="text-muted subtitle">
 							<slot name="header-subtitle"></slot>
@@ -17,16 +20,16 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 col-xs-12" v-if="is_main_page">
+				<div class="col-lg-6 col-md-12 col-xs-12" v-if="is_with_video">
 					<div class="video-container">
 						<iframe class="center video-size" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-12 col-xs-12" v-if="!is_main_page">
+				<div class="col-lg-6 col-md-12 col-xs-12" v-if="!is_with_video">
 					<img src="../assets/suivi-d-activité.jpg" class="size-image">
 				</div>
 			</div>
-			<div class="row card-deck catchline" v-if="is_main_page">
+			<div class="row card-deck catchline" v-if="is_with_information">
 				<product-information v-for="productInformation in productInformations"
 						 class="col-xs-12 col-md-6 col-lg-4">
 					<span slot="title">{{productInformation.title}}</span>
@@ -46,7 +49,9 @@
 		},
 		props: {
 			scroll_to_signup: {type: Function, required: true},
-			is_main_page: {type: Boolean, required: true}
+			is_with_video: {type: Boolean, required: true},
+			is_with_information: {type: Boolean, required: true},
+			is_main_title: {type: Boolean, required: true}
 		},
 		data() {
 			return {
