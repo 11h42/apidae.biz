@@ -49,13 +49,6 @@
 								"pourront prendre en main l'outil rapidement.",
 					},
 					{
-						title: "GAGNER EN PRODUCTIVITÉ ET EFFICACITÉ :",
-						advantage:
-								"Gagner en productivité en intégrant notre SIRH dans votre entreprise. Faites gagner " +
-								"du temps à chaque menbre de votre équipe, en centratisant les tâches administratives " +
-								"sur une seule application RH."
-					},
-					{
 						title: "NOTRE ACCOMPAGNEMENT",
 						advantage:
 								"Un logiciel adaptable à vos besoins : Une équipe travaille constamment sur le " +
@@ -64,6 +57,13 @@
 						advantage2:
 								"Vous pouvez contacter le support technique rapidement par mail ou " +
 								"par téléphone. Une équipe vous répond le plus rapidement possible."
+					},
+					{
+						title: "GAGNER EN PRODUCTIVITÉ ET EFFICACITÉ :",
+						advantage:
+								"Gagner en productivité en intégrant notre SIRH dans votre entreprise. Faites gagner " +
+								"du temps à chaque menbre de votre équipe, en centratisant les tâches administratives " +
+								"sur une seule application RH."
 					},
 					{
 						title: "100% COMPATIBLE (ORDINATEUR, TABLETTE, SMARTPHONE) :",
@@ -79,6 +79,7 @@
 </script>
 
 <style scoped>
+
 	.advantage-container {
 		padding-top: 8em;
 	}

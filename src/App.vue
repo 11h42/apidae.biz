@@ -1,9 +1,10 @@
 <template>
-	<div class="core-app">
+	<div class="core-app" onresize="resizeEvent()" onload="loadEvent()" >
 		<div id="app">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
-			<cover class="masthead" :scroll_to_signup="scroll_to_signup" :is_main_page="true">
+			<cover :scroll_to_signup="scroll_to_signup" :is_with_video="true"
+				   :is_with_information="true" :is_main_title="true">
 				<span slot="header" class="m-x-auto">
 					Apidae : Solution de management des ressources
 				</span>
@@ -79,6 +80,55 @@
 			}
 		}
 	};
+
+	function resizeEvent(){
+		changeSizeSubTitle();
+		changeSizeTitleInformation();
+	}
+
+	function loadEvent(){
+		changeSizeSubTitle();
+		changeSizeTitleInformation();
+	}
+
+    function  changeSizeTitleInformation() {
+    	if (window.innerWidth > 768) {
+			var baseHeight = 0;
+			for (var id in window.heightTitleInformation) {
+				var subTitle = window.heightTitleInformation[id];
+				if (subTitle.offsetHeight > baseHeight) {
+					baseHeight = subTitle.offsetHeight
+				}
+			}
+			for (var id in window.heightTitleInformation) {
+				var subTitle = window.heightTitleInformation[id];
+				if(subTitle.style)
+				{
+					subTitle.style.height = baseHeight + 'px';
+				}
+			}
+		}
+	}
+
+	function  changeSizeSubTitle() {
+    	if (window.innerWidth > 768) {
+			var baseHeight = 0;
+			for (var id in window.heightSubTitle) {
+				var subTitle = window.heightSubTitle[id];
+				if (subTitle.clientHeight > baseHeight) {
+					baseHeight = subTitle.clientHeight
+				}
+			}
+			for (var id in window.heightSubTitle) {
+				var subTitle = window.heightSubTitle[id];
+				if(subTitle.style)
+					subTitle.style.height = baseHeight + 'px';
+			}
+		}
+	}
+
+	window.onresize = resizeEvent;
+	window.onload = loadEvent;
 </script>
 
 <style>

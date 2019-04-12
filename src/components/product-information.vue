@@ -2,7 +2,7 @@
 	<article>
 		<div class="product-information">
 			<div class="text-xs-left">
-				<h4>
+				<h4 id="heightTitleInformation">
 					<slot name="title"></slot>
 				</h4>
 			</div>
@@ -15,9 +15,6 @@
 
 <script>
     export default {
-    	props: {
-			productInformations: {type: Array, required: true}
-		},
     }
 </script>
 
