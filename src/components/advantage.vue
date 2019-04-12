@@ -26,7 +26,7 @@
 	</div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 	import ProductAdvantage from "./product-advantage";
 
 	export default {
