@@ -38,14 +38,14 @@
     "webpack": "^2.1.0-beta.20",
     "webpack-dev-server": "^2.1.0-beta.0"
   },
-  "babel": {
-    "presets": [
-      [
-        "es2015",
-        {
-          "modules": false
-        }
-      ]
-    ]
-  }
+//  "babel": {
+//    "presets": [
+//      [
+//        "es2015",
+//        {
+//          "modules": false
+//        }
+//      ]
+//    ]
+//  }
 }
