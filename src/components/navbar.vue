@@ -6,7 +6,7 @@
 				&nbsp;Apidae</a>
 			<div class="nav-item navmenu" id="navmenuId">
 				<a href="/">Accueil</a>
-				<a href="./cra">Suivi d'activité</a>
+				<a href="cra">Suivi d'activité</a>
 				<a href="./src/absences.html">Congés et absences</a>
 				<a href="./src/frais.html">Notes de frais</a>
 				<a href="./src/time.html">Time tracking</a>

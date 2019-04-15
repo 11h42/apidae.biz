@@ -37,7 +37,7 @@
 						description3:
 								"Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l\'organisation de vos équipes.",
 						label: "En savoir plus",
-						reference: "./cra",
+						reference: "cra",
 					},
 					{
 						id: "congés-et-absences",

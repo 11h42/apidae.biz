@@ -1,6 +1,6 @@
 <template>
-    <div class="core-cra">
-		<div id="app">
+    <div id="app">
+		<div class="core-cra">
 			<navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
 
 			<cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
@@ -117,7 +117,7 @@
 		width: 100%;
 	}
 
-	app {
+	#app {
 		position: relative;
 		overflow: auto;
 		width: 100%;
