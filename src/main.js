@@ -9,7 +9,7 @@ const routes = {
 	'/cra': Cra,
 };
 
-new Vue({
+const app = new Vue({
 	el: '#app',
 	data: {
 		currentRoute: window.location.pathname
@@ -18,10 +18,16 @@ new Vue({
 		ViewComponent () {
 			console.log('rrrrrrrrrrrrrr');
 			console.dir(this.currentRoute);
+			console.dir(routes[this.currentRoute]);
 			return routes[this.currentRoute] || '<h1>NOT FOUND</h1>'
 		}
 	},
 	render (h) {
 		return h(this.ViewComponent)
 	}
+});
+
+window.addEventListener('popstate', () => {
+	console.log("mmmmmmmmmmmmmm");
+  	app.currentRoute = window.location.pathname
 });
