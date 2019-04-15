@@ -47,7 +47,9 @@
 				// };
 				event.preventDefault();
 				this.$root.currentRoute = '/cra/';
-				window.history.pushState(
+				console.dir(window.location);
+				window.location.pathname = '/cra/';
+				window.location.pushState(
 				  null,
 				  './../pages/cra.vue',
 				  '/cra/'
