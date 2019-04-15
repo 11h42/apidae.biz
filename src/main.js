@@ -6,6 +6,8 @@ import Cra from './pages/cra.vue'
 
 // Vue.use(VueRouter);
 
+new Vue(App).$mount('#app');
+
 const routes = {
 	'/': App ,
 	'/signup': Signup,
