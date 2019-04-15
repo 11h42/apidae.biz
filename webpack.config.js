@@ -3,7 +3,9 @@ const path = require('path');
 
 module.exports = {
 	context: __dirname + '/src',
-	entry: './main.js',
+	entry: {
+		app: './src/main.js'
+	},
 	devServer: {
 		historyApiFallback: true,
 	},

@@ -6,6 +6,7 @@
 				&nbsp;Apidae</a>
 			<div class="nav-item navmenu" id="navmenuId">
 				<a href="/">Accueil</a>
+				<!--<router-link to="/foo">Suivi d'activité</router-link>-->
 				<a href="/cra">Suivi d'activité</a>
 				<a href="./src/absences.html">Congés et absences</a>
 				<a href="./src/frais.html">Notes de frais</a>
