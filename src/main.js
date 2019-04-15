@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Signup from './Signup.vue'
-import Cra from './pages/cra'
+import Cra from './pages/cra.vue'
 
 const routes = {
 	'/': App ,
@@ -16,6 +16,8 @@ new Vue({
 	},
 	computed: {
 		ViewComponent () {
+			console.log('rrrrrrrrrrrrrr');
+			console.dir(this.currentRoute);
 			return routes[this.currentRoute] || '<h1>NOT FOUND</h1>'
 		}
 	},
