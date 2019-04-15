@@ -6,8 +6,8 @@
 				&nbsp;Apidae</a>
 			<div class="nav-item navmenu" id="navmenuId">
 				<a href="/">Accueil</a>
-				<a href="/cra" @click="changePage">Suivi d'activité</a>
-				<!--href="/cra"-->
+				<a href="/cra/">Suivi d'activité</a>
+				<!--href="/cra" @click="changePage"-->
 				<a href="./src/absences.html">Congés et absences</a>
 				<a href="./src/frais.html">Notes de frais</a>
 				<a href="./src/time.html">Time tracking</a>
@@ -21,9 +21,9 @@
 </template>
 <script type="text/ecmascript-6">
 
-	import App from './../App.vue'
-	import Signup from './../Signup.vue'
-	import Cra from './../pages/cra.vue'
+	// import App from './../App.vue'
+	// import Signup from './../Signup.vue'
+	// import Cra from './../pages/cra.vue'
 
 	export default {
 		props: {
@@ -39,20 +39,20 @@
 					x.className = "navmenu";
 				}
 			},
-			changePage: function (event) {
-				const routes = {
-					'/': App ,
-					'/signup': Signup,
-					'/cra': Cra,
-				};
-				event.preventDefault();
-				this.$root.currentRoute = '/cra';
-				window.history.pushState(
-				  null,
-				  routes['/cra'],
-				  '/cra'
-				);
-			}
+			// changePage: function (event) {
+			// 	const routes = {
+			// 		'/': App ,
+			// 		'/signup': Signup,
+			// 		'/cra': Cra,
+			// 	};
+			// 	event.preventDefault();
+			// 	this.$root.currentRoute = '/cra';
+			// 	window.history.pushState(
+			// 	  null,
+			// 	  routes['/cra'],
+			// 	  '/cra'
+			// 	);
+			// }
 		}
 	}
 </script>

@@ -6,7 +6,7 @@ import Cra from './pages/cra.vue'
 const routes = {
 	'/': App ,
 	'/signup': Signup,
-	'/cra': Cra,
+	'/cra/': Cra,
 };
 
 const app = new Vue({
@@ -27,7 +27,7 @@ const app = new Vue({
 	}
 });
 
-window.addEventListener('popstate', () => {
-	console.log("mmmmmmmmmmmmmm");
-  	app.currentRoute = window.location.pathname
-});
+// window.addEventListener('popstate', () => {
+// 	console.log("mmmmmmmmmmmmmm");
+//   	app.currentRoute = window.location.pathname
+// });
