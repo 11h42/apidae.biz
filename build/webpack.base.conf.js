@@ -4,6 +4,9 @@ const utils = require('./utils');
 const config = require('../config');
 const { VueLoaderPlugin } = require('vue-loader');
 const vueLoaderConfig = require('./vue-loader.conf');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -45,12 +48,29 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: vueLoaderConfig
+        // options: vueLoaderConfig
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      // this will apply to both plain `.css` files
+      // AND `<style>` blocks in `.vue` files
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it uses publicPath in webpackOptions.output
+              publicPath: '../',
+              hmr: process.env.NODE_ENV === 'development',
+            },
+          },
+          'css-loader',
+        ],
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
@@ -79,7 +99,14 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    // extract css into its own file
+    new MiniCssExtractPlugin({
+          // Options similar to the same options in webpackOptions.output
+          // both options are optional
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+        }),
   ],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
