@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="col-lg-7 col-md-12 col-xs-12 row">
-      <product-advantage v-for="product in productAdvantages"
+      <product-advantage v-for="product in productAdvantages" :key="product.title"
              class="col-xs-12 col-md-6 col-lg-6">
           <span slot="title">{{product.title}}</span>
           <p class="advantage" slot="advantage">{{product.advantage}}</p>

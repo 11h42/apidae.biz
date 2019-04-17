@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="row card-deck catchline" v-if="is_with_information">
-        <product-information v-for="productInformation in productInformations"
+        <product-information v-for="productInformation in productInformations" :key="productInformation.title"
              class="col-xs-12 col-md-6 col-lg-4">
           <span slot="title">{{productInformation.title}}</span>
           <p class="information-style" slot="information">{{productInformation.information}}</p>

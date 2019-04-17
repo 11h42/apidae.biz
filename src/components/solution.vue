@@ -3,7 +3,7 @@
     <h2 class="title-solution">Nos solutions RH Apidae</h2>
     <hr class="split-line"/>
     <section id="solutions" class="row">
-      <feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id"
+      <feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id" :key="feature.id"
          class=" col-xs-12 col-lg-3 col-md-6 feature_container">
         <span class="title" slot="title">{{feature.title}}</span>
         <span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
