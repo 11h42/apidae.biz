@@ -27,7 +27,7 @@
       return {
         advantageUsersList: [
           {
-            source: "/src/assets/Salarié.jpg",
+            source: require("./../assets/Salarié.jpg"),
             title: "SALARIÉ",
             advantages: [
               "-Facilite la rédaction des comptes rendus d'activités",
@@ -36,7 +36,7 @@
             ]
           },
           {
-            source: "/src/assets/manager.jpg",
+            source: require("../assets/manager.jpg"),
             title: "MANAGER",
             advantages: [
               "-Connaître la rentabilité des projets",
@@ -44,7 +44,7 @@
             ]
           },
           {
-            source: "/src/assets/comptable.jpg",
+            source: require("../assets/comptable.jpg"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "-Faciliter la facturation client",
