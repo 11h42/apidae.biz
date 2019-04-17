@@ -1,48 +1,48 @@
 <template>
-	<footer class="footer bg-inverse">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<our-address></our-address>
-				</div>
-				<div class="col-md-4">
-					<contact-us></contact-us>
-				</div>
-				<div class="col-md-4">
-					<our-services></our-services>
-				</div>
-			</div>
+  <footer class="footer bg-inverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <our-address></our-address>
+        </div>
+        <div class="col-md-4">
+          <contact-us></contact-us>
+        </div>
+        <div class="col-md-4">
+          <our-services></our-services>
+        </div>
+      </div>
 
-			<div class="row">
-				<attribution></attribution>
-			</div>
-		</div>
-	</footer>
+      <div class="row">
+        <attribution></attribution>
+      </div>
+    </div>
+  </footer>
 </template>
 <script type="text/ecmascript-6">
-	import OurAddress from './our-address';
-	import ContactUs from './contact-us';
-	import OurServices from './our-services';
-	import Attribution from './attribution';
+  import OurAddress from './our-address';
+  import ContactUs from './contact-us';
+  import OurServices from './our-services';
+  import Attribution from './attribution';
 
-	export default {
-		components: {
-			OurAddress,
-			ContactUs,
-			OurServices,
-			Attribution
-		}
-	}
+  export default {
+    components: {
+      OurAddress,
+      ContactUs,
+      OurServices,
+      Attribution
+    }
+  }
 </script>
 <style>
-	.bg-inverse {
-		color: white;
-	}
-	.bg-inverse a {
-		color: hsla(0, 0%, 100%, 0.5);
-	}
-	.footer {
-		padding-top: 3rem;
-		background-color: #1C2B36 !important;
-	}
+  .bg-inverse {
+    color: white;
+  }
+  .bg-inverse a {
+    color: hsla(0, 0%, 100%, 0.5);
+  }
+  .footer {
+    padding-top: 3rem;
+    background-color: #1C2B36 !important;
+  }
 </style>
