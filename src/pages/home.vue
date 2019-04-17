@@ -1,22 +1,47 @@
 <template>
-  <div class="core-app" onresize="resizeEvent()" onload="loadEvent()">
-    <navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
+  <div>
+    <cover :scroll_to_signup="scroll_to_signup" :is_with_video="true"
+           :is_with_information="true" :is_main_title="true">
+      <span slot="header" class="m-x-auto">
+        Apidae : Solution de management des ressources
+      </span>
+      <small slot="header-subtitle">Apidae est le logiciel de management des ressources en entreprise idéal pour le
+        TPE/PME.
+        Vous allez pouvoir centraliser et automatiser des procédures administratives telle que la
+        <b>gestion des notes de frais</b>, <b>la gestion des congés et des absneces</b> des salariés ainsi
+        que la <b>gestion du suivi d'activité</b> au sein de l'entreprise. Des solutions RH dans une seule
+        application, c'est ce que Apidae vous propose &nbsp;!
+      </small>
+      <small slot="text_button_free" class="size-btn-cover">
+        <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement notre solution APIDAE !
+      </small>
+    </cover>
 
-    <router-view/>
+    <div class="container-fluid">
+      <solution></solution>
 
-    <my-footer></my-footer>
+      <advantage :showbtntry="true" :scroll_to_signup="scroll_to_signup"></advantage>
+
+      <pricing :ascomponent="true" :scroll_to_signup="scroll_to_signup"></pricing>
+
+      <signup :scroll_to_price="scroll_to_price"></signup>
+
+      <section id="nous-contacter" class="row">
+        <call-to-action class="col-xs-12"></call-to-action>
+      </section>
+    </div>
   </div>
 </template>
 <script type="text/ecmascript-6">
-  import Navbar from "./components/navbar";
-  import Cover from "./components/cover";
-  import CallToAction from "./components/call-to-action";
-  import MyFooter from "./components/footer";
-  import Solution from "./components/solution";
-  import Advantage from "./components/advantage";
-  import Continue from "./components/continue.vue";
-  import Pricing from "./Pricing.vue";
-  import Signup from "./Signup.vue";
+  import Navbar from "../components/navbar";
+  import Cover from "../components/cover";
+  import CallToAction from "../components/call-to-action";
+  import MyFooter from "../components/footer";
+  import Solution from "../components/solution";
+  import Advantage from "../components/advantage";
+  import Continue from "../components/continue.vue";
+  import Pricing from "../Pricing.vue";
+  import Signup from "../Signup.vue";
 
   export default {
     components: {
@@ -101,9 +126,9 @@
 </script>
 
 <style>
-  @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-  @import "../node_modules/font-awesome/css/font-awesome.min.css";
-  @import "../node_modules/hint.css/hint.min.css";
+  @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+  @import "../../node_modules/font-awesome/css/font-awesome.min.css";
+  @import "../../node_modules/hint.css/hint.min.css";
 
   body,
   html {

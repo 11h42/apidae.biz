@@ -1,7 +1,5 @@
 <template>
-  <div class="core-cra">
-    <navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
-
+  <div class="">
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true">
       <span slot="header" class="m-x-auto">
@@ -16,7 +14,7 @@
         facilement la facturation client et de conaître la rentabilité des projets.
       </small>
       <small slot="text_button_free" class="size-btn-cover">
-        <i class='fa fa-arrow-circle-o-right'/>&nbspEssayer gratuitement
+        <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement
       </small>
     </cover>
 
@@ -63,15 +61,14 @@
       <call-to-action class="col-xs-12"></call-to-action>
     </section>
 
-    <my-footer></my-footer>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import Navbar from "./../components/navbar";
   import Cover from "./../components/cover";
-  import Argument from "./../components/argument"
-  import AdvantageUsers from "./../components/advantage-users"
+  import Argument from "./../components/argument";
+  import AdvantageUsers from "./../components/advantage-users";
   import CallToAction from "./../components/call-to-action";
   import Pricing from "./../Pricing.vue";
   import Signup from "./../Signup.vue";

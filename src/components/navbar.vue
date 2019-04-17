@@ -5,9 +5,9 @@
         <img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
         &nbsp;Apidae</a>
       <div class="nav-item navmenu" id="navmenuId">
-        <a href="/">Accueil</a>
-        <!--<router-link to="/foo">Suivi d'activité</router-link>-->
-        <a href="/cra">Suivi d'activité</a>
+        <router-link to="/">Accueil</router-link>
+        <router-link to="/cra">Suivi d'activité</router-link>
+<!--        <a href="/cra">Suivi d'activité</a>-->
         <a href="./src/absences.html">Congés et absences</a>
         <a href="./src/frais.html">Notes de frais</a>
         <a href="./src/time.html">Time tracking</a>
@@ -36,7 +36,7 @@
         }
       }
     }
-  }
+  };
 </script>
 <style>
   nav {
