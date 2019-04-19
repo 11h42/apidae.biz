@@ -33,22 +33,16 @@
   </div>
 </template>
 <script type="text/ecmascript-6">
-  import Navbar from "../components/navbar";
   import Cover from "../components/cover";
   import CallToAction from "../components/call-to-action";
-  import MyFooter from "../components/footer";
   import Solution from "../components/solution";
   import Advantage from "../components/advantage";
-  import Continue from "../components/continue.vue";
   import Pricing from "../Pricing.vue";
   import Signup from "../Signup.vue";
 
   export default {
     components: {
-      Navbar,
-      Continue,
       CallToAction,
-      MyFooter,
       Solution,
       Advantage,
       Cover,
@@ -75,87 +69,4 @@
       }
     }
   };
-
-  function resizeEvent () {
-    changeSizeSubTitle();
-    changeSizeTitleInformation();
-  }
-
-  function loadEvent () {
-    changeSizeSubTitle();
-    changeSizeTitleInformation();
-  }
-
-  function changeSizeTitleInformation() {
-    if (window.innerWidth > 768) {
-      var baseHeight = 0;
-      for (var id in window.heightTitleInformation) {
-        var subTitle = window.heightTitleInformation[id];
-        if (subTitle.offsetHeight > baseHeight) {
-          baseHeight = subTitle.offsetHeight
-        }
-      }
-      for (var id in window.heightTitleInformation) {
-        var subTitle = window.heightTitleInformation[id];
-        if (subTitle.style) {
-          subTitle.style.height = baseHeight + 'px';
-        }
-      }
-    }
-  }
-
-  function changeSizeSubTitle() {
-    if (window.innerWidth > 768) {
-      var baseHeight = 0;
-      for (var id in window.heightSubTitle) {
-        var subTitle = window.heightSubTitle[id];
-        if (subTitle.clientHeight > baseHeight) {
-          baseHeight = subTitle.clientHeight
-        }
-      }
-      for (var id in window.heightSubTitle) {
-        var subTitle = window.heightSubTitle[id];
-        if (subTitle.style)
-          subTitle.style.height = baseHeight + 'px';
-      }
-    }
-  }
-
-  window.onresize = resizeEvent;
-  window.onload = loadEvent;
 </script>
-
-<style>
-  @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-  @import "../../node_modules/font-awesome/css/font-awesome.min.css";
-  @import "../../node_modules/hint.css/hint.min.css";
-
-  body,
-  html {
-    font-family: "Ubuntu", sans-serif !important;
-    font-weight: 400;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-
-  #call-to-action {
-    padding-top: 50px;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  .core-app {
-    position: relative;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-  }
-
-  .size-btn-cover {
-    font-size: 1em;
-  }
-
-</style>

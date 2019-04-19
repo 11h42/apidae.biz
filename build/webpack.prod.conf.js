@@ -9,6 +9,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -86,7 +88,21 @@ const webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+
+    // new PrerenderSPAPlugin({
+    //   // Required - The path to the webpack-outputted app to prerender.
+    //   staticDir: path.join(__dirname, '../dist'),
+    //   // Required - Routes to render.
+    //   routes: ['/', '/cra'],
+    //   renderer: new Renderer({
+    //     inject: {
+    //       foo: 'bar'
+    //     },
+    //     headless: true,
+    //     renderAfterDocumentEvent: 'render-event'
+    //   })
+    // }),
   ]
 });
 

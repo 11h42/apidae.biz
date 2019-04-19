@@ -65,25 +65,21 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import Navbar from "./../components/navbar";
   import Cover from "./../components/cover";
   import Argument from "./../components/argument";
   import AdvantageUsers from "./../components/advantage-users";
   import CallToAction from "./../components/call-to-action";
   import Pricing from "./../Pricing.vue";
   import Signup from "./../Signup.vue";
-  import MyFooter from "./../components/footer";
 
   export default {
-        components: {
-      Navbar,
+    components: {
       Cover,
       Argument,
       AdvantageUsers,
       CallToAction,
       Pricing,
-      Signup,
-      MyFooter,
+      Signup
     },
 
     methods: {
@@ -103,8 +99,8 @@
           1000
         );
       }
-    },
     }
+  };
 </script>
 
 <style scoped>

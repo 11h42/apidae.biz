@@ -39,16 +39,16 @@
 <script type="text/ecmascript-6">
   export default {
     props: {
-      illustration: {type: String, required: true},
-      link: {type: String, required: true},
-      id: {type: String, required: true}
+      illustration: { type: String, required: true },
+      link: { type: String, required: true },
+      id: { type: String, required: true }
     },
     computed: {
       illustrationClass: function () {
-        return this.illustration
+        return this.illustration;
       }
     }
-  }
+  };
 </script>
 <style>
   .feature {

@@ -9,26 +9,12 @@
 </template>
 <script type="text/ecmascript-6">
   import Navbar from "./components/navbar";
-  import Cover from "./components/cover";
-  import CallToAction from "./components/call-to-action";
   import MyFooter from "./components/footer";
-  import Solution from "./components/solution";
-  import Advantage from "./components/advantage";
-  import Continue from "./components/continue.vue";
-  import Pricing from "./Pricing.vue";
-  import Signup from "./Signup.vue";
 
   export default {
     components: {
       Navbar,
-      Continue,
-      CallToAction,
       MyFooter,
-      Solution,
-      Advantage,
-      Cover,
-      Pricing,
-      Signup
     },
 
     methods: {
@@ -50,54 +36,6 @@
       }
     }
   };
-
-  function resizeEvent () {
-    changeSizeSubTitle();
-    changeSizeTitleInformation();
-  }
-
-  function loadEvent () {
-    changeSizeSubTitle();
-    changeSizeTitleInformation();
-  }
-
-  function changeSizeTitleInformation() {
-    if (window.innerWidth > 768) {
-      var baseHeight = 0;
-      for (var id in window.heightTitleInformation) {
-        var subTitle = window.heightTitleInformation[id];
-        if (subTitle.offsetHeight > baseHeight) {
-          baseHeight = subTitle.offsetHeight
-        }
-      }
-      for (var id in window.heightTitleInformation) {
-        var subTitle = window.heightTitleInformation[id];
-        if (subTitle.style) {
-          subTitle.style.height = baseHeight + 'px';
-        }
-      }
-    }
-  }
-
-  function changeSizeSubTitle() {
-    if (window.innerWidth > 768) {
-      var baseHeight = 0;
-      for (var id in window.heightSubTitle) {
-        var subTitle = window.heightSubTitle[id];
-        if (subTitle.clientHeight > baseHeight) {
-          baseHeight = subTitle.clientHeight
-        }
-      }
-      for (var id in window.heightSubTitle) {
-        var subTitle = window.heightSubTitle[id];
-        if (subTitle.style)
-          subTitle.style.height = baseHeight + 'px';
-      }
-    }
-  }
-
-  window.onresize = resizeEvent;
-  window.onload = loadEvent;
 </script>
 
 <style>

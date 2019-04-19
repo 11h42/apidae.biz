@@ -17,5 +17,6 @@ export default new Router({
       name: 'CRA',
       component: Cra
     }
-  ]
+  ],
+  mode: 'history'
 });
