@@ -14,27 +14,27 @@
 </template>
 
 <script type="text/ecmascript-6">
-  function resizeEvent() {
+  function resizeEvent () {
     changeSizeSubTitle();
     changeSizeTitleInformation();
   }
 
-  function loadEvent() {
+  function loadEvent () {
     changeSizeSubTitle();
     changeSizeTitleInformation();
   }
 
-  function changeSizeTitleInformation() {
+  function changeSizeTitleInformation () {
     if (window.innerWidth > 768) {
       var baseHeight = 0;
       for (var id in window.heightTitleInformation) {
         var subTitle = window.heightTitleInformation[id];
-        if (subTitle.offsetHeight > baseHeight) {
-          baseHeight = subTitle.offsetHeight;
+        if (subTitle.firstChild && subTitle.firstChild.offsetHeight > baseHeight) {
+          baseHeight = subTitle.firstChild.offsetHeight;
         }
       }
-      for (var id in window.heightTitleInformation) {
-        var subTitle = window.heightTitleInformation[id];
+      for (var idIn in window.heightTitleInformation) {
+        var subTitle = window.heightTitleInformation[idIn];
         if (subTitle.style) {
           subTitle.style.height = baseHeight + 'px';
         }
@@ -42,17 +42,17 @@
     }
   }
 
-  function changeSizeSubTitle() {
+  function changeSizeSubTitle () {
     if (window.innerWidth > 768) {
       var baseHeight = 0;
       for (var id in window.heightSubTitle) {
         var subTitle = window.heightSubTitle[id];
-        if (subTitle.clientHeight > baseHeight) {
-          baseHeight = subTitle.clientHeight
+        if (subTitle.lastChild && subTitle.lastChild.offsetHeight > baseHeight) {
+          baseHeight = subTitle.lastChild.offsetHeight;
         }
       }
-      for (var id in window.heightSubTitle) {
-        var subTitle = window.heightSubTitle[id];
+      for (var idIn in window.heightSubTitle) {
+        var subTitle = window.heightSubTitle[idIn];
         if (subTitle.style)
           subTitle.style.height = baseHeight + 'px';
       }

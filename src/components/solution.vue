@@ -4,7 +4,7 @@
     <hr class="split-line"/>
     <section id="solutions" class="row">
       <feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id" :key="feature.id" :link="feature.reference"
-         class=" col-xs-12 col-lg-3 col-md-6 feature_container">
+         class="col-xs-12 col-lg-3 col-md-6 feature_container">
         <span class="title" slot="title">{{feature.title}}</span>
         <span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
         <p class="description" slot="description">{{feature.description}}</p>
@@ -116,8 +116,8 @@
   .feature_container{
     font-weight: bold;
     font-size: large;
-    padding: 0;
-    padding-bottom: 4em;
+    padding: 0 0 4em 0 !important;
+    margin: 0 !important;
   }
 
   .color-illustration {

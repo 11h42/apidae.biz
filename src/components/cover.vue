@@ -57,7 +57,7 @@
       return {
         productInformations: [
           {
-            title: "DIGITILISATION DE VOTRE ENTREPRISE",
+            title: "DIGITALISATION DE VOTRE ENTREPRISE",
             information:
                 "Vous accompagner dans la digitalisation de votre entreprise, " +
                 "c'est ce que vous promet notre application RH Apidae",
@@ -112,11 +112,12 @@
     width: 100%;
   }
 
-  .video-container{
-    width: 80%;
-    margin: auto;
+  @media (min-width: 638px) {
+    .video-container {
+      width: 80%;
+      margin: auto;
+    }
   }
-
   .video-size {
     max-width: 100%;
     max-height: 100%;

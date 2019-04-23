@@ -62,7 +62,8 @@
 
   .core-app {
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
   }

@@ -11,11 +11,13 @@
         </span>
         <br/>
         <div class="place-button">
-          <a class="btn btn-lg btn-yellow col-xs-12" v-if="showbtntry" @click="scroll_to_signup">Essayez dés maintenant</a>
+          <div class="center-button">
+            <a class="btn btn-lg btn-yellow" v-if="showbtntry" @click="scroll_to_signup">Essayez dés maintenant</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-7 col-md-12 col-xs-12 row">
+    <div class="col-lg-7 col-md-12 col-xs-12">
       <product-advantage v-for="product in productAdvantages" :key="product.title"
              class="col-xs-12 col-md-6 col-lg-6">
           <span slot="title">{{product.title}}</span>
@@ -95,14 +97,17 @@
   }
 
   .place-button {
-    bottom: 0;
-    position: absolute;
-    left: 50%;
+    width: 100%;
+  }
+
+  @media (min-width: 638px){
+    .center-button {
+      width: 18.4em;
+      margin: 0 auto;
+    }
   }
 
   .btn-yellow {
-    position: relative;
-    left: -50%;
     margin-top: 2em;
     margin-bottom: 2.2em;
     font-weight: bold;

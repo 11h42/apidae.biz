@@ -197,7 +197,7 @@
   }
 
   #captcha-and-submit {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
   }
