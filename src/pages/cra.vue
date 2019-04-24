@@ -115,10 +115,12 @@
     font-size: 1em;
   }
 
-  .place-cover {
-    margin-top: 8em;
-    width: 80%;
-    margin-left: 10%;
+  @media (min-width: 638px) {
+    .place-cover {
+      margin-top: 8em;
+      width: 80%;
+      margin-left: 10%;
+    }
   }
 
 </style>

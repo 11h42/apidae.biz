@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-7 col-md-12 col-xs-12">
+    <div class="col-lg-7 col-md-12 col-xs-12 row product-advantage-container">
       <product-advantage v-for="product in productAdvantages" :key="product.title"
              class="col-xs-12 col-md-6 col-lg-6">
           <span slot="title">{{product.title}}</span>
@@ -36,8 +36,8 @@
       ProductAdvantage
     },
     props: {
-      showbtntry: {type: Boolean, required: true},
-      scroll_to_signup: {type: Function, required: true}
+      showbtntry: { type: Boolean, required: true },
+      scroll_to_signup: { type: Function, required: true }
     },
     data () {
       return {
@@ -122,5 +122,10 @@
   .title-advantage {
     text-align: left;
     font-size: 3.6em;
+  }
+
+  .product-advantage-container {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 </style>

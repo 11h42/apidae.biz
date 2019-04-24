@@ -52,11 +52,11 @@
               "-Récupération rapide des heures travaillées par projet",
               "-Exportation vars le logiciel de paie"
             ]
-          },
+          }
         ]
-      }
+      };
     }
-  }
+  };
 </script>
 
 <style scoped>
@@ -72,6 +72,7 @@
   }
 
   .subtittle-advantage-users {
+    margin: 0;
     width: 100%;
     text-align: center;
     font-size: 1.8em;

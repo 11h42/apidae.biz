@@ -4,7 +4,7 @@
       <slot name="title"></slot>
     </h2>
     <hr/>
-    <div class="subtittle-argument row">
+    <div class="subtittle-argument">
       <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12 position-subtitle">
         <slot name="header-subtitle"></slot>
       </div>
@@ -30,7 +30,7 @@
       return {
         argumentsList: [
           {
-            look_block: "col-lg-6 row",
+            look_block: "col-lg-6 row look-block-left",
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Remplir ses activités",
@@ -56,7 +56,7 @@
             look_infomation: "para-argument",
           },
           {
-            look_block: "col-lg-6 row",
+            look_block: "col-lg-6 row look-block-left",
             look_number: "icon-yellow build-icon",
             number: "03",
             title: "Statistique",
@@ -112,6 +112,13 @@
     margin: 0;
   }
 
+  @media (max-width: 991px) {
+    .look-block-left {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
   @media (min-width: 992px) {
     .pt-lg-6 {
       padding-top: 8em !important;
@@ -148,12 +155,24 @@
     }
   }
 
-  .sub-tittle-activity {
-    float: right;
-    text-align: left;
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
+  @media (min-width: 638px) {
+    .sub-tittle-activity {
+      float: right;
+      text-align: left;
+      font-size: 2em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .sub-tittle-activity {
+      float: right;
+      text-align: left;
+      font-size: 2em;
+      margin: 0 0 0 1em;
+      padding: 0;
+    }
   }
 
   @media (min-width: 992px) {
