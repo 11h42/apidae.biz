@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersList">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
-        <h4>{{advantageUser.title}}</h4>
+        <p class="lead font-weight-bold">{{advantageUser.title}}</p>
         <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
       </div>
     </div>

@@ -5,15 +5,15 @@
     <div id="pricing-container" class="container">
       <h2 class="font-weight-bold">Tarifs</h2>
       <hr>
-      <h5 class="text-muted">Découvrez l'offre adaptée à vos besoins</h5>
+      <span class="text-muted size-text-important">Découvrez l'offre adaptée à vos besoins</span>
 
       <div id="pricings" class="row">
         <div class="pricing col-lg-4" id="decouverte">
           <div class="inner-pricing">
             <div class="pricing-header">
-              <h5>Découverte</h5>
+              <span class="size-text-important">Découverte</span>
               <hr>
-              <h2><b>Gratuit</b></h2>
+              <span class="size-title-big d-inline-block">Gratuit</span>
               <br>
               <i>Période d'essai d'une durée de 2 mois sans engagement</i>
               <br>
@@ -45,10 +45,10 @@
         <div class="pricing col-lg-4" id="starter">
           <div class="inner-pricing box-shadow">
             <div class="pricing-header">
-              <h5>Starter</h5>
+              <span class="size-text-important">Starter</span>
               <hr>
-              <h1 class="d-inline-block"><b>9</b></h1>
-              <sup><h5 class="d-inline-block">€</h5></sup>
+              <span class="size-title-big d-inline-block"><b>9</b></span>
+              <sup><span class="size-text-important d-inline-block">€</span></sup>
               <br/>
               <i>H.T. / mois</i>
               <br>
@@ -93,9 +93,9 @@
         <div class="pricing col-lg-4" id="entreprise">
           <div class="inner-pricing box-shadow">
             <div class="pricing-header">
-              <h5>Premium</h5>
+              <span class="size-text-important">Premium</span>
               <hr>
-              <h3><b>Tarif dégréssif</b></h3>
+              <span class="size-title-big d-inline-block">Tarif dégréssif</span>
               <br>
               <i>Payez en fonction du nombre d'utilisateurs</i>
               <br>

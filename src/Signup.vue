@@ -3,12 +3,12 @@
 
     <h2 class="font-weight-bold">Essayer gratuitement</h2>
     <hr>
-    <h5 class="text-muted">Découvrez les fonctionnalités d'Apidae<br/>
-      <span class="text-warning">pendant deux mois gratuitement et sans engagement</span> !</h5>
+    <span class="text-muted size-text-important">Découvrez les fonctionnalités d'Apidae<br/>
+      <span class="text-warning">pendant deux mois gratuitement et sans engagement</span> !</span>
 
     <div class="row">
       <div class="col-lg-6" id="inner-form" v-bind:class="{'faded': submit_success}">
-        <h3>Créer votre compte</h3>
+        <span class="size-title">Créer votre compte</span>
         <hr>
         <form @submit.prevent="send_form">
           <label for="companyname">Nom de votre société* : <i class="text-muted"><br/>(ex: 'Entre-Prise',
@@ -44,8 +44,8 @@
           <br v-if="error_message">
           <br>
           <div id="captcha-and-submit">
-            <div class="g-recaptcha" data-sitekey="6LemBHwUAAAAAIBgnSCFE1Pk0BWVbZkwWU05TYYU"></div>
-            <input v-if="!loading" type="submit" value="Valider" class="btn btn-lg">
+            <div class="g-recaptcha captcha-container" data-sitekey="6LemBHwUAAAAAIBgnSCFE1Pk0BWVbZkwWU05TYYU"></div>
+            <input v-if="!loading" type="submit" value="Valider" class="btn btn-lg valid-button">
             <button v-if="loading" class="btn btn-lg" id="form-loading-button">
               <div class="lds-ring">
                 <div></div>
@@ -61,23 +61,23 @@
 
 
       <div class="col-lg-6 hidden-md-down" id="access-pricing-div" v-if="!submit_success">
-        <h4 class="text-muted">Ou bien...</h4>
+        <span class="text-muted size-title">Ou bien...</span>
         <br/>
-        <h3>Votre version d'évaluation est expirée ?</h3>
+        <span class="size-title">Votre version d'évaluation est expirée ?</span>
         <br/>
         <br/>
-        <a @click="scroll_to_price" class="btn">Voir les tarifs</a>
+        <a @click="scroll_to_price" class="btn btn-lg">Voir les tarifs</a>
       </div>
 
       <div class="col-lg-12" v-if="submit_success" id="submit-success-div"
          v-bind:class="{'visible': submit_success}">
-        <h4 class="text-muted">Il ne reste plus qu'une étape ...</h4>
+        <span class="text-muted size-title">Il ne reste plus qu'une étape ...</span>
         <br/>
-        <h5>Nous vous avons envoyé un mail, </h5>
-        <h5>cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !
+        <span class="size-text-important">Nous vous avons envoyé un mail, </span>
+        <span class="size-text-important">cliquez sur le lien à l'intérieur de celui-ci pour activer votre compte !
           <br/>
           <br/>
-        </h5>
+        </span>
         <span>Attention, vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</span>
       </div>
     </div>
@@ -200,6 +200,30 @@
     display: block;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+
+  @media (min-width: 638px) {
+    .captcha-container {
+      float: left;
+      width: 70%;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 638px) {
+    .valid-button {
+      float: right;
+      width: 28%;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .valid-button {
+      float: left !important;
+      margin: 0;
+    }
   }
 
   #access-pricing-div {

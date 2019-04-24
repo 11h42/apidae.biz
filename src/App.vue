@@ -72,4 +72,31 @@
     font-size: 1em;
   }
 
+  .size-text-important {
+    font-size: 1.3em;
+  }
+
+  .size-title-big {
+    font-size: 2em;
+    margin-bottom: 0.7em;
+  }
+
+  .size-title-small {
+    font-size: 1.5em;
+  }
+
+  .size-title-middle {
+    font-size: 1.7em;
+  }
+
+  .size-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .default-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+
 </style>

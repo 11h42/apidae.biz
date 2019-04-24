@@ -2,9 +2,9 @@
   <article>
     <div class="product-information">
       <div class="text-xs-left">
-        <h4 id="heightTitleInformation">
+        <span id="heightTitleInformation">
           <slot name="title"></slot>
-        </h4>
+        </span>
       </div>
       <div>
         <slot name="information"></slot>
@@ -70,5 +70,9 @@
     padding: 0 0 2em 0;
     width: 80%;
     margin-left: 10%;
+  }
+
+  #heightTitleInformation {
+    font-size: 1.3em;
   }
 </style>

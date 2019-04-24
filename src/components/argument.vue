@@ -12,7 +12,7 @@
     <div class="row">
       <div :class=argument.look_block v-for="argument in argumentsList">
         <span :class=argument.look_number>{{argument.number}}</span>
-        <h4 :class=argument.look_title>{{argument.title}}</h4>
+        <span :class=argument.look_title>{{argument.title}}</span>
         <div class="col-xs-12">
           <p :class=argument.look_infomation>{{argument.information}}</p>
         </div>
@@ -34,7 +34,7 @@
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Remplir ses activités",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12 pt-lg-5 pt-md-5 mt-lg-3 mt-md-3",
+            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
               "Tous les menbres de vos équipes remplissent leurs activités quotidiennes dans la " +
               "partie bilan d'activité : Ils indiquent le nom du projet/client sur lequel " +
@@ -48,7 +48,7 @@
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Bilan d'activité",
-            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12 pt-lg-5 pt-md-5 mt-lg-3 mt-md-3",
+            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Faire remplir un suivi d'activité par vos équipes vous permet une gestion claire des" +
               " temps de travail de vos équipes. Vous obtenez chaque mois le bilan d'activité " +
@@ -60,7 +60,7 @@
             look_number: "icon-yellow build-icon",
             number: "03",
             title: "Statistique",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12 pt-lg-5 pt-md-5 mt-lg-3 mt-md-3",
+            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
               "Apidae regroupe les différentes informations remplies par vos équipes et vous donne " +
               "des statistiques suite au bilan d'activité de vos équipes. Par exemple vous pouvez " +
@@ -72,7 +72,7 @@
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Bilan facturation client",
-            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12 pt-lg-5 pt-md-5 mt-lg-3 mt-md-3",
+            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Simplifiez la gestion des facturations lient. Envoyé à votre service comptabilité " +
               "la synthèse des temps d'activité par projet/ par client.",
@@ -157,11 +157,12 @@
 
   @media (min-width: 638px) {
     .sub-tittle-activity {
+      max-width: calc(100% - 9em);
       float: right;
       text-align: left;
       font-size: 2em;
-      margin: 0;
-      padding: 0;
+      margin: 1rem 0 0 0 !important;
+      padding: 3rem 0 0 0 !important;
     }
   }
 

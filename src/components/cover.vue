@@ -11,9 +11,9 @@
               <slot name="header"></slot>
             </h2>
             <br/>
-            <h4 class="text-muted subtitle">
+            <p class="text-muted subtitle ">
               <slot name="header-subtitle"></slot>
-            </h4>
+            </p>
 
             <a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
               <slot name="text_button_free" class="free-size"></slot>
@@ -96,6 +96,7 @@
   .subtitle {
     text-align: justify;
     font-weight: lighter;
+    font-size: 1.3em;
   }
 
   .cover {

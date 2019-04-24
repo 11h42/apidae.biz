@@ -1,10 +1,10 @@
 <template>
   <article id="call-to-action" class="mx-auto text-xs-center">
 
-    <h3>
+    <span class="size-title-middle">
       Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-primary">question</span>
       ?
-    </h3>
+    </span>
 
     <hr>
 

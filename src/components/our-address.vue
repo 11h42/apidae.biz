@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Nos bureaux</h3>
+    <span class="size-title-middle">Nos bureaux</span>
     <div class="vcard">
       <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp
       <span class="fn org name">Apidae - AKEMA SAS</span> <br>

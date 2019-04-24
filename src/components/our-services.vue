@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3>Nos services</h3>
+    <span class="size-title-middle">Nos services</span>
     <ul class="list-unstyled">
       <li>
         <i class="fa fa-envelope-o" aria-hidden="true" ></i> &nbsp

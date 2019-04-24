@@ -19,7 +19,7 @@
 
       <signup></signup>
 
-      <section id="nous-contacter" class="row">
+      <section id="nous-contacter" class="row default-container">
         <call-to-action class="col-xs-12"></call-to-action>
       </section>
     </div>

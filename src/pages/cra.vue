@@ -5,14 +5,14 @@
       <span slot="header" class="m-x-auto">
         Apidae : Logiciel de suivi d'activité pour TPE et PME
       </span>
-      <small slot="header-subtitle">Simplifier la déclaration des temps de travail de vos collaborateurs.
+      <span slot="header-subtitle">Simplifier la déclaration des temps de travail de vos collaborateurs.
         Avec Apidae vos équipes remplissent leurs activités mensuellement et à la fin du mois vous récupérez
         le bilan de chacun. Cela vous permet de faciliter la gestion RH et financière de votre entreprise.
         <br/>
         <br/>
         Avoir une vision globale des temps de travail de vos équipes par projet vous permet de gérer
         facilement la facturation client et de conaître la rentabilité des projets.
-      </small>
+      </span>
       <small slot="text_button_free" class="size-btn-cover">
         <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement
       </small>
@@ -43,11 +43,11 @@
       <span slot="header" class="m-x-auto">
         Découvrez toutes les fonctionnalités de logiciel RH APIDAE
       </span>
-      <small slot="header-subtitle">Apidae, c'est notre solution SIRH : Un logiciel tout-en-un. <br/>
+      <span slot="header-subtitle">Apidae, c'est notre solution SIRH : Un logiciel tout-en-un. <br/>
         Retrouver toutes les fonctionnalités de Apidae : <br/> <br/>
         -Gestion des congés et des absences <br/> -Suivi d'activité <br/> -Time tracking <br/>
         -Gestion des notes de frais
-      </small>
+      </span>
       <small slot="text_button_free" class="size-btn-cover">
         DÉCOUVREZ APIDAE
       </small>
@@ -57,7 +57,7 @@
 
     <signup :scroll_to_price="scroll_to_price"></signup>
 
-    <section id="nous-contacter" class="row">
+    <section id="nous-contacter" class="row default-container">
       <call-to-action class="col-xs-12"></call-to-action>
     </section>
 
