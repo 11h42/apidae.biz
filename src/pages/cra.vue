@@ -3,7 +3,7 @@
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true">
       <span slot="header" class="m-x-auto">
-        Apidae : Logiciel de suivi d'activité pour TPE et PME
+        Apidae : Logiciel de suivi d'activité
       </span>
       <span slot="header-subtitle">Simplifier la déclaration des temps de travail de vos collaborateurs.
         Avec Apidae vos équipes remplissent leurs activités mensuellement et à la fin du mois vous récupérez

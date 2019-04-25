@@ -59,12 +59,12 @@
             look_block: "col-lg-6 row look-block-left",
             look_number: "icon-yellow build-icon",
             number: "03",
-            title: "Statistique",
+            title: "Statistiques",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
               "Apidae regroupe les différentes informations remplies par vos équipes et vous donne " +
               "des statistiques suite au bilan d'activité de vos équipes. Par exemple vous pouvez " +
-              "maintenant connaître le temps de travil consacré à chaque projet.",
+              "maintenant connaître le temps de travail consacré à chaque projet.",
             look_infomation: "para-argument",
           },
           {
