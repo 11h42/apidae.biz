@@ -4,15 +4,15 @@
       <a class="navbar-brand" href="/">
         <img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
         &nbsp;Apidae</a>
-      <!--</ro class="nav-item navmenu" id="navmenuId">-->
+      <div class="nav-item navmenu" id="navmenuId">
         <a @click="change_page_selected('accueil')"><router-link to="/" :class="{'active-menu': page_selected == 'accueil'}">
           Accueil</router-link></a>
         <a @click="change_page_selected('cra')"><router-link to="/cra" :class="{'active-menu': page_selected == 'cra'}">
           Suivi d'activité</router-link></a>
 <!--        <a href="/cra">Suivi d'activité</a>-->
-        <a @click="change_page_selected('holiday')"><a href="./src/absences.html" :class="{'active-menu': page_selected == 'holiday'}">Congés et absences</a></a>
-        <a @click="change_page_selected('cost')"><a href="./src/frais.html" :class="{'active-menu': page_selected == 'cost'}">Notes de frais</a></a>
-        <a @click="change_page_selected('time')"><a href="./src/time.html" :class="{'active-menu': page_selected == 'time'}">Time tracking</a></a>
+        <a @click="change_page_selected('holiday')"><router-link to="/holiday" :class="{'active-menu': page_selected == 'holiday'}">Congés et absences</router-link></a>
+        <a @click="change_page_selected('cost')"><router-link to="/cost" :class="{'active-menu': page_selected == 'cost'}">Notes de frais</router-link></a>
+        <a @click="change_page_selected('time')"><router-link to="/time" :class="{'active-menu': page_selected == 'time'}">Time tracking</router-link></a>
         <a href="javascript:void(0);" class="icon" @click="transformMenu()">
           <i class="fa fa-bars"></i>
         </a>
@@ -87,7 +87,6 @@
       display: block;
       text-align: center;
       padding: 7px 8px;
-      font-size: 1.3em;
   }
 
   .navmenu .icon {

@@ -57,7 +57,7 @@
             description3:
                 "Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu.",
             label: "En savoir plus",
-            reference: "./src/absences.html",
+            reference: "/holiday",
             pageSelected: "holiday"
           },
           {
@@ -72,7 +72,7 @@
             description3:
                 "De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise.",
             label: "En savoir plus",
-            reference: "./src/frais.html",
+            reference: "/cost",
             pageSelected: "cost"
           },
           {
@@ -87,7 +87,7 @@
             description3:
                 "",
             label: "En savoir plus",
-            reference: "./src/time.html",
+            reference: "/time",
             pageSelected: "time"
           }
         ]
