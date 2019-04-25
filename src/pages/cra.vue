@@ -13,7 +13,7 @@
         Avoir une vision globale des temps de travail de vos équipes par projet vous permet de gérer
         facilement la facturation client et de conaître la rentabilité des projets.
       </span>
-      <small slot="text_button_free" class="size-btn-cover">
+      <small slot="text_button_free" class="size-btn-cover" @click="scroll_to_signup">
         <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement
       </small>
     </cover>

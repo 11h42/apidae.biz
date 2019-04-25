@@ -12,13 +12,13 @@
         que la <b>gestion du suivi d'activité</b> au sein de l'entreprise. Des solutions RH dans une seule
         application, c'est ce que Apidae vous propose &nbsp;!
       </span>
-      <small slot="text_button_free" class="size-btn-cover">
+      <small slot="text_button_free" class="size-btn-cover" @click="scroll_to_signup">
         <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement notre solution APIDAE !
       </small>
     </cover>
 
     <div class="container-fluid">
-      <solution></solution>
+      <solution :change_page_selected="change_page_selected"></solution>
 
       <advantage :showbtntry="true" :scroll_to_signup="scroll_to_signup"></advantage>
 
@@ -43,7 +43,8 @@
   export default {
     props: {
       scroll_to_signup: { type: Function, required: true },
-      scroll_to_price: { type: Function, required: true }
+      scroll_to_price: { type: Function, required: true },
+      change_page_selected: { type: Function, required: true }
     },
 
     components: {

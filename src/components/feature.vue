@@ -29,9 +29,9 @@
         </div>
       </div>
       <div class="card-block">
-        <div class="card-button">
+        <a class="card-button">
           <slot name="button"></slot>
-        </div>
+        </a>
       </div>
     </div>
   </article>

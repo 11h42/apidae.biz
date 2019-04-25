@@ -10,7 +10,9 @@
         <p class="description" slot="description">{{feature.description}}</p>
         <p class="description" slot="description2">{{feature.description2}}</p>
         <p class="description" slot="description3">{{feature.description3}}</p>
-        <a class="btn learn-more" slot="button" v-bind:href="feature.reference">{{feature.label}}</a>
+        <a class="btn learn-more" slot="button" @click="change_page_selected(feature.pageSelected)">
+          <router-link :to="feature.reference">{{feature.label}}</router-link>
+          </a>
       </feature>
     </section>
   </div>
@@ -19,6 +21,9 @@
   import Feature from "./feature";
 
   export default {
+    props: {
+      change_page_selected: { type: Function, required: true }
+    },
     components: {
       Feature
     },
@@ -37,7 +42,8 @@
             description3:
                 "Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l'organisation de vos équipes.",
             label: "En savoir plus",
-            reference: "cra"
+            reference: "/cra",
+            pageSelected: "cra"
           },
           {
             id: "congés-et-absences",
@@ -51,7 +57,8 @@
             description3:
                 "Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu.",
             label: "En savoir plus",
-            reference: "./src/absences.html"
+            reference: "./src/absences.html",
+            pageSelected: "holiday"
           },
           {
             id: "notes-de-frais",
@@ -65,7 +72,8 @@
             description3:
                 "De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise.",
             label: "En savoir plus",
-            reference: "./src/frais.html"
+            reference: "./src/frais.html",
+            pageSelected: "cost"
           },
           {
             id: "time-tracking",
@@ -79,21 +87,11 @@
             description3:
                 "",
             label: "En savoir plus",
-            reference: "./src/time.html"
+            reference: "./src/time.html",
+            pageSelected: "time"
           }
         ]
       };
-    },
-
-    methods: {
-      scroll_to_signup: function () {
-        $(".core-app").animate(
-          {
-            scrollTop: $("#signup-form").offset().top
-          },
-          1000
-        );
-      }
     }
   };
 </script>
@@ -133,7 +131,7 @@
   }
 
   .learn-more {
-    background-color: #fcce21;
+    background-color: #fcce21 !important;
     font-size: large;
     font-weight: bold;
     position: relative;
