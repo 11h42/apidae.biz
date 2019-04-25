@@ -13,6 +13,8 @@
       <div :class=argument.look_block v-for="argument in argumentsListCra">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
+        <span :class=argument.look_litle_link>{{argument.litle_link}}</span>
+        <span :class=argument.look_litle_title>{{argument.litle_title}}</span>
         <div class="col-xs-12">
           <p :class=argument.look_infomation>{{argument.information}}</p>
         </div>
@@ -23,6 +25,8 @@
       <div :class=argument.look_block v-for="argument in argumentsListHoliday">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
+        <span :class=argument.look_litle_link>{{argument.litle_link}}</span>
+        <span :class=argument.look_litle_title>{{argument.litle_title}}</span>
         <div class="col-xs-12">
           <p :class=argument.look_infomation>{{argument.information}}</p>
         </div>
@@ -33,6 +37,8 @@
       <div :class=argument.look_block v-for="argument in argumentsListCost">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
+        <span :class=argument.look_litle_link>{{argument.litle_link}}</span>
+        <span :class=argument.look_litle_title>{{argument.litle_title}}</span>
         <div class="col-xs-12">
           <p :class=argument.look_infomation>{{argument.information}}</p>
         </div>
@@ -43,6 +49,8 @@
       <div :class=argument.look_block v-for="argument in argumentsListTime">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
+        <span :class=argument.look_litle_link>{{argument.litle_link}}</span>
+        <span :class=argument.look_litle_title>{{argument.litle_title}}</span>
         <div class="col-xs-12">
           <p :class=argument.look_infomation>{{argument.information}}</p>
         </div>
@@ -183,8 +191,10 @@
             number: "01",
             title: "Remplir le Time Tracking",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            litle_title: "Chronomètre intégré",
+            look_litle_title: "litle-title-activity",
             information:
-              "Chronomètre intégré.\n C’est un chronomètre directement intégré sur la plateforme Apidae, " +
+              "C’est un chronomètre directement intégré sur la plateforme Apidae, " +
               "cela permet à vos équipes de mesurer leurs temps de travail sur une activité. Le collaborateur, " +
               "lors d'une nouvelle tâche sur un projet, peut déclencher un chronomètre en début d'activité et " +
               "l'arrêter selon ses besoins ou contraintes, ou bien tout simplement lorsque la tâche est terminée.",
@@ -192,10 +202,14 @@
           },
           {
             look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
-            look_number: "icon-yellow build-icon build-icon-2",
-            number: "",
-            title: "Manuellement",
+            look_number: "icon-yellow build-icon build-icon-2 shadow-icon",
+            number: "01B",
+            title: "",
             look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            litle_link: "ou",
+            look_litle_link: "icon-yellow litle-link-activity",
+            litle_title: "Manuellement",
+            look_litle_title: "litle-title-activity",
             information:
               "Vous avez oublié de lancer ou d’arrêter le chronomètre pas de soucis, vouspouvez aussi remplir vos " +
               "temps d’activité manuellement directement sur votre calendrier.",
@@ -334,6 +348,19 @@
     color: #fcce21;
   }
 
+  @media (min-width: 992px) {
+    .shadow-icon {
+      color: transparent !important;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .shadow-icon {
+      color: transparent !important;
+      height: 0 !important;
+    }
+  }
+
   .build-icon {
     font-size: 7em;
     float: left;
@@ -393,6 +420,30 @@
       position: relative;
       left: -25px;
     }
+  }
+
+  @media (min-width: 992px) {
+    .litle-link-activity {
+      width: 100%;
+      text-align: left;
+      font-size: 1.7em;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .litle-link-activity {
+      width: 100%;
+      text-align: center;
+      font-size: 1.7em;
+      padding: 0;
+    }
+  }
+
+  .litle-title-activity {
+    margin: auto;
+    font-size: 1.7em;
+    padding-bottom: 0.7em;
   }
 
   .para-argument {
