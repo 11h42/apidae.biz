@@ -49,7 +49,7 @@
         -Gestion des notes de frais
       </span>
       <small slot="text_button_free" class="size-btn-cover">
-        DÉCOUVREZ APIDAE
+        <router-link to="/">DÉCOUVREZ APIDAE</router-link>
       </small>
     </cover>
 

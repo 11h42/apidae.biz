@@ -1,6 +1,7 @@
 <template>
   <div class="core-app" onresize="resizeEvent()" onload="loadEvent()">
-    <navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"></navbar>
+    <navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"
+            :page_selected="page_selected" :change_page_selected="change_page_selected"></navbar>
 
     <router-view/>
 
@@ -14,7 +15,7 @@
   export default {
     components: {
       Navbar,
-      MyFooter,
+      MyFooter
     },
 
     methods: {
@@ -33,7 +34,15 @@
           },
           1000
         );
+      },
+      change_page_selected: function (pageSelected) {
+        this.page_selected = pageSelected;
       }
+    },
+    data () {
+      return {
+        page_selected: "accueil"
+      };
     }
   };
 </script>

@@ -48,12 +48,12 @@
       ProductInformation,
     },
     props: {
-      scroll_to_signup: {type: Function, required: true},
-      is_with_video: {type: Boolean, required: true},
-      is_with_information: {type: Boolean, required: true},
-      is_main_title: {type: Boolean, required: true}
+      scroll_to_signup: { type: Function, required: true },
+      is_with_video: { type: Boolean, required: true },
+      is_with_information: { type: Boolean, required: true },
+      is_main_title: { type: Boolean, required: true }
     },
-    data() {
+    data () {
       return {
         productInformations: [
           {
