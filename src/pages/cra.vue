@@ -18,7 +18,7 @@
       </small>
     </cover>
 
-    <argument>
+    <argument :page_selected="page_selected">
       <span slot="title">
         Suivi d'activité de vos équipes
       </span>
@@ -29,7 +29,7 @@
       </small>
     </argument>
 
-    <advantage-users>
+    <advantage-users :page_selected="page_selected">
       <span slot="title">
         Les avantages utilisateurs
       </span>
@@ -76,6 +76,7 @@
     props: {
       scroll_to_signup: { type: Function, required: true },
       scroll_to_price: { type: Function, required: true },
+      page_selected: { type: String, required: true },
       change_page_selected: { type: Function, required: true }
     },
 

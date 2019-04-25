@@ -9,8 +9,29 @@
         <slot name="header-subtitle"></slot>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersList">
+    <div class="row" v-if="page_selected == 'cra'">
+      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListCra">
+        <img :src="advantageUser.source" class="image-advantage rounded-circle">
+        <p class="lead font-weight-bold">{{advantageUser.title}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+      </div>
+    </div>
+    <div class="row" v-if="page_selected == 'holiday'">
+      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListHoliday">
+        <img :src="advantageUser.source" class="image-advantage rounded-circle">
+        <p class="lead font-weight-bold">{{advantageUser.title}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+      </div>
+    </div>
+    <div class="row" v-if="page_selected == 'cost'">
+      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListCost">
+        <img :src="advantageUser.source" class="image-advantage rounded-circle">
+        <p class="lead font-weight-bold">{{advantageUser.title}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+      </div>
+    </div>
+    <div class="row" v-if="page_selected == 'time'">
+      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListTime">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
         <p class="lead font-weight-bold">{{advantageUser.title}}</p>
         <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
@@ -23,34 +44,127 @@
   export default {
     name: "advantage-users",
 
+    props: {
+      page_selected: { type: String, required: true }
+    },
+
     data () {
       return {
-        advantageUsersList: [
+        advantageUsersListCra: [
           {
             source: require("./../assets/Salarié.jpg"),
             title: "SALARIÉ",
             advantages: [
-              "-Facilite la rédaction des comptes rendus d'activités",
-              "-Gagnez du temps dans la gestion du temps de travail",
-              "-Avoir une vision globale sur son planning"
+              "- Facilite la rédaction des comptes rendus d'activités",
+              "- Gagnez du temps dans la gestion du temps de travail",
+              "- Avoir une vision globale sur son planning"
             ]
           },
           {
             source: require("../assets/manager.jpg"),
             title: "MANAGER",
             advantages: [
-              "-Connaître la rentabilité des projets",
-              "-Vision globale des activités de vos équipes"
+              "- Connaître la rentabilité des projets",
+              "- Vision globale des activités de vos équipes"
             ]
           },
           {
             source: require("../assets/comptable.jpg"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
-              "-Faciliter la facturation client",
-              "-Gagner du temps",
-              "-Récupération rapide des heures travaillées par projet",
-              "-Exportation vars le logiciel de paie"
+              "- Faciliter la facturation client",
+              "- Gagner du temps",
+              "- Récupération rapide des heures travaillées par projet",
+              "- Exportation vars le logiciel de paie"
+            ]
+          }
+        ],
+        advantageUsersListHoliday: [
+          {
+            source: require("./../assets/Salarié.jpg"),
+            title: "SALARIÉ",
+            advantages: [
+              "- Faire une demande rapidement",
+              "- Gérer son solde de congé",
+              "- Possibilité de faire les demandes à distance",
+              "- Visibilité sur le planning des absences"
+            ]
+          },
+          {
+            source: require("../assets/manager.jpg"),
+            title: "MANAGER",
+            advantages: [
+              "- Valider rapidement les demandes",
+              "- Facilite la prise de décision",
+              "- Fluidifier les demandes d’absences",
+              "- Vision globale sur les effectifs présents."
+            ]
+          },
+          {
+            source: require("../assets/comptable.jpg"),
+            title: "SERVICE COMPTABILITÉ",
+            advantages: [
+              "- Gestion fiable du planning des absences",
+              "- Exportation des données vers le logiciel de paie",
+              "- Visibilité sur les effectifs présents"
+            ]
+          }
+        ],
+        advantageUsersListTime: [
+          {
+            source: require("./../assets/Salarié.jpg"),
+            title: "SALARIÉ",
+            advantages: [
+              "- Facilite la rédaction des comptes rendues d’activités",
+              "- Gagner du temps dans la gestion du temps de travail"
+            ]
+          },
+          {
+            source: require("../assets/manager.jpg"),
+            title: "MANAGER",
+            advantages: [
+              "- Connaitre la rentabilité des projets",
+              "- Vision globale des activités de vos équipes",
+              "- Gestion des temps de travail"
+            ]
+          },
+          {
+            source: require("../assets/comptable.jpg"),
+            title: "SERVICE COMPTABILITÉ",
+            advantages: [
+              "- Faciliter la facturation client",
+              "- Gagner du temps"
+            ]
+          }
+        ],
+        advantageUsersListCost: [
+          {
+            source: require("./../assets/Salarié.jpg"),
+            title: "SALARIÉ",
+            advantages: [
+              "- Délais de remboursement plus rapide",
+              "- Enregistrer ses notes de frais rapidement",
+              "- Pas de risque de perdre les justificatifs de notes de frais"
+            ]
+          },
+          {
+            source: require("../assets/manager.jpg"),
+            title: "MANAGER",
+            advantages: [
+              "- Vision globale des dépenses par employé, par services et par projet",
+              "- Dépenses par type de frais (frais de transport, repas, ...) ",
+              "- Centralisation des frais professionnels",
+              "- Gain de temps"
+            ]
+          },
+          {
+            source: require("../assets/comptable.jpg"),
+            title: "SERVICE COMPTABILITÉ",
+            advantages: [
+              "- Diminuer les temps de remboursement",
+              "- Gagner du temps dans la gestion des frais professionnels",
+              "- Visibilité sur le flux de dépenses",
+              "- Exportation des données pour votre comptable"
             ]
           }
         ]

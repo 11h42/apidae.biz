@@ -4,7 +4,7 @@
             :page_selected="page_selected" :change_page_selected="change_page_selected"></navbar>
 
     <router-view :scroll_to_signup="scroll_to_signup" :scroll_to_price="scroll_to_price"
-                 :change_page_selected="change_page_selected"/>
+                 :change_page_selected="change_page_selected" :page_selected="page_selected"/>
 
     <my-footer></my-footer>
   </div>
