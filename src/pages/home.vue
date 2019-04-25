@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-home">
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="true"
            :is_with_information="true" :is_main_title="true">
       <span slot="header" class="m-x-auto">
@@ -41,6 +41,11 @@
   import Signup from "../Signup.vue";
 
   export default {
+    props: {
+      scroll_to_signup: { type: Function, required: true },
+      scroll_to_price: { type: Function, required: true }
+    },
+
     components: {
       CallToAction,
       Solution,
@@ -51,22 +56,6 @@
     },
 
     methods: {
-      scroll_to_signup: function () {
-        $("html, body").animate(
-          {
-            scrollTop: $("#signup-form").offset().top
-          },
-          1000
-        );
-      },
-      scroll_to_price: function () {
-        $("html, body").animate(
-          {
-            scrollTop: $("#pricing-form").offset().top
-          },
-          1000
-        );
-      }
     }
   };
 </script>

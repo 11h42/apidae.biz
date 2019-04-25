@@ -48,7 +48,7 @@
         -Gestion des congés et des absences <br/> -Suivi d'activité <br/> -Time tracking <br/>
         -Gestion des notes de frais
       </span>
-      <small slot="text_button_free" class="size-btn-cover">
+      <small slot="text_button_free" class="size-btn-cover" @click="change_page_selected('accueil')">
         <router-link to="/">DÉCOUVREZ APIDAE</router-link>
       </small>
     </cover>
@@ -73,6 +73,12 @@
   import Signup from "./../Signup.vue";
 
   export default {
+    props: {
+      scroll_to_signup: { type: Function, required: true },
+      scroll_to_price: { type: Function, required: true },
+      change_page_selected: { type: Function, required: true }
+    },
+
     components: {
       Cover,
       Argument,
@@ -83,22 +89,6 @@
     },
 
     methods: {
-      scroll_to_signup: function () {
-        $("html, body").animate(
-          {
-            scrollTop: $("#signup-form").offset().top
-          },
-          1000
-        );
-      },
-      scroll_to_price: function () {
-        $("html, body").animate(
-          {
-            scrollTop: $("#pricing-form").offset().top
-          },
-          1000
-        );
-      }
     }
   };
 </script>

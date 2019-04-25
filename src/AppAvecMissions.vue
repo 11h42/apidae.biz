@@ -117,7 +117,7 @@
 
     methods: {
       scroll_to_signup: function () {
-        $("html, body").animate(
+        $(".core-app").animate(
             {
               scrollTop: $("#signup-form").offset().top
             },

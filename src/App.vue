@@ -3,7 +3,8 @@
     <navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"
             :page_selected="page_selected" :change_page_selected="change_page_selected"></navbar>
 
-    <router-view/>
+    <router-view :scroll_to_signup="scroll_to_signup" :scroll_to_price="scroll_to_price"
+                 :change_page_selected="change_page_selected"/>
 
     <my-footer></my-footer>
   </div>
@@ -20,22 +21,28 @@
 
     methods: {
       scroll_to_signup: function () {
-        $("html, body").animate(
+        $(".core-app").animate(
           {
-            scrollTop: $("#signup-form").offset().top
+            scrollTop: $("#signup-form")[0].offsetTop
           },
           1000
         );
       },
       scroll_to_price: function () {
-        $("html, body").animate(
+        $(".core-app").animate(
           {
-            scrollTop: $("#pricing-form").offset().top
+            scrollTop: $("#pricing-form")[0].offsetTop
           },
           1000
         );
       },
       change_page_selected: function (pageSelected) {
+        $(".core-app").animate(
+          {
+            scrollTop: 0
+          },
+          1000
+        );
         this.page_selected = pageSelected;
       }
     },

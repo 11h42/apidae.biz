@@ -15,7 +15,7 @@
               <slot name="header-subtitle"></slot>
             </p>
 
-            <a @click="scroll_to_signup" class="btn btn-lg" id="cover-trial-button">
+            <a class="btn btn-lg" id="cover-trial-button">
               <slot name="text_button_free" class="free-size"></slot>
             </a>
           </div>

@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="/">
         <img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
         &nbsp;Apidae</a>
-      </ro class="nav-item navmenu" id="navmenuId">
+      <!--</ro class="nav-item navmenu" id="navmenuId">-->
         <a @click="change_page_selected('accueil')"><router-link to="/" :class="{'active-menu': page_selected == 'accueil'}">
           Accueil</router-link></a>
         <a @click="change_page_selected('cra')"><router-link to="/cra" :class="{'active-menu': page_selected == 'cra'}">
