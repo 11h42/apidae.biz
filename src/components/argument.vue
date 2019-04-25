@@ -57,6 +57,18 @@
         <div style="height: 100%"></div>
       </div>
     </div>
+    <div class="row" v-if="page_selected == 'order'">
+      <div :class=argument.look_block v-for="argument in argumentsListOrder">
+        <span :class=argument.look_number>{{argument.number}}</span>
+        <span :class=argument.look_title>{{argument.title}}</span>
+        <span :class=argument.look_litle_link>{{argument.litle_link}}</span>
+        <span :class=argument.look_litle_title>{{argument.litle_title}}</span>
+        <div class="col-xs-12">
+          <p :class=argument.look_infomation>{{argument.information}}</p>
+        </div>
+        <div style="height: 100%"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -295,6 +307,42 @@
               "Exporter directement toutes les données des notes de frais au service concerné. En cas de contrôle " +
               "(URSSAF) vous pouvez exporter directement les historiques des notes de frais de tous vos " +
               "collaborateurs.",
+            look_infomation: "para-argument"
+          }
+        ],
+        argumentsListOrder: [
+          {
+            look_block: "col-lg-6 row look-block-left",
+            look_number: "icon-yellow build-icon build-icon-1",
+            number: "01",
+            title: "Remplissez votre ordre de mission",
+            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            information:
+              "Le module ordre de mission permet à vos collaborateurs de saisir leurs demandes de déplacement " +
+              "rapidement en y associant toutes les informations nécessaires (l’objet du déplacement, la date, le " +
+              "lieu, moyen de transport, ...)",
+            look_infomation: "para-argument"
+          },
+          {
+            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_number: "icon-yellow build-icon build-icon-2",
+            number: "02",
+            title: "Contrôler l’ordre de mission",
+            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            information:
+              "Avant la validation de l’ordre de mission, vous pouvez vous assurer de la nécessité de cette dernière. " +
+              "Vous évitez tout frais inutiles.",
+            look_infomation: "para-argument"
+          },
+          {
+            look_block: "col-lg-6 row look-block-left",
+            look_number: "icon-yellow build-icon",
+            number: "03",
+            title: "Émission du billet",
+            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            information:
+              "Une fois que l’ordre de mission est validé par le responsable concerné la plateforme émet donc " +
+              "le billet qui vous permet d’être en règle.",
             look_infomation: "para-argument"
           }
         ]

@@ -5,6 +5,7 @@ import Cra from '@/pages/cra';
 import Holiday from '@/pages/holiday';
 import Cost from '@/pages/cost';
 import Time from '@/pages/time';
+import Order from '@/pages/order';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/time',
       name: 'TIME',
       component: Time
+    },
+    {
+      path: '/order',
+      name: 'ORDER',
+      component: Order
     }
   ],
   mode: 'history'

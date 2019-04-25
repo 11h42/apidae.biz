@@ -37,6 +37,13 @@
         <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
       </div>
     </div>
+    <div class="row" v-if="page_selected == 'order'">
+      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListOrder">
+        <img :src="advantageUser.source" class="image-advantage rounded-circle">
+        <p class="lead font-weight-bold">{{advantageUser.title}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -165,6 +172,34 @@
               "- Gagner du temps dans la gestion des frais professionnels",
               "- Visibilité sur le flux de dépenses",
               "- Exportation des données pour votre comptable"
+            ]
+          }
+        ],
+        advantageUsersListOrder: [
+          {
+            source: require("./../assets/Salarié.jpg"),
+            title: "SALARIÉ",
+            advantages: [
+              "- Enregistrer son déplacement rapidement",
+              "- Suivre l’avancement de sa demande",
+              "- Délais de remboursement plus rapides"
+            ]
+          },
+          {
+            source: require("../assets/manager.jpg"),
+            title: "MANAGER",
+            advantages: [
+              "- Contrôler la nécessité des frais professionnels.",
+              "- Éviter les frais de mission inutiles",
+              "- Gagner du temps pour l’émission des billets"
+            ]
+          },
+          {
+            source: require("../assets/comptable.jpg"),
+            title: "SERVICE COMPTABILITÉ",
+            advantages: [
+              "- Diminuer les temps de remboursement",
+              "- Gagner du temps dans la gestion des frais professionnels"
             ]
           }
         ]
