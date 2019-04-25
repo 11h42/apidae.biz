@@ -201,7 +201,7 @@
     width: 20em;
     height: 15em;
     border: none;
-    box-shadow: -10px 10px 40px #3c3c3c;
+    box-shadow: -10px 10px 20px #9A989D;
   }
 
   .text-advantage {

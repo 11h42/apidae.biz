@@ -49,8 +49,17 @@
         </span>
         <span slot="header-subtitle">Apidae, c'est notre solution SIRH : Un logiciel tout-en-un. <br/>
           Retrouver toutes les fonctionnalités de Apidae : <br/> <br/>
-          -Gestion des congés et des absences <br/> -Suivi d'activité <br/> -Time tracking <br/>
-          -Gestion des notes de frais
+          <span class="link-sentence" v-if="page_selected != 'holiday'" @click="change_page_selected('holiday')"><router-link to="/holiday">- Gestion des congés et des absences </router-link></span>
+          <span v-if="page_selected == 'holiday'">- Gestion des congés et des absences </span>
+          <br/>
+          <span class="link-sentence" v-if="page_selected != 'cra'" @click="change_page_selected('cra')"><router-link to="/cra">- Suivi d'activité </router-link></span>
+          <span v-if="page_selected == 'cra'">- Suivi d'activité </span>
+          <br/>
+          <span class="link-sentence" v-if="page_selected != 'time'" @click="change_page_selected('time')"><router-link to="/time">- Time tracking </router-link></span>
+          <span v-if="page_selected == 'time'">- Time tracking </span>
+          <br/>
+          <span class="link-sentence" v-if="page_selected != 'cost'" @click="change_page_selected('cost')"><router-link to="/cost">- Gestion des notes de frais </router-link></span>
+          <span v-if="page_selected == 'cost'">- Gestion des notes de frais </span>
         </span>
         <small slot="text_button_free" class="size-btn-cover" @click="change_page_selected('accueil')">
           <router-link to="/">DÉCOUVREZ APIDAE</router-link>

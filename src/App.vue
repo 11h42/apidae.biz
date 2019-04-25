@@ -166,4 +166,15 @@
     margin-left: 10%;
   }
 
+  .link-sentence a {
+    color: #6c757d !important;
+  }
+
+  .link-sentence:hover a{
+    color: #fcce21 !important;
+  }
+  .link-sentence:hover {
+    cursor: pointer;
+  }
+
 </style>
