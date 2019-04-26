@@ -13,7 +13,7 @@
         <a @click="change_page_selected('holiday')"><router-link to="/holiday" :class="{'active-menu': page_selected == 'holiday'}">Congés et absences</router-link></a>
         <a @click="change_page_selected('cost')"><router-link to="/cost" :class="{'active-menu': page_selected == 'cost'}">Notes de frais</router-link></a>
         <a @click="change_page_selected('time')"><router-link to="/time" :class="{'active-menu': page_selected == 'time'}">Time tracking</router-link></a>
-        <a @click="change_page_selected('order')"><router-link to="/order" :class="{'active-menu': page_selected == 'order'}">ordre de mission</router-link></a>
+        <a @click="change_page_selected('order')"><router-link to="/order" :class="{'active-menu': page_selected == 'order'}">Ordre de mission</router-link></a>
         <a href="javascript:void(0);" class="icon" @click="transformMenu()">
           <i class="fa fa-bars"></i>
         </a>

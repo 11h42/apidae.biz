@@ -1,17 +1,17 @@
 <template>
   <div class="">
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
-         :is_with_information="false" :is_main_title="true">
+         :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
       <span slot="header" class="m-x-auto">
         Apidae : Logiciel de suivi d'activité
       </span>
-      <span slot="header-subtitle">Simplifier la déclaration des temps de travail de vos collaborateurs.
+      <span slot="header-subtitle">Simplifiez la déclaration des temps de travail de vos collaborateurs.
         Avec Apidae vos équipes remplissent leurs activités mensuellement et à la fin du mois vous récupérez
         le bilan de chacun. Cela vous permet de faciliter la gestion RH et financière de votre entreprise.
         <br/>
         <br/>
         Avoir une vision globale des temps de travail de vos équipes par projet vous permet de gérer
-        facilement la facturation client et de conaître la rentabilité des projets.
+        facilement la facturation client et de connaître la rentabilité des projets.
       </span>
       <small slot="text_button_free" class="size-btn-cover" @click="scroll_to_signup">
         <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement
@@ -23,7 +23,7 @@
         Suivi d'activité de vos équipes
       </span>
       <small slot="header-subtitle"> Apidae est la solution idéale pour favoriser le suivi d'activité de
-        votre entreprise. Notre Logiciel de suivi d'activité vous permet d'avoir une vision à 360° sur
+        votre entreprise. Notre logiciel de suivi d'activité vous permet d'avoir une vision à 360° sur
         l'activité de votre entreprise. Apidae, vous permet de connaître les temps d'activité de vos
         équipes par projet, et ainsi de faciliter la gestion de la facturation client.
       </small>
@@ -33,7 +33,7 @@
       <span slot="title">
         Les avantages utilisateurs
       </span>
-      <small slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilan d'activité. Avec Apidae
+      <small slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilans d'activité. Avec Apidae
         vous remplissez chaque jour vos activités professionnnel sur la plateforme.
       </small>
     </advantage-users>

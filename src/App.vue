@@ -41,7 +41,7 @@
           {
             scrollTop: 0
           },
-          1000
+          0
         );
         this.page_selected = pageSelected;
       },

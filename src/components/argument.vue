@@ -90,7 +90,7 @@
             title: "Remplir ses activités",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
-              "Tous les menbres de vos équipes remplissent leurs activités quotidiennes dans la " +
+              "Tous les membres de vos équipes remplissent leurs activités quotidiennes dans la " +
               "partie bilan d'activité : Ils indiquent le nom du projet/client sur lequel " +
               "ils travaillent et indiquent leur temps de travail (journée entière, demi-journée). " +
               "Vous pouvez remplir votre bilan d'activité quand vous le souhaitez selon les " +
@@ -439,8 +439,8 @@
     .sub-tittle-activity {
       max-width: calc(100% - 9em);
       float: right;
-      text-align: left;
-      font-size: 2em;
+      text-align: center;
+      font-size: 1.7em;
       margin: 1rem 0 0 0 !important;
       padding: 3rem 0 0 0 !important;
     }
@@ -449,8 +449,8 @@
   @media (max-width: 638px) {
     .sub-tittle-activity {
       float: right;
-      text-align: left;
-      font-size: 2em;
+      text-align: center;
+      font-size: 1.7em;
       margin: 0 0 0 1em;
       padding: 0;
     }
@@ -490,14 +490,14 @@
 
   .litle-title-activity {
     margin: auto;
-    font-size: 1.7em;
+    font-size: 1.3em;
     padding-bottom: 0.7em;
   }
 
   .para-argument {
     text-align: justify;
     text-align-last: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
     float: top;
     width: 80%;
     margin-left: 10%;
