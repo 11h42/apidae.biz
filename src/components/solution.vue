@@ -42,7 +42,7 @@
             description3:
                 "Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l'organisation de vos équipes.",
             label: "En savoir plus",
-            reference: "/cra",
+            reference: "/suivi-d-activite",
             pageSelected: "cra"
           },
           {
@@ -57,7 +57,7 @@
             description3:
                 "Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu.",
             label: "En savoir plus",
-            reference: "/holiday",
+            reference: "/conges-et-absences",
             pageSelected: "holiday"
           },
           {
@@ -72,7 +72,7 @@
             description3:
                 "De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise.",
             label: "En savoir plus",
-            reference: "/cost",
+            reference: "/notes-de-frais",
             pageSelected: "cost"
           },
           {
@@ -87,7 +87,7 @@
             description3:
                 "",
             label: "En savoir plus",
-            reference: "/time",
+            reference: "/time-tracking",
             pageSelected: "time"
           }
         ]

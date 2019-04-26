@@ -18,27 +18,27 @@ export default new Router({
       component: Home
     },
     {
-      path: '/cra',
+      path: '/suivi-d-activite',
       name: 'CRA',
       component: Cra
     },
     {
-      path: '/holiday',
+      path: '/conges-et-absences',
       name: 'HOLIDAY',
       component: Holiday
     },
     {
-      path: '/cost',
+      path: '/notes-de-frais',
       name: 'COST',
       component: Cost
     },
     {
-      path: '/time',
+      path: '/time-tracking',
       name: 'TIME',
       component: Time
     },
     {
-      path: '/order',
+      path: '/ordre-de-mission',
       name: 'ORDER',
       component: Order
     },
