@@ -46,6 +46,11 @@ export default new Router({
       path: '/mentions-legales',
       name: 'LEGAL',
       component: Legal
+    },
+    {
+      path: "*",
+      name: 'Home',
+      component: Home
     }
   ],
   mode: 'history'

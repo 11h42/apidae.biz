@@ -6,7 +6,7 @@
           Apidae : Gestion des ordres de mission (À venir prochainement)
         </span>
         <span slot="header-subtitle">Simplifiez la gestion des déplacements professionnels de vos équipes en
-          dématérialisant les processus de gestion des ordres de mission ponctuel ou permanent. Vos employés
+          dématérialisant les processus de gestion des ordres de mission ponctuels ou permanents. Vos employés
           remplissent leur ordre de mission sur l’application en renseignant les frais liés à ce déplacement. Vous
           pouvez également indiquer sur l’ordre de mission les frais maximums autorisés par type de frais pour chaque
           mission.
@@ -27,7 +27,7 @@
           Les avantages utilisateurs
         </span>
         <small slot="header-subtitle"> Apidae vous permet d’optimiser le processus de gestion des ordres de mission.
-          Vous gagnez du temps sur la gestion des frais professionnels avecun processus de demande de remboursement
+          Vous gagnez du temps sur la gestion des frais professionnels avec un processus de demande de remboursement
           simple et rapide. Apidae vous permet de centraliser les demandes et de donner un cadre légal aux déplacements
           de vos collaborateurs.
         </small>

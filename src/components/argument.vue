@@ -320,7 +320,7 @@
             information:
               "Le module ordre de mission permet à vos collaborateurs de saisir leurs demandes de déplacement " +
               "rapidement en y associant toutes les informations nécessaires (l’objet du déplacement, la date, le " +
-              "lieu, moyen de transport, ...)",
+              "lieu, le moyen de transport, ...)",
             look_infomation: "para-argument"
           },
           {
@@ -331,7 +331,7 @@
             look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Avant la validation de l’ordre de mission, vous pouvez vous assurer de la nécessité de cette dernière. " +
-              "Vous évitez tout frais inutiles.",
+              "Vous évitez tous frais inutiles.",
             look_infomation: "para-argument"
           },
           {
