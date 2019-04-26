@@ -2,9 +2,9 @@
   <div class="solution-container">
     <h2 class="title-solution">Nos solutions RH Apidae</h2>
     <hr class="split-line"/>
-    <section id="solutions" class="row">
+    <section id="solutions" class="feature-container">
       <feature v-for="feature in features" :illustration="feature.illustration" :id="feature.id" :key="feature.id" :link="feature.reference"
-         class="col-xs-12 col-lg-3 col-md-6 feature_container">
+         :class="feature.columnClass">
         <span class="title" slot="title">{{feature.title}}</span>
         <span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
         <p class="description" slot="description">{{feature.description}}</p>
@@ -31,6 +31,7 @@
       return {
         features: [
           {
+            columnClass: "feature-column",
             id: "suivi-d’activité",
             title: "Suivi d’activité",
             illustration: "fa fa-3x fa-line-chart color-illustration",
@@ -46,6 +47,7 @@
             pageSelected: "suivi-d-activite"
           },
           {
+            columnClass: "feature-column",
             id: "congés-et-absences",
             title: "Congés et absences",
             illustration: "fa fa-3x fa-plane color-illustration",
@@ -61,6 +63,7 @@
             pageSelected: "conges-et-absences"
           },
           {
+            columnClass: "feature-column",
             id: "notes-de-frais",
             title: "Notes de frais",
             illustration: "fa fa-3x fa-credit-card color-illustration",
@@ -76,10 +79,11 @@
             pageSelected: "notes-de-frais"
           },
           {
+            columnClass: "feature-column",
             id: "time-tracking",
             title: "Time tracking",
             illustration: "fa fa-3x fa-clock-o color-illustration",
-            subtitle: "Traçabilité des tâches à venir ou en cours",
+            subtitle: "Traçabilité des tâches à venir ou en cours (À venir prochainement)",
             description:
                 "Suivez en temps réel les temps d'activité de chacun de vos collaborateurs, par tâche et par projet, et obtenez des synthèses significatives et détaillées. ",
             description2:
@@ -89,6 +93,22 @@
             label: "En savoir plus",
             reference: "/time-tracking",
             pageSelected: "time-tracking"
+          },
+          {
+            columnClass: "feature-column",
+            id: "ordres-de-mission",
+            title: "Ordre de mission",
+            illustration: "fa fa-3x fa-clock-o color-illustration",
+            subtitle: "Règlementer les déplacements",
+            description:
+                "Vos collaborateurs ont une mission à l’extérieur des bureaux ? Avec Apidae ils vont pouvoir remplir un ordre de mission rapidement et compléter simplement toutes les informations nécessaires.",
+            description2:
+                "La gestion des ordres de mission avec Apidae vous permet de donner un cadre légal aux déplacements de vos employés et de donner les conditions de remboursement pour chaque mission.",
+            description3:
+                "",
+            label: "En savoir plus",
+            reference: "/ordre-de-mission",
+            pageSelected: "ordre-de-mission"
           }
         ]
       };
@@ -111,11 +131,41 @@
     width: 80%;
   }
 
-  .feature_container{
-    font-weight: bold;
-    font-size: large;
-    padding: 0 0 4em 0 !important;
-    margin: 0 !important;
+  .feature-container {
+    width: 80%;
+    margin-left: 10% !important;
+  }
+
+  @media (min-width: 1600px) {
+    .feature-column {
+      display: inline-flex !important;
+      width: 19%;
+      font-weight: bold;
+      font-size: large;
+      padding: 0 0 4em 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+  @media (max-width: 1600px) and (min-width: 638px) {
+    .feature-column {
+      display: inline-flex !important;
+      width: 48%;
+      font-weight: bold;
+      font-size: large;
+      padding: 0 0 4em 0 !important;
+      margin: 0 !important;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .feature-column {
+      width: 100%;
+      font-weight: bold;
+      font-size: large;
+      padding: 0 0 4em 0 !important;
+      margin: 0 !important;
+    }
   }
 
   .color-illustration {
