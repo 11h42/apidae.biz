@@ -25,11 +25,11 @@
             <iframe class="center video-size" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 col-xs-12" v-if="!is_with_video">
+        <div class="col-lg-6 col-md-12 col-xs-12 image-container" v-if="!is_with_video">
           <img v-if="page_selected == 'suivi-d-activite'" src="../assets/suivi-d-activité.jpg" class="size-image">
           <img v-if="page_selected == 'conges-et-absences'" src="../assets/gestion-des-congés.jpg" class="size-image">
           <img v-if="page_selected == 'notes-de-frais'" src="../assets/note-de-frais.jpg" class="size-image">
-          <img v-if="page_selected == 'time-tracking'" src="../assets/time-tracking.jpg" class="size-image-time">
+          <img v-if="page_selected == 'time-tracking'" src="../assets/time-tracking.jpg" class="size-image">
           <img v-if="page_selected == 'ordre-de-mission'" src="../assets/note-de-frais.jpg" class="size-image">
         </div>
       </div>
@@ -114,13 +114,47 @@
     width: 80%;
   }
 
-  .size-image {
+  .image-container {
+    position: relative;
     width: 100%;
   }
 
-  .size-image-time {
-    width: 70%;
-    margin-left: 15%;
+  @media screen and (min-width: 991px) {
+    .size-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  @media screen and (min-width: 991px) {
+    .video-size {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      max-height: 100%
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .size-image {
+      width: 80%;
+      margin: auto auto auto 10%;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .video-size {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 
   @media (min-width: 638px) {
@@ -128,10 +162,6 @@
       width: 80%;
       margin: auto;
     }
-  }
-  .video-size {
-    max-width: 100%;
-    max-height: 100%;
   }
 
   .information-style{
