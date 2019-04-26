@@ -12,8 +12,8 @@
 <!--        <a href="/cra">Suivi d'activité</a>-->
         <a @click="change_page_selected('conges-et-absences')"><router-link to="/conges-et-absences" :class="{'active-menu': page_selected == 'conges-et-absences'}">Congés et absences</router-link></a>
         <a @click="change_page_selected('notes-de-frais')"><router-link to="/notes-de-frais" :class="{'active-menu': page_selected == 'notes-de-frais'}">Notes de frais</router-link></a>
-        <a @click="change_page_selected('time-tracking')"><router-link to="/time-tracking" :class="{'active-menu': page_selected == 'time-tracking'}">Time tracking</router-link></a>
         <a @click="change_page_selected('ordre-de-mission')"><router-link to="/ordre-de-mission" :class="{'active-menu': page_selected == 'ordre-de-mission'}">Ordre de mission</router-link></a>
+        <a @click="change_page_selected('time-tracking')"><router-link to="/time-tracking" :class="{'active-menu': page_selected == 'time-tracking'}">Time tracking</router-link></a>
         <a href="javascript:void(0);" class="icon" @click="transformMenu()">
           <i class="fa fa-bars"></i>
         </a>

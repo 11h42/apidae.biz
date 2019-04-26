@@ -5,7 +5,7 @@
     </h2>
     <hr/>
     <div class="subtittle-advantage-users row">
-      <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12  ">
+      <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12 subtittle-advantage-container">
         <slot name="header-subtitle"></slot>
       </div>
     </div>
@@ -226,6 +226,11 @@
     width: 100%;
     text-align: center;
     font-size: 1.8em;
+  }
+
+  .subtittle-advantage-container {
+    font-size: 0.9em;
+    margin: auto;
   }
 
   .position-subtitle {

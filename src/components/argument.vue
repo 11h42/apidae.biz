@@ -382,6 +382,7 @@
   }
 
   .position-subtitle {
+    font-size: 0.9em;
     margin: auto;
   }
 
@@ -508,7 +509,7 @@
   .para-argument {
     text-align: justify;
     text-align-last: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     float: top;
     width: 80%;
     margin-left: 10%;
