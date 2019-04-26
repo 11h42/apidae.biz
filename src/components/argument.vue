@@ -9,7 +9,7 @@
         <slot name="header-subtitle"></slot>
       </div>
     </div>
-    <div class="row" v-if="page_selected == 'cra'">
+    <div class="row" v-if="page_selected == 'suivi-d-activite'">
       <div :class=argument.look_block v-for="argument in argumentsListCra">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
@@ -21,7 +21,7 @@
         <div style="height: 100%"></div>
       </div>
     </div>
-    <div class="row" v-if="page_selected == 'holiday'">
+    <div class="row" v-if="page_selected == 'conges-et-absences'">
       <div :class=argument.look_block v-for="argument in argumentsListHoliday">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
@@ -33,7 +33,7 @@
         <div style="height: 100%"></div>
       </div>
     </div>
-    <div class="row" v-if="page_selected == 'cost'">
+    <div class="row" v-if="page_selected == 'notes-de-frais'">
       <div :class=argument.look_block v-for="argument in argumentsListCost">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
@@ -45,7 +45,7 @@
         <div style="height: 100%"></div>
       </div>
     </div>
-    <div class="row" v-if="page_selected == 'time'">
+    <div class="row" v-if="page_selected == 'time-tracking'">
       <div :class=argument.look_block v-for="argument in argumentsListTime">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
@@ -57,7 +57,7 @@
         <div style="height: 100%"></div>
       </div>
     </div>
-    <div class="row" v-if="page_selected == 'order'">
+    <div class="row" v-if="page_selected == 'ordre-de-mission'">
       <div :class=argument.look_block v-for="argument in argumentsListOrder">
         <span :class=argument.look_number>{{argument.number}}</span>
         <span :class=argument.look_title>{{argument.title}}</span>
@@ -125,7 +125,7 @@
             look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
-            title: "Bilan facturation client",
+            title: "Facturation client",
             look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Simplifiez la gestion des facturations lient. Envoyé à votre service comptabilité " +
@@ -223,7 +223,7 @@
             litle_title: "Manuellement",
             look_litle_title: "litle-title-activity",
             information:
-              "Vous avez oublié de lancer ou d’arrêter le chronomètre pas de soucis, vouspouvez aussi remplir vos " +
+              "Vous avez oublié de lancer ou d’arrêter le chronomètre pas de soucis, vous pouvez aussi remplir vos " +
               "temps d’activité manuellement directement sur votre calendrier.",
             look_infomation: "para-argument"
           },
@@ -246,7 +246,7 @@
             look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Suivez en temps réel l’avancement des projets en cours. Obtenez une synthèse mensuelle avec des " +
-              "données significatifs tels que le projet le plustravaillé et les temps par projets.",
+              "données significatives telles que le projet le plus travaillé et les temps par projets.",
             look_infomation: "para-argument"
           }
         ],
@@ -272,7 +272,7 @@
             look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Transférez directement vos justificatifs de note   de frais depuis votre mobile. Prenez en photo le " +
-              "reçu et ajouter le sur Apidae. Ne perdez plus vos justificatifs de note de frais.",
+              "reçu et ajoutez le sur Apidae. Ne perdez plus vos justificatifs de note de frais.",
             look_infomation: "para-argument"
           },
           {

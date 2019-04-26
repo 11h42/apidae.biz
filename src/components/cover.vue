@@ -26,11 +26,11 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-xs-12" v-if="!is_with_video">
-          <img v-if="page_selected == 'cra'" src="../assets/suivi-d-activité.jpg" class="size-image">
-          <img v-if="page_selected == 'holiday'" src="../assets/gestion-des-congés.jpg" class="size-image">
-          <img v-if="page_selected == 'cost'" src="../assets/note-de-frais.jpg" class="size-image">
-          <img v-if="page_selected == 'time'" src="../assets/time-tracking.jpg" class="size-image">
-          <img v-if="page_selected == 'order'" src="../assets/note-de-frais.jpg" class="size-image">
+          <img v-if="page_selected == 'suivi-d-activite'" src="../assets/suivi-d-activité.jpg" class="size-image">
+          <img v-if="page_selected == 'conges-et-absences'" src="../assets/gestion-des-congés.jpg" class="size-image">
+          <img v-if="page_selected == 'notes-de-frais'" src="../assets/note-de-frais.jpg" class="size-image">
+          <img v-if="page_selected == 'time-tracking'" src="../assets/time-tracking.jpg" class="size-image-time">
+          <img v-if="page_selected == 'ordre-de-mission'" src="../assets/note-de-frais.jpg" class="size-image">
         </div>
       </div>
       <div class="row card-deck catchline" v-if="is_with_information">
@@ -70,12 +70,12 @@
           {
             title: "SIMPLIFIEZ VOS PROCESS RH",
             information:
-                "Automatiser vos processus RH et faite gagner du temps à vos collaborateurs"
+                "Automatiser vos processus RH et faites gagner du temps à vos collaborateurs"
           },
           {
             title: "UNE SOLUTION TOUT-EN-UN",
             information:
-                "Gérez vos notes de frais, vos comptes-rendus d'actovités, vos congés et vos temps " +
+                "Gérez vos notes de frais, vos comptes-rendus d'activités, vos congés et vos temps " +
                 "de travail depuis une seule application web ou mobile"
           }
         ]
@@ -116,6 +116,11 @@
 
   .size-image {
     width: 100%;
+  }
+
+  .size-image-time {
+    width: 70%;
+    margin-left: 15%;
   }
 
   @media (min-width: 638px) {

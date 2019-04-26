@@ -25,7 +25,7 @@
           d’absences et de congés sont centralisées sur une seule plateforme. Fini les demandes de congés qui sont
           oubliées, il n’y a plus de malentendu, ni de confusion. Si une demande est validée elle est directement
           visible dans le calendrier. Apidae vous permet donc de simplifier et de cadrer les demandes de congé.
-          Les services qui s’occupentde valider les congés ne sont plus dérangés pendant leur travail. Cela permet
+          Les services qui s’occupent de valider les congés ne sont plus dérangés pendant leur travail. Cela permet
           donc de fluidifier les demandes d’absence et de gagner en productivité.
         </small>
       </argument>
@@ -34,8 +34,8 @@
         <span slot="title">
           Les avantages utilisateurs
         </span>
-        <small slot="header-subtitle"> Gérer les congés n’a jamais était aussi simple et rapide. Apidae est un
-          logiciel 100% web utilisable sur tout type de support et disponible n’importe où. Les gestions des demandes
+        <small slot="header-subtitle"> Gérer les congés n’a jamais été aussi simple et rapide. Apidae est un
+          logiciel 100% web utilisable sur tous types de supports et disponible n’importe où. Les gestions des demandes
           de congés et d’absences peuvent donc être réalisées à distance. La partie congé et absence de notre
           solution RH vous permet de gérer facilement le planning de congés de vos équipes et de fluidifier chaque
           demande.
@@ -43,26 +43,26 @@
       </advantage-users>
 
       <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"
-           :is_with_information="false" :is_main_title="false">
+           :is_with_information="false" :is_main_title="false" :page_selected="page_selected">
         <span slot="header" class="m-x-auto">
           Découvrez toutes les fonctionnalités de logiciel RH APIDAE
         </span>
         <span slot="header-subtitle">Apidae, c'est notre solution SIRH : Un logiciel tout-en-un. <br/>
           Retrouver toutes les fonctionnalités de Apidae : <br/> <br/>
-          <span class="link-sentence" v-if="page_selected != 'holiday'" @click="change_page_selected('holiday')"><router-link to="/conges-et-absences">- Gestion des congés et des absences </router-link></span>
-          <span v-if="page_selected == 'holiday'">- Gestion des congés et des absences </span>
+          <span class="link-sentence" v-if="page_selected != 'conges-et-absences'" @click="change_page_selected('conges-et-absences')"><router-link to="/conges-et-absences">- Gestion des congés et des absences </router-link></span>
+          <span v-if="page_selected == 'conges-et-absences'">- Gestion des congés et des absences </span>
           <br/>
-          <span class="link-sentence" v-if="page_selected != 'cra'" @click="change_page_selected('cra')"><router-link to="/suivi-d-activite">- Suivi d'activité </router-link></span>
-          <span v-if="page_selected == 'cra'">- Suivi d'activité </span>
+          <span class="link-sentence" v-if="page_selected != 'suivi-d-activite'" @click="change_page_selected('suivi-d-activite')"><router-link to="/suivi-d-activite">- Suivi d'activité </router-link></span>
+          <span v-if="page_selected == 'suivi-d-activite'">- Suivi d'activité </span>
           <br/>
-          <span class="link-sentence" v-if="page_selected != 'time'" @click="change_page_selected('time')"><router-link to="/time-tracking">- Time tracking </router-link></span>
-          <span v-if="page_selected == 'time'">- Time tracking </span>
+          <span class="link-sentence" v-if="page_selected != 'time-tracking'" @click="change_page_selected('time-tracking')"><router-link to="/time-tracking">- Time tracking </router-link></span>
+          <span v-if="page_selected == 'time-tracking'">- Time tracking </span>
           <br/>
-          <span class="link-sentence" v-if="page_selected != 'cost'" @click="change_page_selected('cost')"><router-link to="/notes-de-frais">- Gestion des notes de frais </router-link></span>
-          <span v-if="page_selected == 'cost'">- Gestion des notes de frais </span>
+          <span class="link-sentence" v-if="page_selected != 'notes-de-frais'" @click="change_page_selected('notes-de-frais')"><router-link to="/notes-de-frais">- Gestion des notes de frais </router-link></span>
+          <span v-if="page_selected == 'notes-de-frais'">- Gestion des notes de frais </span>
           <br/>
-          <span class="link-sentence" v-if="page_selected != 'order'" @click="change_page_selected('order')"><router-link to="/ordre-de-mission">- Ordre de mission </router-link></span>
-          <span v-if="page_selected == 'order'">- Ordre de mission </span>
+          <span class="link-sentence" v-if="page_selected != 'ordre-de-mission'" @click="change_page_selected('ordre-de-mission')"><router-link to="/ordre-de-mission">- Ordre de mission </router-link></span>
+          <span v-if="page_selected == 'ordre-de-mission'">- Ordre de mission </span>
         </span>
         <small slot="text_button_free" class="size-btn-cover" @click="change_page_selected('accueil')">
           <router-link to="/">DÉCOUVREZ APIDAE</router-link>

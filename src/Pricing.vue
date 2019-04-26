@@ -95,7 +95,7 @@
             <div class="pricing-header">
               <span class="size-text-important">Premium</span>
               <hr>
-              <span class="size-title-big d-inline-block">Tarif dégréssif</span>
+              <span class="size-title-big d-inline-block">Tarif sur demande</span>
               <br>
               <i>Payez en fonction du nombre d'utilisateurs</i>
               <br>

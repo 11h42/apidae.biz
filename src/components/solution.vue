@@ -43,7 +43,7 @@
                 "Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l'organisation de vos équipes.",
             label: "En savoir plus",
             reference: "/suivi-d-activite",
-            pageSelected: "cra"
+            pageSelected: "suivi-d-activite"
           },
           {
             id: "congés-et-absences",
@@ -58,7 +58,7 @@
                 "Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu.",
             label: "En savoir plus",
             reference: "/conges-et-absences",
-            pageSelected: "holiday"
+            pageSelected: "conges-et-absences"
           },
           {
             id: "notes-de-frais",
@@ -73,7 +73,7 @@
                 "De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise.",
             label: "En savoir plus",
             reference: "/notes-de-frais",
-            pageSelected: "cost"
+            pageSelected: "notes-de-frais"
           },
           {
             id: "time-tracking",
@@ -88,7 +88,7 @@
                 "",
             label: "En savoir plus",
             reference: "/time-tracking",
-            pageSelected: "time"
+            pageSelected: "time-tracking"
           }
         ]
       };

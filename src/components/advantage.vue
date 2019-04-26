@@ -45,7 +45,7 @@
           {
             title: "SIMPLE D'UTILISATION",
             advantage:
-                "Conscinet que le changement peut être difficile à adopter, les équipes de Apidae " +
+                "Conscient que le changement peut être difficile à adopter, les équipes d'Apidae " +
                 "ont mis en place un logiciel RH facile à prendre en main, son interface ergonomique " +
                 "vous permet de l'installer rapidement au sein de votre entreprise. Vos équipes " +
                 "pourront prendre en main l'outil rapidement."
@@ -64,7 +64,7 @@
             title: "GAGNER EN PRODUCTIVITÉ ET EFFICACITÉ :",
             advantage:
                 "Gagner en productivité en intégrant notre SIRH dans votre entreprise. Faites gagner " +
-                "du temps à chaque menbre de votre équipe, en centratisant les tâches administratives " +
+                "du temps à chaque membre de votre équipe, en centratisant les tâches administratives " +
                 "sur une seule application RH."
           },
           {
