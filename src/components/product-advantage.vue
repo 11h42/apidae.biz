@@ -1,7 +1,7 @@
 <template>
   <article>
     <div class="product-advantage">
-      <div class="text-xs-left" id="heightSubTitle">
+      <div class="text-xs-left position-title" id="heightSubTitle">
         <i class="fa fa-circle-thin fa-3x icon-yellow build-icon"><span class="build-check">&#10003;</span></i>
         <span class="sub-tittle size-title-small">
           <slot name="title"></slot>
@@ -47,5 +47,9 @@
 
   .icon-yellow {
     color: #fcce21;
+  }
+
+  .position-title {
+    margin-bottom: 1em;
   }
 </style>

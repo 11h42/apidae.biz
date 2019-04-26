@@ -110,17 +110,29 @@
 
   function changeSizeSubTitle () {
     if (window.innerWidth > 768) {
-      var baseHeight = 0;
+      var baseHeightFirstLine = 0;
+      var baseHeightSecondLine = 0;
+      var count = 0;
       for (var id in window.heightSubTitle) {
+        count += 1;
         var subTitle = window.heightSubTitle[id];
-        if (subTitle.lastChild && subTitle.lastChild.offsetHeight > baseHeight) {
-          baseHeight = subTitle.lastChild.offsetHeight;
+        if (subTitle.lastChild && count > 2 && subTitle.lastChild.offsetHeight > baseHeightSecondLine) {
+          baseHeightSecondLine = subTitle.lastChild.offsetHeight;
+        }
+        if (subTitle.lastChild && count < 3 && subTitle.lastChild.offsetHeight > baseHeightFirstLine) {
+          baseHeightFirstLine = subTitle.lastChild.offsetHeight;
         }
       }
+      count = 0;
       for (var idIn in window.heightSubTitle) {
+        count += 1;
         var subTitle = window.heightSubTitle[idIn];
-        if (subTitle.style)
-          subTitle.style.height = baseHeight + 'px';
+        if (subTitle.style && count < 3) {
+          subTitle.style.height = baseHeightFirstLine + 'px';
+        }
+        if (subTitle.style && count > 2) {
+          subTitle.style.height = baseHeightSecondLine + 'px';
+        }
       }
     }
   }
