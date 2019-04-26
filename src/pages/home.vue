@@ -44,7 +44,8 @@
     props: {
       scroll_to_signup: { type: Function, required: true },
       scroll_to_price: { type: Function, required: true },
-      change_page_selected: { type: Function, required: true }
+      change_page_selected: { type: Function, required: true },
+      page_selected: { type: String, required: true }
     },
 
     components: {

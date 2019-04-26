@@ -1,10 +1,15 @@
 <template>
-  <div class="core-app" onresize="resizeEvent()" onload="loadEvent()">
+  <div class="core-app" onresize="resizeEvent()" onload="loadEvent()" v-on:scroll="scrollFunction()">
     <navbar :showbtntry="true" :scroll_to_signup="scroll_to_signup"
             :page_selected="page_selected" :change_page_selected="change_page_selected"></navbar>
 
     <router-view :scroll_to_signup="scroll_to_signup" :scroll_to_price="scroll_to_price"
                  :change_page_selected="change_page_selected" :page_selected="page_selected"/>
+
+    <div><a id="bt-retour" class="btn btn-lg btn-yellow fa fa-3x fa-arrow-circle-up bt-invisible"
+      @click="return_top_page">
+
+    </a></div>
 
     <my-footer></my-footer>
   </div>
@@ -47,6 +52,25 @@
       },
       default_page_selected: function () {
         return window.location.pathname.substring(1) !== "" ? window.location.pathname.substring(1) : 'accueil';
+      },
+      return_top_page: function () {
+        $(".core-app").animate(
+          {
+            scrollTop: 0
+          },
+          1000
+        );
+      },
+      scrollFunction: function () {
+        var valueClass = ($(".core-app")[0].scrollTop > $(".core-app")[0].offsetHeight) ? "bt-visible" : "bt-invisible";
+
+        if (document.getElementById("bt-retour").className.indexOf("bt-visible") > 0) {
+          document.getElementById("bt-retour").className = document.getElementById("bt-retour").className.replace("bt-visible", '');
+        }
+        if (document.getElementById("bt-retour").className.indexOf("bt-invisible") > 0) {
+          document.getElementById("bt-retour").className = document.getElementById("bt-retour").className.replace("bt-invisible", '');
+        }
+        document.getElementById("bt-retour").className += valueClass;
       }
     },
     data () {
@@ -133,6 +157,39 @@
     overflow-x: hidden;
     width: 100%;
     height: 100%;
+  }
+
+  #bt-retour {
+    bottom: 0;
+    position:fixed;
+    opacity: 0.5;
+    right: 0;
+  }
+
+  #bt-retour.bt-invisible{
+    opacity:0;
+    bottom:-3em;
+    position:fixed;
+    right: 0;
+    transition:all ease-in 0.5s;
+  }
+
+  #bt-retour.bt-visible{
+    right: 0;
+    position:fixed;
+    bottom:0;
+    opacity:0.5;
+  }
+
+  #bt-retour.bt-visible:hover {
+    transition:all ease-in 0.3s;
+    opacity: 1;
+  }
+
+  .btn-yellow {
+    margin: 1em;
+    padding: 0.2em;
+    background-color: #fcce21;
   }
 
   .size-btn-cover {
