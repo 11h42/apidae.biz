@@ -6,6 +6,7 @@ import Holiday from '@/pages/holiday';
 import Cost from '@/pages/cost';
 import Time from '@/pages/time';
 import Order from '@/pages/order';
+import Legal from '@/pages/legal';
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/order',
       name: 'ORDER',
       component: Order
+    },
+    {
+      path: '/mentions-legales',
+      name: 'LEGAL',
+      component: Legal
     }
   ],
   mode: 'history'

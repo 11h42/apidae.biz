@@ -28,9 +28,9 @@
         <div class="col-lg-6 col-md-12 col-xs-12" v-if="!is_with_video">
           <img v-if="page_selected == 'cra'" src="../assets/suivi-d-activité.jpg" class="size-image">
           <img v-if="page_selected == 'holiday'" src="../assets/gestion-des-congés.jpg" class="size-image">
-          <img v-if="page_selected == 'cost'" src="../assets/suivi-d-activité.jpg" class="size-image">
-          <img v-if="page_selected == 'time'" src="../assets/suivi-d-activité.jpg" class="size-image">
-          <img v-if="page_selected == 'order'" src="../assets/suivi-d-activité.jpg" class="size-image">
+          <img v-if="page_selected == 'cost'" src="../assets/note-de-frais.jpg" class="size-image">
+          <img v-if="page_selected == 'time'" src="../assets/time-tracking.jpg" class="size-image">
+          <img v-if="page_selected == 'order'" src="../assets/note-de-frais.jpg" class="size-image">
         </div>
       </div>
       <div class="row card-deck catchline" v-if="is_with_information">

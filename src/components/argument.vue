@@ -344,6 +344,17 @@
               "Une fois que l’ordre de mission est validé par le responsable concerné la plateforme émet donc " +
               "le billet qui vous permet d’être en règle.",
             look_infomation: "para-argument"
+          },
+          {
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_number: "icon-yellow build-icon build-icon-4",
+            number: "04",
+            title: "Être conforme à votre convention collective",
+            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
+            information:
+              "Soyez conforme à l’article 51 de la convention collective syntec en remplissant vos ordres de mission " +
+              "sur Apidae.",
+            look_infomation: "para-argument"
           }
         ]
       };

@@ -181,8 +181,8 @@
             title: "SALARIÉ",
             advantages: [
               "- Enregistrer son déplacement rapidement",
-              "- Suivre l’avancement de sa demande",
-              "- Délais de remboursement plus rapides"
+              "- Délais de remboursement plus rapides",
+              "- Être assuré légalement pendant son déplacement"
             ]
           },
           {
@@ -199,7 +199,8 @@
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "- Diminuer les temps de remboursement",
-              "- Gagner du temps dans la gestion des frais professionnels"
+              "- Gagner du temps dans la gestion des frais professionnels",
+              "- Anticiper les dépenses"
             ]
           }
         ]

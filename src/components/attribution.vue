@@ -3,7 +3,7 @@
     <p class="text-muted">
       © 2019 Apidae
       ·
-      <a href="/src/mentions-legales.html">Mentions légales</a>
+      <a><router-link to="/mentions-legales">Mentions légales</router-link></a>
       par <a href="http://akema.fr">Akema.fr</a>.
     </p>
   </div>
