@@ -46,7 +46,7 @@
         this.page_selected = pageSelected;
       },
       default_page_selected: function () {
-        return window.location.pathname.substring(1);
+        return window.location.pathname.substring(1) !== "" ? window.location.pathname.substring(1) : 'accueil';
       }
     },
     data () {

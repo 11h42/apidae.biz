@@ -51,6 +51,9 @@
           <br/>
           <span class="link-sentence" v-if="page_selected != 'cost'" @click="change_page_selected('cost')"><router-link to="/cost">- Gestion des notes de frais </router-link></span>
           <span v-if="page_selected == 'cost'">- Gestion des notes de frais </span>
+          <br/>
+          <span class="link-sentence" v-if="page_selected != 'order'" @click="change_page_selected('order')"><router-link to="/order">- Ordre de mission </router-link></span>
+          <span v-if="page_selected == 'order'">- Ordre de mission </span>
         </span>
         <small slot="text_button_free" class="size-btn-cover" @click="change_page_selected('accueil')">
           <router-link to="/">DÉCOUVREZ APIDAE</router-link>

@@ -56,6 +56,7 @@
               <span>Inscription</span>
             </button>
           </div>
+          <label class="col-xs-12"><i class="text-muted size-title-small"><br/>Aucune carte de crédit demandée</i></label>
         </form>
       </div>
 
