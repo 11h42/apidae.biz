@@ -1,6 +1,6 @@
 <template>
   <div class="advantage-users-container">
-    <h2 class="advantage-users-argument">
+    <h2 class="title-size-responsive">
       <slot name="title"></slot>
     </h2>
     <hr/>
@@ -215,10 +215,6 @@
     text-align: center;
     margin-left: 10%;
     width: 80%;
-  }
-
-  .advantage-users-argument {
-    font-size: 3.6em;
   }
 
   .subtittle-advantage-users {

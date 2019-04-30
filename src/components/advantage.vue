@@ -2,7 +2,7 @@
   <div class="row advantage-container">
     <div class="col-lg-5 col-md-12 col-xs-12">
       <div class="main-advantage">
-        <h2 class="title-advantage">Les avantages du logiciel RH Apidae</h2>
+        <h2 class="title-advantage title-size-responsive">Les avantages du logiciel RH Apidae</h2>
         <br/>
         <span class="main-text">
           Apidae est une solution de gestion d'entreprise facile à mettre en place au sein de vos équipes.
@@ -121,7 +121,6 @@
 
   .title-advantage {
     text-align: left;
-    font-size: 3.6em;
   }
 
   .product-advantage-container {

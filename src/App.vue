@@ -246,4 +246,25 @@
     cursor: pointer;
   }
 
+  @media (min-width: 992px) {
+    .title-size-responsive {
+      font-weight: bold;
+      font-size: 2.5em;
+    }
+  }
+
+  @media (min-width: 638px) and (max-width: 992px) {
+    .title-size-responsive {
+      font-weight: bold;
+      font-size: 2em;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .title-size-responsive {
+      font-weight: bold;
+      font-size: 1.8em;
+    }
+  }
+
 </style>

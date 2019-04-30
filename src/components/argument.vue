@@ -1,6 +1,6 @@
 <template>
   <div class="argument-container">
-    <h2 class="title-argument">
+    <h2 class="title-size-responsive">
       <slot name="title"></slot>
     </h2>
     <hr/>
@@ -371,10 +371,6 @@
     width: 80%;
   }
 
-  .title-argument {
-    font-size: 3.6em;
-  }
-
   .subtittle-argument {
     width: 100%;
     text-align: center;
@@ -391,7 +387,7 @@
     margin: 0;
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .look-block-left {
       padding: 0;
       margin: 0;

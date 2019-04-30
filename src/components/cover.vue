@@ -4,7 +4,7 @@
       <div class="catchline row">
         <div class="col-lg-6 col-md-12 col-xs-12">
           <div class="cover-para">
-            <h1 class="maintitle" v-if="is_main_title">
+            <h1 class="maintitle title-size-responsive" v-if="is_main_title">
               <slot name="header"></slot>
             </h1>
             <h2 class="maintitle" v-if="!is_main_title">
