@@ -198,10 +198,20 @@
     opacity: 1;
   }
 
-  .btn-yellow {
-    margin: 1em;
-    padding: 0.2em;
-    background-color: #fcce21;
+  @media (min-width: 638px) {
+    .btn-yellow {
+      margin: 1em;
+      padding: 0.2em;
+      background-color: #fcce21;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .btn-yellow {
+      margin: 0.2em;
+      padding: 0.1em;
+      background-color: #fcce21;
+    }
   }
 
   .size-btn-cover {

@@ -5,7 +5,7 @@
     </h2>
     <hr/>
     <div class="subtittle-argument">
-      <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12 position-subtitle big-text-responsive">
+      <div class="position-subtitle big-text-responsive">
         <slot name="header-subtitle"></slot>
       </div>
     </div>
@@ -378,6 +378,7 @@
   }
 
   .position-subtitle {
+    padding-bottom: 1em;
     margin: auto;
   }
 
