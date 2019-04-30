@@ -134,10 +134,14 @@
   .feature-container {
     width: 80%;
     margin-left: 10% !important;
+    position: relative;
+    height: 100%;
   }
 
   @media (min-width: 1600px) {
     .feature-column {
+      position: initial;
+      height: 100%;
       display: inline-flex !important;
       width: 19%;
       font-weight: bold;
@@ -149,6 +153,8 @@
 
   @media (max-width: 1600px) and (min-width: 638px) {
     .feature-column {
+      position: relative;
+      height: 100%;
       display: inline-flex !important;
       width: 48%;
       font-weight: bold;
@@ -160,6 +166,7 @@
 
   @media (max-width: 638px) {
     .feature-column {
+      position: relative;
       width: 100%;
       font-weight: bold;
       font-size: large;

@@ -70,7 +70,6 @@
   }
   .feature .card-button {
     position: absolute;
-    left: 50%;
     bottom: 1.5em;
   }
   .feature .subtitle {
