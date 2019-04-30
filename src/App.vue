@@ -267,4 +267,22 @@
     }
   }
 
+  @media (min-width: 638px) {
+    .btn-responsive {
+      padding-left: 50px !important;
+      padding-right: 50px !important;
+      margin-top: 60px !important;
+      margin-bottom: 40px !important;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .btn-responsive {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      margin-top: 30px !important;
+      margin-bottom: 40px !important;
+    }
+  }
+
 </style>

@@ -12,7 +12,7 @@
         <br/>
         <div class="place-button">
           <div class="center-button">
-            <a class="btn btn-lg btn-yellow" v-if="showbtntry" @click="scroll_to_signup">Essayez dés maintenant</a>
+            <a class="btn btn-lg btn-yellow btn-responsive" v-if="showbtntry" @click="scroll_to_signup">Essayez dés maintenant</a>
           </div>
         </div>
       </div>

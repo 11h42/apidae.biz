@@ -15,7 +15,7 @@
               <slot name="header-subtitle"></slot>
             </p>
 
-            <a class="btn btn-lg" id="cover-trial-button">
+            <a class="btn btn-lg btn-responsive" id="cover-trial-button">
               <slot name="text_button_free" class="free-size"></slot>
             </a>
           </div>
@@ -99,7 +99,7 @@
   }
 
   .subtitle {
-    text-align: justify;
+    hyphens: auto;
     font-weight: lighter;
     font-size: 1.3em;
   }

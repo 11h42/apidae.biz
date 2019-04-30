@@ -233,12 +233,44 @@
     margin: auto;
   }
 
-  .image-advantage {
-    margin: 2em 0;
-    width: 20em;
-    height: 15em;
-    border: none;
-    box-shadow: -10px 10px 20px #9A989D;
+  @media (min-width: 1140px) {
+    .image-advantage {
+      margin: 2em 0;
+      width: 18em;
+      height: 13.5em;
+      border: none;
+      box-shadow: -10px 10px 20px #9A989D;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1140px){
+    .image-advantage {
+      margin: 2em 0;
+      width: 12em;
+      height: 9em;
+      border: none;
+      box-shadow: -10px 10px 20px #9A989D;
+    }
+  }
+
+  @media (min-width: 638px) and (max-width: 992px){
+    .image-advantage {
+      margin: 2em 0;
+      width: 18em;
+      height: 13.5em;
+      border: none;
+      box-shadow: -10px 10px 20px #9A989D;
+    }
+  }
+
+  @media (max-width: 638px){
+    .image-advantage {
+      margin: 2em 0;
+      width: 12em;
+      height: 9em;
+      border: none;
+      box-shadow: -10px 10px 20px #9A989D;
+    }
   }
 
   .text-advantage {

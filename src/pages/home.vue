@@ -13,7 +13,7 @@
         application, c'est ce que Apidae vous propose &nbsp;!
       </span>
       <small slot="text_button_free" class="size-btn-cover" @click="scroll_to_signup">
-        <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement notre solution APIDAE !
+        <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement
       </small>
     </cover>
 
