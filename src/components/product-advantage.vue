@@ -3,7 +3,7 @@
     <div class="product-advantage">
       <div class="text-xs-left position-title" id="heightSubTitle">
         <i class="fa fa-circle-thin fa-3x icon-yellow build-icon"><span class="build-check">&#10003;</span></i>
-        <span class="sub-tittle size-title-small">
+        <span class="sub-tittle sub-title-responsive">
           <slot name="title"></slot>
         </span>
       </div>
@@ -31,11 +31,12 @@
   }
 
   .sub-tittle {
-    width: calc(100% - 2em);
+    font-weight: bold;
+    width: calc(100% - 2.2em);
     text-align: left;
     float: right;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0.5em;
   }
 
   .build-check {

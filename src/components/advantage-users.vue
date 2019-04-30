@@ -229,10 +229,6 @@
     margin: auto;
   }
 
-  .position-subtitle {
-    margin: auto;
-  }
-
   @media (min-width: 1140px) {
     .image-advantage {
       margin: 2em 0;

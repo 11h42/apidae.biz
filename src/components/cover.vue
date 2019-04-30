@@ -11,7 +11,7 @@
               <slot name="header"></slot>
             </h2>
             <br/>
-            <p class="text-muted subtitle ">
+            <p class="text-muted subtitle main-text-responsive">
               <slot name="header-subtitle"></slot>
             </p>
 
@@ -101,7 +101,6 @@
   .subtitle {
     hyphens: auto;
     font-weight: lighter;
-    font-size: 1.3em;
   }
 
   .cover {

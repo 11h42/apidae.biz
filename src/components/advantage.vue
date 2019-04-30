@@ -4,7 +4,7 @@
       <div class="main-advantage">
         <h2 class="title-advantage title-size-responsive">Les avantages du logiciel RH Apidae</h2>
         <br/>
-        <span class="main-text">
+        <span class="main-text-responsive">
           Apidae est une solution de gestion d'entreprise facile à mettre en place au sein de vos équipes.
           Apidae vous accompagne dans la digitalisation des tâches administratives pour faciliter la gestion du
           personnel. Avec Apidae vous faites gagner du temps à tous vos collaborateurs &nbsp;!
@@ -113,10 +113,6 @@
     font-weight: bold;
     font-size: x-large;
     background-color: #fcce21;
-  }
-
-  .main-text {
-    font-size: x-large;
   }
 
   .title-advantage {

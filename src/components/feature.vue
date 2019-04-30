@@ -3,10 +3,10 @@
     <div class="card-container">
       <!--col-lg-9 col-md-10 col-xs-12-->
       <div class="text-xs-center">
-        <div class="card-title">
+        <div class="card-title sub-title-responsive">
           <slot name="title"></slot>
         </div>
-        <div class="card-subtitle text-muted">
+        <div class="card-subtitle text-muted sub-second-title-responsive">
           <slot name="subtitle"></slot>
         </div>
       </div>
@@ -61,12 +61,6 @@
   .feature .card-container {
     margin-left: 10%;
     width: 80%;
-  }
-  .feature .card-title {
-    font-size: xx-large;
-  }
-  .feature .card-subtitle {
-    font-size: x-large;
   }
   .feature .card-button {
     position: absolute;
