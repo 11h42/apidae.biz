@@ -81,13 +81,47 @@
   };
 
   function resizeEvent () {
+    changeSizeSubTitleSolution();
     changeSizeSubTitle();
     changeSizeTitleInformation();
   }
 
   function loadEvent () {
+    changeSizeSubTitleSolution();
     changeSizeSubTitle();
     changeSizeTitleInformation();
+  }
+
+  function changeSizeSubTitleSolution () {
+    if (window.innerWidth > 1600) {
+      var baseHeight = 0;
+      for (var id in window.heightSubTitleSolution) {
+        var subTitle = window.heightSubTitleSolution[id];
+        if (subTitle.firstChild && subTitle.firstChild.offsetHeight > baseHeight) {
+          baseHeight = subTitle.firstChild.offsetHeight;
+        }
+      }
+      for (var idIn in window.heightSubTitleSolution) {
+        var subTitle = window.heightSubTitleSolution[idIn];
+        if (subTitle.style) {
+          subTitle.style.height = baseHeight + 'px';
+        }
+      }
+
+      baseHeight = 0;
+      for (var id in window.heightDescSolution) {
+        var subTitle = window.heightDescSolution[id];
+        if (subTitle.firstChild && subTitle.firstChild.offsetHeight > baseHeight) {
+          baseHeight = subTitle.firstChild.offsetHeight;
+        }
+      }
+      for (var idIn in window.heightDescSolution) {
+        var subTitle = window.heightDescSolution[idIn];
+        if (subTitle.style) {
+          subTitle.style.height = baseHeight + 'px';
+        }
+      }
+    }
   }
 
   function changeSizeTitleInformation () {

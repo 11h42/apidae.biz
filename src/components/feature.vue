@@ -3,10 +3,10 @@
     <div class="card-container">
       <!--col-lg-9 col-md-10 col-xs-12-->
       <div class="text-xs-center">
-        <div class="card-title sub-title-responsive">
+        <div class="card-title sub-title-responsive" id="heightSubTitleSolution">
           <slot name="title"></slot>
         </div>
-        <div class="card-subtitle text-muted sub-second-title-responsive">
+        <div class="card-subtitle text-muted sub-second-title-responsive" id="heightDescSolution" >
           <slot name="subtitle"></slot>
         </div>
       </div>
