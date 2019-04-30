@@ -98,7 +98,7 @@
             columnClass: "feature-column",
             id: "ordres-de-mission",
             title: "Ordre de mission",
-            illustration: "fa fa-3x fa-clock-o color-illustration",
+            illustration: "fa fa-3x fa-clock-o icon-mission-order color-illustration",
             subtitle: "Règlementer les déplacements",
             description:
                 "Vos collaborateurs ont une mission à l’extérieur des bureaux ? Avec Apidae ils vont pouvoir remplir un ordre de mission rapidement et compléter simplement toutes les informations nécessaires.",
@@ -189,6 +189,12 @@
     font-weight: bold;
     position: relative;
     left: -50%;
+  }
+
+  .icon-mission-order {
+    color: transparent !important;
+    background: url("../assets/icon-mission-order.png") no-repeat;
+    background-position: top;
   }
 
 </style>
