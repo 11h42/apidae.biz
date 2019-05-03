@@ -136,8 +136,8 @@
   </div>
 </template>
 <script type="text/ecmascript-6">
-import Navbar from "./components/navbar";
-import MyFooter from "./components/footer";
+import Navbar from "./navbar";
+import MyFooter from "./footer";
 
 export default {
   props: {
@@ -156,9 +156,9 @@ export default {
 </script>
 
 <style>
-  @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-  @import "../node_modules/font-awesome/css/font-awesome.min.css";
-  @import "../node_modules/hint.css/hint.min.css";
+  @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+  @import "../../node_modules/font-awesome/css/font-awesome.min.css";
+  @import "../../node_modules/hint.css/hint.min.css";
 
   #pricing-container {
 

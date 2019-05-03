@@ -74,8 +74,8 @@
   import Argument from "./../components/argument";
   import AdvantageUsers from "./../components/advantage-users";
   import CallToAction from "./../components/call-to-action";
-  import Pricing from "./../Pricing.vue";
-  import Signup from "./../Signup.vue";
+  import Pricing from "./../components/Pricing.vue";
+  import Signup from "./../components/Signup.vue";
 
   export default {
     props: {
