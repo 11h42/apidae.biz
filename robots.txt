@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /build/
+Disallow: /config/
+Disallow: /src/
+Disallow: /static/
+
+
+Sitemap: https://apidae.biz/sitemap.xml
