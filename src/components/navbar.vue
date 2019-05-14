@@ -2,7 +2,7 @@
   <nav class="navbar navbar-full navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
+        <img src="../assets/logo-apidae.jpg" alt="Logo Apidae" id="navbar-logo">
         &nbsp;Apidae</a>
       <div class="nav-item navmenu" id="navmenuId">
         <a @click="change_page_selected('accueil'); transformMenu();"><router-link to="/" :class="{'active-menu': page_selected == 'accueil'}">
