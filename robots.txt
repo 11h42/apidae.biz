@@ -5,4 +5,4 @@ Disallow: /src/
 Disallow: /static/
 
 
-Sitemap: https://apidae.netlify.com/sitemap.xml
+Sitemap: https://apidae.biz/sitemap.xml

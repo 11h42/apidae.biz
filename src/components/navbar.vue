@@ -18,7 +18,7 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      <a class="nav-item btn btn-yellow" v-if="showbtntry" @click="scroll_to_signup">Essai gratuit</a>
+      <a id="essai" class="nav-item btn btn-yellow" v-if="showbtntry" @click="scroll_to_signup">Essai gratuit</a>
     </div>
   </nav>
 </template>
@@ -73,6 +73,10 @@
 
   nav a.btn-yellow {
     background-color: #fcce21;
+  }
+
+  #essai {
+    padding : 1%;
   }
 
   nav a.btn-default {

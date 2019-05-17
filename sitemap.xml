@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apidae.netlify.com/</loc>
+    <loc>https://apidae.biz/</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://apidae.netlify.com/suivi-d-activite</loc>
+    <loc>https://apidae.biz/suivi-d-activite</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://apidae.netlify.com/conges-et-absences</loc>
+    <loc>https://apidae.biz/conges-et-absences</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://apidae.netlify.com/notes-de-frais</loc>
+    <loc>https://apidae.biz/notes-de-frais</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://apidae.netlify.com/ordre-de-mission</loc>
+    <loc>https://apidae.biz/ordre-de-mission</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://apidae.netlify.com/time-tracking</loc>
+    <loc>https://apidae.biz/time-tracking</loc>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
