@@ -422,6 +422,7 @@
       font-size: 7em;
       float: left;
       width: 1.3em;
+      margin-left: .3em;
     }
   }
 
@@ -430,6 +431,7 @@
       font-size: 5em;
       float: left;
       width: 1em;
+      margin-left: .3em;
     }
   }
 
