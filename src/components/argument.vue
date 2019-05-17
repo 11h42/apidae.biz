@@ -118,7 +118,7 @@
             information:
               "Apidae regroupe les différentes informations remplies par vos équipes et vous donne " +
               "des statistiques suite au bilan d'activité de vos équipes. Par exemple vous pouvez " +
-              "maintenant connaître le temps de travail consacré à chaque projet.",
+              "maintenant connaître le temps de travail consacré à chacun des projet.",
             look_infomation: "para-argument",
           },
           {
@@ -128,7 +128,7 @@
             title: "Facturation client",
             look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
-              "Simplifiez la gestion des facturations lient. Envoyé à votre service comptabilité " +
+              "Simplifiez la gestion des facturations client. Envoyé à votre service comptabilité " +
               "la synthèse des temps d'activité par projet/ par client.",
             look_infomation: "para-argument"
           }
@@ -141,9 +141,9 @@
             title: "Faites vos demandes",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
-              "Apidae contient un module Absences et Congés. Depuis cette page vous pouvez faire vos demandes de " +
+              "Apidae contient un module Absences et Congés. Depuis cette page, vous pouvez faire vos demandes de " +
               "congés simplement. Remplissez les dates et le motif de votre absence (Formation, arrêt maladie, RTT, " +
-              "congés payés,événement familial,  ....). Une fois votre demande terminée vous pouvez l’envoyer " +
+              "congés payés, événement familial,  ....). Une fois votre demande terminée vous pouvez l’envoyer " +
               "directement à votre responsable.",
             look_infomation: "para-argument"
           },
@@ -155,7 +155,7 @@
             look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Pour prévenir le responsable, un e-mail lui est envoyé automatiquement après la demande d’absence " +
-              "rédigée par l’employé. L’employé peut connaitre l’état de sa demande d’absence directement sur la " +
+              "rédigée par l’employé. Celui-ci peut connaitre l’état de sa demande d’absence directement sur la " +
               "plateforme : Validée, refusée ou en attente.",
             look_infomation: "para-argument"
           },
@@ -166,7 +166,7 @@
             title: "Gestion de la validation des congés",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
-              "Sur le Dashboard de Apidae le responsable a une vision sur les demandes en cours. Ainsi il va pouvoir " +
+              "Sur le Dashboard de Apidae, le responsable a une vision sur les demandes en cours. Ainsi il va pouvoir " +
               "valider directement ou non les demandes de congés. Pour faciliter la prise de décision, un calendrier " +
               "global des absences est disponible pour permettre de voir les absences de tous les collaborateurs. " +
               "Cela lui donne une vision globale de l’effectif présent.",
@@ -190,7 +190,7 @@
             title: "Calendrier des absences",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
-              "Une fois validée l’absence est automatiquement renseignée sur le calendrier. L’accès au calendrier " +
+              "Une fois validée, l’absence est automatiquement renseignée sur le calendrier. L’accès au calendrier " +
               "est paramétrable, les collaborateurs ont une visibilité sur le calendrier des absences en fonction de " +
               "leur droit.",
             look_infomation: "para-argument"
@@ -223,7 +223,7 @@
             litle_title: "Manuellement",
             look_litle_title: "litle-title-activity",
             information:
-              "Vous avez oublié de lancer ou d’arrêter le chronomètre pas de soucis, vous pouvez aussi remplir vos " +
+              "Vous avez oublié de lancer ou d’arrêter le chronomètre ? Pas de soucis, vous pouvez aussi remplir vos " +
               "temps d’activité manuellement directement sur votre calendrier.",
             look_infomation: "para-argument"
           },
@@ -271,7 +271,7 @@
             title: "Les justificatifs des notes de frais",
             look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
-              "Transférez directement vos justificatifs de note   de frais depuis votre mobile. Prenez en photo le " +
+              "Transférez directement vos justificatifs de note de frais depuis votre mobile. Prenez en photo le " +
               "reçu et ajoutez le sur Apidae. Ne perdez plus vos justificatifs de note de frais.",
             look_infomation: "para-argument"
           },
@@ -282,7 +282,7 @@
             title: "La validation des frais professionnels",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
-              "Une fois la demande créée par le salarié le manager reçoit automatiquement un mail qui lui indique " +
+              "Une fois la demande créée par le salarié, le manager reçoit automatiquement un mail qui lui indique " +
               "une nouvelle demande de remboursement de frais professionnels par un de ses collaborateurs. Il peut " +
               "ainsi valider la demande pour lancer le processus de remboursement",
             look_infomation: "para-argument"
@@ -341,7 +341,7 @@
             title: "Émission du billet",
             look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
             information:
-              "Une fois que l’ordre de mission est validé par le responsable concerné la plateforme émet donc " +
+              "Une fois que l’ordre de mission est validé par le responsable concerné, la plateforme émet donc " +
               "le billet qui vous permet d’être en règle.",
             look_infomation: "para-argument"
           },
@@ -352,7 +352,7 @@
             title: "Être conforme à votre convention collective",
             look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
-              "Soyez conforme à l’article 51 de la convention collective syntec en remplissant vos ordres de mission " +
+              "Soyez conforme à l’article 51 de la convention collective Syntec en remplissant vos ordres de mission " +
               "sur Apidae.",
             look_infomation: "para-argument"
           }
@@ -451,6 +451,7 @@
     .build-icon-2 {
       position: relative;
       left: -50px;
+      margin-left: 0.3em;
     }
   }
 
@@ -458,6 +459,7 @@
     .build-icon-4 {
       position: relative;
       left: -25px;
+      margin-left: 0.3em;
     }
   }
 
@@ -532,7 +534,7 @@
   }
 
   .para-argument {
-    text-align: justify;
+    text-align: center;
     text-align-last: center;
     font-size: 1.2em;
     float: top;
