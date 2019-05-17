@@ -467,7 +467,7 @@
     .sub-tittle-activity {
       max-width: calc(100% - 8em);
       float: right;
-      text-align: center;
+      text-align: left;
       font-size: 1.7em;
       margin: 1rem 0 0 0 !important;
       padding: 3rem 0 0 0 !important;
@@ -488,7 +488,7 @@
   @media (max-width: 638px) {
     .sub-tittle-activity {
       float: right;
-      text-align: center;
+      text-align: left;
       font-size: 1.5em;
       margin: 0 0 0.5em 1em;
       padding: 0;
@@ -534,8 +534,8 @@
   }
 
   .para-argument {
-    text-align: center;
-    text-align-last: center;
+    text-align: left;
+    text-align-last: left;
     font-size: 1.2em;
     float: top;
     width: 80%;

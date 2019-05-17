@@ -76,7 +76,7 @@
   }
 
   #essai {
-    padding : 2%;
+    padding : 1%;
   }
 
   nav a.btn-default {
