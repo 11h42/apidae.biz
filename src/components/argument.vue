@@ -438,6 +438,7 @@
       font-size: 4em;
       margin: auto;
       width: 0.7em;
+      margin-left: .3em;
     }
   }
 
@@ -450,7 +451,7 @@
   @media (min-width: 992px) {
     .build-icon-2 {
       position: relative;
-      left: -50px;
+      left: 0px;
       margin-left: 0.3em;
     }
   }
@@ -458,7 +459,7 @@
   @media (min-width: 992px) {
     .build-icon-4 {
       position: relative;
-      left: -25px;
+      left: 0px;
       margin-left: 0.3em;
     }
   }
@@ -498,14 +499,14 @@
   @media (min-width: 992px) {
     .sub-tittle-activity-2 {
       position: relative;
-      left: -50px;
+      left: 0px;
     }
   }
 
   @media (min-width: 992px) {
     .sub-tittle-activity-4 {
       position: relative;
-      left: -25px;
+      left: 0px;
     }
   }
 
