@@ -68,6 +68,7 @@
     "prerender-spa-plugin": "^3.4.0",
     "pretty-data": "^0.40.0",
     "rimraf": "^2.6.0",
+    "robotstxt-webpack-plugin": "^5.0.0",
     "semver": "^6.0.0",
     "shelljs": "^0.8.3",
     "sitemap-webpack-plugin": "^0.6.0",
