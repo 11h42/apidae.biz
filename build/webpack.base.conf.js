@@ -5,6 +5,7 @@ const config = require('../config');
 const { VueLoaderPlugin } = require('vue-loader');
 const vueLoaderConfig = require('./vue-loader.conf');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
 
@@ -107,6 +108,7 @@ module.exports = {
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
         }),
+    new FaviconsWebpackPlugin('./src/assets/logo-apidae.png'),
   ],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
