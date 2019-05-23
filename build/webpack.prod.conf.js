@@ -9,12 +9,21 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
+const PrerenderSPAPlugin = require('prerender-spa-plugin');
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const prettydata = require('pretty-data');
+
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : require('../config/prod.env');
+
+const prettyPrint = xml => {
+  const result = prettydata.pd.xml(xml);
+  return result;
+};
+
 
 const webpackConfig = merge(baseWebpackConfig, {
   mode: 'production',
@@ -89,6 +98,13 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
+
+    new SitemapPlugin('https://apidae.biz', config.build.paths, {
+      changeFreq: 'monthly',
+      priority: 1,
+      skipGzip: true,
+      formatter: prettyPrint,
+    }),
 
     // new PrerenderSPAPlugin({
     //   // Required - The path to the webpack-outputted app to prerender.
