@@ -3,7 +3,10 @@
       <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
            :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
         <span slot="header" class="m-x-auto">
-          Apidae : Gestion des ordres de mission (À venir prochainement)
+          Gestion des ordres de mission
+        </span>
+        <span slot="header-small" class="m-x-auto">
+          (À venir prochainement)
         </span>
         <span slot="header-subtitle">Simplifiez la gestion des déplacements professionnels de vos équipes en
           dématérialisant les processus de gestion des ordres de mission ponctuels ou permanents. Vos employés

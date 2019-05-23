@@ -3,7 +3,7 @@
       <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
         <span slot="header" class="m-x-auto">
-          Apidae : Gestion des congés et absences
+          Gestion des congés et des absences
         </span>
         <span slot="header-subtitle">Apidae est la solution idéale pour digitaliser la gestion des congés et des
           absences pour votre entreprise TPE et PME. Gérer les congés n’a jamais été aussi simple et rapide !

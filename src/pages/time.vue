@@ -3,7 +3,10 @@
       <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
         <span slot="header" class="m-x-auto">
-          Apidae : Votre logiciel de gestion des temps de travail ( À venir prochainement)
+          Votre logiciel de gestion des temps de travail
+        </span>
+        <span slot="header-small" class="m-x-auto">
+          ( À venir prochainement)
         </span>
         <span slot="header-subtitle">La fonctionnalité Time Tracking de Apidae vous permet de suivre en détail
           les tâches réalisées par projet. Vos collaborateurs peuvent remplir leurs missions par heure. Cela permet
