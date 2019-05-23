@@ -77,6 +77,7 @@
 
   #essai {
     padding : 1%;
+    margin: auto;
   }
 
   nav a.btn-default {
