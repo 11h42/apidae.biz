@@ -22,20 +22,20 @@
       <span slot="title">
         Suivi d'activité de vos équipes
       </span>
-      <small slot="header-subtitle"> Apidae est la solution idéale pour favoriser le suivi d'activité de
+      <span slot="header-subtitle"> Apidae est la solution idéale pour favoriser le suivi d'activité de
         votre entreprise. Notre logiciel de suivi d'activité vous permet d'avoir une vision à 360° sur
         l'activité de votre entreprise. Apidae, vous permet de connaître les temps d'activité de vos
         équipes par projet, et ainsi de faciliter la gestion de la facturation client.
-      </small>
+      </span>
     </argument>
 
     <advantage-users :page_selected="page_selected">
       <span slot="title">
         Les avantages utilisateurs
       </span>
-      <small slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilans d'activité. Avec Apidae
+      <span slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilans d'activité. Avec Apidae
         vous remplissez chaque jour vos activités professionnnelles sur la plateforme.
-      </small>
+      </span>
     </advantage-users>
 
     <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"

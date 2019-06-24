@@ -29,11 +29,11 @@
         <span slot="title">
           Les avantages utilisateurs
         </span>
-        <small slot="header-subtitle"> Apidae vous permet d’optimiser le processus de gestion des ordres de mission.
+        <span slot="header-subtitle"> Apidae vous permet d’optimiser le processus de gestion des ordres de mission.
           Vous gagnez du temps sur la gestion des frais professionnels avec un processus de demande de remboursement
           simple et rapide. Apidae vous permet de centraliser les demandes et de donner un cadre légal aux déplacements
           de vos collaborateurs.
-        </small>
+        </span>
       </advantage-users>
 
       <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"

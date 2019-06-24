@@ -37,7 +37,7 @@
         <product-information v-for="productInformation in productInformations" :key="productInformation.title"
              class="col-xs-12 col-md-6 col-lg-4">
           <span slot="title">{{productInformation.title}}</span>
-          <p class="information-style" slot="information">{{productInformation.information}}</p>
+          <p class="information-style text-responsive" slot="information">{{productInformation.information}}</p>
         </product-information>
       </div>
     </div>

@@ -22,19 +22,19 @@
         <span slot="title">
           Gestion des temps d’activité
         </span>
-        <small slot="header-subtitle"> Apidae, vous permet de connaitre les temps d'activité de vos équipes par
+        <span slot="header-subtitle"> Apidae, vous permet de connaitre les temps d'activité de vos équipes par
           taches, projet et/ou par mission.  Augmenter la productivité de vos équipes en suivant les temps passés
           pour chaque partie du projet.
-        </small>
+        </span>
       </argument>
 
       <advantage-users :page_selected="page_selected">
         <span slot="title">
           Les avantages utilisateurs
         </span>
-        <small slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilans d’activités. Avec Apidae vous
+        <span slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilans d’activités. Avec Apidae vous
           remplissez chaque jour vos activités professionnelles sur la plateforme.
-        </small>
+        </span>
       </advantage-users>
 
       <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"

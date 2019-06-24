@@ -6,29 +6,29 @@
         <div class="card-title sub-title-responsive" id="heightSubTitleSolution">
           <slot name="title"></slot>
         </div>
-        <div class="card-subtitle text-muted sub-second-title-responsive" id="heightDescSolution" >
+        <div class="card-subtitle text-muted" id="heightDescSolution" >
           <slot name="subtitle"></slot>
         </div>
       </div>
       <div class="m-x-auto text-xs-center illustration">
         <i :class="illustrationClass"></i>
       </div>
-      <div class="card-block">
+      <div class="card-block text-responsive">
         <div class="card-text">
           <slot name="description"></slot>
         </div>
       </div>
-      <div class="card-block">
+      <div class="card-block text-responsive">
         <div class="card-text">
           <slot name="description2"></slot>
         </div>
       </div>
-      <div class="card-block">
+      <div class="card-block text-responsive">
         <div class="card-text">
           <slot name="description3"></slot>
         </div>
       </div>
-      <div class="card-block">
+      <div class="card-block text-responsive">
         <a class="card-button">
           <slot name="button"></slot>
         </a>

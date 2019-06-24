@@ -26,11 +26,11 @@
         <span slot="title">
           Les avantages utilisateurs
         </span>
-        <small slot="header-subtitle"> Apidae vous promet une gestion simple et rapide des notes de frais. Vous
+        <span slot="header-subtitle"> Apidae vous promet une gestion simple et rapide des notes de frais. Vous
           gagnez du temps sur la gestion des frais professionnels avec un processusde demande de remboursement
           simple et rapide. Apidae vous permet de centraliser les demandes et de donner un cadre fiable à la gestion
           des notes de frais dans votre entreprise.
-        </small>
+        </span>
       </advantage-users>
 
       <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"

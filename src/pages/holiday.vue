@@ -21,25 +21,25 @@
         <span slot="title">
           Automatisez la gestion des demandes des congés
         </span>
-        <small slot="header-subtitle"> Simple, rapide et efficace c’est la promesse de Apidae. Toutes les demandes
+        <span slot="header-subtitle"> Simple, rapide et efficace c’est la promesse de Apidae. Toutes les demandes
           d’absences et de congés sont centralisées sur une seule plateforme. Fini les demandes de congés qui sont
           oubliées, il n’y a plus de malentendu, ni de confusion. Si une demande est validée elle est directement
           visible dans le calendrier. Apidae vous permet donc de simplifier et de cadrer les demandes de congé.
           Les services qui s’occupent de valider les congés ne sont plus dérangés pendant leur travail. Cela permet
           donc de fluidifier les demandes d’absence et de gagner en productivité.
-        </small>
+        </span>
       </argument>
 
       <advantage-users :page_selected="page_selected">
         <span slot="title">
           Les avantages utilisateurs
         </span>
-        <small slot="header-subtitle"> Gérer les congés n’a jamais été aussi simple et rapide. Apidae est un
+        <span slot="header-subtitle"> Gérer les congés n’a jamais été aussi simple et rapide. Apidae est un
           logiciel 100% web utilisable sur tous types de supports et disponible n’importe où. Les gestions des demandes
           de congés et d’absences peuvent donc être réalisées à distance. La partie congé et absence de notre
           solution RH vous permet de gérer facilement le planning de congés de vos équipes et de fluidifier chaque
           demande.
-        </small>
+        </span>
       </advantage-users>
 
       <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"

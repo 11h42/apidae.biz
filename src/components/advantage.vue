@@ -21,8 +21,8 @@
       <product-advantage v-for="product in productAdvantages" :key="product.title"
              class="col-xs-12 col-md-6 col-lg-6">
           <span slot="title">{{product.title}}</span>
-          <p class="advantage" slot="advantage">{{product.advantage}}</p>
-          <p class="advantage" slot="advantage2">{{product.advantage2}}</p>
+          <p class="text-responsive" slot="advantage">{{product.advantage}}</p>
+          <p class="text-responsive" slot="advantage2">{{product.advantage2}}</p>
       </product-advantage>
     </div>
   </div>
@@ -90,10 +90,6 @@
     margin-left: 10%;
     margin-bottom: 8em;
     width: 80%;
-  }
-
-  .advantage {
-    font-size: large;
   }
 
   .place-button {

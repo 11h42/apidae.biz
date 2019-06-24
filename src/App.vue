@@ -367,40 +367,8 @@
     }
   }
 
-  @media (min-width: 992px) {
-    .big-text-responsive {
-      font-size: 1.1em;
-    }
-  }
-
-  @media (min-width: 638px) and (max-width: 992px) {
-    .big-text-responsive {
-      font-size: 0.9em;
-    }
-  }
-
-  @media (max-width: 638px) {
-    .big-text-responsive {
-      font-size: 0.8em;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .sub-second-title-responsive {
-      font-size: 1.1em;
-    }
-  }
-
-  @media (min-width: 638px) and (max-width: 992px) {
-    .sub-second-title-responsive {
-      font-size: 0.9em;
-    }
-  }
-
-  @media (max-width: 638px) {
-    .sub-second-title-responsive {
-      font-size: 0.8em;
-    }
+  .text-responsive {
+    font-size: 0.8em;
   }
 
   @media (min-width: 638px) {

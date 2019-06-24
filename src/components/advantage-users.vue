@@ -4,7 +4,7 @@
       <slot name="title"></slot>
     </h2>
     <hr/>
-    <div class="subtittle-advantage-users row">
+    <div class="subtittle-advantage-users main-text-responsive row">
       <div class="col-lg-8 col-md-10 col-sm-11 col-xs-12 subtittle-advantage-container">
         <slot name="header-subtitle"></slot>
       </div>
@@ -13,35 +13,35 @@
       <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListCra">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
         <p class="lead font-weight-bold">{{advantageUser.title}}</p>
-        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
       </div>
     </div>
     <div class="row" v-if="page_selected == 'conges-et-absences'">
       <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListHoliday">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
         <p class="lead font-weight-bold">{{advantageUser.title}}</p>
-        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
       </div>
     </div>
     <div class="row" v-if="page_selected == 'notes-de-frais'">
       <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListCost">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
         <p class="lead font-weight-bold">{{advantageUser.title}}</p>
-        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
       </div>
     </div>
     <div class="row" v-if="page_selected == 'time-tracking'">
       <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListTime">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
         <p class="lead font-weight-bold">{{advantageUser.title}}</p>
-        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
       </div>
     </div>
     <div class="row" v-if="page_selected == 'ordre-de-mission'">
       <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersListOrder">
         <img :src="advantageUser.source" class="image-advantage rounded-circle">
         <p class="lead font-weight-bold">{{advantageUser.title}}</p>
-        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage">{{advantage}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
       </div>
     </div>
   </div>
@@ -221,11 +221,9 @@
     margin: 0;
     width: 100%;
     text-align: center;
-    font-size: 1.8em;
   }
 
   .subtittle-advantage-container {
-    font-size: 0.9em;
     margin: auto;
   }
 
