@@ -180,7 +180,7 @@ export default {
     color: white !important;
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
   }
 
   .inner-pricing {

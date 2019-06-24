@@ -120,7 +120,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 992px) {
     .size-image {
       position: absolute;
       top: 50%;
@@ -132,7 +132,7 @@
     }
   }
 
-  @media screen and (min-width: 991px) {
+  @media screen and (min-width: 992px) {
     .video-size {
       position: absolute;
       top: 50%;
@@ -144,14 +144,14 @@
     }
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     .size-image {
       width: 80%;
       margin: auto auto auto 10%;
     }
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     .video-size {
       max-width: 100%;
       max-height: 100%;
@@ -175,7 +175,7 @@
     }
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     .cover {
       background-size: auto;
     }

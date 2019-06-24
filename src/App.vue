@@ -205,6 +205,8 @@
     height: 100%;
   }
 
+  /* global style*/
+
   .page-container {
     width: 80%;
     margin-left: 10%;
@@ -213,6 +215,14 @@
   .container-fluid {
     padding: 0;
     margin: 0;
+  }
+
+  @media (max-width: 638px) {
+    .video-container {
+      height: 10em;
+      max-width: 16em;
+      margin: auto;
+    }
   }
 
   #bt-retour {
