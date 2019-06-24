@@ -1,5 +1,5 @@
 <template>
-  <div class="legal pusher">
+  <div class="legal pusher page-container">
     <br/>
     <article class="ui segment text container">
       <h4 class="ui header">Article 1. Identification</h4>

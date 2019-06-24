@@ -213,8 +213,8 @@
   .advantage-users-container {
     padding-top: 8em;
     text-align: center;
-    margin-left: 10%;
-    width: 80%;
+    margin: 0;
+    width: 100%;
   }
 
   .subtittle-advantage-users {

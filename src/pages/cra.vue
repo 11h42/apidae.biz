@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="page-container">
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
       <span slot="header" class="m-x-auto">
@@ -121,8 +121,8 @@
   @media (min-width: 638px) {
     .place-cover {
       margin-top: 8em;
-      width: 80%;
-      margin-left: 10%;
+      width: 100%;
+      margin: 0;
     }
   }
 

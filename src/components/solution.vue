@@ -128,8 +128,8 @@
   }
 
   .feature-container {
-    width: 80%;
-    margin-left: 10% !important;
+    width: 100%;
+    margin: 0;
     position: relative;
     height: 100%;
   }

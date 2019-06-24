@@ -205,6 +205,16 @@
     height: 100%;
   }
 
+  .page-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+
   #bt-retour {
     bottom: 0;
     position:fixed;

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page-container">
       <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
         <span slot="header" class="m-x-auto">
