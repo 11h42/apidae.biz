@@ -149,7 +149,8 @@
           <br>
           <br>
         </span>
-        <span>Attention, vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</span>
+        <span>Attention pensez à vérifier dans vos indésirables et si vous ne recevez pas le mail de confirmation d’ici 10 mins veuillez nous contacter : contact@apidae.biz !</span><br><br>
+        <span class="fa fa-exclamation-triangle"> Vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</span>
       </div>
     </div>
   </div>

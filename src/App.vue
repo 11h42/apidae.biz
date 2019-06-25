@@ -42,6 +42,9 @@
         );
       },
       change_page_selected: function (pageSelected) {
+        if (pageSelected === "accueil") {
+          changeTab();
+        }
         $(".core-app").animate(
           {
             scrollTop: 0
@@ -79,6 +82,12 @@
       };
     }
   };
+
+  function changeTab () {
+    changeSizeSubTitleSolution();
+    changeSizeSubTitle();
+    changeSizeTitleInformation();
+  }
 
   function resizeEvent () {
     changeSizeSubTitleSolution();
