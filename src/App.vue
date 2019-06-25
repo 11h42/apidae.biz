@@ -17,6 +17,7 @@
 <script type="text/ecmascript-6">
   import Navbar from "./components/navbar";
   import MyFooter from "./components/footer";
+  import $ from "jquery";
 
   export default {
     components: {
@@ -188,10 +189,11 @@
   @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
   @import "../node_modules/font-awesome/css/font-awesome.min.css";
   @import "../node_modules/hint.css/hint.min.css";
+  @import "../node_modules/ubuntu-fontface/ubuntu.min.css";
 
   body,
   html {
-    font-family: "Ubuntu", sans-serif !important;
+    font-family: "Ubuntu Condensed", sans-serif !important;
     font-weight: 400;
     width: 100%;
     height: 100%;
