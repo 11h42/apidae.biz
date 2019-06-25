@@ -9,7 +9,7 @@
         <span class="subtitle" slot="subtitle">{{feature.subtitle}}</span>
         <p class="description" slot="description">{{feature.description}}</p>
         <p class="description" slot="description2">{{feature.description2}}</p>
-        <p class="description" slot="description3">{{feature.description3}}</p>
+        <p class="description" :aria-hidden="feature.isHidden" slot="description3">{{feature.description3}}</p>
         <a class="btn learn-more" slot="button" @click="change_page_selected(feature.pageSelected)">
           <router-link :to="feature.reference">{{feature.label}}</router-link>
           </a>
@@ -42,6 +42,7 @@
                 "L'un de vos collaborateurs ne se rappelle plus ce qu'il a fait le vendredi 12 après-midi ?",
             description3:
                 "Plus de prise de tête : les tâches peuvent être saisies au jour le jour en toute simplicité. Coté manager, vous avez une vision globale du planning et de l'organisation de vos équipes.",
+            isHidden: false,
             label: "En savoir plus",
             reference: "/suivi-d-activite",
             pageSelected: "suivi-d-activite"
@@ -58,6 +59,7 @@
                 "Dès la validation, les périodes concernées sont automatiquement renseignées dans le rapport d'activité du collaborateur heureux qui va partir en vacances.",
             description3:
                 "Le calendrier global des absences vos permet de visualiser mois par mois le planning prévu.",
+            isHidden: false,
             label: "En savoir plus",
             reference: "/conges-et-absences",
             pageSelected: "conges-et-absences"
@@ -74,6 +76,7 @@
                 "Plus besoin de rechercher les justificatifs égarés ou rangés au fond d'un tiroir.",
             description3:
                 "De votre coté, vous optimisez le délai de remboursement et avez une vision globale des frais liés à chacun des services de l'entreprise.",
+            isHidden: false,
             label: "En savoir plus",
             reference: "/notes-de-frais",
             pageSelected: "notes-de-frais"
@@ -90,6 +93,7 @@
                 "Idéal pour l'organisation du travail et pour disposer d'une vue globale de l'activité de chacun des membres de votre équipe. Le collaborateur, lors d'une nouvelle tâche sur un projet, peut déclencher un chronomètre en début d'activité, et l'arrêter selon ses besoins ou contraintes, ou bien tout simplement lorsque la tâche est terminée.",
             description3:
                 "",
+            isHidden: true,
             label: "En savoir plus",
             reference: "/time-tracking",
             pageSelected: "time-tracking"
@@ -106,6 +110,7 @@
                 "La gestion des ordres de mission avec Apidae vous permet de donner un cadre légal aux déplacements de vos employés et de donner les conditions de remboursement pour chaque mission.",
             description3:
                 "",
+            isHidden: true,
             label: "En savoir plus",
             reference: "/ordre-de-mission",
             pageSelected: "ordre-de-mission"

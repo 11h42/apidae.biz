@@ -118,11 +118,11 @@
               <span>Inscription</span>
             </button>
           </div>
-          <label class="col-xs-12">
-            <i class="text-muted size-title-small">
+          <p class="col-xs-12">
+            <i class="text-muted comment-text-muted size-title-small">
               <br>Aucune carte de crédit demandée
             </i>
-          </label>
+          </p>
         </form>
       </div>
 
@@ -301,6 +301,10 @@ export default {
     float: left !important;
     margin: 0;
   }
+}
+
+.comment-text-muted {
+  float: left;
 }
 
 #access-pricing-div {

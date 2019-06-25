@@ -23,7 +23,7 @@
           <span slot="title">{{product.title}}</span>
           <span slot="nexttitle">{{product.nexttitle}}</span>
           <p class="text-responsive" slot="advantage">{{product.advantage}}</p>
-          <p class="text-responsive" slot="advantage2">{{product.advantage2}}</p>
+          <p class="text-responsive" :aria-hidden="product.isHidden" slot="advantage2">{{product.advantage2}}</p>
       </product-advantage>
     </div>
   </div>
@@ -49,7 +49,8 @@
                 "Conscient que le changement peut être difficile à adopter, les équipes d'Apidae " +
                 "ont mis en place un logiciel RH facile à prendre en main, son interface ergonomique " +
                 "vous permet de l'installer rapidement au sein de votre entreprise. Vos équipes " +
-                "pourront prendre en main l'outil rapidement."
+                "pourront prendre en main l'outil rapidement.",
+            isHidden: true
           },
           {
             title: "NOTRE ACCOMPAGNEMENT",
@@ -59,14 +60,16 @@
                 "besoins !",
             advantage2:
                 "Vous pouvez contacter le support technique rapidement par mail ou " +
-                "par téléphone. Une équipe vous répond le plus rapidement possible."
+                "par téléphone. Une équipe vous répond le plus rapidement possible.",
+            isHidden: false
           },
           {
             title: "GAGNER EN PRODUCTIVITÉ ET EFFICACITÉ :",
             advantage:
                 "Gagner en productivité en intégrant notre SIRH dans votre entreprise. Faites gagner " +
                 "du temps à chaque membre de votre équipe, en centratisant les tâches administratives " +
-                "sur une seule application RH."
+                "sur une seule application RH.",
+            isHidden: true
           },
           {
             title: "100% COMPATIBLE ",
@@ -74,7 +77,8 @@
             advantage:
                 "L'application a été conçu pour être entièrement responsive. Chaque utilisateur " +
                 "peut accéder à Apidae quel que soit son lieu de travail et depuis n'importe " +
-                "qu'elle interface."
+                "qu'elle interface.",
+            isHidden: true
           }
         ]
       };
