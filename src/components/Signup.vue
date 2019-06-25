@@ -150,7 +150,10 @@
           <br>
         </span>
         <span>Attention pensez à vérifier dans vos indésirables et si vous ne recevez pas le mail de confirmation d’ici 10 mins veuillez nous contacter : contact@apidae.biz !</span><br><br>
-        <span class="fa fa-exclamation-triangle"> Vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</span>
+        <span class="fa fa-exclamation-triangle"> Vous ne pourrez pas vous connecter avant d'avoir validé votre e-mail !</span> <br> <br>
+        <span>À bientôt, <br>
+              Toute l’équipe Apidae
+        </span>
       </div>
     </div>
   </div>
@@ -172,7 +175,7 @@ export default {
     return {
       form: {},
       error_message: "",
-      submit_success: false,
+      submit_success: true,
       login_url: "",
       loading: false
     };

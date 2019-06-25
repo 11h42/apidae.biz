@@ -166,7 +166,7 @@
   }
 
   .information-style{
-    text-align: justify;
+    text-align: left;
   }
 
   @media screen and (max-height: 638px) {

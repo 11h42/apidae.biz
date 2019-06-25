@@ -5,6 +5,9 @@
         <i class="fa fa-circle-thin fa-3x icon-yellow build-icon"><span class="build-check">&#10003;</span></i>
         <span class="sub-tittle sub-title-responsive">
           <slot name="title"></slot>
+          <span class="tiny-text-responsive">
+            <slot name="nexttitle"></slot>
+          </span>
         </span>
       </div>
       <div>
@@ -22,7 +25,7 @@
 
 <style scoped>
   .product-advantage {
-    text-align: justify;
+    text-align: left;
     display: grid;
     border: none;
     padding: 2em 0 2em 0;
@@ -36,6 +39,15 @@
     text-align: left;
     float: right;
     margin: 0;
+    padding: 0 0 0 0.5em;
+  }
+
+  .next-sub-tittle {
+    font-weight: bold;
+    width: calc(100% - 5em);
+    text-align: left;
+    float: right;
+    margin: 0 0 0 0;
     padding: 0 0 0 0.5em;
   }
 

@@ -159,11 +159,11 @@
       for (var id in window.heightSubTitle) {
         count += 1;
         var subTitle = window.heightSubTitle[id];
-        if (subTitle.lastChild && count > 2 && subTitle.lastChild.offsetHeight > baseHeightSecondLine) {
-          baseHeightSecondLine = subTitle.lastChild.offsetHeight;
+        if (subTitle.children && subTitle.children[1] && count > 2 && (subTitle.children[1].offsetHeight) > baseHeightSecondLine) {
+          baseHeightSecondLine = subTitle.children[1].offsetHeight;
         }
-        if (subTitle.lastChild && count < 3 && subTitle.lastChild.offsetHeight > baseHeightFirstLine) {
-          baseHeightFirstLine = subTitle.lastChild.offsetHeight;
+        if (subTitle.children && subTitle.children[1] && count < 3 && (subTitle.children[1].offsetHeight) > baseHeightFirstLine) {
+          baseHeightFirstLine = subTitle.children[1].offsetHeight;
         }
       }
       count = 0;
@@ -359,6 +359,24 @@
   }
 
   @media (min-width: 992px) {
+    .small-sub-title-responsive {
+      font-size: 1em;
+    }
+  }
+
+  @media (min-width: 638px) and (max-width: 992px) {
+    .small-sub-title-responsive {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .small-sub-title-responsive {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (min-width: 992px) {
     .main-text-responsive {
       font-size: 1.3em;
     }
@@ -377,11 +395,15 @@
   }
 
   .text-responsive {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   .small-text-responsive {
-    font-size: 0.7em;
+    font-size: 0.8em;
+  }
+
+  .tiny-text-responsive {
+    font-size: 0.6em;
   }
 
   @media (min-width: 638px) {

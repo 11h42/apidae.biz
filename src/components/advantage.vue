@@ -21,6 +21,7 @@
       <product-advantage v-for="product in productAdvantages" :key="product.title"
              class="col-xs-12 col-md-6 col-lg-6">
           <span slot="title">{{product.title}}</span>
+          <span slot="nexttitle">{{product.nexttitle}}</span>
           <p class="text-responsive" slot="advantage">{{product.advantage}}</p>
           <p class="text-responsive" slot="advantage2">{{product.advantage2}}</p>
       </product-advantage>
@@ -68,7 +69,8 @@
                 "sur une seule application RH."
           },
           {
-            title: "100% COMPATIBLE (ORDINATEUR, TABLETTE, SMARTPHONE) :",
+            title: "100% COMPATIBLE ",
+            nexttitle: "(ORDINATEUR, TABLETTE, SMARTPHONE) :",
             advantage:
                 "L'application a été conçu pour être entièrement responsive. Chaque utilisateur " +
                 "peut accéder à Apidae quel que soit son lieu de travail et depuis n'importe " +
@@ -86,7 +88,7 @@
   }
 
   .main-advantage {
-    text-align: justify;
+    text-align: left;
     margin-left: 10%;
     margin-bottom: 0;
     width: 80%;
