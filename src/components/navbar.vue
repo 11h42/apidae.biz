@@ -5,15 +5,15 @@
         <img src="../assets/logo-apidae.png" alt="Logo Apidae" id="navbar-logo">
         &nbsp;Apidae</a>
       <div class="nav-item navmenu" id="navmenuId">
-        <a @click="change_page_selected('accueil'); transformMenu();"><router-link to="/" :class="{'active-menu': page_selected == 'accueil'}">
+        <a @click="change_page_selected('accueil'); transformMenu();"><router-link to="/" :class="{'active-menu': page_selected == 'accueil', 'inactive-menu': page_selected != 'accueil'}">
           Accueil</router-link></a>
-        <a @click="change_page_selected('suivi-d-activite'); transformMenu();"><router-link to="/suivi-d-activite" :class="{'active-menu': page_selected == 'suivi-d-activite'}">
+        <a @click="change_page_selected('suivi-d-activite'); transformMenu();"><router-link to="/suivi-d-activite" :class="{'active-menu': page_selected == 'suivi-d-activite', 'inactive-menu': page_selected != 'suivi-d-activite'}">
           Suivi d'activité</router-link></a>
 <!--        <a href="/cra">Suivi d'activité</a>-->
-        <a @click="change_page_selected('conges-et-absences'); transformMenu();"><router-link to="/conges-et-absences" :class="{'active-menu': page_selected == 'conges-et-absences'}">Congés et absences</router-link></a>
-        <a @click="change_page_selected('notes-de-frais'); transformMenu();"><router-link to="/notes-de-frais" :class="{'active-menu': page_selected == 'notes-de-frais'}">Notes de frais</router-link></a>
-        <a @click="change_page_selected('ordre-de-mission'); transformMenu();"><router-link to="/ordre-de-mission" :class="{'active-menu': page_selected == 'ordre-de-mission'}">Ordre de mission</router-link></a>
-        <a @click="change_page_selected('time-tracking'); transformMenu();"><router-link to="/time-tracking" :class="{'active-menu': page_selected == 'time-tracking'}">Time tracking</router-link></a>
+        <a @click="change_page_selected('conges-et-absences'); transformMenu();"><router-link to="/conges-et-absences" :class="{'active-menu': page_selected == 'conges-et-absences', 'inactive-menu': page_selected != 'conges-et-absences'}">Congés et absences</router-link></a>
+        <a @click="change_page_selected('notes-de-frais'); transformMenu();"><router-link to="/notes-de-frais" :class="{'active-menu': page_selected == 'notes-de-frais', 'inactive-menu': page_selected != 'notes-de-frais'}">Notes de frais</router-link></a>
+        <a @click="change_page_selected('ordre-de-mission'); transformMenu();"><router-link to="/ordre-de-mission" :class="{'active-menu': page_selected == 'ordre-de-mission', 'inactive-menu': page_selected != 'ordre-de-mission'}">Ordre de mission</router-link></a>
+        <a @click="change_page_selected('time-tracking'); transformMenu();"><router-link to="/time-tracking" :class="{'active-menu': page_selected == 'time-tracking', 'inactive-menu': page_selected != 'time-tracking'}">Time tracking</router-link></a>
         <a href="javascript:void(0);" class="icon" @click="transformMenu()">
           <i class="fa fa-bars"></i>
         </a>
@@ -56,11 +56,24 @@
 
   .active-menu {
     font-weight: bold;
-    color: #fcce21 !important;
+    color: #fcce21;
+  }
+
+  .active-menu:hover {
+    font-weight: bold;
+    color: #fcce21;
+  }
+
+  .inactive-menu {
+    color: white;
+  }
+
+  .inactive-menu:hover {
+    color: white;
   }
 
   a {
-    color: white !important;
+    color: white;
     outline: none;
     text-decoration: none !important;
   }

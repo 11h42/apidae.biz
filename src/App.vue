@@ -199,7 +199,7 @@
 
   body,
   html {
-    font-family: "Ubuntu Condensed", sans-serif !important;
+    font-family: "Ubuntu Condensed", sans-serif;
     font-weight: 400;
     width: 100%;
     height: 100%;
@@ -289,6 +289,10 @@
     font-size: 1em;
   }
 
+  .size-btn-cover a {
+    color: white;
+  }
+
   .size-text-important {
     font-size: 1.3em;
   }
@@ -317,11 +321,11 @@
   }
 
   .link-sentence a {
-    color: #6c757d !important;
+    color: #6c757d;
   }
 
   .link-sentence:hover a{
-    color: #fcce21 !important;
+    color: #fcce21;
   }
   .link-sentence:hover {
     cursor: pointer;
