@@ -32,7 +32,7 @@
 
   .sub-tittle {
     font-weight: bold;
-    width: calc(100% - 2.2em);
+    width: calc(100% - 2.7em);
     text-align: left;
     float: right;
     margin: 0;

@@ -2,7 +2,7 @@
   <article>
     <div class="product-information">
       <div class="text-xs-left">
-        <span id="heightTitleInformation">
+        <span id="heightTitleInformation" class="sub-title-responsive">
           <slot name="title"></slot>
         </span>
       </div>
@@ -23,9 +23,5 @@
     padding: 0 0 2em 0;
     width: 80%;
     margin-left: 10%;
-  }
-
-  #heightTitleInformation {
-    font-size: 1.3em;
   }
 </style>

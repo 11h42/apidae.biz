@@ -118,7 +118,7 @@
 
 <style>
   .solution-container{
-    padding-top: 8em;
+    padding-top: 5em;
     text-align: center;
   }
 
@@ -175,12 +175,12 @@
     color: #fcce21;
     border-bottom: black solid 1px;
     width: 100%;
-    padding-bottom: 1.2em;
+    padding-bottom: 0.5em;
   }
 
   #solutions{
-    top: 10vh;
-    margin: 3em 0  0 0;
+    top: 7vh;
+    margin: 0 0  0 0;
   }
 
   .learn-more {

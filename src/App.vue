@@ -313,21 +313,21 @@
   @media (min-width: 992px) {
     .title-size-responsive {
       font-weight: bold;
-      font-size: 2.5em;
+      font-size: 2.1em;
     }
   }
 
   @media (min-width: 638px) and (max-width: 992px) {
     .title-size-responsive {
       font-weight: bold;
-      font-size: 2em;
+      font-size: 1.7em;
     }
   }
 
   @media (max-width: 638px) {
     .title-size-responsive {
       font-weight: bold;
-      font-size: 1.8em;
+      font-size: 1.5em;
     }
   }
 
@@ -351,19 +351,19 @@
 
   @media (min-width: 992px) {
     .main-text-responsive {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
   }
 
   @media (min-width: 638px) and (max-width: 992px) {
     .main-text-responsive {
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
   }
 
   @media (max-width: 638px) {
     .main-text-responsive {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
   }
 

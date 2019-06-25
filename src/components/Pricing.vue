@@ -163,7 +163,7 @@ export default {
   #pricing-container {
 
     text-align: center;
-    padding: 8em 0 0 0;
+    padding: 5em 0 0 0;
   }
 
   #pricings {

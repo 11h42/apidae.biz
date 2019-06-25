@@ -90,7 +90,7 @@
   }
 
   .catchline {
-    margin-top: 7vh;
+    margin-top: 10vh;
     position: relative;
   }
 

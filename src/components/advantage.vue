@@ -82,13 +82,13 @@
 
 <style scoped>
   .advantage-container {
-    padding-top: 8em;
+    padding-top: 10em;
   }
 
   .main-advantage {
     text-align: justify;
     margin-left: 10%;
-    margin-bottom: 8em;
+    margin-bottom: 0;
     width: 80%;
   }
 

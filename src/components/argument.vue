@@ -88,7 +88,7 @@
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Remplir ses activités",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Tous les membres de vos équipes remplissent leurs activités quotidiennes dans la " +
               "partie bilan d'activité : Ils indiquent le nom du projet/client sur lequel " +
@@ -102,7 +102,7 @@
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Bilan d'activité",
-            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Faire remplir un suivi d'activité par vos équipes vous permet une gestion claire des" +
               " temps de travail de vos équipes. Vous obtenez chaque mois le bilan d'activité " +
@@ -114,7 +114,7 @@
             look_number: "icon-yellow build-icon",
             number: "03",
             title: "Statistiques",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Apidae regroupe les différentes informations remplies par vos équipes et vous donne " +
               "des statistiques suite au bilan d'activité de vos équipes. Par exemple vous pouvez " +
@@ -126,7 +126,7 @@
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Facturation client",
-            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Simplifiez la gestion des facturations client. Envoyé à votre service comptabilité " +
               "la synthèse des temps d'activité par projet/ par client.",
@@ -139,7 +139,7 @@
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Faites vos demandes",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Apidae contient un module Absences et Congés. Depuis cette page, vous pouvez faire vos demandes de " +
               "congés simplement. Remplissez les dates et le motif de votre absence (Formation, arrêt maladie, RTT, " +
@@ -152,7 +152,7 @@
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Demande d’absence en cours",
-            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Pour prévenir le responsable, un e-mail lui est envoyé automatiquement après la demande d’absence " +
               "rédigée par l’employé. Celui-ci peut connaitre l’état de sa demande d’absence directement sur la " +
@@ -164,7 +164,7 @@
             look_number: "icon-yellow build-icon",
             number: "03",
             title: "Gestion de la validation des congés",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Sur le Dashboard de Apidae, le responsable a une vision sur les demandes en cours. Ainsi il va pouvoir " +
               "valider directement ou non les demandes de congés. Pour faciliter la prise de décision, un calendrier " +
@@ -177,7 +177,7 @@
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Confirmation de validation de l’absence",
-            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Un mail est envoyé à la personne qui a fait la demande, pour lui informer de l’état de sa demande : " +
               "validée ou refusée.",
@@ -188,7 +188,7 @@
             look_number: "icon-yellow build-icon",
             number: "05",
             title: "Calendrier des absences",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Une fois validée, l’absence est automatiquement renseignée sur le calendrier. L’accès au calendrier " +
               "est paramétrable, les collaborateurs ont une visibilité sur le calendrier des absences en fonction de " +
@@ -202,7 +202,7 @@
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Remplir le Time Tracking",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             litle_title: "Chronomètre intégré",
             look_litle_title: "litle-title-activity",
             information:
@@ -217,7 +217,7 @@
             look_number: "icon-yellow build-icon build-icon-2 shadow-icon",
             number: "01B",
             title: "",
-            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             litle_link: "ou",
             look_litle_link: "icon-yellow litle-link-activity",
             litle_title: "Manuellement",
@@ -232,7 +232,7 @@
             look_number: "icon-yellow build-icon",
             number: "02",
             title: "Gestion des temps de travail",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Vous disposez d’une vue globale de l’activité de vos collaborateurs, cela vous permet de " +
               "faciliter l’organisation du travail de vos équipes.",
@@ -243,7 +243,7 @@
             look_number: "icon-yellow build-icon build-icon-4",
             number: "03",
             title: "Confirmation de validation de l’absence",
-            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Suivez en temps réel l’avancement des projets en cours. Obtenez une synthèse mensuelle avec des " +
               "données significatives telles que le projet le plus travaillé et les temps par projets.",
@@ -256,7 +256,7 @@
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Remplir les notes de frais",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Le salarié se rend sur la plateforme Apidae dans le module Note de frais, il indique ses frais " +
               "professionnels rapidement et simplement. Le salarié doit créer une note de frais, choisir la nature " +
@@ -269,7 +269,7 @@
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Les justificatifs des notes de frais",
-            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Transférez directement vos justificatifs de note de frais depuis votre mobile. Prenez en photo le " +
               "reçu et ajoutez le sur Apidae. Ne perdez plus vos justificatifs de note de frais.",
@@ -280,7 +280,7 @@
             look_number: "icon-yellow build-icon",
             number: "03",
             title: "La validation des frais professionnels",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Une fois la demande créée par le salarié, le manager reçoit automatiquement un mail qui lui indique " +
               "une nouvelle demande de remboursement de frais professionnels par un de ses collaborateurs. Il peut " +
@@ -292,7 +292,7 @@
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Le remboursement des dépenses professionnelles",
-            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Le salarié est prévenu dès que la demande de remboursement a été validée.",
             look_infomation: "para-argument text-responsive"
@@ -302,7 +302,7 @@
             look_number: "icon-yellow build-icon",
             number: "05",
             title: "Exportation des données",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Exporter directement toutes les données des notes de frais au service concerné. En cas de contrôle " +
               "(URSSAF) vous pouvez exporter directement les historiques des notes de frais de tous vos " +
@@ -316,7 +316,7 @@
             look_number: "icon-yellow build-icon build-icon-1",
             number: "01",
             title: "Remplissez votre ordre de mission",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Le module ordre de mission permet à vos collaborateurs de saisir leurs demandes de déplacement " +
               "rapidement en y associant toutes les informations nécessaires (l’objet du déplacement, la date, le " +
@@ -328,7 +328,7 @@
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Contrôler l’ordre de mission",
-            look_title: "sub-tittle-activity sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-6 col-md-6 col-xs-12",
             information:
               "Avant la validation de l’ordre de mission, vous pouvez vous assurer de la nécessité de cette dernière. " +
               "Vous évitez tous frais inutiles.",
@@ -339,7 +339,7 @@
             look_number: "icon-yellow build-icon",
             number: "03",
             title: "Émission du billet",
-            look_title: "sub-tittle-activity col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             information:
               "Une fois que l’ordre de mission est validé par le responsable concerné, la plateforme émet donc " +
               "le billet qui vous permet d’être en règle.",
@@ -350,7 +350,7 @@
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Être conforme à votre convention collective",
-            look_title: "sub-tittle-activity sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-4 col-lg-6 col-md-6 col-xs-12",
             information:
               "Soyez conforme à l’article 51 de la convention collective Syntec en remplissant vos ordres de mission " +
               "sur Apidae.",
@@ -418,7 +418,7 @@
 
   @media (min-width: 992px) {
     .build-icon {
-      font-size: 7em;
+      font-size: 5em;
       float: left;
       width: 1.3em;
       margin-left: .3em;
@@ -427,7 +427,7 @@
 
   @media (min-width: 638px) and (max-width: 992px){
     .build-icon {
-      font-size: 5em;
+      font-size: 4em;
       float: left;
       width: 1em;
       margin-left: .3em;
@@ -436,7 +436,7 @@
 
   @media (max-width: 638px) {
     .build-icon {
-      font-size: 4em;
+      font-size: 3em;
       margin: auto;
       width: 0.7em;
       margin-left: .3em;
@@ -470,7 +470,6 @@
       max-width: calc(100% - 8em);
       float: right;
       text-align: left;
-      font-size: 1.7em;
       margin: 1rem 0 0 0 !important;
       padding: 3rem 0 0 0 !important;
     }
@@ -478,12 +477,11 @@
 
   @media (min-width: 638px) and (max-width: 992px) {
     .sub-tittle-activity {
-      max-width: calc(100% - 5em);
+      max-width: calc(100% - 6em);
       float: right;
       text-align: left;
-      font-size: 1.6em;
       margin: 1rem 0 0 1em !important;
-      padding: 3rem 0 0 0 !important;
+      padding: 2rem 0 0 0 !important;
     }
   }
 
@@ -491,7 +489,6 @@
     .sub-tittle-activity {
       float: right;
       text-align: left;
-      font-size: 1.5em;
       margin: 0 0 0.5em 1em;
       padding: 0;
     }
