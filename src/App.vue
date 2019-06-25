@@ -206,6 +206,14 @@
     position: absolute;
   }
 
+  a:not([href]):not([tabindex]) {
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
   #call-to-action {
     padding-top: 50px;
   }
@@ -420,19 +428,19 @@
 
   @media (min-width: 638px) {
     .btn-responsive {
-      padding-left: 50px !important;
-      padding-right: 50px !important;
-      margin-top: 60px !important;
-      margin-bottom: 40px !important;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 60px;
+      margin-bottom: 40px;
     }
   }
 
   @media (max-width: 638px) {
     .btn-responsive {
-      padding-left: 20px !important;
-      padding-right: 20px !important;
-      margin-top: 30px !important;
-      margin-bottom: 40px !important;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 30px;
+      margin-bottom: 40px;
     }
   }
 
