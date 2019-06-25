@@ -22,7 +22,7 @@
         </div>
         <div class="col-lg-6 col-md-12 col-xs-12" v-if="is_with_video">
           <div class="video-container">
-            <iframe class="center video-size" width="560" height="315" src="https://www.youtube.com/embed/-49EYn9eFtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="center video-size" width="560" height="315" src="" id="youtube_video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-xs-12 image-container" v-if="!is_with_video">

@@ -97,9 +97,15 @@
   }
 
   function loadEvent () {
+    loadVideo();
     changeSizeSubTitleSolution();
     changeSizeSubTitle();
     changeSizeTitleInformation();
+  }
+
+  function loadVideo () {
+    var elementVideo = document.getElementById("youtube_video");
+    elementVideo.src = "https://www.youtube.com/embed/-49EYn9eFtk";
   }
 
   function changeSizeSubTitleSolution () {
