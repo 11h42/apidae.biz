@@ -175,7 +175,7 @@ export default {
     return {
       form: {},
       error_message: "",
-      submit_success: true,
+      submit_success: false,
       login_url: "",
       loading: false
     };
