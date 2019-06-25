@@ -204,7 +204,7 @@
             title: "Remplir le Time Tracking",
             look_title: "sub-tittle-activity sub-title-responsive col-lg-6 col-md-6 col-xs-12",
             litle_title: "Chronomètre intégré",
-            look_litle_title: "litle-title-activity",
+            look_litle_title: "litle-title-activity sub-title-responsive",
             information:
               "C’est un chronomètre directement intégré sur la plateforme Apidae, " +
               "cela permet à vos équipes de mesurer leurs temps de travail sur une activité. Le collaborateur, " +
@@ -221,7 +221,7 @@
             litle_link: "ou",
             look_litle_link: "icon-yellow litle-link-activity",
             litle_title: "Manuellement",
-            look_litle_title: "litle-title-activity",
+            look_litle_title: "litle-title-activity sub-title-responsive",
             information:
               "Vous avez oublié de lancer ou d’arrêter le chronomètre ? Pas de soucis, vous pouvez aussi remplir vos " +
               "temps d’activité manuellement directement sur votre calendrier.",
@@ -528,7 +528,6 @@
 
   .litle-title-activity {
     margin: auto;
-    font-size: 1.3em;
     padding-bottom: 0.7em;
   }
 
