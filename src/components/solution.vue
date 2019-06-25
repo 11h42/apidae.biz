@@ -134,7 +134,7 @@
     height: 100%;
   }
 
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     .feature-column {
       position: initial;
       height: 100%;
@@ -147,7 +147,7 @@
     }
   }
 
-  @media (max-width: 1600px) and (min-width: 638px) {
+  @media (max-width: 1200px) and (min-width: 638px) {
     .feature-column {
       position: relative;
       height: 100%;
