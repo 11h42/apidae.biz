@@ -23,6 +23,7 @@
   </nav>
 </template>
 <script type="text/ecmascript-6">
+  import $ from "jquery";
 
   export default {
     props: {
@@ -33,6 +34,10 @@
     },
     methods: {
       transformMenu: function () {
+        if (window.grecaptcha) {
+          $('#captcha-load').html('');
+          $.getScript("https://www.google.com/recaptcha/api.js");
+        }
         var x = document.getElementById("navmenuId");
         if (x.className === "navmenu") {
           x.className += " responsive";

@@ -103,7 +103,7 @@
           <br v-if="error_message">
           <br>
           <div id="captcha-and-submit">
-            <div
+            <div id="captcha-load"
               class="g-recaptcha captcha-container"
               data-sitekey="6LemBHwUAAAAAIBgnSCFE1Pk0BWVbZkwWU05TYYU"
             ></div>

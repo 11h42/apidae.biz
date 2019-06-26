@@ -2,7 +2,7 @@
   <article id="call-to-action" class="mx-auto text-xs-center">
 
     <span class="size-title-middle">
-      Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-primary">question</span>
+      Envie d’un <span class="text-warning">devis</span> ou simplement de nous poser une <span class="text-warning">question</span>
       ?
     </span>
 
@@ -44,9 +44,5 @@
 
   .text-warning {
     color: #fcce21;
-  }
-
-  .text-primary {
-    color: #246d84 !important;
   }
 </style>

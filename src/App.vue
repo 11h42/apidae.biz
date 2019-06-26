@@ -210,6 +210,10 @@
     color: white;
   }
 
+  a:not([href]):not([tabindex]):hover {
+    color: white;
+  }
+
   a {
     color: white;
   }

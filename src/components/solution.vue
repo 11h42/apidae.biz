@@ -196,6 +196,10 @@
     left: -50%;
   }
 
+  .learn-more a:hover{
+    color: white;
+  }
+
   .icon-mission-order {
     color: transparent !important;
     background: url("../assets/icon-mission-order.png") no-repeat;
