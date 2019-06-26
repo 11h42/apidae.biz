@@ -1,5 +1,5 @@
 <template>
-  <article :id="id" class="feature row">
+  <article :id="id" class="feature">
     <div class="card-container">
       <!--col-lg-9 col-md-10 col-xs-12-->
       <div class="text-xs-center">

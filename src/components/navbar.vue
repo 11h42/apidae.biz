@@ -56,7 +56,7 @@
 </script>
 <style>
   nav {
-    background-color: #1C2B36 !important;
+    background-color: #1C2B36;
   }
 
   #navbar-logo {
@@ -86,11 +86,11 @@
   a {
     color: white;
     outline: none;
-    text-decoration: none !important;
+    text-decoration: none;
   }
 
   nav a.btn {
-    float: right !important;
+    float: right;
     margin-top: 0px;
     margin-right: 15px;
   }
@@ -117,6 +117,10 @@
       display: block;
       text-align: center;
       padding: 7px 8px;
+  }
+
+  .navmenu a:hover {
+    text-decoration: none;
   }
 
   .navmenu .icon {

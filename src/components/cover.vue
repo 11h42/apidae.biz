@@ -183,8 +183,8 @@
 
   #cover-trial-button {
     display: block;
-    white-space: normal !important;
-      word-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
     width: fit-content;
     width: -moz-fit-content;
     color: white;

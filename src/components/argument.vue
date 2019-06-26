@@ -98,7 +98,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Bilan d'activité",
@@ -122,7 +122,7 @@
             look_infomation: "para-argument text-responsive",
           },
           {
-            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Facturation client",
@@ -148,7 +148,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Demande d’absence en cours",
@@ -173,7 +173,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Confirmation de validation de l’absence",
@@ -213,7 +213,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-2 shadow-icon",
             number: "01B",
             title: "",
@@ -239,7 +239,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-4",
             number: "03",
             title: "Confirmation de validation de l’absence",
@@ -265,7 +265,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Les justificatifs des notes de frais",
@@ -288,7 +288,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Le remboursement des dépenses professionnelles",
@@ -324,7 +324,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-2",
             number: "02",
             title: "Contrôler l’ordre de mission",
@@ -346,7 +346,7 @@
             look_infomation: "para-argument text-responsive"
           },
           {
-            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-md-0 pt-lg-6",
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
             look_number: "icon-yellow build-icon build-icon-4",
             number: "04",
             title: "Être conforme à votre convention collective",
@@ -395,7 +395,7 @@
 
   @media (min-width: 992px) {
     .pt-lg-6 {
-      padding-top: 8em !important;
+      padding-top: 8em;
     }
   }
 
@@ -405,14 +405,14 @@
 
   @media (min-width: 992px) {
     .shadow-icon {
-      color: transparent !important;
+      color: transparent;
     }
   }
 
   @media (max-width: 992px) {
     .shadow-icon {
-      color: transparent !important;
-      height: 0 !important;
+      color: transparent;
+      height: 0;
     }
   }
 
@@ -470,8 +470,8 @@
       max-width: calc(100% - 8em);
       float: right;
       text-align: left;
-      margin: 1rem 0 0 0 !important;
-      padding: 3rem 0 0 0 !important;
+      margin: 1rem 0 0 0;
+      padding: 3rem 0 0 0;
     }
   }
 
@@ -480,8 +480,8 @@
       max-width: calc(100% - 6em);
       float: right;
       text-align: left;
-      margin: 1rem 0 0 1em !important;
-      padding: 2rem 0 0 0 !important;
+      margin: 1rem 0 0 1em;
+      padding: 2rem 0 0 0;
     }
   }
 
@@ -527,6 +527,7 @@
   }
 
   .litle-title-activity {
+    width: 100%;
     margin: auto;
     padding-bottom: 0.7em;
   }

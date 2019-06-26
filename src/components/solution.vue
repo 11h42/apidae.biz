@@ -143,12 +143,12 @@
     .feature-column {
       position: initial;
       height: 100%;
-      display: inline-flex !important;
+      display: inline-flex;
       width: 19%;
       font-weight: bold;
       font-size: large;
-      padding: 0 0 4em 0 !important;
-      margin: 0 !important;
+      padding: 0 0 4em 0;
+      margin: 0;
     }
   }
 
@@ -156,12 +156,12 @@
     .feature-column {
       position: relative;
       height: 100%;
-      display: inline-flex !important;
+      display: inline-flex;
       width: 48%;
       font-weight: bold;
       font-size: large;
-      padding: 0 0 4em 0 !important;
-      margin: 0 !important;
+      padding: 0 0 4em 0;
+      margin: 0;
     }
   }
 
@@ -171,8 +171,8 @@
       width: 100%;
       font-weight: bold;
       font-size: large;
-      padding: 0 0 4em 0 !important;
-      margin: 0 !important;
+      padding: 0 0 4em 0;
+      margin: 0;
     }
   }
 
@@ -188,8 +188,12 @@
     margin: 0 0  0 0;
   }
 
+  .btn:defined {
+    background-color: #fcce21;
+  }
+
   .learn-more {
-    background-color: #fcce21 !important;
+    background-color: #fcce21;
     font-size: large;
     font-weight: bold;
     position: relative;
@@ -201,7 +205,7 @@
   }
 
   .icon-mission-order {
-    color: transparent !important;
+    color: transparent;
     background: url("../assets/icon-mission-order.png") no-repeat;
     background-position: top;
   }

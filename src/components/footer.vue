@@ -43,6 +43,6 @@
   }
   .footer {
     padding-top: 3rem;
-    background-color: #1C2B36 !important;
+    background-color: #1C2B36;
   }
 </style>

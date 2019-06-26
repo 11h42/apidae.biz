@@ -177,7 +177,7 @@ export default {
 
   .pricing {
     padding: 20px;
-    color: white !important;
+    color: white;
   }
 
   @media screen and (max-width: 992px) {
@@ -204,20 +204,20 @@ export default {
 
   .pricing-body {
     padding: 0 35px 20px 35px;
-    color: #3c3c3c !important;
+    color: #3c3c3c;
     text-align: left;
   }
 
   .pricing-body * {
-    color: #3c3c3c !important;
+    color: #3c3c3c;
   }
 
   .pricing-body .fa {
-    color: #fcce21 !important;
+    color: #fcce21;
   }
 
   .pricing-body i .icon-plus {
-    color: black !important;
+    color: black;
   }
 
   .pricing-body .quote {
@@ -235,7 +235,6 @@ export default {
     right: 0px;
     bottom: 15px;
     padding: 5px 25px 5px 15px;
-    color: firebrick;
   }
 
   .pricing-body ul {
@@ -273,7 +272,7 @@ export default {
   }
 
   .entreprise-btn {
-    border: 3px solid white !important;
+    border: 3px solid white;
   }
 
 </style>
