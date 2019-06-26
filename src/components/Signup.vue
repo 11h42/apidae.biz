@@ -161,8 +161,10 @@
 <script type="text/ecmascript-6">
 import Navbar from "./navbar";
 import MyFooter from "./footer";
+import $ from "jquery";
 
 export default {
+
   props: {
     scroll_to_price: { type: Function, required: true }
   },
@@ -246,7 +248,7 @@ export default {
 }
 
 #signup-form form label a {
-  color: #0275d8 !important;
+  color: #0275d8;
 }
 
 #signup-form form input {
@@ -269,7 +271,6 @@ export default {
   width: -moz-fit-content;
   padding: 7px 20px;
   border: none;
-  float: right;
   margin-top: 15px;
 }
 
@@ -280,7 +281,7 @@ export default {
   width: 100%;
 }
 
-@media (min-width: 638px) {
+@media (min-width: 1200px) {
   .captcha-container {
     float: left;
     width: 70%;
@@ -288,7 +289,38 @@ export default {
   }
 }
 
-@media (min-width: 638px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+  .captcha-container {
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 638px) and (max-width: 992px) {
+  .captcha-container {
+    float: left;
+    width: 70%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .valid-button {
+    float: right;
+    width: 28%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .valid-button {
+    float: left;
+    margin: 0;
+  }
+}
+
+@media (min-width: 638px) and (max-width: 992px) {
   .valid-button {
     float: right;
     width: 28%;
@@ -298,7 +330,7 @@ export default {
 
 @media (max-width: 638px) {
   .valid-button {
-    float: left !important;
+    float: left;
     margin: 0;
   }
 }

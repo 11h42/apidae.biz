@@ -34,6 +34,7 @@
     },
     methods: {
       transformMenu: function () {
+        loadVideo();
         if (window.grecaptcha) {
           $('#captcha-load').html('');
           $.getScript("https://www.google.com/recaptcha/api.js");
@@ -47,6 +48,11 @@
       }
     }
   };
+
+  function loadVideo () {
+    var elementVideo = document.getElementById("youtube_video");
+    elementVideo.src = "https://www.youtube.com/embed/-49EYn9eFtk";
+  }
 </script>
 <style>
   nav {
