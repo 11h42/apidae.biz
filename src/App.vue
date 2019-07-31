@@ -366,19 +366,19 @@
 
   @media (min-width: 992px) {
     .sub-title-responsive {
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
   }
 
   @media (min-width: 638px) and (max-width: 992px) {
     .sub-title-responsive {
-      font-size: 1.1em;
+      font-size: 1.2em;
     }
   }
 
   @media (max-width: 638px) {
     .sub-title-responsive {
-      font-size: 1em;
+      font-size: 1.1em;
     }
   }
 
@@ -418,8 +418,22 @@
     }
   }
 
-  .text-responsive {
-    font-size: 0.9em;
+  @media (min-width: 992px) {
+    .text-responsive {
+      font-size: 1.1em;
+    }
+  }
+
+  @media (min-width: 638px) and (max-width: 992px) {
+    .text-responsive {
+      font-size: 1em;
+    }
+  }
+
+  @media (max-width: 638px) {
+    .text-responsive {
+      font-size: 0.9em;
+    }
   }
 
   .small-text-responsive {
