@@ -86,7 +86,7 @@
             id: "time-tracking",
             title: "Time tracking",
             illustration: "fa fa-3x fa-clock-o color-illustration",
-            subtitle: "Traçabilité des tâches à venir ou en cours (À venir prochainement)",
+            subtitle: "Traçabilité des tâches à venir ou en cours",
             description:
                 "Suivez en temps réel les temps d'activité de chacun de vos collaborateurs, par tâche et par projet, et obtenez des synthèses significatives et détaillées. ",
             description2:
@@ -103,6 +103,23 @@
             id: "ordres-de-mission",
             title: "Ordre de mission",
             illustration: "fa fa-3x fa-clock-o icon-mission-order color-illustration",
+            subtitle: "Règlementer les déplacements",
+            description:
+                "Vos collaborateurs ont une mission à l’extérieur des bureaux ? Avec Apidae ils vont pouvoir remplir un ordre de mission rapidement et compléter simplement toutes les informations nécessaires.",
+            description2:
+                "La gestion des ordres de mission avec Apidae vous permet de donner un cadre légal aux déplacements de vos employés et de donner les conditions de remboursement pour chaque mission.",
+            description3:
+                "",
+            isHidden: true,
+            label: "En savoir plus",
+            reference: "/ordre-de-mission",
+            pageSelected: "ordre-de-mission"
+          },
+          {
+            columnClass: "feature-column",
+            id: "Bien-être-au-travail",
+            title: "Bien-être au travail",
+            illustration: "fa fa-3x fa-heart color-illustration",
             subtitle: "Règlementer les déplacements",
             description:
                 "Vos collaborateurs ont une mission à l’extérieur des bureaux ? Avec Apidae ils vont pouvoir remplir un ordre de mission rapidement et compléter simplement toutes les informations nécessaires.",
@@ -134,21 +151,38 @@
 
   .feature-container {
     width: 100%;
-    margin: 0;
     position: relative;
     height: 100%;
   }
-
+  .card-text{
+    text-align: left;
+  }
   @media (min-width: 1200px) {
     .feature-column {
-      position: initial;
-      height: 100%;
+      position: relative;
+      height: 55ex;
       display: inline-flex;
-      width: 19%;
+      width: 33%;
       font-weight: bold;
       font-size: large;
       padding: 0 0 4em 0;
-      margin: 0;
+      margin-top: 20px;
+    }
+
+  }
+    @media (min-width: 2500px) {
+    .feature-column {
+      position: relative;
+      height: 45ex;
+      display: inline-flex;
+      width: 33%;
+      font-weight: bold;
+      font-size: large;
+      padding: 0 0 4em 0;
+      margin-top: 20px;
+    }
+    .card-text{
+    text-align: left;
     }
   }
 
@@ -161,7 +195,7 @@
       font-weight: bold;
       font-size: large;
       padding: 0 0 4em 0;
-      margin: 0;
+      margin-top: 20px;
     }
   }
 
@@ -172,7 +206,6 @@
       font-weight: bold;
       font-size: large;
       padding: 0 0 4em 0;
-      margin: 0;
     }
   }
 
@@ -199,7 +232,6 @@
     position: relative;
     left: -50%;
   }
-
   .learn-more a:hover{
     color: white;
   }

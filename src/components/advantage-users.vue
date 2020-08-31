@@ -44,6 +44,13 @@
         <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
       </div>
     </div>
+    <div class="row" v-if="page_selected == 'wellness'">
+      <div class="col-lg-4 col-md-6 col-xs-12" v-for="advantageUser in advantageUsersWellness">
+        <img :src="advantageUser.source" class="image-advantage rounded-circle">
+        <p class="sub-title-responsive font-weight-bold">{{advantageUser.title}}</p>
+        <p v-for="advantage in advantageUser.advantages" class="text-left text-advantage text-responsive">{{advantage}}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -59,8 +66,8 @@
       return {
         advantageUsersListCra: [
           {
-            source: require("./../assets/Salarié.jpg"),
-            title: "SALARIÉ",
+            source: require("./../assets/collab.png"),
+            title: "COLLABORATEUR",
             advantages: [
               "- Facilite la rédaction des comptes rendus d'activités",
               "- Gagnez du temps dans la gestion du temps de travail",
@@ -68,7 +75,7 @@
             ]
           },
           {
-            source: require("../assets/manager.jpg"),
+            source: require("../assets/manager.png"),
             title: "MANAGER",
             advantages: [
               "- Connaître la rentabilité des projets",
@@ -76,7 +83,7 @@
             ]
           },
           {
-            source: require("../assets/comptable.jpg"),
+            source: require("../assets/compta.png"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "- Faciliter la facturation client",
@@ -88,8 +95,8 @@
         ],
         advantageUsersListHoliday: [
           {
-            source: require("./../assets/Salarié.jpg"),
-            title: "SALARIÉ",
+            source: require("./../assets/collab.png"),
+            title: "COLLABORATEUR",
             advantages: [
               "- Faire une demande rapidement",
               "- Gérer son solde de congé",
@@ -98,7 +105,7 @@
             ]
           },
           {
-            source: require("../assets/manager.jpg"),
+            source: require("../assets/manager.png"),
             title: "MANAGER",
             advantages: [
               "- Valider rapidement les demandes",
@@ -108,7 +115,7 @@
             ]
           },
           {
-            source: require("../assets/comptable.jpg"),
+            source: require("../assets/compta.png"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "- Gestion fiable du planning des absences",
@@ -119,15 +126,15 @@
         ],
         advantageUsersListTime: [
           {
-            source: require("./../assets/Salarié.jpg"),
-            title: "SALARIÉ",
+            source: require("./../assets/collab.png"),
+            title: "COLLABORATEUR",
             advantages: [
               "- Facilite la rédaction des comptes rendues d’activités",
               "- Gagner du temps dans la gestion du temps de travail"
             ]
           },
           {
-            source: require("../assets/manager.jpg"),
+            source: require("../assets/manager.png"),
             title: "MANAGER",
             advantages: [
               "- Connaitre la rentabilité des projets",
@@ -136,7 +143,7 @@
             ]
           },
           {
-            source: require("../assets/comptable.jpg"),
+            source: require("../assets/compta.png"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "- Faciliter la facturation client",
@@ -146,8 +153,8 @@
         ],
         advantageUsersListCost: [
           {
-            source: require("./../assets/Salarié.jpg"),
-            title: "SALARIÉ",
+            source: require("./../assets/collab.png"),
+            title: "COLLABORATEUR",
             advantages: [
               "- Délais de remboursement plus rapide",
               "- Enregistrer ses notes de frais rapidement",
@@ -155,7 +162,7 @@
             ]
           },
           {
-            source: require("../assets/manager.jpg"),
+            source: require("../assets/manager.png"),
             title: "MANAGER",
             advantages: [
               "- Vision globale des dépenses par employé, par services et par projet",
@@ -165,7 +172,7 @@
             ]
           },
           {
-            source: require("../assets/comptable.jpg"),
+            source: require("../assets/compta.png"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "- Diminuer les temps de remboursement",
@@ -177,8 +184,8 @@
         ],
         advantageUsersListOrder: [
           {
-            source: require("./../assets/Salarié.jpg"),
-            title: "SALARIÉ",
+            source: require("./../assets/collab.png"),
+            title: "COLLABORATEUR",
             advantages: [
               "- Enregistrer son déplacement rapidement",
               "- Délais de remboursement plus rapides",
@@ -186,7 +193,7 @@
             ]
           },
           {
-            source: require("../assets/manager.jpg"),
+            source: require("../assets/manager.png"),
             title: "MANAGER",
             advantages: [
               "- Contrôler la nécessité des frais professionnels.",
@@ -195,12 +202,42 @@
             ]
           },
           {
-            source: require("../assets/comptable.jpg"),
+            source: require("../assets/compta.png"),
             title: "SERVICE COMPTABILITÉ",
             advantages: [
               "- Diminuer les temps de remboursement",
               "- Gagner du temps dans la gestion des frais professionnels",
               "- Anticiper les dépenses"
+            ]
+          }
+        ],
+        advantageUsersWellness: [
+          {
+            source: require("./../assets/collab.png"),
+            title: "COLLABORATEUR",
+            advantages: [
+              "- Réponses rapides aux questionnaires",
+              "- Permet d’évoquer les souhaits rapidement",
+              "- Confidentialité"
+            ]
+          },
+          {
+            source: require("../assets/manager.png"),
+            title: "MANAGER",
+            advantages: [
+              "- Vision globale du fonctionnement de ses équipes/salariés",
+              "- Gain de temps",
+              "- Adaptabilité de la communication",
+              "- Mise en place du process approprié"
+            ]
+          },
+          {
+            source: require("../assets/rh.png"),
+            title: "SERVICE RESSOURCES HUMAINES",
+            advantages: [
+              "- Retours rapides aux questionnaires",
+              "- Permet de comprendre au mieux les attentes  des collaborateurs",
+              "- Confidentialité"
             ]
           }
         ]
@@ -220,7 +257,7 @@
   .subtittle-advantage-users {
     margin: 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .subtittle-advantage-container {

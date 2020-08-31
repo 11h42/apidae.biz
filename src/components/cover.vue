@@ -31,6 +31,7 @@
           <img v-if="page_selected == 'notes-de-frais'" src="../assets/note-de-frais.jpg" class="size-image">
           <img v-if="page_selected == 'time-tracking'" src="../assets/time-tracking.jpg" class="size-image">
           <img v-if="page_selected == 'ordre-de-mission'" src="../assets/note-de-frais.jpg" class="size-image">
+          <img v-if="page_selected == 'wellness'" src="../assets/wellness.png" class="size-image">
         </div>
       </div>
       <div class="row card-deck catchline" v-if="is_with_information">

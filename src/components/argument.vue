@@ -69,6 +69,18 @@
         <div style="height: 100%"></div>
       </div>
     </div>
+    <div class="row" v-if="page_selected == 'wellness'">
+      <div :class=argument.look_block v-for="argument in argumentsListWellness">
+        <span :class=argument.look_number>{{argument.number}}</span>
+        <span :class=argument.look_title>{{argument.title}}</span>
+        <span :class=argument.look_litle_link>{{argument.litle_link}}</span>
+        <span :class=argument.look_litle_title>{{argument.litle_title}}</span>
+        <div class="col-xs-12">
+          <p :class=argument.look_infomation>{{argument.information}}</p>
+        </div>
+        <div style="height: 100%"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -356,10 +368,76 @@
               "sur Apidae.",
             look_infomation: "para-argument text-responsive"
           }
+        ],
+        argumentsListWellness: [
+          {
+            look_block: "col-lg-6 row look-block-left",
+            look_number: "icon-yellow build-icon build-icon-1",
+            number: "01",
+            title: "Concevez vos questionnaires",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-9 col-md-9 col-xs-12",
+            litle_title: "",
+            look_litle_title: "litle-title-activity sub-title-responsive",
+            information:
+              "Vous avez la possibilité de concevoir" +
+              " vos propres questionnaires en fonction de vos orientations RH et d’équipe.",
+            look_infomation: "para-argument text-responsive"
+          },
+          {
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
+            look_number: "icon-yellow build-icon build-icon-1",
+            number: "02",
+            title: "Remplissez vos questionnaires",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-9 col-md-9 col-xs-12",
+            litle_title: "",
+            look_litle_title: "litle-title-activity sub-title-responsive",
+            information:
+              "Vous remplissez directement les questionnaires quand vous en avez envie" +
+              ", sur votre mobile ou sur votre ordinateur, dans le lieu que vous souhaitez." +
+              " Ne perdez plus de temps pour faire parvenir une information importante à votre manager sur votre ressenti en entreprise.",
+            look_infomation: "para-argument text-responsive"
+          },
+          {
+            look_block: "col-lg-6 row look-block-left",
+            look_number: "icon-yellow build-icon build-icon-4",
+            number: "03",
+            title: "Recevez le PDF",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-2 col-lg-9 col-md-9 col-xs-12",
+            litle_link: "",
+            look_litle_link: "icon-yellow litle-link-activity",
+            litle_title: "",
+            look_litle_title: "litle-title-activity sub-title-responsive",
+            information:
+              "Une fois le questionnaire rempli, le salarié et vous recevrez un PDF avec les réponses aux questions." +
+              " Ce PDF est totalement confidentiel et reste entre votre collaborateur et vous.",
+            look_infomation: "para-argument text-responsive"
+          },
+          {
+            look_block: "col-lg-6 row pt-xs-0 look-block-right pt-xs-0 pt-lg-6",
+            look_number: "icon-yellow build-icon",
+            number: "04",
+            title: "Contrôler la vie en entreprise",
+            look_title: "sub-tittle-activity sub-title-responsive col-lg-9 col-md-9 col-xs-12",
+            information:
+              "Une fois le PDF reçu, vous pouvez analyser et mettre en place une certaine communication," +
+              " ou un process en rapport à cela.",
+            look_infomation: "para-argument text-responsive"
+          },
+          {
+            look_block: "col-lg-6 row look-block-left",
+            look_number: "icon-yellow build-icon build-icon-4",
+            number: "05",
+            title: "Visualisez l’évolution de votre année",
+            look_title: "sub-tittle-activity sub-title-responsive sub-tittle-activity-4 col-lg-9 col-md-9 col-xs-12",
+            information:
+              "Chaque mois, vous pouvez répondre aux questionnaires," +
+              " et vous pouvez voir si les ressentis ont évolués.",
+            look_infomation: "para-argument text-responsive"
+          }
         ]
       };
-    },
-  }
+    }
+  };
 </script>
 
 <style scoped>

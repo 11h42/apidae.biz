@@ -5,9 +5,6 @@
         <span slot="header" class="m-x-auto">
           Gestion des ordres de mission
         </span>
-        <span slot="header-small" class="m-x-auto">
-          (À venir prochainement)
-        </span>
         <span slot="header-subtitle">Simplifiez la gestion des déplacements professionnels de vos équipes en
           dématérialisant les processus de gestion des ordres de mission ponctuels ou permanents. Vos employés
           remplissent leur ordre de mission sur l’application en renseignant les frais liés à ce déplacement. Vous

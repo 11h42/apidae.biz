@@ -7,6 +7,7 @@ import Cost from '@/pages/cost';
 import Time from '@/pages/time';
 import Order from '@/pages/order';
 import Legal from '@/pages/legal';
+import Wellness from '@/pages/wellness';
 
 Vue.use(Router);
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/ordre-de-mission',
       name: 'ORDER',
       component: Order
+    },
+    {
+      path: '/wellness',
+      name: 'WELLNESS',
+      component: Wellness
     },
     {
       path: '/mentions-legales',

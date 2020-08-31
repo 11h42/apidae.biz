@@ -3,41 +3,50 @@
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="false"
          :is_with_information="false" :is_main_title="true" :page_selected="page_selected">
       <span slot="header" class="m-x-auto">
-        Logiciel de suivi d'activité
+        Gestion du bien-être au travail
       </span>
-      <span slot="header-subtitle">Simplifiez la déclaration des temps de travail de vos collaborateurs.
-        Avec Apidae vos équipes remplissent leurs activités mensuellement et à la fin du mois vous récupérez
-        le bilan de chacun. Cela vous permet de faciliter la gestion RH et financière de votre entreprise.
+      <span slot="header-subtitle">Vous voulez mettre en place stratégie RH sur le bien-être au travail? Nous sommes là pour vous accompagner!
+        Avec notre solution, vous pouvez connaître le ressenti de vos salariés sous trois déclinaisons !
         <br/>
         <br/>
-        Avoir une vision globale des temps de travail de vos équipes par projet vous permet de gérer
-        facilement la facturation client et de connaître la rentabilité des projets.
+        Vous pouvez également cibler vos thématiques via des questionnaires personnalisables.
       </span>
       <small slot="text_button_free" class="size-btn-cover" @click="scroll_to_signup">
         <i class='fa fa-arrow-circle-o-right'/>&nbsp;Essayer gratuitement
       </small>
     </cover>
-
+    <different-wellness :page_selected="page_selected">
+      <span slot="title">
+        Mesurer la qualité du bien-être au travail
+      </span>
+      <span slot="header-subtitle"> Optimisez votre temps! Vos employés remplissent
+        le ou les formulaire(s) en fonction   de   votre   thématique   sur   Apidae.biz.
+        Vous   recevez   directement   le compte rendu et
+        vous donneront des indicateurs afin de mettre en place le meilleur process
+        de bien-être au travail, au sein de votre entreprise. Notre solution   vous
+         permet   d’avoir   des   échanges   plus   fréquents   avec   vos collaborateurs,
+        lorsqu’ils en ont besoin, ou non.
+      </span>
+    </different-wellness>
     <argument :page_selected="page_selected">
       <span slot="title">
         Suivi d'activité de vos équipes
       </span>
-      <span slot="header-subtitle"> Apidae est la solution idéale pour favoriser le suivi d'activité de
-        votre entreprise. Notre logiciel de suivi d'activité vous permet d'avoir une vision à 360° sur
-        l'activité de votre entreprise. Apidae, vous permet de connaître les temps d'activité de vos
-        équipes par projet, et ainsi de faciliter la gestion de la facturation client.
-      </span>
     </argument>
-
     <advantage-users :page_selected="page_selected">
       <span slot="title">
         Les avantages utilisateurs
       </span>
-      <span slot="header-subtitle"> Ne perdez plus de temps à réaliser vos bilans d'activité. Avec Apidae
-        vous remplissez chaque jour vos activités professionnnelles sur la plateforme.
+      <span slot="header-subtitle"> Connaître si votre salarié se sent bien au travail
+        n’a jamais été aussi rapide et simple! La partie «bien-être  au travail»
+        vous  permet de gérer facilement vos salariés sur le plan émotionnel et physique.
+        Certains profils ont du mal à communiquer verbalement sur leur ressenti: par écrit et sur leur session,
+        ils se sentiront en confiance.
+        <br>
+        Avec l’application Apidae et l’onglet «Bien-être au travail»,
+        le confort de vos collaborateurs est au cœur de votre entité.
       </span>
     </advantage-users>
-
     <cover class="place-cover" :scroll_to_signup="scroll_to_signup" :is_with_video="true"
          :is_with_information="false" :is_main_title="false" :page_selected="page_selected">
       <span slot="header" class="m-x-auto">
@@ -83,6 +92,7 @@
   import Cover from "./../components/cover";
   import Argument from "./../components/argument";
   import AdvantageUsers from "./../components/advantage-users";
+  import DifferentWellness from "./../components/different-wellness"
   import CallToAction from "./../components/call-to-action";
   import Pricing from "./../components/Pricing.vue";
   import Signup from "./../components/Signup.vue";
@@ -101,7 +111,8 @@
       AdvantageUsers,
       CallToAction,
       Pricing,
-      Signup
+      Signup,
+      DifferentWellness
     },
 
     methods: {
