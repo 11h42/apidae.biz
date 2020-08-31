@@ -56,6 +56,9 @@
           <br/>
           <span class="link-sentence" v-if="page_selected != 'ordre-de-mission'" @click="change_page_selected('ordre-de-mission')"><router-link to="/ordre-de-mission">- Ordre de mission </router-link></span>
           <span v-if="page_selected == 'ordre-de-mission'">- Ordre de mission </span>
+          <br>
+          <span class="link-sentence" v-if="page_selected != 'wellness'" @click="change_page_selected('wellness')"><router-link to="/wellness">- Bien-être au travail</router-link></span>
+          <span v-if="page_selected == 'wellness'">- Bien-être au travail</span>
         </span>
         <small slot="text_button_free" class="size-btn-cover" @click="change_page_selected('accueil')">
           <router-link to="/">DÉCOUVREZ APIDAE</router-link>

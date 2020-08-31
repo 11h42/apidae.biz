@@ -80,7 +80,11 @@
               </li>
               <li>
                 <i class="fa fa-envelope-open">&nbsp;&nbsp;</i>
-                Module Ordres de Mission <i>(bientôt !)</i>
+                Module Ordres de Mission
+              </li>
+              <li>
+                <i class="fa fa-envelope-open">&nbsp;&nbsp;</i>
+                Bien-être au travail
               </li>
               <li>
                 <i class="fa fa-file-pdf-o">&nbsp;&nbsp;</i>

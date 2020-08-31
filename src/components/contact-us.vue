@@ -5,7 +5,7 @@
       <li class="tel">
         <i class="fa fa-phone" aria-hidden="true" title="Téléphone"></i> &nbsp
         <b title="téléphone">tél.</b>:
-        <span class="value">(+33).556.787.250</span>
+        <span class="value">05 56 78 72 50</span>
       </li>
       <li class="email">
         <i class="fa fa-envelope" aria-hidden="true" title="par e-mail"></i> &nbsp

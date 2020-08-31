@@ -14,7 +14,7 @@
         <a @click="change_page_selected('notes-de-frais'); transformMenu();"><router-link to="/notes-de-frais" :class="{'active-menu': page_selected == 'notes-de-frais', 'inactive-menu': page_selected != 'notes-de-frais'}">Notes de frais</router-link></a>
         <a @click="change_page_selected('ordre-de-mission'); transformMenu();"><router-link to="/ordre-de-mission" :class="{'active-menu': page_selected == 'ordre-de-mission', 'inactive-menu': page_selected != 'ordre-de-mission'}">Ordre de mission</router-link></a>
         <a @click="change_page_selected('time-tracking'); transformMenu();"><router-link to="/time-tracking" :class="{'active-menu': page_selected == 'time-tracking', 'inactive-menu': page_selected != 'time-tracking'}">Time tracking</router-link></a>
-        <a @click="change_page_selected('wellness'); transformMenu();"><router-link to="/wellness" :class="{'active-menu': page_selected == 'wellness', 'inactive-menu': page_selected != 'wellness'}">Bien-être</router-link></a>
+        <a @click="change_page_selected('wellness'); transformMenu();"><router-link to="/wellness" :class="{'active-menu': page_selected == 'wellness', 'inactive-menu': page_selected != 'wellness'}">Bien-être <br><div class="position-absolute small" style="color: #fcce21">NEW !</div></router-link></a>
         <a href="javascript:void(0);" class="icon" @click="transformMenu()">
           <i class="fa fa-bars"></i>
         </a>

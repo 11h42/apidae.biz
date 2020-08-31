@@ -34,21 +34,24 @@
             source: require("./../assets/daily.png"),
             title: "Quotidien",
             advantages: [
-              "Chaque jour est un jour nouveau! Des humeurs différentes!"
+              "Chaque jour est un jour nouveau !" ,
+              "Des humeurs différentes !"
             ]
           },
           {
             source: require("../assets/monthly.png"),
             title: "Mensuel",
             advantages: [
-              "Une vision globale sur le déroulement du mois écoulé reste important pour le suivi du bien - être! "
+              "Une vision globale sur le déroulement du mois écoulé reste important pour le suivi du bien - être ! "
             ]
           },
           {
             source: require("../assets/projet.png"),
             title: "Projet",
             advantages: [
-              "Un projet non comprit? Stressant? Vous savez tout!"
+              "Un projet non comprit ?",
+              "Stressant ?",
+              " Vous savez tout !"
             ]
           }
         ]

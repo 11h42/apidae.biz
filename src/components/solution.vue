@@ -121,16 +121,15 @@
             title: "Bien-être au travail",
             illustration: "fa fa-3x fa-heart color-illustration",
             subtitle: "Règlementer les déplacements",
-            description:
-                "Vos collaborateurs ont une mission à l’extérieur des bureaux ? Avec Apidae ils vont pouvoir remplir un ordre de mission rapidement et compléter simplement toutes les informations nécessaires.",
-            description2:
-                "La gestion des ordres de mission avec Apidae vous permet de donner un cadre légal aux déplacements de vos employés et de donner les conditions de remboursement pour chaque mission.",
-            description3:
-                "",
+            description: "Une envie de mettre en place une stratégie de bien-être au travail au sein de votre structure ?\n" +
+              "En quelques réponses vous savez le ressenti, les attentes de vos collaborateurs et pourrez en décliner un indice de satisfaction!\n" +
+              "Tous les mois, vous avez des statistiques qui vous montrent l’évolution de la forme de vos salariés.",
+            description2: "Côté suivi individuel, vous gagnez du temps sur les entretiens annuels, professionnels, de remotivations ou bilan annuel !",
+            description3:"",
             isHidden: true,
             label: "En savoir plus",
-            reference: "/ordre-de-mission",
-            pageSelected: "ordre-de-mission"
+            reference: "/wellness",
+            pageSelected: "wellness"
           }
         ]
       };
