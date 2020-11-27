@@ -141,6 +141,7 @@
         id="submit-success-div"
         v-bind:class="{'visible': submit_success}"
       >
+      <script type="text/javascript"> (function (w, d, id) { if(w.av) { return; } var ts = new Date().getTime(); w.avURL = w.avURL || 'https://appvizer.one'; w.avPool = w.avPool || []; w.avPool.push({start: ts, id: id}); w.av = function () { w.avPool.push(arguments) }; var e = document.createElement("script"); e.async = true; e.src = w.avURL + '/ariadne/v1/ariadne.js?ts=' + ts; d.getElementsByTagName("head")[0].appendChild(e); })(window, document); av("conversion", {id: 'AP-25378'}); </script>
         <span class="text-muted size-title">Il ne reste plus qu'une étape ...</span>
         <br>
         <span class="size-text-important">Nous vous avons envoyé un mail,</span>
