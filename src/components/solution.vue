@@ -120,7 +120,7 @@
             id: "Bien-être-au-travail",
             title: "Bien-être au travail",
             illustration: "fa fa-3x fa-heart color-illustration",
-            subtitle: "Règlementer les déplacements",
+            subtitle: "Mesurer la qualité du bien-être au travail",
             description: "Une envie de mettre en place une stratégie de bien-être au travail au sein de votre structure ?\n" +
               "En quelques réponses vous savez le ressenti, les attentes de vos collaborateurs et pourrez en décliner un indice de satisfaction!\n" +
               "Tous les mois, vous avez des statistiques qui vous montrent l’évolution de la forme de vos salariés.",
