@@ -47,7 +47,7 @@
             <div class="pricing-header">
               <span class="size-text-important">Starter</span>
               <hr>
-              <span class="size-title-big d-inline-block"><b>9</b></span>
+              <span class="size-title-big d-inline-block"><b>19</b></span>
               <sup><span class="size-text-important d-inline-block">€</span></sup>
               <br/>
               <i>H.T. / mois</i>
