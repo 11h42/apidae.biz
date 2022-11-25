@@ -104,7 +104,7 @@
             name="code Partenaire"
             id="codePart"
             class="margin-bottom"
-            v-model="form.telephone"
+            v-model="form.codePart"
             :disabled="submit_success"
           >
           <br>
