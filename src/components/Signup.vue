@@ -96,7 +96,17 @@
             v-model="form.password"
             :disabled="submit_success"
           >
-
+          <label for="codePartenaire">
+            Code Partenaire* :
+          </label>
+          <input
+            type="text"
+            name="code Partenaire"
+            id="codePart"
+            class="margin-bottom"
+            v-model="form.telephone"
+            :disabled="submit_success"
+          >
           <br>
           <br v-if="error_message">
           <i v-if="error_message" id="error-message">{{ error_message }}</i>
