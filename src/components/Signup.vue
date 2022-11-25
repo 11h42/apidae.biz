@@ -1,6 +1,6 @@
 <template>
   <div id="signup-form" class="container">
-    <h2 class="font-weight-bold">Essayer gratuitemennt</h2>
+    <h2 class="font-weight-bold">Essayer gratuitement</h2>
     <hr>
     <span class="text-muted size-text-important">
       Découvrez les fonctionnalités d'Apidae
