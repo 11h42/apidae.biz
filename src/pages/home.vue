@@ -3,7 +3,7 @@
     <cover :scroll_to_signup="scroll_to_signup" :is_with_video="true"
            :is_with_information="true" :is_main_title="true" :page_selected="page_selected">
       <span slot="header" class="m-x-auto">
-        Apidae : Solution de management des ressources
+        Apidae : Solution de management de ressources
       </span>
       <span slot="header-subtitle">Apidae est le logiciel de management des ressources en entreprise idéal pour les
         TPE/PME.
